@@ -1,118 +1,117 @@
-# Ke hoach trien khai 12 thang
+# Kế hoạch triển khai 12 tháng
 
-## Muc tieu tong the
+## Mục tiêu tổng thể
 
-Trong 12 thang, nen tang can dat duoc trang thai:
+Trong vòng 12 tháng, nền tảng cần đạt được các trạng thái sau:
 
-- Co mang luoi truong pho thong, trung cap, cao dang, dai hoc va doanh nghiep cung tham gia.
-- Co thu vien chuong trinh STEAM du lon de trien khai dong loat.
-- Co cac khoa AI va vibe coding tao doanh thu som.
-- Co cac chuoi STEAM den nghe nghiep ro rang.
-- Co he thong ho so nang luc, rubric va minh chung san pham.
-- Co cong doanh nghiep dat hang nhan luc.
+- Hình thành mạng lưới trường phổ thông, trung cấp, cao đẳng, đại học và doanh nghiệp cùng tham gia.
+- Xây dựng thư viện chương trình STEAM đủ lớn để triển khai đồng loạt.
+- Có các khóa AI và vibe coding tạo doanh thu sớm.
+- Hình thành các chuỗi từ STEAM đến nghề nghiệp một cách rõ ràng.
+- Có hệ thống hồ sơ năng lực, rubric và minh chứng sản phẩm.
+- Có cổng doanh nghiệp đặt hàng nhân lực.
 
-## Thang 1: Mo chien dich dong thoi
+## Tháng 1: Mở chiến dịch đồng thời
 
-- Thanh lap ban dieu hanh chung.
-- Lap danh sach truong, phong STEAM, truong nghe, cao dang, dai hoc va doanh nghiep co the tiep can.
-- Phan loai theo dia phuong, loai truong, thiet bi, quy mo va nguoi quyet dinh.
-- Chao ban ngay cac chuong trinh AI cho giao vien, AI cho sinh vien va vibe coding.
-- Khoi dong 4 nhom san xuat khoa STEAM.
-- Xay 8 ma tran STEAM-nghe.
-- Thu nhu cau nhan luc tu it nhat 10 doanh nghiep.
-- Hoan thanh ban nen tang dau tien: quan ly to chuc, khoa hoc, lop va nguoi dung.
+- Thành lập ban điều hành chung.
+- Lập danh sách các trường, phòng STEAM, trường nghề, cao đẳng, đại học và doanh nghiệp có thể tiếp cận.
+- Phân loại theo địa phương, loại trường, thiết bị, quy mô và người có thẩm quyền quyết định.
+- Chào bán ngay các chương trình AI cho giáo viên, AI cho sinh viên và vibe coding.
+- Khởi động 4 nhóm sản xuất khóa STEAM.
+- Xây dựng 8 ma trận STEAM - nghề.
+- Thu thập nhu cầu nhân lực từ ít nhất 10 doanh nghiệp.
+- Hoàn thành phiên bản nền tảng đầu tiên gồm quản lý tổ chức, khóa học, lớp học và người dùng.
 
-## Thang 2: Trien khai lop that
+## Tháng 2: Triển khai lớp học thực tế
 
-- To chuc cac cohort AI dau tien tai truong pho thong, cao dang va dai hoc.
-- Dao tao giao vien nguon cho phong STEAM.
-- Dua 8 den 10 khoa STEAM dau tien len he thong.
-- Cau hinh moi truong theo dung thiet bi tung truong dang co.
-- Mo cong dang ky chuong trinh cho cac truong trong mang luoi.
-- Bat dau thu ho so du an va du lieu nang luc hoc sinh.
+- Tổ chức các cohort AI đầu tiên tại trường phổ thông, cao đẳng và đại học.
+- Đào tạo giáo viên nguồn cho các phòng STEAM.
+- Đưa 8-10 khóa STEAM đầu tiên lên hệ thống.
+- Cấu hình môi trường học tập phù hợp với thiết bị hiện có của từng trường.
+- Mở cổng đăng ký chương trình cho các trường trong mạng lưới.
+- Bắt đầu thu thập hồ sơ dự án và dữ liệu năng lực của học sinh.
 
-## Thang 3: Phu dot truong dau tien
+## Tháng 3: Phủ đợt trường đầu tiên
 
-- 20 den 30 co so giao duc hoat dong tren nen tang.
-- 15 den 20 khoa STEAM san sang.
-- Trien khai tuan le AI va STEAM theo cum truong.
-- Mo khoa vibe coding cho THPT, sinh vien va giang vien.
-- Hoan thien portfolio hoc sinh.
-- Ra mat dashboard danh cho ban giam hieu.
-- Chuyen nhu cau cua doanh nghiep thanh cac don hang nang luc dau tien.
+- Có 20-30 cơ sở giáo dục hoạt động trên nền tảng.
+- Có 15-20 khóa STEAM sẵn sàng triển khai.
+- Tổ chức tuần lễ AI và STEAM theo cụm trường.
+- Mở khóa vibe coding cho học sinh THPT, sinh viên và giảng viên.
+- Hoàn thiện portfolio học sinh.
+- Ra mắt dashboard dành cho ban giám hiệu.
+- Chuyển nhu cầu của doanh nghiệp thành những đơn hàng năng lực đầu tiên.
 
-## Thang 4-5: Mo rong theo cum dia phuong
+## Tháng 4-5: Mở rộng theo cụm địa phương
 
-- Trien khai theo So, dia phuong hoac cum truong.
-- Moi cum co mot dieu phoi vien va nhom giang vien nguon.
-- Mo dong thoi nhieu cohort thay vi cu chuyen gia di day tung lop.
-- Dat 30 den 40 khoa STEAM.
-- Dua 5 den 8 chuoi huong nghiep len nen tang.
-- Trien khai AI cho can bo quan ly giao duc.
-- Ky hop tac voi truong nghe va doanh nghiep cho chuong trinh dao tao theo don hang.
-- Hoan thien phan he quan ly thiet bi va ty le su dung phong STEAM.
+- Triển khai theo sở, địa phương hoặc cụm trường.
+- Mỗi cụm có một điều phối viên và một nhóm giảng viên nguồn.
+- Mở đồng thời nhiều cohort thay vì cử chuyên gia đi dạy từng lớp.
+- Đạt 30-40 khóa STEAM.
+- Đưa 5-8 chuỗi hướng nghiệp lên nền tảng.
+- Triển khai AI cho cán bộ quản lý giáo dục.
+- Ký kết hợp tác với trường nghề và doanh nghiệp để triển khai chương trình đào tạo theo đơn đặt hàng.
+- Hoàn thiện phân hệ quản lý thiết bị và tỷ lệ sử dụng phòng STEAM.
 
-## Thang 6: Chuan hoa de nhan rong
+## Tháng 6: Chuẩn hóa để nhân rộng
 
-Muc tieu giua ky:
+Mục tiêu giữa kỳ:
 
-| Chi tieu | Muc tieu |
+| Chỉ tiêu | Mục tiêu |
 |---|---:|
-| Truong pho thong | 40-50 |
-| Trung cap, cao dang, dai hoc | 10-15 |
-| Giao vien, giang vien da duoc dao tao | 500-700 |
-| Nguoi hoc | 5.000-8.000 |
-| Khoa STEAM | 30-40 |
-| Chuoi nghe trien khai thuc te | 5 |
-| Doanh nghiep tham gia xac dinh nang luc | 10 |
-| Chuong trinh dao tao theo don hang | 3-5 |
+| Trường phổ thông | 40-50 |
+| Trường trung cấp, cao đẳng, đại học | 10-15 |
+| Giáo viên, giảng viên đã được đào tạo | 500-700 |
+| Người học | 5.000-8.000 |
+| Khóa STEAM | 30-40 |
+| Chuỗi nghề được triển khai thực tế | 5 |
+| Doanh nghiệp tham gia xác định năng lực | 10 |
+| Chương trình đào tạo theo đơn đặt hàng | 3-5 |
 
-Thang 6 dung du lieu de xac dinh khoa nao can mo rong, sua hoac thay the.
+Trong tháng 6, cần sử dụng dữ liệu thực tế để xác định khóa học nào nên mở rộng, điều chỉnh hoặc thay thế.
 
-## Thang 7-8: Ra mat he sinh thai nghe nghiep
+## Tháng 7-8: Ra mắt hệ sinh thái nghề nghiệp
 
-- Mo phan he trai nghiem nghe cho THPT.
-- To chuc cac khoa ngan han tai truong nghe va cao dang.
-- Dua bai danh gia thuc hanh vao ho so nang luc.
-- Ra mat cong doanh nghiep dat hang nhan luc.
-- Doanh nghiep nhin thay so nguoi dang hoc, sap dat chuan va da san sang.
-- Trien khai AI va vibe coding cho doanh nghiep.
-- Ket noi cac don vi dich vu viec lam va dua nguoi lao dong di nuoc ngoai co giay phep.
+- Mở phân hệ trải nghiệm nghề cho học sinh THPT.
+- Tổ chức các khóa ngắn hạn tại trường nghề và cao đẳng.
+- Đưa bài đánh giá thực hành vào hồ sơ năng lực.
+- Ra mắt cổng doanh nghiệp đặt hàng nhân lực.
+- Cho phép doanh nghiệp theo dõi số người đang học, sắp đạt chuẩn và đã sẵn sàng.
+- Triển khai AI và vibe coding cho doanh nghiệp.
+- Kết nối với các đơn vị dịch vụ việc làm và đơn vị được cấp phép đưa người lao động đi làm việc ở nước ngoài.
 
-## Thang 9-10: Ghep dao tao voi don hang that
+## Tháng 9-10: Gắn đào tạo với đơn hàng thực tế
 
-- Doanh nghiep dua bai toan va du lieu mo phong vao chuong trinh.
-- Truong to chuc cohort dao tao theo yeu cau.
-- Sinh vien va hoc vien nghe lam capstone do doanh nghiep dat hang.
-- Mo he thong phong van, danh gia va xac nhan nang luc.
-- Tao danh sach ung vien san sang cho tung vi tri.
-- Tich hop ngoai ngu nghe nghiep cho cac chuong trinh huong den thi truong quoc te.
-- To chuc ngay hoi trinh dien san pham va tuyen dung theo nang luc.
+- Doanh nghiệp đưa bài toán và dữ liệu mô phỏng vào chương trình.
+- Nhà trường tổ chức các cohort đào tạo theo yêu cầu.
+- Sinh viên và học viên nghề thực hiện capstone do doanh nghiệp đặt hàng.
+- Mở hệ thống phỏng vấn, đánh giá và xác nhận năng lực.
+- Tạo danh sách ứng viên sẵn sàng cho từng vị trí.
+- Tích hợp ngoại ngữ nghề nghiệp cho các chương trình hướng đến thị trường quốc tế.
+- Tổ chức ngày hội trình diễn sản phẩm và tuyển dụng theo năng lực.
 
-## Thang 11-12: Mo rong toan mang luoi
+## Tháng 11-12: Mở rộng toàn mạng lưới
 
-- Cong bo thu vien 40 den 60 chuong trinh STEAM.
-- Cong bo cac lo trinh tu STEAM den nghe nghiep.
-- To chuc su kien STEAM-AI-Skills quy mo lien truong.
-- Ban goi su dung nen tang va hoc lieu cho nam hoc tiep theo.
-- Ky tiep cac don hang dao tao va nhan luc.
-- Mo mang luoi chuyen gia, giao vien nguon va dieu phoi vien dia phuong.
-- Chuan hoa bo bao cao cho truong, dia phuong va doanh nghiep.
+- Công bố thư viện gồm 40-60 chương trình STEAM.
+- Công bố các lộ trình từ STEAM đến nghề nghiệp.
+- Tổ chức sự kiện STEAM - AI - Skills quy mô liên trường.
+- Bán gói sử dụng nền tảng và học liệu cho năm học tiếp theo.
+- Ký kết thêm các đơn hàng đào tạo và nhân lực.
+- Mở rộng mạng lưới chuyên gia, giáo viên nguồn và điều phối viên địa phương.
+- Chuẩn hóa bộ báo cáo dành cho nhà trường, địa phương và doanh nghiệp.
 
-## Chi tieu sau 12 thang
+## Chỉ tiêu sau 12 tháng
 
-| Chi tieu | Muc tieu |
+| Chỉ tiêu | Mục tiêu |
 |---|---:|
-| Truong pho thong | 60-100 |
-| Trung cap, cao dang, dai hoc | 20-30 |
-| Doanh nghiep tham gia | 30-50 |
-| Khoa STEAM | 40-60 |
-| Chuong trinh AI/vibe coding | 8-12 |
-| Chuoi STEAM-nghe | 8 |
-| Giao vien/giang vien duoc dao tao | 1.000-1.500 |
-| Hoc sinh, sinh vien tham gia | 15.000-25.000 |
-| Hoc vien nghe co ho so nang luc | 1.500-2.500 |
-| Don hang nhan luc | 15-25 |
-| Ho so du dieu kien ghep viec | 800-1.200 |
-| Nguoi duoc tuyen hoac gioi thieu thanh cong | 300-500 |
-
+| Trường phổ thông | 60-100 |
+| Trường trung cấp, cao đẳng, đại học | 20-30 |
+| Doanh nghiệp tham gia | 30-50 |
+| Khóa STEAM | 40-60 |
+| Chương trình AI/vibe coding | 8-12 |
+| Chuỗi STEAM - nghề | 8 |
+| Giáo viên, giảng viên được đào tạo | 1.000-1.500 |
+| Học sinh, sinh viên tham gia | 15.000-25.000 |
+| Học viên nghề có hồ sơ năng lực | 1.500-2.500 |
+| Đơn hàng nhân lực | 15-25 |
+| Hồ sơ đủ điều kiện ghép việc | 800-1.200 |
+| Người được tuyển dụng hoặc giới thiệu thành công | 300-500 |
