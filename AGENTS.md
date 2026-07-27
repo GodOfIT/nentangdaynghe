@@ -2,11 +2,11 @@
 
 > **Đọc file này trước tiên, trước mọi file khác trong repo.**
 >
-> Repo này được nhiều trợ lý AI cùng làm việc (Claude, ChatGPT/Codex và có thể thêm). File này là nguồn sự thật chung về bối cảnh, ràng buộc và những vấn đề đang tồn tại.
+> Repo này được nhiều trợ lý AI cùng làm việc (Claude, ChatGPT/Codex và có thể thêm). File này là nguồn sự thật chung về bối cảnh, ràng buộc và trạng thái điều hành.
 >
-> **Quy tắc ưu tiên:** nếu file này mâu thuẫn với bất kỳ file nào khác trong repo, **file này thắng**, cho đến khi file kia được sửa. Các tài liệu khác được viết ở giai đoạn giả định bộ máy lớn và chưa được dọn hết.
+> **Quy tắc ưu tiên:** nếu file này mâu thuẫn với bất kỳ file nào khác trong repo, **file này thắng**, cho đến khi file kia được sửa.
 
-Cập nhật lần cuối: 2026-07-27
+Cập nhật lần cuối: 2026-07-27  
 Người chủ trì: Bùi Minh Đức
 
 ## Quyết định điều hành mới nhất
@@ -23,316 +23,404 @@ Khi có mâu thuẫn giữa các con số trong file này và các kế hoạch 
 
 ---
 
-## 1. Tóm tắt vấn đề trong một đoạn
+## 1. Bối cảnh điều hành hiện tại
 
-Repo mô tả một hệ sinh thái giáo dục nghề 5 trục, lập kế hoạch cho bộ máy 25–40 người, doanh thu mục tiêu 13–35 tỷ. **Thực tế nguồn lực là 5 người core.** Toàn bộ phần định lượng của kế hoạch cần tính lại, và phần lớn phạm vi cần cắt. Tài liệu chiến lược và định vị vẫn tốt, giữ nguyên. Vấn đề nằm ở chỗ repo đang mang hai phiên bản kế hoạch chồng lên nhau mà không file nào tuyên bố mình là bản chính.
+Repo mô tả tầm nhìn hệ sinh thái giáo dục nghề nhiều trục, nhưng nguồn lực hiện tại là **5 người core**. Tài liệu chiến lược dài hạn vẫn được giữ lại; kế hoạch điều hành phải bám vào năng lực thật, dữ liệu thật và các tài sản kỹ thuật đã có.
 
----
+Năm đầu ưu tiên các năng lực dùng chung:
 
-## 2. Nguồn lực thật (thay thế mọi giả định nhân sự trong repo)
+- đào tạo AI cho sinh viên, giảng viên và doanh nghiệp;
+- vibe coding và khóa thực hành có sản phẩm đầu ra;
+- cấp quyền sử dụng khóa học;
+- đào tạo năng lực giáo viên triển khai STEAM trong phạm vi pilot rõ ràng;
+- nền tảng AI-first dựa trên tài sản hiện có.
+
+Không tự động biến toàn bộ tầm nhìn dài hạn thành cam kết trong 12 tháng.
+
+## 2. Nguồn lực thật
 
 ### 2.1. Đội core: 5 người
 
 | Vai trò | Số lượng | Ghi chú |
 |---|---:|---|
-| Điều hành, quan hệ đối tác, bán hàng | 1 | Đồng thời là người dạy chính giai đoạn đầu |
-| Phát triển nền tảng (cùng AI) | 1 | |
-| Xây dựng nội dung, thiết kế học tập | 1–2 | |
-| Hành chính, vận hành, đối soát | 1 | |
+| Điều hành, quan hệ đối tác, bán hàng | 1 | Có thể đồng thời là người dạy chính giai đoạn đầu |
+| Phát triển nền tảng cùng AI | 1 | Nút thắt kỹ thuật dùng chung cho nhiều dòng sản phẩm |
+| Nội dung, thiết kế học tập | 1–2 | Xây học liệu, rubric, sản phẩm đào tạo |
+| Hành chính, vận hành, đối soát | 1 | Phải được hỗ trợ bằng workflow và tự động hóa |
 
-Ngoài core: **mạng lưới chuyên gia thuê ngoài** cho các mảng chuyên môn sâu.
+Ngoài core: mạng lưới chuyên gia theo từng lĩnh vực, trả theo cohort/hợp đồng khi phù hợp.
 
-`docs/bo-may-van-hanh.md` đang ghi 25–40 người — **con số đó đã lỗi thời, bỏ qua.**
+`docs/bo-may-van-hanh.md` có mô hình 25–40 người là tầm nhìn tổ chức cũ, không phải nguồn lực hiện hành.
 
-### 2.2. Chi phí cố định tương ứng
+### 2.2. Chi phí cố định
 
-135–170 triệu/tháng, tức **1,6–2,0 tỷ/năm**. Bao gồm lương 5 người đã tính BHXH, văn phòng, kế toán, pháp lý, hạ tầng, subscription AI và công cụ.
+Các mức 92–126 triệu/tháng hoặc 146–195 triệu/tháng trong `ke-hoach/chi-phi-va-dong-tien.md` đều là `[giả định]`.
 
-Mọi kế hoạch doanh thu phải đặt cạnh con số này.
+Chưa được dùng 150 triệu/tháng làm số chắc chắn cho đến khi anh Đức chốt:
 
-### 2.3. Tài sản kỹ thuật đã có, phải tái sử dụng
+- founder có nhận lương hay không;
+- đội thực tế là 4 hay 5 người;
+- người dạy chính tính vào chi phí cố định hay trực tiếp;
+- các chi phí văn phòng, hạ tầng và công cụ thực tế.
 
-Đây là lợi thế mà repo hiện **không nhắc tới dòng nào**, và là lý do một dev có thể làm được việc của một đội:
+### 2.3. Tài sản kỹ thuật phải tái sử dụng
 
-| Tài sản | Bản chất | Dùng cho phân hệ nào |
+| Tài sản | Bản chất | Vai trò dự kiến |
 |---|---|---|
-| **SOPai** | Engine workflow trên state machine | Vòng đời cohort: đăng ký → thanh toán → học → nộp bài → chấm → cấp chứng nhận. Đây là phần lõi. |
-| **Arkon** | Knowledge hub, MCP server, RAG | Kho học liệu, trợ lý AI cho giáo viên, trợ giảng AI trả lời học viên |
-| **henlich.vn** | Lịch, booking, bio-link | Lịch học, đăng ký cohort, điểm danh, trang landing từng cohort |
+| **SOPai** | Workflow/state machine | Vòng đời cohort, trạng thái người học, nhắc lịch, nộp bài |
+| **Arkon** | Knowledge hub, MCP, RAG | Kho học liệu, trợ lý AI, hỗ trợ và chấm sơ bộ |
+| **henlich.vn** | Lịch, booking, landing | Đăng ký, lịch học, điểm danh và trang cohort |
 
-**Nguyên tắc:** không đề xuất xây từ đầu bất kỳ thứ gì trong ba mảng trên. Nếu cần, hãy hỏi mức độ hoàn thiện hiện tại trước khi lập kế hoạch kỹ thuật.
+Không đề xuất xây lại từ đầu trước khi audit mức độ hoàn thiện. Audit phải chỉ ra:
 
----
-
-## 3. Mâu thuẫn đang tồn tại trong repo — đừng lan truyền chúng
-
-| Chỗ mâu thuẫn | File A | File B | Bản nào đúng |
-|---|---|---|---|
-| Mô hình doanh thu | `docs/mo-hinh-doanh-thu.md`: 13–35 tỷ theo công thức cũ | `ke-hoach/ke-hoach-kinh-doanh-12-thang.md` và `ke-hoach/muc-tieu-thang-1.md`: tách sinh viên online, bán khóa, giảng viên và doanh nghiệp | **Ưu tiên các file kế hoạch mới**, đồng thời dùng unit economics để kiểm tra đóng góp |
-| Kế hoạch 12 tháng | `ke-hoach/ke-hoach-12-thang.md`: 60–100 trường, 15.000–25.000 học sinh | `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`: 120–130 đơn vị, 21.000–27.000 lượt | **B** là bản điều hành. A là tầm nhìn sản phẩm, không phải cam kết. |
-| Quy mô nhân sự | `docs/bo-may-van-hanh.md`: 25–40 người | File này: 5 người | **File này** |
-
-**Điểm cần nhấn:** bảng công thức trong `mo-hinh-doanh-thu.md` ("50 hợp đồng × 60–120 triệu", "60–100 trường × 80–200 triệu/năm") vi phạm đúng nguyên tắc mà chính repo đặt ra tại `docs/the-manh-du-an.md` mục 5 — cấm suy ngược doanh thu từ giá hợp đồng giả định. Đây là tàn dư của phiên bản cũ chưa dọn.
+- chức năng dùng ngay;
+- chức năng chạy hybrid;
+- chức năng phải xây hoặc tích hợp;
+- giờ dev và chi phí duy trì.
 
 ---
 
-## 4. Ràng buộc bắt buộc khi lập bất kỳ kế hoạch nào
+## 3. Kiến trúc vận hành: AI-first, hybrid dự phòng
 
-Đây là các ràng buộc cứng. Kế hoạch vi phạm bất kỳ điểm nào dưới đây đều không dùng được.
+Claude vòng 2 đã sửa đúng một lỗi hệ thống: không được lấy đào tạo thủ công làm đường cơ sở rồi coi AI là tối ưu hóa về sau.
 
-1. **Tách đúng công thức theo dòng sản phẩm.** Sinh viên online tính theo số người trả phí × học phí thực thu; đào tạo giảng viên và doanh nghiệp tính theo số khóa, giá trị hợp đồng và tiền đã thu.
-2. **Mọi con số doanh thu phải có con số chi phí đi kèm.** Không trình bày doanh thu gộp như thể là tiền về túi.
-3. **Phải kiểm tra trần năng lực vận hành trước khi đặt KPI quy mô.** Xem mục 6 — nút thắt không phải giờ giảng.
-4. **Phải tính mùa vụ.** Tháng 6–8 nghỉ hè, tháng 1–2 Tết, tháng 5 và 12 mùa thi. Không đặt tăng trưởng tuyến tính đều mỗi tháng.
-5. **Không hứa sản phẩm cần phần cứng ở quy mô lớn.** Xem mục 7.
-6. **Chỉ 2 trục sản phẩm trong 12 tháng đầu.** Xem mục 8.
-7. **Không đề xuất "tuyển thêm người" như giải pháp mặc định.** 5 người là ràng buộc, không phải biến số. Nếu một kế hoạch chỉ chạy được khi có 15 người, kế hoạch đó sai.
-8. **Đánh dấu rõ đâu là giả định.** Mọi con số chưa được kiểm chứng bằng dữ liệu thật phải ghi `[giả định]`.
+### AI-first — kiến trúc mục tiêu
 
----
+- đăng ký và mã học viên tự động;
+- thanh toán định danh và đối soát tự động;
+- trợ lý AI tuyến đầu trên kho tri thức khóa học;
+- workflow nhắc lịch, điểm danh và nộp bài;
+- LLM chấm sơ bộ theo rubric, người duyệt vòng cuối;
+- dashboard ticket, ngoại lệ, chi phí và chất lượng.
 
-## 5. Unit economics — bảng số phải dùng
+### Hybrid — phương án triển khai an toàn
 
-Chi tiết đầy đủ tại `ke-hoach/unit-economics.md`. Tóm tắt cấu hình khóa phổ cập:
+- AI gợi ý, người vận hành duyệt;
+- đối soát bán tự động;
+- người xử lý ngoại lệ và khiếu nại;
+- người kiểm tra các bài chấm có rủi ro;
+- giới hạn quy mô khi tải vượt trần.
 
-| Khoản/người | 200 người, chia 40% | 500 người, chia 40% | 500 người, chia 20% |
-|---|---:|---:|---:|
-| Học phí | 220.000 | 220.000 | 220.000 |
-| Chia đối tác | −88.000 | −88.000 | −44.000 |
-| Phí thanh toán | −6.000 | −6.000 | −6.000 |
-| Giảng viên | −50.000 | −20.000 | −20.000 |
-| Trợ giảng | −40.000 | −32.000 | −32.000 |
-| Nền tảng, LLM API | −10.000 | −10.000 | −10.000 |
-| Hỗ trợ học viên, đối soát | −10.000 | −10.000 | −10.000 |
-| **Đóng góp/người** | **16.000** | **54.000** | **98.000** |
-| **Đóng góp/cohort** | **3,2 triệu** | **27 triệu** | **49 triệu** |
+Không được coi AI-first đã sẵn sàng nếu chưa audit và kiểm thử.
 
-### Kết luận rút ra
+Các giả định sau chỉ dùng để chạy độ nhạy, không phải dữ liệu thật:
 
-**Ở cấu hình mà repo đang giả định (cohort 200, chia 40%), biên đóng góp chỉ 7% học phí gộp.** Để phủ 150 triệu chi phí cố định mỗi tháng cần ~47 cohort/tháng, tương đương 9.400 người học/tháng. Bất khả thi.
+- phí thanh toán/đối soát 0,8%;
+- LLM API 14.000 đồng/người/khóa;
+- nền tảng/lưu trữ 6.000 đồng/người;
+- một điều phối viên 4 triệu đồng/cohort;
+- một điều phối viên đủ cho 1.000 học viên.
 
-Ngay ở cấu hình tốt nhất (500 người, chia 20%), vẫn cần 1.500 người học/tháng chỉ để hòa chi phí cố định, chưa có lợi nhuận. Mà 1.500/tháng chính là mức trần kế hoạch đặt cho tháng 11–12.
-
-**Vì vậy: khóa phổ cập là kênh tuyển sinh và tạo dữ liệu, KHÔNG phải nguồn thu.** Repo đã viết đúng điều này một nửa rồi lại tính 1,44–4,95 tỷ doanh thu từ chính nó. Hai cách hiểu không tồn tại song song được.
-
-### Ba đòn bẩy để phổ cập ít nhất hòa vốn
-
-- Cohort ≥500 người (chi phí giảng viên gần như cố định)
-- Hạ tỷ lệ chia xuống 15–25%
-- Cắt chi phí trợ giảng bằng AI — đòn bẩy này nên là năng lực lõi của chính dự án
-
-### Về tỷ lệ chia 40%
-
-Chỉ hợp lý nếu trường/đầu mối thực sự làm tuyển sinh, thu tiền, điều phối và hỗ trợ tại chỗ — tức mua lao động vận hành mà 5 người không tự làm được. Nếu vậy phải viết thành SOW cụ thể trong hợp đồng. Nếu trường chỉ cho mượn danh và gửi thông báo, 40% là quá đắt.
+Chi tiết và phép tính minh họa nằm tại `ke-hoach/unit-economics.md`.
 
 ---
 
-## 6. Nút thắt thật: trần vận hành, không phải giờ giảng
+## 4. Bốn dòng thương mại và các sản phẩm liên quan
 
-Đây là chỗ mọi kế hoạch dễ sai nhất.
+### 4.1. Sinh viên online
 
-Tháng 1 theo kế hoạch cần ~14–20 buổi giảng, tương đương 30–50 giờ. **Một người làm được** nếu nội dung đã sẵn. Giảng dạy không phải nút thắt.
+- KPI tháng đầu: 200–300 người thanh toán và bắt đầu học.
+- Học phí 220.000 đồng/người và phần dự án 60% là `[giả định]`.
+- Kịch bản ngân sách hoàn thành: 50–60%.
+- Mục tiêu vận hành nội bộ: khoảng 70%.
+- Không dùng 70% làm cam kết đối ngoại trước khi có dữ liệu thật.
 
-Nút thắt nằm ở phần không ai tính:
+Không còn kết luận cứng “khóa phổ cập không phải nguồn thu”.
 
-- **Đối soát hàng trăm giao dịch thanh toán nhỏ.** Nếu thu qua chuyển khoản thủ công, đây là tải vận hành lớn và dễ sai sót.
-- **Hỗ trợ học viên.** 200–300 sinh viên vẫn cần quy trình trả lời và nhắc lịch rõ ràng.
-- **Thu và chấm sản phẩm** cho nhóm hoàn thành.
-- **Đồng thời** phải xây nền tảng, tuyển chuyên gia, chốt đầu mối và bán B2B.
+- Ở 200–300 người: ưu tiên kiểm chứng và đo tải.
+- Từ 500 người trở lên: có thể tạo đóng góp rõ nếu AI-first hoạt động đúng.
+- Không mở rộng chỉ vì bảng giả định cho biên cao.
 
-### Ba điều kiện bắt buộc trước khi mở quy mô 1.000 người
+### 4.2. Cấp quyền sử dụng khóa học
 
-1. Cổng thanh toán tự động đối soát — không chuyển khoản thủ công
-2. Trợ lý AI trả lời tuyến đầu qua Zalo OA
-3. Điều phối viên tại từng đơn vị, có trách nhiệm ghi trong hợp đồng
+Ba cấu hình định hướng:
 
-Thiếu một trong ba thì hạ quy mô.
+1. quyền sử dụng nội dung;
+2. nội dung + nền tảng + báo cáo;
+3. triển khai đầy đủ có tùy chỉnh và đào tạo giảng viên nguồn.
 
----
+Không gọi đây là dòng “biên gần như thuần”. Phải tính cập nhật, onboarding, nền tảng, hỗ trợ, kỹ thuật, báo cáo và kiểm soát phạm vi sử dụng.
 
-## 7. Vì sao STEAM phải hoãn
+### 4.3. B2B giảng viên
 
-`san-pham/chuoi-steam-den-nghe.md` và `ke-hoach/ke-hoach-12-thang.md` đặt mục tiêu 40–60 khóa STEAM 12–15 buổi.
+- Khung giá: 20–50 triệu đồng/khóa.
+- Phải có dự toán riêng cho từng hợp đồng.
+- AI rút ngắn thiết kế và sản xuất học liệu nhưng không xóa giờ đứng lớp, đi lại và hỗ trợ.
 
-Mỗi khóa cần: thiết kế chuyên môn, mua và kiểm thử thiết bị, chạy thử với học sinh thật, hội đồng thẩm định. **AI tăng tốc được bước soạn giáo án, rubric, học liệu — nhưng không rút ngắn được ba bước sau.** Đây là ràng buộc vật lý, không phải ràng buộc năng suất.
+### 4.4. B2B doanh nghiệp
 
-Ước tính 150–250 giờ công mỗi khóa. 40 khóa = 6.000–10.000 giờ = 3–5 người toàn thời gian trong một năm. Dự án có khoảng 1,5 người cho nội dung.
+- Khung giá: 20–100 triệu đồng/khóa.
+- Có thể kết hợp khảo sát, đào tạo, tư vấn và triển khai.
+- Không dùng một hợp đồng 100 triệu làm đại diện cho toàn bộ dòng sản phẩm.
 
-**Thực tế:** 6–10 khóa STEAM trong 12 tháng nếu vẫn muốn tự làm.
+### 4.5. Vibe coding/thực hành
 
-**Phương án hợp lý hơn:** không tự xây thư viện STEAM. Hợp tác hoặc license từ đơn vị đã có, dự án đóng góp phần nền tảng, đánh giá năng lực và dữ liệu. Đó mới là chỗ khác biệt.
-
----
-
-## 8. Phạm vi 12 tháng: giữ 2 trục, hoãn 4 trục
-
-Nguyên tắc "triển khai đồng thời nhiều dòng sản phẩm, không tư duy tuyến tính" trong repo được viết cho bộ máy 25–40 người. **Với 5 người nó đảo ngược hoàn toàn** — 5 trục chia cho 5 người là mỗi trục một người và không trục nào xong.
-
-### Giữ
-
-- **Đào tạo AI** (giáo viên, giảng viên, học sinh, sinh viên, doanh nghiệp)
-- **Vibe coding**
-
-Lý do: không phần cứng, không phòng lab, AI tăng tốc được toàn chuỗi sản xuất, đúng năng lực sẵn có, tạo tiền ngay, có đường lên B2B rõ ràng.
-
-### Hoãn sang năm 2–3
-
-- STEAM Lab OS
-- Chuỗi STEAM–nghề
-- Đặt hàng nhân lực
-- Việc làm quốc tế
-
-**Không xóa các tài liệu này.** Gắn nhãn *"tầm nhìn kiến trúc năm 2–3, không phải cam kết triển khai 12 tháng"*. Chúng có giá trị để thuyết phục đối tác rằng dự án biết đang đi đâu.
+Là dòng sản phẩm có đầu ra rõ nhưng giá, tỷ lệ chuyển đổi và biên chưa được chốt. Không dùng mức 2,5 triệu/người hoặc biên 53% như số thật trước cohort đầu.
 
 ---
 
-## 9. Đảo thứ tự: B2B trước, phổ cập sau
+## 5. KPI B2B phải tách trạng thái
 
-Kế hoạch hiện tại đặt phổ cập trước để tạo quy mô, B2B sau. **Với 5 người, thứ tự đó làm cạn tiền trước khi kịp có gì.**
+“2 khóa” không phải một chỉ số duy nhất.
 
-So sánh cùng một đơn vị công sức:
+Mỗi khóa phải theo dõi:
 
-| Hướng | Công sức | Đóng góp |
-|---|---|---:|
-| 1 khóa giảng viên 20–50 triệu hoặc 1 khóa doanh nghiệp 20–100 triệu; biên phải kiểm chứng theo phạm vi | ~1 người × 1–4 tuần | Theo unit economics từng hợp đồng |
-| Phổ cập, để đạt cùng mức đóng góp (54k/người) | Hàng trăm đến hàng nghìn người học + toàn bộ tải vận hành mục 6 | Phụ thuộc cấu hình cohort |
+1. cơ hội đủ điều kiện;
+2. đề xuất đã gửi;
+3. hợp đồng đã ký;
+4. tiền ứng trước/tiền đã thu;
+5. khóa đã khai giảng;
+6. khóa đã hoàn thành;
+7. sản phẩm đã bàn giao;
+8. công nợ;
+9. cơ hội gia hạn/triển khai tiếp.
 
-B2B hiệu quả hơn một bậc về tiền trên mỗi giờ công.
+Tài liệu tháng 1 hiện định nghĩa KPI thương mại là **2 hợp đồng giảng viên và 2 hợp đồng doanh nghiệp đã ký, có lịch triển khai**, đồng thời đặt mục tiêu giao đủ 2 + 2 nếu lịch khách hàng cho phép.
 
-**Vai trò mới của phổ cập:** chi phí marketing có kiểm soát, chạy ở quy mô vừa đủ để không lỗ. **KPI của nó là số hợp đồng B2B sinh ra và số người chuyển lên tầng thực hành — không phải doanh thu học phí.**
-
-**Tầng thực hành** (Vibe Coding Foundation, 6–8 buổi, 2–3 triệu/người, cohort 30–50) có biên tốt nhất trong mảng bán lẻ: ~55–60%, thường bán trực tiếp không qua trường nên không mất phần chia.
-
----
-
-## 10. Bức tranh tài chính 12 tháng đã tính lại
-
-| Nguồn | Quy mô | Đóng góp |
-|---|---|---:|
-| Phổ cập | 8.000–12.000 lượt | 350–650 triệu |
-| Thực hành | 250–400 người × 2,5 triệu | 340–550 triệu |
-| B2B | Khóa giảng viên 20–50 triệu; khóa doanh nghiệp 20–100 triệu | Tính theo số khóa ký và đóng góp thực tế |
-| **Tổng đóng góp** | | **Cần cập nhật sau dữ liệu thật** |
-| Chi phí cố định | | −1,6 đến −2,0 tỷ |
-| **Kết quả** | | **Phụ thuộc chủ yếu vào số khóa B2B và biên từng hợp đồng** |
-
-**Biến số quyết định là số hợp đồng B2B, không phải số người học.**
-
-**Vốn lưu động:** tháng 1–5 có rủi ro âm nếu hợp đồng B2B chậm thanh toán. Cần runway hoặc các hợp đồng trả trước trong quý I. Xem `ke-hoach/chi-phi-va-dong-tien.md`.
+Giá trị hợp đồng, doanh thu ghi nhận và tiền đã thu phải báo cáo riêng.
 
 ---
 
-## 11. Những sai lầm ChatGPT có khả năng mắc trên repo này
+## 6. Mạng lưới và B2B
 
-Đây là phần quan trọng nhất của file. Đọc kỹ trước khi tạo bất kỳ đề xuất nào.
+Không tạo đối lập giả giữa hai khái niệm:
 
-1. **Đọc `mo-hinh-doanh-thu.md` và lấy con số 13–35 tỷ.** File đó đã lỗi thời và tự mâu thuẫn với nguyên tắc của chính repo.
+- **Mạng lưới:** kênh phân phối và kích hoạt đơn vị.
+- **B2B:** mô hình hợp đồng và doanh thu.
 
-2. **Giữ nguyên 5 trục vì repo nói "triển khai đồng thời".** Nguyên tắc đó gắn với bộ máy 25–40 người. Với 5 người nó sai.
+Một đầu mối chỉ được tính là có giá trị khi chuyển thành ít nhất một trong các kết quả:
 
-3. **Nhầm doanh thu gộp với đóng góp.** Học phí thu được không phải toàn bộ tiền dự án giữ lại.
+- đơn vị kích hoạt;
+- đề xuất thương mại;
+- hợp đồng;
+- lịch triển khai;
+- người học thật;
+- tiền thực thu.
 
-4. **Lạc quan về tỷ lệ hoàn thành.** Phải đo bằng cohort đầu tiên, không tự lấy 70% làm số chắc chắn.
-
-5. **Đề xuất tuyển thêm người khi gặp nút thắt.** Đây là phản xạ mặc định và nó bị cấm ở đây. Giải pháp phải là: cắt phạm vi, tự động hóa bằng AI, hoặc đẩy sang chuyên gia ngoài trả theo cohort.
-
-6. **Chỉ tính giờ giảng khi đánh giá năng lực.** Xem mục 6 — nút thắt là đối soát, hỗ trợ học viên và chấm bài.
-
-7. **Coi AI là giải pháp cho mọi nút thắt.** AI không mua được thiết bị, không chạy thử với học sinh thật, không ngồi hội đồng thẩm định, không xây được quan hệ với sở giáo dục.
-
-8. **Đề xuất xây nền tảng từ đầu.** Xem mục 2.3 — SOPai, Arkon, henlich.vn đã có.
-
-9. **Bỏ qua cơ chế thu phí trong trường công.** Thu học phí qua trường công lập cần cơ chế phù hợp với quy định về các khoản thu dịch vụ; cụm từ "chia sẻ doanh thu cho trường" phải được xử lý cẩn trọng.
-
-10. **Bỏ qua cạnh tranh với miễn phí.** Nhiều chương trình AI cho giáo viên miễn phí. Giá trị phải nằm ở điều phối, sản phẩm đầu ra, đánh giá và dữ liệu năng lực, không chỉ ở nội dung.
+Không ghi thông tin quan hệ hoặc hỗ trợ chiến lược nhạy cảm vào tài liệu công khai nếu chưa được anh Đức cho phép.
 
 ---
 
-## 12. Câu hỏi chỉ anh Đức trả lời được — đừng tự giả định
+## 7. STEAM — bản chất đúng của sản phẩm năm đầu
 
-Nếu một kế hoạch phụ thuộc vào các câu hỏi này, **hãy hỏi thay vì đoán**:
+Claude vòng 2 đã sửa cách hiểu: STEAM năm đầu không phải dự án tự xây thư viện 40–60 khóa phần cứng.
 
-1. Các đầu mối hệ thống đã cam kết chưa, hay còn phải đi tìm?
-2. Runway hiện tại bao nhiêu tháng?
-3. Đã có cơ chế thu phí hợp pháp qua trường công chưa?
-4. Ai là người dạy chính?
-5. SOPai, Arkon, henlich.vn đang ở mức hoàn thiện nào?
-6. Đã có chuyên gia ngoài nào ký khung hợp tác chưa?
-7. Pháp nhân nào đứng ra thu học phí, cơ chế hóa đơn và thuế cho các giao dịch nhỏ?
+Sản phẩm định hướng là:
+
+- đào tạo năng lực giáo viên dạy STEAM;
+- học liệu/hướng dẫn cho 1–2 môn thí điểm;
+- hướng dẫn giáo viên tổ chức hoạt động cho học sinh;
+- hỗ trợ từ xa sau đào tạo;
+- có thể kèm công cụ số hoặc trợ lý AI nếu phạm vi được chốt.
+
+STEAM có thể chạy song song như một nhánh B2B giáo dục, dùng chung năng lực nội dung, đào tạo giáo viên, nền tảng và chuyên gia; không nhất thiết tạo một bộ máy riêng.
+
+Không được coi các nhận định sau là dữ liệu thật nếu chưa có xác nhận/nguồn:
+
+- tháng 9 là hạn cứng;
+- các chương trình miễn phí không phủ vùng khó;
+- nguồn trả tiền chắc chắn là sở/chương trình mục tiêu/tài trợ;
+- 1–2 môn cụ thể có thể triển khai ngay.
+
+Trước khi cam kết phải chốt:
+
+- ai trả tiền;
+- môn thí điểm;
+- số trường và giáo viên;
+- đầu ra cần đạt;
+- hướng dẫn học sinh là tài liệu hay phần mềm;
+- chuyên gia nghiệm thu;
+- điều phối viên tại chỗ, đặc biệt ở vùng khó.
+
+Nhóm giáo viên vùng khó phải có unit economics riêng. AI hỗ trợ người điều phối, không mặc định thay hoàn toàn người tại chỗ.
 
 ---
 
-## 13. Mạng lưới chuyên gia ngoài — cần thiết kế, không thể tùy hứng
+## 8. Thời gian và mùa vụ
 
-"Chuyên gia ngoài làm phần khó" là chiến lược đúng nhưng hiện chỉ là một câu nói. Với 5 người, đây là hạ tầng sống còn và cần cơ chế:
+“Tháng 1, tháng 2…” trong kế hoạch là tháng vận hành, không tự động tương ứng với tháng dương lịch.
 
-- **Chia doanh thu theo cohort thay vì trả phí cố định.** Ví dụ 25–35% học phí thuần của cohort họ dạy. Bảo vệ dòng tiền và đồng thuận lợi ích.
-- **Chuyển giao quyền sở hữu học liệu, bắt buộc bằng hợp đồng.** Nếu không, sau 12 tháng dự án không sở hữu tài sản nào — mà tài sản chính là lý do tồn tại của mô hình.
-- **Điều khoản không đi vòng.** Rủi ro lớn: chuyên gia gặp trường qua dự án rồi ký thẳng với trường ở đợt sau.
-- **Tuyển trước, không tuyển khi cần.** Danh sách 15–25 người theo lĩnh vực, đã ký khung, sẵn sàng nhận cohort trong 2 tuần.
-- **Gộp với khái niệm "giảng viên nguồn"** đã có trong repo — hiện đang là hai thứ tách rời nhưng thực chất là một hệ thống.
+Trước khi phân tích mùa vụ phải chốt:
 
----
+1. ngày bắt đầu chính thức;
+2. ánh xạ tháng vận hành sang tháng dương lịch;
+3. mùa vụ riêng của từng dòng sản phẩm.
 
-## 14. Rủi ro đặc thù của quy mô 5 người
-
-Repo chưa có risk register. Ba rủi ro dưới đây chỉ xuất hiện ở quy mô này:
-
-- **Bus factor bằng 1 trên hầu hết vai trò.** Nền tảng một người, bán hàng một người, nhiều khả năng là cùng một người. Một đợt ốm giữa cohort lớn là khủng hoảng.
-- **Người sáng lập là nút thắt kép.** Cách giảm: ghi hình nội dung để tách khỏi giờ giảng trực tiếp càng sớm càng tốt.
-- **Không có dự phòng năng lực.** Nếu một đầu mối bất ngờ đẩy số người vượt trần, dự án có thể không phục vụ nổi. Cần điều khoản trần quy mô mỗi đợt trong hợp đồng.
+Không dùng quy tắc cố định “tháng 6–8 nghỉ hè” cho bảng tháng vận hành nếu chưa ánh xạ.
 
 ---
 
-## 15. Backlog — việc cần làm, theo thứ tự ưu tiên
+## 9. Unit economics và tài chính
 
-| # | Việc | File | Trạng thái |
+### 9.1. Không dùng dự báo cũ
+
+Không dùng các con số sau như dự báo:
+
+- tháng 1 âm 135 triệu;
+- tháng 1 âm 37 triệu;
+- runway 800 triệu–1 tỷ;
+- 8.000–12.000 lượt phổ cập;
+- 12–20 hợp đồng B2B;
+- các bảng đóng góp năm được suy ra từ giả định.
+
+### 9.2. Hai cấu hình sinh viên
+
+`ke-hoach/unit-economics.md` có:
+
+- AI-first: minh họa đóng góp dương theo các giả định của Claude;
+- hybrid: minh họa 200 người có thể hòa vốn/lỗ nhẹ.
+
+Khoảng cách giữa hai cấu hình chứng minh tự động hóa là biến số cấu trúc. Nó không chứng minh các giả định AI-first là đúng.
+
+### 9.3. Dữ liệu cần đo
+
+- chi phí LLM API/người/khóa;
+- số lượt hỏi và token;
+- tỷ lệ chuyển người thật;
+- ticket/người;
+- giờ điều phối;
+- lỗi thanh toán/tài khoản;
+- thời gian duyệt bài;
+- chất lượng câu trả lời/chấm bài;
+- chi phí xây và duy trì workflow;
+- chi phí thật từng hợp đồng B2B;
+- unit economics STEAM.
+
+### 9.4. Dòng tiền
+
+Theo dõi riêng:
+
+- giá trị hợp đồng;
+- tiền ứng trước;
+- tiền đã thu;
+- doanh thu ghi nhận;
+- chi phí trực tiếp;
+- công nợ;
+- tiền mặt và runway.
+
+Không dựng bảng dòng tiền 12 tháng trước khi có trần giao khóa, lịch thanh toán và dữ liệu cohort đầu.
+
+---
+
+## 10. Nút thắt và thứ tự kỹ thuật
+
+Nút thắt không chỉ là giờ giảng. Phải tính:
+
+- thanh toán và đối soát;
+- hỗ trợ và ngoại lệ;
+- chấm/duyệt sản phẩm;
+- xây tự động hóa;
+- bán B2B;
+- chuyên gia ngoài;
+- vận hành STEAM nếu được kích hoạt.
+
+Thứ tự kỹ thuật chỉ chốt sau audit 2–3 ngày.
+
+Nếu dự án tự thu hàng trăm giao dịch, thứ tự mặc định:
+
+1. đăng ký, mã học viên, đối soát;
+2. FAQ/RAG tuyến đầu ở chế độ hybrid;
+3. nhắc lịch, điểm danh, nộp bài;
+4. chấm sơ bộ theo rubric;
+5. tính năng STEAM sau khi chốt tài liệu hay phần mềm.
+
+Nếu đối tác thu và đối soát, thứ tự có thể thay đổi.
+
+---
+
+## 11. Sai lầm các trợ lý AI phải tránh
+
+1. Lấy lại con số 13–35 tỷ từ tài liệu lịch sử.
+2. Nhầm học phí gộp, giá trị hợp đồng hoặc phần sau chia sẻ với lợi nhuận.
+3. Dùng mô hình thủ công làm cấu hình duy nhất.
+4. Dùng mô hình AI-first như thể đã được kiểm thử.
+5. Coi một điều phối viên đủ cho 1.000 người là sự thật.
+6. Dùng 70% hoàn thành làm cam kết đối ngoại.
+7. Nhầm tháng vận hành với tháng dương lịch.
+8. Tạo đối lập giữa mạng lưới và B2B.
+9. Hiểu STEAM là thư viện 40–60 khóa phần cứng.
+10. Coi AI thay được chuyên gia, điều phối tại chỗ hoặc quan hệ đối tác.
+11. Đề xuất xây lại SOPai, Arkon hoặc henlich.vn mà chưa audit.
+12. Tự điền dữ liệu nội bộ hoặc công bố thông tin chiến lược nhạy cảm.
+
+---
+
+## 12. Câu hỏi chỉ anh Đức trả lời được
+
+1. Ngày bắt đầu chính thức.
+2. Trần số khóa B2B có thể giao mỗi tháng.
+3. Mức hoàn thiện SOPai, Arkon và henlich.vn.
+4. Founder có nhận lương trong 6 tháng đầu không.
+5. Runway và nguồn tiền mặt hiện có.
+6. Đã có chuyên gia ngoài nào sẵn sàng ký khung hợp tác.
+7. Pháp nhân, hóa đơn, thuế và cơ chế thu học phí.
+8. STEAM:
+   - ai trả tiền;
+   - môn thí điểm;
+   - mốc tháng 9 cần đạt gì;
+   - số trường/giáo viên;
+   - hướng dẫn học sinh là tài liệu hay phần mềm;
+   - người điều phối tại chỗ.
+9. Giá và phạm vi các gói cấp quyền khóa học.
+
+Không tự đoán các câu trả lời này.
+
+---
+
+## 13. Mạng lưới chuyên gia ngoài
+
+Cần thiết kế cơ chế:
+
+- phí cố định hoặc chia theo cohort/hợp đồng;
+- quyền sở hữu và quyền sử dụng học liệu;
+- bảo mật và không đi vòng;
+- tiêu chuẩn nghiệm thu;
+- thời gian sẵn sàng;
+- danh sách chuyên gia theo lĩnh vực;
+- gắn với hệ thống giảng viên nguồn.
+
+Các tỷ lệ 25–35% chỉ là ví dụ, không phải mức đã chốt.
+
+---
+
+## 14. Backlog ưu tiên
+
+| # | Việc | File/kết quả | Trạng thái |
 |---:|---|---|---|
-| 1 | Sửa giả định nhân sự và bổ sung nguyên tắc kiểm tra trần vận hành | `docs/the-manh-du-an.md` | **Chưa làm — ưu tiên cao nhất.** File này dạy AI cách lập kế hoạch, sai ở đây lan ra mọi nơi |
-| 2 | Dọn bảng công thức hợp đồng 13–35 tỷ | `docs/mo-hinh-doanh-thu.md` | **Xong** — file đã viết lại thành bốn dòng doanh thu |
-| 3 | Gắn nhãn "tầm nhìn, không phải cam kết" | `ke-hoach/ke-hoach-12-thang.md` | **Xong** — banner đã thêm 27/07 |
-| 4 | Viết unit economics đầy đủ các dòng sản phẩm + ngưỡng hòa vốn | `ke-hoach/unit-economics.md` | Đã có bản giả định, cần cập nhật sau dữ liệu thật |
-| 5 | Viết chi phí, dòng tiền theo tháng, vốn lưu động | `ke-hoach/chi-phi-va-dong-tien.md` | Có bản giả định. **Bảng dòng tiền mục 3 dựng theo mô hình cũ, cần dựng lại theo bốn dòng doanh thu** |
-| 6 | Bản đồ tái sử dụng SOPai / Arkon / henlich | `nen-tang/ban-do-tai-su-dung.md` | Chưa có |
-| 7 | Cơ chế thu phí hợp pháp với trường công | `phap-ly/co-che-thu-phi-truong-cong.md` | Chưa có |
-| 8 | Cơ chế mạng lưới chuyên gia: chia, IP, không đi vòng | `van-hanh/mang-luoi-chuyen-gia.md` | Chưa có |
-| 9 | Risk register | `docs/rui-ro.md` | Chưa có |
-| 10 | Sửa lộ trình tháng theo mùa vụ năm học | `ke-hoach/ke-hoach-kinh-doanh-12-thang.md` | Chưa làm |
-| 11 | Chốt KPI tháng 1: 2 khóa giảng viên, 2 khóa doanh nghiệp, 200–300 sinh viên online | `ke-hoach/muc-tieu-thang-1.md` | Đã cập nhật |
-| 12 | Phân tích cạnh tranh, đặc biệt với chương trình AI miễn phí | `docs/canh-tranh.md` | Chưa có |
-| 13 | Dựng lại bảng dòng tiền 12 tháng theo bốn dòng doanh thu | `ke-hoach/chi-phi-va-dong-tien.md` | Chưa làm |
+| 1 | Đồng bộ nguyên tắc lập kế hoạch | `docs/the-manh-du-an.md` | Đã cập nhật sau Claude vòng 2 |
+| 2 | Chuẩn hóa KPI tháng đầu | `ke-hoach/muc-tieu-thang-1.md` | Đã cập nhật |
+| 3 | Dựng lại kế hoạch 12 tháng không dùng phép nhân tùy ý | `ke-hoach/ke-hoach-kinh-doanh-12-thang.md` | Đã cập nhật |
+| 4 | Unit economics AI-first/hybrid và từng dòng sản phẩm | `ke-hoach/unit-economics.md` | Có khung giả định, chờ kiểm thử |
+| 5 | Khung chi phí và dòng tiền | `ke-hoach/chi-phi-va-dong-tien.md` | Đã rút dự báo cũ, chờ dữ liệu thật |
+| 6 | Audit tái sử dụng SOPai/Arkon/henlich | `nen-tang/ban-do-tai-su-dung.md` | Chưa làm — ưu tiên vận hành |
+| 7 | Test chi phí trợ giảng AI/LLM | Báo cáo thử nghiệm | Chưa làm — ưu tiên định lượng |
+| 8 | Cơ chế mạng lưới chuyên gia | `van-hanh/mang-luoi-chuyen-gia.md` | Chưa có |
+| 9 | Mô hình STEAM giáo viên 1–2 môn | Tài liệu riêng | Chờ anh Đức chốt phạm vi |
+| 10 | Cạnh tranh chương trình AI miễn phí | `docs/canh-tranh.md` | Chưa có |
+| 11 | Cơ chế thu phí trường công | `phap-ly/co-che-thu-phi-truong-cong.md` | Cần tra cứu và luật sư |
+| 12 | Giá cấp quyền khóa học | Tài liệu giá | Chưa chốt |
+| 13 | Risk register | `docs/rui-ro.md` | Chưa có |
+| 14 | Dòng tiền 12 tháng | Bảng tài chính | Chỉ làm sau dữ liệu thật và trần B2B |
 
 ---
 
-## 16. Quy ước làm việc chung
+## 15. Quy ước phối hợp AI
 
-**Ngôn ngữ:** tiếng Việt cho toàn bộ nội dung. Tên file không dấu, dùng gạch ngang.
-
-**Cách xử lý tài liệu cũ:** không xóa. Thêm khối cảnh báo ở đầu file:
-
-```markdown
-> **[DEPRECATED 2026-07-27]** Nội dung dưới đây dựa trên giả định bộ máy 25–40 người.
-> Xem AGENTS.md mục 2 để biết nguồn lực thực tế. Giữ lại để tham chiếu lịch sử.
-```
-
-**Đánh dấu giả định:** mọi con số chưa kiểm chứng ghi `[giả định]`. Con số đã có dữ liệu thật ghi `[thực tế, <nguồn>, <ngày>]`.
-
-**Khi hai AI bất đồng:** không tự ý ghi đè kết luận của nhau. Ghi cả hai phương án vào file kèm lập luận, để anh Đức quyết. Dùng định dạng:
-
-```markdown
-> **Điểm cần quyết:** <mô tả>
-> - Phương án A (Claude): ... Lý do: ...
-> - Phương án B (ChatGPT): ... Lý do: ...
-```
-
-**Cập nhật file này:** khi có thông tin mới làm thay đổi bối cảnh (đầu mối đã ký, runway đã rõ, cohort đầu tiên có số thật), cập nhật ngay mục liên quan và ghi vào changelog dưới đây. File này lỗi thời thì cả hai AI cùng sai.
+- Ngôn ngữ tài liệu: tiếng Việt; tên file không dấu, dùng gạch ngang.
+- Mọi số chưa kiểm chứng ghi `[giả định]`.
+- Số có dữ liệu thật ghi `[thực tế, <nguồn>, <ngày>]`.
+- Không xóa lập luận cũ; giữ trong `THAO-LUAN.md` hoặc thư mục `trao-doi/` để truy vết.
+- Khi bất đồng, ghi phương án, đánh đổi và dữ liệu cần thêm.
+- Không AI nào tự đóng vấn đề hoặc quyết thay anh Đức.
+- Sau mỗi vòng, cập nhật báo cáo ngắn hoặc biên bản tổng hợp để anh Đức đọc trong khoảng 2 phút.
 
 ---
 
-## 17. Changelog
+## 16. Changelog
 
 | Ngày | Thay đổi | Bởi |
 |---|---|---|
-| 2026-07-27 | Tạo file. Ghi nhận nguồn lực thật 5 người, tính lại unit economics, xác định nút thắt vận hành, đề xuất cắt còn 2 trục và đảo thứ tự B2B trước phổ cập. | Claude |
-| 2026-07-27 | Bổ sung quyết định mới nhất: 2 khóa giảng viên, 2 khóa doanh nghiệp, 200–300 sinh viên; cập nhật khung giá và công thức doanh thu. | ChatGPT |
-| 2026-07-27 | Thêm `THAO-LUAN.md` (giao thức trao đổi hai chiều, nghĩa vụ báo cáo, 10 vấn đề mở). Gắn banner cho `bo-may-van-hanh.md` và `ke-hoach-12-thang.md`. Rà soát toàn repo: phát hiện bảng dòng tiền tháng 1 lệch nhau (−135 tr so với −37 tr), đã đánh dấu. | Claude |
+| 2026-07-27 | Tạo file, ghi nhận đội 5 người, các giả định chi phí và vấn đề vận hành. | Claude |
+| 2026-07-27 | Bổ sung quyết định KPI 2 khóa giảng viên, 2 khóa doanh nghiệp và 200–300 sinh viên. | ChatGPT |
+| 2026-07-27 | Claude vòng 2 tự sửa mô hình thủ công, cách hiểu STEAM, mùa vụ và đối lập mạng lưới/B2B; đề xuất mô hình AI-first. | Claude |
+| 2026-07-27 | Đồng bộ AI-first/hybrid, STEAM đào tạo giáo viên, KPI ký–thu–giao, rút dự báo tài chính cũ và cập nhật backlog. | ChatGPT |
