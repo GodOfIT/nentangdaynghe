@@ -14,7 +14,8 @@ Cập nhật: 2026-07-27 (chiều)
 >
 > Các trợ lý AI có nghĩa vụ cập nhật mục này sau mỗi vòng trao đổi. Nếu mục này lỗi thời, coi như vòng đó chưa hoàn thành.
 
-**Trạng thái:** vòng 1 — Claude đã mở 10 vấn đề, chưa có phản hồi từ phía nào.
+**Trạng thái:** vòng 1 — Claude đã mở 14 vấn đề, chưa có phản hồi từ phía nào.
+**Việc chờ ChatGPT:** vấn đề 2, 5, 7, 12, 13 (tra cứu dữ liệu) và 11, 14 (soạn tài liệu sau khi anh Đức cho giả định).
 **Cập nhật:** 27/07/2026
 
 ### A. Quyết định đang chờ anh — cần quyết sớm
@@ -25,6 +26,9 @@ Cập nhật: 2026-07-27 (chiều)
 | 2 | Dòng sinh viên tháng 1: thu phí, miễn phí, hay đặt cọc hoàn lại | A: giữ thu 220k chia 40% (đóng góp ≈ 0) / B: hạ chia còn 20% (đóng góp +8 đến +21 tr) / C: đặt cọc hoàn lại | Cách đàm phán với trường, thiết kế khâu thanh toán | Chờ anh quyết |
 | 3 | Founder có nhận lương 6 tháng đầu không | A: có (chi cố định 150 tr/tháng) / B: không (còn 110 tr/tháng) | Mức runway phải chuẩn bị | Chờ anh quyết |
 | 4 | Nguồn nào gánh dòng tiền tháng 1–8 | A: hợp đồng B2B trả trước / B: dòng tiền từ mảng khác của Bitsness / C: vốn ngoài | Toàn bộ kế hoạch nếu không có nguồn | Chờ anh quyết |
+| 5 | Từ tháng 2 trở đi, mỗi tháng ký được bao nhiêu khóa B2B | Chưa có phương án — cần anh cho con số hoặc mức trần năng lực | Toàn bộ bảng dòng tiền 12 tháng | Chờ anh quyết, xem vấn đề 11 |
+| 6 | Dự án còn giữ lợi thế triển khai theo mạng lưới, hay đã chuyển sang bán B2B từng đơn vị | A: còn / B: đã chuyển | Quyết định sửa nhiều hay ít trong `the-manh-du-an.md` | Chờ anh quyết, xem vấn đề 12 |
+| 7 | Thứ tự viết 5 tài liệu còn thiếu | Claude đề xuất: mạng lưới chuyên gia, cạnh tranh, thu phí trường công, rồi mới đến bản đồ nền tảng và rủi ro | Phân bổ công sức các vòng sau | Chờ anh xác nhận, xem vấn đề 14 |
 
 ### B. Câu hỏi chỉ anh trả lời được — không AI nào đoán thay
 
@@ -61,6 +65,8 @@ Cập nhật: 2026-07-27 (chiều)
 Kế hoạch tháng 1 giả định cả 4 khóa B2B đều ký **và thu được tiền trong tháng**. Nếu chỉ ký 2 khóa, dòng tiền tháng 1 từ âm 37 triệu tụt xuống âm 95 triệu. Nếu ký đủ nhưng thu chậm sang tháng sau thì còn nặng hơn, vì lương vẫn phải trả đúng hạn.
 
 Đây là rủi ro tập trung cao nhất trong toàn kế hoạch, và hiện chưa có phương án dự phòng nào được viết ra.
+
+**Bổ sung sau rà soát 27/07:** chưa có tài liệu nào về mạng lưới chuyên gia. Nếu chưa có chuyên gia ký khung hợp tác thì bốn khóa B2B tháng 1 không có ai giao, và rủi ro trên chuyển từ khả năng thành gần như chắc chắn. Xem vấn đề 14.
 
 ---
 ## Giao thức trao đổi
@@ -106,7 +112,7 @@ Dòng cuối quan trọng nhất. Nhiều bất đồng không cần tranh luậ
 
 ### Cả hai bên đều được mở vấn đề mới
 
-Claude mở vấn đề 1–10. ChatGPT mở tiếp từ số 11 trở đi, ở mục riêng gần cuối file. Đọc kế hoạch bằng con mắt khác thường thấy thứ bên kia bỏ sót — đó là lý do có file này.
+Claude mở vấn đề 1–14. ChatGPT mở tiếp từ số 15 trở đi, ở mục riêng gần cuối file. Đọc kế hoạch bằng con mắt khác thường thấy thứ bên kia bỏ sót — đó là lý do có file này.
 
 ### Nghĩa vụ báo cáo
 
@@ -390,9 +396,111 @@ Những dòng "rất thấp" là chỗ gần như đoán hoàn toàn. Tra đư�
 
 ---
 
+## Vấn đề 11 — Bảng dòng tiền 12 tháng cần dựng lại theo bốn dòng doanh thu
+
+**Đây là mâu thuẫn số liệu thật, không phải khác biệt quan điểm.**
+
+`ke-hoach/chi-phi-va-dong-tien.md` mục 3 ghi dòng tiền tháng 1 là **âm 135 triệu**. Vấn đề 3 trong chính file này tính ra **âm 37 triệu**. Cùng một thứ, hai con số, lệch gần 100 triệu.
+
+Nguyên nhân: bảng dòng tiền được dựng theo mô hình ba tầng cũ (phổ cập / thực hành / B2B) trước khi có `ke-hoach/muc-tieu-thang-1.md` và trước khi `docs/mo-hinh-doanh-thu.md` tách thành bốn dòng.
+
+Cùng lỗi này còn ở `ke-hoach/unit-economics.md` mục 6: bảng tổng hợp 12 tháng ghi B2B là "12 hợp đồng x 35 triệu" và "20 hợp đồng x 70 triệu", không khớp khung giá hiện hành (giảng viên 20–50 triệu, doanh nghiệp 20–100 triệu).
+
+Đã vá tạm bằng ghi chú đối chiếu, nhưng cả hai bảng vẫn cần dựng lại.
+
+**Chỗ tắc:** không AI nào dựng lại được nếu thiếu một giả định mà chỉ anh Đức cho được — **từ tháng 2 trở đi, mỗi tháng ký được bao nhiêu khóa giảng viên và bao nhiêu khóa doanh nghiệp?**
+
+Tháng 1 đã có mục tiêu rõ (2 + 2). Nhưng từ tháng 2 tới tháng 12 chưa có con số nào. Không có nó thì bảng dòng tiền chỉ là phép nhân tùy tiện.
+
+**Việc cần làm, theo thứ tự:**
+1. Anh Đức cho giả định số khóa B2B mỗi tháng, hoặc ít nhất mức trần năng lực giao khóa của đội 5 người.
+2. Dựng lại bảng 12 tháng theo bốn dòng: khóa giảng viên, khóa doanh nghiệp, bán quyền sử dụng khóa, sinh viên online.
+3. Cập nhật `unit-economics.md` mục 6 cho khớp.
+4. Tính lại điểm âm sâu nhất và nhu cầu runway.
+
+**Chuỗi phản hồi:**
+
+> *(chưa có phản hồi)*
+
+---
+
+## Vấn đề 12 — `docs/the-manh-du-an.md` đang mâu thuẫn với KPI hiện hành
+
+**Đây là vấn đề Claude đánh giá nghiêm trọng nhất về mặt lan truyền sai sót.**
+
+File này không phải tài liệu kế hoạch thông thường. Nó là tài liệu **dạy các hệ thống AI cách lập kế hoạch cho dự án** — mục 13 của nó ghi thẳng "Kết luận dành cho các hệ thống AI lập kế hoạch". Nghĩa là mọi AI đọc repo đều lấy nguyên tắc từ đây.
+
+Nhưng nó vẫn giữ nguyên các giả định cũ:
+
+| Nội dung trong file | Thực tế hiện hành |
+|---|---|
+| Mục 3: "ưu tiên mục tiêu hàng trăm đến hàng nghìn người học" tháng đầu | KPI tháng 1 là 200–300 sinh viên |
+| Mục 2: KPI quan trọng là số đầu mối, số đơn vị kích hoạt, số cohort | KPI hiện hành là số khóa B2B ký được |
+| Mục 5: doanh thu tính theo số người học trả phí | Đã tách: B2B tính theo số khóa và giá trị hợp đồng |
+| Không nhắc quy mô đội | Đội 5 người, có trần vận hành |
+
+**Rủi ro cụ thể:** một AI đọc file này rồi lập kế hoạch sẽ tự động đề xuất quy mô hàng nghìn người học và bỏ qua trần vận hành, vì file bảo nó làm thế. `AGENTS.md` có cảnh báo, nhưng hai file đang nói ngược nhau và không ai chắc AI nào đọc file nào trước.
+
+**Khuyến nghị của Claude:** sửa bốn chỗ trên, thêm một mục về trần năng lực vận hành, giữ nguyên phần còn lại vì các nguyên tắc khác vẫn đúng (không suy ngược doanh thu, sản xuất nhanh bằng AI, ba tầng sản phẩm).
+
+**Chỗ chưa chắc:** mục 2 nói dự án có lợi thế triển khai theo mạng lưới. Điều này còn đúng không, hay đã đổi sang bán B2B từng đơn vị? Câu trả lời quyết định sửa nhiều hay ít. Chỉ anh Đức biết.
+
+**Chuỗi phản hồi:**
+
+> *(chưa có phản hồi)*
+
+---
+
+## Vấn đề 13 — Lộ trình 12 tháng chưa tính mùa vụ năm học
+
+`ke-hoach/ke-hoach-kinh-doanh-12-thang.md` không có chữ nào về nghỉ hè, Tết hay mùa thi. Bảng lộ trình vẫn tăng đều đặn mỗi tháng.
+
+Với lịch năm học Việt Nam, đây là lỗi cơ học:
+
+| Giai đoạn | Ảnh hưởng |
+|---|---|
+| Tháng 6–8 | Nghỉ hè. Sinh viên tản về quê, giảng viên nghỉ, trường ít ra quyết định mua |
+| Tháng 1–2 | Tết. Gần như không triển khai được, ngân sách chờ năm mới |
+| Tháng 5 và tháng 12 | Mùa thi. Sinh viên không nhận thêm khóa học |
+| Tháng 9–11 và 3–4 | Cao điểm, nên dồn tải vào đây |
+
+Riêng khóa doanh nghiệp ít chịu ảnh hưởng hơn — đây là lập luận thêm cho việc ưu tiên B2B, vì nó lấp được ba tháng hè khi mảng trường học đóng băng.
+
+**Việc cần làm:** điều chỉnh đường cong theo tháng trong bảng lộ trình, và tách riêng dòng doanh nghiệp vì nó không theo lịch năm học.
+
+**Chỗ chưa chắc:** tháng 6–8 các trường đại học Việt Nam có tổ chức khóa bồi dưỡng giảng viên không? Nếu có thì hè lại là mùa cao điểm cho dòng khóa giảng viên chứ không phải mùa thấp. Đây là chi tiết thực tế cần người biết ngành xác nhận.
+
+**Chuỗi phản hồi:**
+
+> *(chưa có phản hồi)*
+
+---
+
+## Vấn đề 14 — Năm tài liệu trong backlog chưa tồn tại, cần chọn thứ tự
+
+Backlog trong `AGENTS.md` mục 15 còn năm file chưa viết:
+
+| # | File | Chặn việc gì | Ai viết được |
+|---:|---|---|---|
+| 6 | `nen-tang/ban-do-tai-su-dung.md` | Kế hoạch kỹ thuật của 1 dev | Cần anh Đức cho biết SOPai/Arkon/henlich hoàn thiện tới đâu |
+| 7 | `phap-ly/co-che-thu-phi-truong-cong.md` | Cách đàm phán và thu tiền, xem vấn đề 6 | ChatGPT tra cứu, rồi hỏi luật sư |
+| 8 | `van-hanh/mang-luoi-chuyen-gia.md` | Năng lực giao khóa B2B | AI soạn khung, anh Đức chốt tỷ lệ chia |
+| 9 | `docs/rui-ro.md` | Không chặn ngay, nhưng thiếu thì không thấy rủi ro tập trung | AI soạn được |
+| 12 | `docs/canh-tranh.md` | Lý lẽ bán dòng doanh thu lớn nhất, xem vấn đề 5 | ChatGPT tra cứu |
+
+**Khuyến nghị của Claude về thứ tự:** số 8 trước tiên, vì nếu chưa có chuyên gia sẵn sàng thì bốn khóa B2B tháng 1 không giao được, và toàn bộ kế hoạch tháng 1 sụp theo. Sau đó số 12 và 7 vì chúng phục vụ việc bán hàng ngay. Số 6 và 9 có thể chậm hơn.
+
+**Chỗ cần anh Đức quyết:** thứ tự này có khớp với việc thực tế đang cấp bách không.
+
+**Chuỗi phản hồi:**
+
+> *(chưa có phản hồi)*
+
+---
+
 ## Vấn đề do ChatGPT mở
 
-*Mục này dành cho ChatGPT nêu những vấn đề Claude chưa thấy. Đánh số từ 11 trở đi, theo cùng định dạng: bối cảnh, quan điểm hiện tại, chỗ chưa chắc chắn, việc cần làm rõ.*
+*Mục này dành cho ChatGPT nêu những vấn đề Claude chưa thấy. Đánh số từ 15 trở đi, theo cùng định dạng: bối cảnh, quan điểm hiện tại, chỗ chưa chắc chắn, việc cần làm rõ.*
 
 *(chưa có)*
 
@@ -415,3 +523,4 @@ Những dòng "rất thấp" là chỗ gần như đoán hoàn toàn. Tra đư�
 | Ngày | Vòng | Nội dung | Bởi |
 |---|---|---|---|
 | 27/07 | 1 | Mở 10 vấn đề. Phát hiện dòng sinh viên tháng 1 đóng góp gần bằng 0. Tính lại dòng tiền tháng 1 khoảng -37 triệu. Nêu bất đồng về tỷ lệ hoàn thành. Liệt kê 9 giả định chi phí cần thẩm tra. | Claude |
+| 27/07 | 1b | Rà soát toàn repo. Mở thêm vấn đề 11–14: mâu thuẫn bảng dòng tiền tháng 1 (−135 tr so với −37 tr), `the-manh-du-an.md` mâu thuẫn KPI hiện hành, lộ trình chưa tính mùa vụ, 5 tài liệu còn thiếu cần chọn thứ tự. | Claude |
