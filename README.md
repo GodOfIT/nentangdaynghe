@@ -1,44 +1,43 @@
-# Nen tang day nghe truc tuyen
+# Nền tảng dạy nghề trực tuyến
 
-Repo nay ghi lai chien luoc, mo hinh san pham va ke hoach trien khai cho nen tang dao tao nghe truc tuyen ket hop STEAM, AI, vibe coding, giao duc nghe nghiep va dat hang nhan luc.
+Repo này ghi lại chiến lược, mô hình sản phẩm và kế hoạch triển khai cho nền tảng đào tạo nghề trực tuyến kết hợp STEAM, AI, vibe coding, giáo dục nghề nghiệp và đặt hàng nhân lực.
 
-Ten y tuong bang tieng Viet: **Nen tang day nghe truc tuyen**.
+Tên ý tưởng bằng tiếng Việt: **Nền tảng dạy nghề trực tuyến**.
 
-## Dinh vi
+## Định vị
 
-Nen tang khong chi la LMS. Day la he sinh thai dieu phoi giua nha truong, nguoi hoc, giao vien, co so giao duc nghe nghiep, doanh nghiep dat hang nhan luc va don vi duoc cap phep trong cac hoat dong viec lam.
+Nền tảng không chỉ là một LMS. Đây là hệ sinh thái điều phối giữa nhà trường, người học, giáo viên, cơ sở giáo dục nghề nghiệp, doanh nghiệp đặt hàng nhân lực và các đơn vị được cấp phép trong hoạt động việc làm.
 
-Thong diep cot loi:
+Thông điệp cốt lõi:
 
-> Doanh nghiep dat hang nang luc. Nha truong dao tao theo nhu cau. Nen tang xac thuc ket qua. Nguoi hoc tiep can co hoi viec lam trong nuoc va quoc te mot cach minh bach.
+> Doanh nghiệp đặt hàng năng lực. Nhà trường đào tạo theo nhu cầu. Nền tảng xác thực kết quả. Người học tiếp cận cơ hội việc làm trong nước và quốc tế một cách minh bạch.
 
-## Nam truc trien khai song song
+## Năm trục triển khai song song
 
-| Truc | San pham | Vai tro |
+| Trục | Sản phẩm | Vai trò |
 |---|---|---|
-| Dao tao AI | AI cho giao vien, giang vien, hoc sinh, sinh vien va doanh nghiep | Tao doanh thu ngay |
-| Vibe coding | Website, ung dung, automation, AI agent | Tao dau ra nhanh, hap dan |
-| STEAM Lab OS | Chuong trinh, hoc lieu, van hanh phong, danh gia hoc sinh | Phu mang luoi truong pho thong |
-| Chuoi STEAM-nghe | STEAM den huong nghiep, dao tao nghe, viec lam | Tao ho so nang luc xuyen suot |
-| Dat hang nhan luc | Doanh nghiep dat nang luc, truong dao tao | Tao thi truong hai phia |
+| Đào tạo AI | AI cho giáo viên, giảng viên, học sinh, sinh viên và doanh nghiệp | Tạo doanh thu ngay |
+| Vibe coding | Website, ứng dụng, automation, AI agent | Tạo đầu ra nhanh, hấp dẫn |
+| STEAM Lab OS | Chương trình, học liệu, vận hành phòng học, đánh giá học sinh | Phủ mạng lưới trường phổ thông |
+| Chuỗi STEAM - nghề | Từ STEAM đến hướng nghiệp, đào tạo nghề và việc làm | Tạo hồ sơ năng lực xuyên suốt |
+| Đặt hàng nhân lực | Doanh nghiệp đặt hàng năng lực, nhà trường tổ chức đào tạo | Tạo thị trường hai phía |
 
-## Tai lieu trong repo
+## Tài liệu trong repo
 
-- [Tong quan chien luoc](docs/tong-quan-chien-luoc.md)
-- [Ke hoach trien khai 12 thang](ke-hoach/ke-hoach-12-thang.md)
-- [Danh muc san pham dao tao](san-pham/danh-muc-san-pham-dao-tao.md)
-- [Chuoi STEAM den nghe nghiep](san-pham/chuoi-steam-den-nghe.md)
-- [Mo hinh nen tang](nen-tang/mo-hinh-nen-tang.md)
-- [Mo hinh doanh thu](docs/mo-hinh-doanh-thu.md)
-- [Vai tro phap ly va nguyen tac an toan](phap-ly/vai-tro-phap-ly.md)
-- [Bo may van hanh](docs/bo-may-van-hanh.md)
+- [Tổng quan chiến lược](docs/tong-quan-chien-luoc.md)
+- [Kế hoạch triển khai 12 tháng](ke-hoach/ke-hoach-12-thang.md)
+- [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
+- [Chuỗi STEAM đến nghề nghiệp](san-pham/chuoi-steam-den-nghe.md)
+- [Mô hình nền tảng](nen-tang/mo-hinh-nen-tang.md)
+- [Mô hình doanh thu](docs/mo-hinh-doanh-thu.md)
+- [Vai trò pháp lý và nguyên tắc an toàn](phap-ly/vai-tro-phap-ly.md)
+- [Bộ máy vận hành](docs/bo-may-van-hanh.md)
 
-## Nguyen tac thiet ke
+## Nguyên tắc thiết kế
 
-- Trien khai dong thoi tren nhieu truong, khong tu duy thu tuyen tinh cham.
-- Dung AI de tang toc san xuat chuong trinh, hoc lieu, rubric va tro ly day hoc.
-- Lay cac khoa AI va vibe coding lam dong tien som.
-- Lay STEAM de tao du lieu nang luc dai han.
-- Lay don hang doanh nghiep de keo chuong trinh dao tao sat thi truong.
-- Nen tang dung o vai tro cong nghe, dao tao, danh gia nang luc va dieu phoi du lieu.
-
+- Triển khai đồng thời tại nhiều trường, không tư duy theo lộ trình tuyến tính chậm.
+- Dùng AI để tăng tốc sản xuất chương trình, học liệu, rubric và trợ lý dạy học.
+- Lấy các khóa AI và vibe coding làm nguồn doanh thu sớm.
+- Lấy STEAM để tạo dữ liệu năng lực dài hạn.
+- Lấy đơn hàng doanh nghiệp để kéo chương trình đào tạo sát nhu cầu thị trường.
+- Nền tảng giữ vai trò công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu.
