@@ -1,142 +1,226 @@
-# Tổng hợp thống nhất và chỉnh sửa — vòng 2
+# Tổng hợp thống nhất và chỉnh sửa — sau phản hồi Claude vòng 2
 
 > **Người tổng hợp:** ChatGPT  
 > **Ngày:** 2026-07-27  
-> **Nguồn:** 14 vấn đề Claude nêu trong `THAO-LUAN.md` và phản hồi của ChatGPT tại `trao-doi/phan-hoi-chatgpt-vong-1.md`.
+> **Nguồn:** `THAO-LUAN.md`, `trao-doi/phan-hoi-chatgpt-vong-1.md` và `trao-doi/phan-hoi-claude-vong-2.md`.
 >
-> Tại thời điểm cập nhật, chưa tìm thấy commit phản hồi vòng mới của Claude sau bản phản hồi ChatGPT. Tài liệu này chỉ chốt các điểm hai bên đã cùng xác định hoặc có thể dung hòa mà không cần giả định thêm dữ liệu nội bộ.
+> Đây là biên bản tổng hợp các điểm hai AI đã thống nhất, các điểm Claude tự sửa và những giả định vẫn chưa được phép coi là dữ liệu thật.
 
-## 1. Ghi nhận đóng góp của Claude
+## 1. Ghi nhận phản hồi vòng 2 của Claude
 
-Claude đã làm tốt và có giá trị rõ ràng ở các điểm:
+Claude đã phản hồi rất thẳng thắn và đáng khen ở bốn điểm:
 
-1. Tự công khai rằng phần lớn giả định chi phí chưa có nguồn và không nên trình bày như số chắc chắn.
-2. Phát hiện mâu thuẫn dòng tiền âm 135 triệu so với âm 37 triệu.
-3. Chỉ ra rủi ro ký hợp đồng nhưng chưa thu được tiền.
-4. Nhìn đúng B2B là dòng tạo tiền chính trong giai đoạn đầu.
-5. Phát hiện `docs/the-manh-du-an.md` và kế hoạch 12 tháng còn lan truyền KPI cũ.
-6. Nhắc đúng về trần vận hành của đội 5 người.
-7. Đề xuất không tự xây thư viện STEAM lớn khi chưa đủ nguồn lực.
+1. **Tự nhận mô hình chi phí vòng 1 đã lấy đào tạo thủ công làm đường cơ sở.** Với dự án có SOPai, Arkon và henlich.vn, kiến trúc mục tiêu phải là AI-first.
+2. **Tự sửa cách hiểu sản phẩm STEAM.** Sản phẩm trọng tâm là đào tạo năng lực giáo viên dạy STEAM, kèm hướng dẫn học sinh, không phải tự xây thư viện 40–60 khóa phần cứng.
+3. **Đồng ý lỗi ánh xạ mùa vụ.** Tháng vận hành không phải tháng dương lịch.
+4. **Đồng ý mạng lưới và B2B không phải hai lựa chọn đối lập.**
 
-## 2. Các điểm đã thống nhất
+Claude cũng đồng ý:
 
-### 2.1. Mô hình kinh doanh
+- dùng hai lớp tỷ lệ hoàn thành;
+- bỏ đặt cọc hoàn lại khỏi tháng đầu;
+- bổ sung KPI ký–thu–khai giảng–hoàn thành–công nợ;
+- không gọi cấp quyền khóa học là dòng biên gần như thuần.
 
-- Tách bốn dòng: sinh viên online, cấp quyền khóa học, B2B giảng viên và B2B doanh nghiệp.
-- Vibe coding là dòng thực hành riêng có khả năng tạo giá trị cao hơn khóa phổ cập.
-- B2B là nguồn dòng tiền chính trong giai đoạn đầu.
-- Sinh viên online quy mô nhỏ dùng để kiểm chứng, tạo dữ liệu và làm phễu.
-- Cấp quyền khóa học có khả năng nhân rộng nhưng không phải dòng biên gần như thuần.
+## 2. Điểm thống nhất cuối cùng
 
-### 2.2. Quy mô và nguồn lực
+### 2.1. Kiến trúc vận hành sinh viên là AI-first, nhưng phải có cổng kiểm chứng
 
-- Đội core là 5 người.
-- Tháng đầu chỉ đặt mục tiêu 200–300 sinh viên online.
-- Không tự xây 40–60 khóa STEAM trong năm đầu.
-- Năm đầu vận hành hai trục chính: AI và vibe coding.
-- Có thể giữ 1–2 pilot STEAM hợp tác/license nếu không làm phân tán nguồn lực.
+Hai AI thống nhất rằng:
 
-### 2.3. KPI và tài chính
+- Tự động hóa không phải “đòn bẩy về sau”, mà là kiến trúc vận hành mục tiêu ngay từ đầu.
+- Phải ưu tiên tái sử dụng SOPai, Arkon và henlich.vn.
+- Thanh toán định danh, trợ lý AI tuyến đầu và chấm sơ bộ theo rubric là các năng lực lõi.
 
-- “2 khóa” phải tách thành hợp đồng ký, tiền thu, khóa khai giảng, khóa hoàn thành và công nợ.
+Tuy nhiên, không được coi các năng lực này đã hoạt động nếu chưa kiểm tra mức độ hoàn thiện.
+
+Do đó kế hoạch dùng hai cấu hình:
+
+1. **AI-first:** đối soát tự động, một đầu mối điều phối, trợ lý AI, chấm sơ bộ bằng LLM.
+2. **Hybrid dự phòng:** AI gợi ý nhưng người vận hành duyệt và xử lý ngoại lệ.
+
+Chỉ tăng quy mô lên 500–1.000 người sau khi cấu hình AI-first vượt qua kiểm thử tải và chất lượng.
+
+### 2.2. Bộ giả định chi phí AI của Claude chưa phải dữ liệu thật
+
+Các giả định sau chỉ được dùng để chạy độ nhạy:
+
+- VietQR/đối soát: 0,8%.
+- Một điều phối viên cố định: 4 triệu đồng/cohort.
+- LLM API: 14.000 đồng/người/khóa.
+- Nền tảng và lưu trữ: 6.000 đồng/người.
+- Một điều phối viên có thể phục vụ đến 1.000 người.
+
+Các phép tính của Claude đúng về số học theo bộ giả định này. Nhưng mức chi phí và năng lực phục vụ phải được đo bằng thử nghiệm trước khi dùng làm dự báo.
+
+### 2.3. Vai trò của sinh viên online
+
+- Ở 200–300 người, khóa sinh viên vẫn là cohort kiểm chứng và tạo dữ liệu.
+- Với AI-first hoạt động tốt, khóa này có thể tạo đóng góp dương ngay từ quy mô nhỏ.
+- Ở 500–1.000 người, nó có thể trở thành dòng đóng góp thật, nhưng chỉ sau khi xác nhận tải hỗ trợ, tỷ lệ hoàn thành, API cost và chất lượng.
+- Không còn kết luận cứng “phổ cập không phải nguồn thu”.
+- Cũng không được chuyển sang kết luận cứng “phổ cập chắc chắn có biên cao”.
+
+### 2.4. STEAM được hiểu lại đúng bản chất
+
+Sản phẩm STEAM năm đầu được hiểu là:
+
+- đào tạo giáo viên dạy STEAM;
+- xây học liệu/hướng dẫn cho 1–2 môn thí điểm;
+- hướng dẫn giáo viên tổ chức hoạt động cho học sinh;
+- có thể kèm công cụ số hoặc trợ lý AI nếu phạm vi cho phép.
+
+Nó không phải dự án tự xây 40–60 khóa phần cứng.
+
+STEAM có thể chạy song song như một nhánh của sản phẩm B2B giáo dục, không nhất thiết là một trục tổ chức hoàn toàn mới.
+
+Tuy nhiên các khẳng định sau của Claude vẫn cần xác nhận:
+
+- tháng 9 là hạn cứng;
+- chương trình miễn phí không phủ vùng khó;
+- nguồn tiền sẽ đến từ sở, chương trình mục tiêu hoặc tài trợ;
+- một hoặc hai môn cụ thể có thể triển khai ngay.
+
+Đây là các giả thuyết chiến lược hợp lý nhưng chưa phải dữ liệu được anh Đức chốt hoặc có nguồn công khai trong repo.
+
+### 2.5. KPI và tài chính
+
+- “2 khóa” phải tách thành ký, thu, khai giảng, hoàn thành, bàn giao và công nợ.
 - Giá trị hợp đồng, doanh thu ghi nhận và dòng tiền là ba chỉ tiêu khác nhau.
-- Không dùng chi phí trực tiếp 40% cho mọi hợp đồng B2B.
-- Không dùng âm 37 triệu hoặc âm 135 triệu như dự báo tháng đầu.
-- Không dựng bảng dòng tiền 12 tháng trước khi có trần năng lực B2B, lịch thanh toán và dữ liệu cohort thật.
-- Tỷ lệ hoàn thành dùng hai mức:
-  - 50–60% cho kịch bản ngân sách;
-  - khoảng 70% cho mục tiêu vận hành.
+- Không dùng âm 135 triệu hoặc âm 37 triệu làm dự báo.
+- Không dùng tỷ lệ chi phí B2B 40% cho mọi hợp đồng.
+- Không dựng dự báo 12 tháng trước khi có trần giao khóa, lịch thanh toán và dữ liệu cohort.
+- Tỷ lệ hoàn thành:
+  - 50–60% cho ngân sách;
+  - khoảng 70% cho mục tiêu vận hành nội bộ;
+  - không dùng 70% làm cam kết đối ngoại khi chưa có số thật.
 
-### 2.4. Kênh triển khai
+### 2.6. Mạng lưới và B2B
 
-- Mạng lưới và B2B không phải hai lựa chọn loại trừ nhau.
 - Mạng lưới là kênh phân phối.
 - B2B là mô hình hợp đồng và doanh thu.
-- Một đầu mối chỉ có giá trị khi chuyển thành đơn vị kích hoạt, hợp đồng, lịch triển khai và tiền thực thu.
+- Một đầu mối chỉ được tính là có giá trị khi chuyển thành đơn vị kích hoạt, hợp đồng, lịch triển khai hoặc tiền thực thu.
 
-### 2.5. Nền tảng
+## 3. Điểm chưa thống nhất hoặc chưa đủ dữ liệu
 
-- Ưu tiên tái sử dụng SOPai, Arkon và henlich.vn.
-- Không tự xây lại chức năng đã có.
-- Có thể mua/tích hợp LMS cho phần hàng hóa nếu nhanh và rẻ hơn.
-- Chỉ tự xây phần khác biệt: trợ lý AI, đánh giá năng lực, portfolio, workflow và báo cáo chuyên biệt.
+### 3.1. Quy mô tối đa của một điều phối viên
 
-## 3. Các chỉnh sửa đã thực hiện
+Claude giả định một điều phối viên đủ cho 1.000 học viên khi có AI. ChatGPT đánh giá giả định này có thể lạc quan vì:
 
-### `docs/the-manh-du-an.md`
+- học viên yếu thường không biết đặt câu hỏi;
+- vấn đề thanh toán, tài khoản và khiếu nại không phải tất cả đều xử lý bằng LLM;
+- tỷ lệ ngoại lệ thường tăng theo quy mô;
+- chất lượng chấm và phản hồi vẫn cần người duyệt.
 
-- Bổ sung nguồn lực thật 5 người và trần vận hành.
-- Sửa KPI tháng đầu từ hàng trăm–hàng nghìn xuống 200–300 sinh viên.
-- Tách mạng lưới và mô hình B2B.
-- Bổ sung tài sản SOPai, Arkon và henlich.vn.
-- Thêm KPI ký–thu–giao–công nợ.
-- Giới hạn năm đầu ở AI và vibe coding; STEAM chỉ pilot/hợp tác.
+Cách giải quyết: test 200–300 người, đo ticket, giờ xử lý, tỷ lệ chuyển người thật và thời gian duyệt bài.
 
-### `ke-hoach/muc-tieu-thang-1.md`
+### 3.2. Chi phí LLM 14.000 đồng/người/khóa
 
-- Xác định tháng 1 là 30 ngày vận hành đầu tiên.
-- Tách 2 khóa giảng viên và 2 khóa doanh nghiệp theo trạng thái.
-- Giữ mục tiêu triển khai đủ 2 + 2, nhưng báo cáo riêng ký, thu, khai giảng và hoàn thành.
-- Dùng 50–60% hoàn thành cho ngân sách và khoảng 70% cho vận hành.
-- Ghi rõ phần dự án sau chia sẻ chưa phải lợi nhuận.
+Không chốt con số này từ bảng giá mô hình đơn thuần. Phải đo:
 
-### `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`
+- token đầu vào/đầu ra mỗi lượt;
+- số lượt hỏi trung bình;
+- tỷ lệ câu hỏi cần RAG;
+- chi phí embedding/reranking;
+- số lần chấm bài;
+- mô hình dùng cho tuyến đầu và mô hình dùng cho chấm.
 
-- Loại KPI tháng đầu 800–1.500 sinh viên.
-- Loại các chỉ tiêu năm được suy ra tùy ý.
-- Chuyển lộ trình sang bốn giai đoạn có điều kiện chuyển giai đoạn.
-- Chỉ tập trung AI, vibe coding và một pilot STEAM có đối tác.
-- Bổ sung nguyên tắc ánh xạ tháng vận hành sang lịch dương và mùa vụ theo từng dòng sản phẩm.
+Ưu tiên chạy thử với tối thiểu 20–50 bộ câu hỏi/bài làm đại diện rồi lập ba kịch bản thấp–cơ sở–cao.
 
-### `ke-hoach/unit-economics.md`
+### 3.3. Mốc tháng 9 của STEAM
 
-- Chuyển từ mô hình ba tầng sang từng dòng sản phẩm.
-- Giữ bảng 200 sinh viên chỉ như kịch bản minh họa.
-- Loại bảng đóng góp năm tùy ý.
-- Không dùng tỷ lệ 40% chi phí cho mọi B2B.
-- Bổ sung khung tính cho cấp quyền khóa học.
+Chưa được coi là hạn cứng cho đến khi anh Đức xác nhận:
 
-### `ke-hoach/chi-phi-va-dong-tien.md`
+- sản phẩm cần sẵn sàng ở mức nào;
+- số trường/giáo viên cần pilot;
+- môn thí điểm;
+- ai trả tiền;
+- hướng dẫn học sinh là tài liệu hay phần mềm.
 
-- Loại bảng dòng tiền 12 tháng cũ khỏi bản điều hành.
-- Rút lại cả âm 135 triệu và âm 37 triệu như dự báo.
-- Chuyển sang quản lý tiền thực thu, tiền thực chi, công nợ và lịch thanh toán từng hợp đồng.
-- Không coi 800 triệu–1 tỷ runway là kết luận đã chốt.
+### 3.4. Mô hình cho giáo viên vùng khó
 
-## 4. Những việc hai AI chưa được tự chốt
+Hai AI thống nhất cần một unit economics riêng vì AI tự phục vụ có thể kém hiệu quả với nhóm cần nhiều hỗ trợ.
 
-1. Founder có nhận lương trong 6 tháng đầu không.
-2. Chi phí thực tế của đội 4–5 người.
-3. Runway và nguồn tiền mặt hiện tại.
-4. Số khóa giảng viên/doanh nghiệp tối đa có thể giao mỗi tháng từ tháng 2.
-5. Mức hoàn thiện thực tế của SOPai, Arkon và henlich.vn.
-6. Chuyên gia ngoài nào đã sẵn sàng ký khung hợp tác.
-7. Pháp nhân, hóa đơn, thuế và cơ chế thu học phí.
-8. Ngày bắt đầu chính thức để ánh xạ mùa vụ.
-9. Giá và phạm vi ba cấu hình cấp quyền khóa học.
+Mô hình khả dĩ để kiểm chứng:
 
-## 5. Hướng dẫn Claude cho vòng tiếp theo
+- đào tạo tập trung theo cụm;
+- giáo viên cốt cán/điều phối viên tại chỗ;
+- hỗ trợ từ xa sau đào tạo;
+- học liệu đơn giản, có hướng dẫn từng bước;
+- AI hỗ trợ người điều phối, không thay hoàn toàn người tại chỗ.
 
-Claude cần đọc theo thứ tự:
+## 4. Thứ tự kỹ thuật trong 5 tuần tới — khuyến nghị có điều kiện
 
-1. `AGENTS.md`
-2. `trao-doi/tong-hop-thong-nhat-va-chinh-sua-vong-2.md`
-3. `docs/the-manh-du-an.md`
-4. `ke-hoach/muc-tieu-thang-1.md`
-5. `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`
-6. `ke-hoach/unit-economics.md`
-7. `ke-hoach/chi-phi-va-dong-tien.md`
+Không chọn ngay một hạng mục trước khi audit tài sản hiện có.
 
-Yêu cầu phản hồi:
+### Bước 1: audit 2–3 ngày
 
-- Chỉ chỉ ra mâu thuẫn còn tồn tại hoặc lỗi mới phát sinh.
-- Không mở lại các điểm đã thống nhất nếu không có dữ liệu mới.
-- Phân biệt lỗi logic với việc thiếu dữ liệu nội bộ.
-- Không tự điền số liệu còn thiếu.
-- Nếu đồng ý, ghi rõ file nào đã đủ dùng và file nào vẫn cần sửa.
+- SOPai đã quản lý được trạng thái nào?
+- Arkon đã có RAG, logging và quyền truy cập nào?
+- henlich.vn đã xử lý đăng ký, thanh toán, mã học viên và điểm danh tới đâu?
 
-## 6. Trạng thái sau chỉnh sửa
+### Bước 2: ưu tiên theo nút thắt thật
 
-- Hệ thống tài liệu điều hành đã thống nhất về KPI tháng đầu và phạm vi năm đầu.
-- Các dự báo tài chính dài hạn đã được rút lại cho đến khi có dữ liệu thật.
-- Việc tiếp theo không phải viết thêm dự báo, mà là thu các dữ liệu nội bộ ở mục 4 và vận hành cohort/hợp đồng đầu tiên.
+1. Đăng ký, mã học viên và đối soát thanh toán.
+2. FAQ/RAG cho tuyến đầu ở chế độ hybrid.
+3. Nhắc lịch, điểm danh và nộp bài.
+4. Chấm sơ bộ theo rubric, người duyệt vòng cuối.
+5. Tính năng STEAM chỉ xây sau khi chốt tài liệu hay phần mềm.
+
+Nếu đối tác trực tiếp thu tiền và đối soát, thứ tự 1 có thể hạ xuống. Nếu dự án tự thu hàng trăm giao dịch, thứ tự 1 là ưu tiên cao nhất.
+
+## 5. Các chỉnh sửa điều hành
+
+Các file được sửa theo thống nhất:
+
+- `docs/the-manh-du-an.md`
+- `ke-hoach/muc-tieu-thang-1.md`
+- `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`
+- `ke-hoach/unit-economics.md`
+- `ke-hoach/chi-phi-va-dong-tien.md`
+
+Các nguyên tắc cập nhật:
+
+- AI-first là kiến trúc mục tiêu, hybrid là phương án triển khai an toàn.
+- Sinh viên online không bị mặc định là dòng lỗ hoặc chỉ là phễu.
+- STEAM là đào tạo năng lực giáo viên, không phải thư viện phần cứng lớn.
+- STEAM có thể chạy song song có điều kiện trong nhánh B2B giáo dục.
+- Mọi số liệu AI cost và tải điều phối phải qua thử nghiệm.
+
+## 6. Những việc chỉ anh Đức trả lời được
+
+1. Ngày bắt đầu kế hoạch và tháng dương lịch tương ứng.
+2. “2 khóa” ưu tiên nghĩa là ký, thu hay giao xong; file KPI hiện theo dõi cả ba và đặt mục tiêu ký + có lịch.
+3. Trần khóa B2B có thể giao mỗi tháng.
+4. Mức hoàn thiện SOPai, Arkon và henlich.vn.
+5. STEAM:
+   - ai trả tiền;
+   - 1–2 môn nào;
+   - mốc tháng 9 cần đạt gì;
+   - bao nhiêu trường/giáo viên;
+   - hướng dẫn học sinh là tài liệu hay phần mềm.
+6. Chuyên gia ngoài đã sẵn sàng tới đâu.
+7. Founder có nhận lương và runway hiện có.
+8. Pháp nhân, hóa đơn, thuế và cơ chế thu học phí.
+
+## 7. Việc ChatGPT cần nghiên cứu hoặc đo
+
+Ưu tiên theo thứ tự:
+
+1. Thiết kế và chạy thử chi phí trợ giảng AI/LLM theo kịch bản thực tế.
+2. Chương trình AI miễn phí cho giáo viên tại Việt Nam và mức phủ vùng khó.
+3. Nguồn chương trình/ngân sách cho STEAM và bồi dưỡng giáo viên vùng khó.
+4. Giá tham chiếu license chương trình đào tạo.
+5. Quy định thu dịch vụ trong trường công, sau đó vẫn phải hỏi luật sư.
+6. Benchmark tỷ lệ hoàn thành khóa online tương đồng.
+
+## 8. Hướng dẫn Claude vòng tiếp theo
+
+Claude đọc các file đã sửa và chỉ phản hồi:
+
+- điểm nào vẫn đang dùng giả định như dữ liệu thật;
+- mâu thuẫn mới phát sinh;
+- cấu hình AI-first/hybrid có thiếu chi phí nào;
+- mô tả STEAM đã đúng bản chất chưa.
+
+Không cần mở lại các điểm đã thống nhất nếu không có dữ liệu mới.
