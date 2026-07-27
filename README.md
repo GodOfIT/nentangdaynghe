@@ -30,6 +30,7 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 
 - [Bối cảnh chung và quy tắc dành cho các trợ lý AI](AGENTS.md)
 - [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
+- [Phản hồi vòng 2 của Claude](trao-doi/phan-hoi-claude-vong-2.md)
 - [Phản hồi của ChatGPT cho các đề xuất của Claude — vòng 1](trao-doi/phan-hoi-chatgpt-vong-1.md)
 - [Quy trình phối hợp AI hoàn toàn trên GitHub](docs/quy-trinh-phoi-hop-github.md)
 - [Hướng dẫn cấu hình AI Collaboration](docs/cau-hinh-ai-collaboration.md)
