@@ -1,0 +1,116 @@
+name: AI Collaboration
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Số GitHub Issue cần hai AI xử lý"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: ai-collaboration-${{ inputs.issue_number }}
+  cancel-in-progress: false
+
+jobs:
+  collaborate:
+    name: ChatGPT → Claude → ChatGPT → Claude → Báo cáo
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ISSUE_NUMBER: ${{ inputs.issue_number }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Kiểm tra cấu hình bắt buộc
+        shell: bash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          test -n "$OPENAI_API_KEY" || { echo "Thiếu secret OPENAI_API_KEY"; exit 1; }
+          test -n "$ANTHROPIC_API_KEY" || { echo "Thiếu secret ANTHROPIC_API_KEY"; exit 1; }
+          test -n "$ISSUE_NUMBER" || { echo "Thiếu số Issue"; exit 1; }
+
+      - name: ChatGPT tạo bản thực hiện vòng 1
+        run: node .github/scripts/openai-collab.mjs draft
+
+      - name: Claude phản biện vòng 1
+        id: claude_review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Bạn là Claude, tác nhân phản biện độc lập trong repo ${{ github.repository }}.
+            Nhiệm vụ đang nằm ở Issue #${{ inputs.issue_number }}.
+
+            Hãy đọc:
+            - AGENTS.md
+            - docs/quy-trinh-phoi-hop-github.md
+            - .ai-work/gpt-draft.md
+
+            Chỉ phản biện, không sửa file và không tự quyết thay anh Đức.
+            Kiểm tra tính đúng đắn, mâu thuẫn, giả định, chi phí, trần vận hành,
+            dữ liệu còn thiếu và mức độ đáp ứng yêu cầu Issue.
+            Trả kết quả đúng JSON schema đã cấu hình.
+          claude_args: >-
+            --max-turns 4
+            --json-schema '{"type":"object","properties":{"status":{"type":"string","enum":["APPROVE","REVISE","HUMAN_DECISION"]},"confidence":{"type":"string","enum":["high","medium","low"]},"summary":{"type":"string"},"required_changes":{"type":"array","items":{"type":"string"}},"assumptions_to_verify":{"type":"array","items":{"type":"string"}},"agreements":{"type":"array","items":{"type":"string"}},"disagreements":{"type":"array","items":{"type":"string"}},"human_decisions":{"type":"array","items":{"type":"string"}},"top_risk":{"type":"string"}},"required":["status","confidence","summary","required_changes","assumptions_to_verify","agreements","disagreements","human_decisions","top_risk"]}'
+
+      - name: Lưu phản biện Claude vòng 1
+        env:
+          REVIEW_JSON: ${{ steps.claude_review.outputs.structured_output }}
+        run: |
+          mkdir -p .ai-work
+          node -e "require('fs').writeFileSync('.ai-work/claude-review.json', process.env.REVIEW_JSON || '{}', 'utf8')"
+
+      - name: ChatGPT sửa theo phản biện
+        run: node .github/scripts/openai-collab.mjs revision
+
+      - name: Claude xác minh bản sửa
+        id: claude_verify
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Bạn là Claude ở vòng xác minh cuối cho Issue #${{ inputs.issue_number }}.
+
+            Hãy đọc:
+            - AGENTS.md
+            - .ai-work/claude-review.json
+            - .ai-work/gpt-revision.md
+
+            Chỉ kiểm tra các lỗi bắt buộc đã được xử lý chưa và có lỗi nghiêm trọng mới không.
+            Không mở rộng phạm vi, không sửa file, không tự quyết thay anh Đức.
+            Trả kết quả đúng JSON schema đã cấu hình.
+          claude_args: >-
+            --max-turns 3
+            --json-schema '{"type":"object","properties":{"status":{"type":"string","enum":["APPROVE","REVISE","HUMAN_DECISION"]},"confidence":{"type":"string","enum":["high","medium","low"]},"summary":{"type":"string"},"required_changes":{"type":"array","items":{"type":"string"}},"assumptions_to_verify":{"type":"array","items":{"type":"string"}},"agreements":{"type":"array","items":{"type":"string"}},"disagreements":{"type":"array","items":{"type":"string"}},"human_decisions":{"type":"array","items":{"type":"string"}},"top_risk":{"type":"string"}},"required":["status","confidence","summary","required_changes","assumptions_to_verify","agreements","disagreements","human_decisions","top_risk"]}'
+
+      - name: Lưu kết quả xác minh Claude
+        env:
+          VERIFY_JSON: ${{ steps.claude_verify.outputs.structured_output }}
+        run: |
+          node -e "require('fs').writeFileSync('.ai-work/claude-verification.json', process.env.VERIFY_JSON || '{}', 'utf8')"
+
+      - name: ChatGPT đăng báo cáo cuối cho anh Đức
+        run: node .github/scripts/openai-collab.mjs report
+
+      - name: Tóm tắt workflow
+        run: |
+          echo "## AI Collaboration hoàn tất" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Issue: #$ISSUE_NUMBER" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Đã chạy: GPT draft → Claude review → GPT revision → Claude verify → GPT report" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Báo cáo cuối đã được đăng vào Issue." >> "$GITHUB_STEP_SUMMARY"
