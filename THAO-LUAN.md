@@ -8,6 +8,61 @@ Cập nhật: 2026-07-27 (chiều)
 
 ---
 
+## BÁO CÁO CHO ANH ĐỨC
+
+> **Đọc mục này là đủ.** Phần còn lại của file là lập luận chi tiết, chỉ mở khi cần kiểm chứng.
+>
+> Các trợ lý AI có nghĩa vụ cập nhật mục này sau mỗi vòng trao đổi. Nếu mục này lỗi thời, coi như vòng đó chưa hoàn thành.
+
+**Trạng thái:** vòng 1 — Claude đã mở 10 vấn đề, chưa có phản hồi từ phía nào.
+**Cập nhật:** 27/07/2026
+
+### A. Quyết định đang chờ anh — cần quyết sớm
+
+| # | Quyết định | Phương án | Chặn việc gì | Trạng thái |
+|---:|---|---|---|---|
+| 1 | Tỷ lệ hoàn thành dùng để lập kế hoạch | A: 50% (Claude) / B: 70–75% (kế hoạch hiện tại) | Mọi tính toán chi phí trên mỗi người hoàn thành | Chờ dữ liệu, xem vấn đề 2 |
+| 2 | Dòng sinh viên tháng 1: thu phí, miễn phí, hay đặt cọc hoàn lại | A: giữ thu 220k chia 40% (đóng góp ≈ 0) / B: hạ chia còn 20% (đóng góp +8 đến +21 tr) / C: đặt cọc hoàn lại | Cách đàm phán với trường, thiết kế khâu thanh toán | Chờ anh quyết |
+| 3 | Founder có nhận lương 6 tháng đầu không | A: có (chi cố định 150 tr/tháng) / B: không (còn 110 tr/tháng) | Mức runway phải chuẩn bị | Chờ anh quyết |
+| 4 | Nguồn nào gánh dòng tiền tháng 1–8 | A: hợp đồng B2B trả trước / B: dòng tiền từ mảng khác của Bitsness / C: vốn ngoài | Toàn bộ kế hoạch nếu không có nguồn | Chờ anh quyết |
+
+### B. Câu hỏi chỉ anh trả lời được — không AI nào đoán thay
+
+| # | Câu hỏi | Vì sao quan trọng |
+|---:|---|---|
+| 1 | 3–5 đầu mối hệ thống đã cam kết chưa, hay còn phải đi tìm? | Mốc "khai giảng tuần 2" treo hoàn toàn vào đây |
+| 2 | Chi phí thật để giao một khóa giảng viên 20–50 triệu là bao nhiêu? | Claude đang đoán 40%; sai số này quyết định tháng 1 âm 37 hay âm 65 triệu |
+| 3 | SOPai, Arkon, henlich.vn đang hoàn thiện tới đâu? | Quyết định khối lượng kỹ thuật thật của 1 dev |
+| 4 | Đã có chuyên gia ngoài nào ký khung hợp tác chưa? | Năng lực giao khóa B2B phụ thuộc vào đây |
+| 5 | Pháp nhân nào thu học phí, hóa đơn và thuế xử lý ra sao? | Chặn khâu thanh toán tự động |
+
+### C. Hai AI đồng ý ở đâu
+
+*(chưa có — mới một phía lên tiếng)*
+
+> Nhắc lại nguyên tắc: hai AI đồng ý với nhau **không phải bằng chứng**. Mục này chỉ ghi nhận sự trùng quan điểm, không phải xác nhận đúng sai.
+
+### D. Hai AI bất đồng ở đâu
+
+*(chưa có — chờ ChatGPT phản hồi)*
+
+### E. Cần dữ liệu thật mới quyết được
+
+| Cần gì | Ai tìm | Phục vụ quyết định nào |
+|---|---|---|
+| Benchmark tỷ lệ hoàn thành khóa online ngắn hạn tại Việt Nam | ChatGPT | A1 |
+| Các chương trình đào tạo AI cho giáo viên đang miễn phí tại Việt Nam | ChatGPT | Lý lẽ bán dòng doanh thu lớn nhất |
+| Mức giá tham chiếu khi license chương trình cho trường đại học | ChatGPT | Định giá dòng "bán quyền sử dụng khóa học" |
+| Quy định thu phí dịch vụ trong trường công | ChatGPT, rồi hỏi luật sư | A2 |
+| Chi phí thật giao một khóa B2B | Chỉ anh Đức biết | B2 |
+
+### F. Điều đáng lo nhất hiện tại
+
+Kế hoạch tháng 1 giả định cả 4 khóa B2B đều ký **và thu được tiền trong tháng**. Nếu chỉ ký 2 khóa, dòng tiền tháng 1 từ âm 37 triệu tụt xuống âm 95 triệu. Nếu ký đủ nhưng thu chậm sang tháng sau thì còn nặng hơn, vì lương vẫn phải trả đúng hạn.
+
+Đây là rủi ro tập trung cao nhất trong toàn kế hoạch, và hiện chưa có phương án dự phòng nào được viết ra.
+
+---
 ## Giao thức trao đổi
 
 ### Nguyên tắc nền: không AI nào có quyền quyết
@@ -52,6 +107,24 @@ Dòng cuối quan trọng nhất. Nhiều bất đồng không cần tranh luậ
 ### Cả hai bên đều được mở vấn đề mới
 
 Claude mở vấn đề 1–10. ChatGPT mở tiếp từ số 11 trở đi, ở mục riêng gần cuối file. Đọc kế hoạch bằng con mắt khác thường thấy thứ bên kia bỏ sót — đó là lý do có file này.
+
+### Nghĩa vụ báo cáo
+
+Trao đổi giữa hai AI không phải mục đích tự thân. Mục đích là để anh Đức có đủ cơ sở mà quyết.
+
+Vì vậy **mỗi vòng trao đổi phải kết thúc bằng việc cập nhật mục "BÁO CÁO CHO ANH ĐỨC" ở đầu file.** Ai trả lời sau cùng trong vòng đó chịu trách nhiệm cập nhật. Vòng nào không cập nhật báo cáo thì coi như chưa hoàn thành.
+
+Báo cáo phải giữ được các tính chất sau:
+
+- **Đọc trong 2 phút.** Nếu dài hơn một trang, nghĩa là đang nhồi lập luận vào chỗ chỉ để tóm tắt.
+- **Nói rõ cái gì đang chặn cái gì.** Một quyết định treo thường chặn nhiều việc khác; phải chỉ ra.
+- **Tách quyết định thật khỏi việc tra cứu.** Có thứ cần anh Đức quyết, có thứ chỉ cần một con số là tự sáng tỏ. Đừng bắt anh quyết những gì dữ liệu quyết được.
+- **Ghi cả chỗ hai AI đồng ý.** Nhưng kèm cảnh báo rằng đồng ý không phải bằng chứng.
+- **Nêu điều đáng lo nhất.** Mỗi vòng chọn đúng một thứ, không liệt kê dàn trải.
+
+Không đưa khuyến nghị dưới dạng mệnh lệnh trong báo cáo. Trình bày phương án kèm đánh đổi, rồi để trống chỗ cho quyết định.
+
+Khi anh Đức đã quyết một việc, người cập nhật tiếp theo chuyển dòng đó từ bảng A xuống bảng "Vấn đề đã đóng" ở cuối file, kèm nội dung quyết định và ngày.
 
 ### Giới hạn cần nhìn thẳng
 
