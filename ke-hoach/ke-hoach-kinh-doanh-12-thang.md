@@ -1,373 +1,261 @@
 # Kế hoạch kinh doanh 12 tháng
 
+> **Phiên bản điều hành sau vòng rà soát Claude–ChatGPT.**
+>
+> Tài liệu này thay thế các chỉ tiêu cũ về 800–1.500 sinh viên tháng đầu và các bảng doanh thu năm được suy ra từ số lượng hợp đồng chưa có căn cứ.
+>
+> Đọc cùng `AGENTS.md`, `ke-hoach/muc-tieu-thang-1.md`, `ke-hoach/unit-economics.md` và `ke-hoach/chi-phi-va-dong-tien.md`.
+
 ## 1. Nguyên tắc lập kế hoạch
 
-Kế hoạch được xây theo nguyên tắc:
+1. Bắt đầu đào tạo từ tuần thứ hai.
+2. Tách bốn dòng doanh thu và unit economics riêng.
+3. B2B là nguồn tạo tiền chính trong giai đoạn đầu.
+4. Lớp sinh viên phổ cập dùng để kiểm chứng, tạo dữ liệu và làm phễu; không mặc định là nguồn lợi nhuận chính.
+5. Mạng lưới là kênh phân phối; hợp đồng B2B là mô hình thương mại.
+6. Đội core là 5 người; mọi KPI phải kiểm tra trần vận hành.
+7. Năm đầu chỉ tập trung vận hành hai trục: **đào tạo AI** và **vibe coding**.
+8. STEAM chỉ triển khai dưới dạng pilot hợp tác hoặc license nếu có đối tác phù hợp; không tự xây thư viện quy mô lớn.
+9. Giá trị hợp đồng, doanh thu ghi nhận và tiền đã thu phải báo cáo riêng.
+10. Mọi con số chưa có dữ liệu thật phải ghi `[giả định]`.
 
-> Bắt đầu triển khai từ tuần thứ hai, tách rõ từng nhóm khách hàng và không dùng chung một mô hình giá cho giảng viên, doanh nghiệp và sinh viên.
+## 2. Cách hiểu về thời gian
 
-Dự án có bốn dòng doanh thu độc lập nhưng hỗ trợ lẫn nhau:
+- **Tháng 1** là 30 ngày vận hành đầu tiên, không mặc định là tháng 1 dương lịch.
+- Khi chốt ngày bắt đầu, phải lập bảng ánh xạ tháng vận hành sang tháng dương lịch.
+- Không áp mùa vụ giống nhau cho mọi dòng sản phẩm:
+  - Sinh viên online chịu ảnh hưởng của mùa thi, Tết và lịch học.
+  - Khóa giảng viên có thể thuận lợi trong một số giai đoạn bồi dưỡng, kể cả hè, tùy từng trường.
+  - Khóa doanh nghiệp ít phụ thuộc lịch năm học hơn.
+  - Bán quyền sử dụng khóa học phụ thuộc chu kỳ phê duyệt, ngân sách và mua sắm của đơn vị.
 
-1. Đào tạo AI trực tiếp cho giảng viên và cán bộ giáo dục.
-2. Đào tạo, tư vấn và triển khai AI trực tiếp cho doanh nghiệp.
-3. Bán quyền sử dụng hoặc chuyển giao khóa học AI cho sinh viên.
-4. Tự vận hành các cohort online dành cho sinh viên.
+## 3. Bốn dòng sản phẩm và doanh thu
 
-Ba tháng đầu ưu tiên triển khai các sản phẩm đã có thể vận hành ngay. Nền tảng được xây song song để phục vụ lớp học thật, cấp quyền khóa học, thu sản phẩm và báo cáo cho đơn vị.
+### 3.1. Đào tạo trực tiếp cho giảng viên
 
-## 2. Bốn mô hình sản phẩm và doanh thu
+- Khung giá: **20–50 triệu đồng/khóa**.
+- Nội dung điều chỉnh theo chuyên ngành, môn học và nhu cầu đơn vị.
+- Đầu ra có thể gồm bộ công cụ AI, trợ lý môn học, skill, agent, kho tri thức hoặc quy trình sản xuất học liệu.
+- Theo dõi riêng hợp đồng ký, tiền thu, khóa khai giảng, khóa hoàn thành và công nợ.
 
-### 2.1. Đào tạo trực tiếp cho giảng viên
+### 3.2. Đào tạo AI cho doanh nghiệp
 
-Đây là dòng sản phẩm B2B có giá trị cao hơn lớp sinh viên online.
+- Khung giá: **20–100 triệu đồng/khóa**.
+- Có thể kết hợp khảo sát, đào tạo, tư vấn và triển khai.
+- Đầu ra có thể gồm quy tắc sử dụng AI, workflow, agent mẫu, tài liệu vận hành hoặc kế hoạch triển khai.
+- Không tính giá chủ yếu theo số học viên.
 
-Đặc điểm:
+### 3.3. Bán quyền sử dụng khóa học cho sinh viên
 
-- Chủ yếu tổ chức trực tiếp tại trường hoặc theo hình thức kết hợp.
-- Nội dung điều chỉnh theo chuyên ngành, môn học và nhu cầu của đơn vị.
-- Có hoạt động thực hành, sản phẩm đầu ra và hỗ trợ sau khóa học.
-- Có thể mở rộng sang xây trợ lý môn học, skill, agent, kho tri thức hoặc quy trình sản xuất học liệu.
+Nên phát triển ba cấu hình:
 
-Khung giá thực tế:
+1. Quyền sử dụng nội dung.
+2. Nội dung + nền tảng + báo cáo.
+3. Gói triển khai đầy đủ có tùy chỉnh và đào tạo giảng viên nguồn.
 
-> **20-50 triệu đồng/khóa**
+Doanh thu:
 
-Giá cuối cùng phụ thuộc số buổi, số người, địa điểm, mức độ tùy chỉnh và sản phẩm cần bàn giao.
+> Phí quyền sử dụng + phí tùy chỉnh + phí nền tảng/onboarding/hỗ trợ
 
-### 2.2. Đào tạo AI cho doanh nghiệp
+Không coi đây là dòng biên gần như thuần. Phải tính chi phí cập nhật, hỗ trợ, kỹ thuật, báo cáo và kiểm soát phạm vi sử dụng.
 
-Đây là dòng sản phẩm đào tạo trực tiếp, có thể kết hợp tư vấn và triển khai.
+### 3.4. Tự vận hành lớp sinh viên online
 
-Đặc điểm:
+Giả định tháng đầu:
 
-- Khảo sát nhu cầu theo phòng ban.
-- Dùng tình huống, dữ liệu và quy trình thật của doanh nghiệp.
-- Có thể bàn giao workflow, agent, tài liệu vận hành hoặc kế hoạch triển khai.
-- Giá trị hợp đồng không phụ thuộc chủ yếu vào số học viên.
+- 200–300 sinh viên thanh toán và bắt đầu học.
+- Học phí bình quân 220.000 đồng/người `[giả định]`.
+- Phần dự án sau chia sẻ 60% `[giả định]`.
+- Kịch bản ngân sách về hoàn thành: 50–60%.
+- Mục tiêu vận hành: khoảng 70%.
 
-Khung giá thực tế:
+Đóng góp phải được tính sau toàn bộ chi phí trực tiếp, không chỉ sau phần chia sẻ đối tác.
 
-> **20-100 triệu đồng/khóa**
+## 4. Sản phẩm triển khai trong năm đầu
 
-Công thức doanh thu:
+### Nhóm 1 — AI cho sinh viên
 
-> Doanh thu doanh nghiệp = phí đào tạo + phí tùy chỉnh nội dung + phí triển khai hoặc hỗ trợ sau đào tạo nếu có
+- AI Fluency: 4 buổi.
+- Hình thức: dự án tự vận hành online hoặc cấp quyền cho trường.
+- Đầu ra: bài tập ứng dụng AI vào học tập và công việc.
 
-### 2.3. Sinh viên — Mô hình A: Bán khóa học cho trường hoặc đối tác
+### Nhóm 2 — AI cho giảng viên
 
-Dự án bán quyền sử dụng một gói khóa học hoàn chỉnh để trường hoặc đối tác tự tổ chức.
+- AI Essentials for Educators: 2 buổi.
+- Faculty AI Builder: 4–12 buổi.
+- Đầu ra: bộ công cụ giảng dạy, trợ lý môn học, skill, agent hoặc kho tri thức.
 
-Gói có thể gồm:
+### Nhóm 3 — AI cho doanh nghiệp
 
-- Đề cương và cấu trúc buổi học.
-- Video, slide, bài đọc và bài tập.
-- Rubric, ngân hàng câu hỏi và tài liệu giảng viên.
-- Hướng dẫn điều phối và hỗ trợ người học.
-- Quyền sử dụng trong phạm vi và thời hạn đã thỏa thuận.
-- Tùy chọn white-label, nền tảng, báo cáo và đào tạo giảng viên nguồn.
+- Enterprise AI: 1–6 buổi tùy bài toán.
+- Có thể mở rộng thành dự án triển khai sau đào tạo.
 
-Cách tính doanh thu:
+### Nhóm 4 — Vibe coding
 
-> Doanh thu = phí quyền sử dụng khóa học + phí tùy chỉnh + phí nền tảng hoặc hỗ trợ nếu có
-
-Giá của dòng sản phẩm này chưa đưa vào dự báo cho đến khi chốt rõ:
-
-- Bán theo học kỳ hay theo năm.
-- Giới hạn số người học.
-- Có cho phép white-label hay không.
-- Có bàn giao file nguồn hay chỉ cấp quyền sử dụng.
-- Có kèm đào tạo giảng viên nguồn và nền tảng hay không.
-
-Ưu tiên bán quyền sử dụng có thời hạn để giữ tài sản trí tuệ và tạo doanh thu định kỳ.
-
-### 2.4. Sinh viên — Mô hình B: Dự án tự vận hành lớp online
-
-Dự án trực tiếp tổ chức tuyển sinh hoặc nhận danh sách từ trường, thu học phí, dạy trực tuyến, quản lý bài tập và đánh giá đầu ra.
-
-Giả định quản trị ban đầu:
-
-- Học phí phổ cập: 150.000-250.000 đồng/người.
-- Khóa thực hành: 250.000-500.000 đồng/người.
-- Học phí bình quân dùng để tính tháng đầu: 220.000 đồng/người.
-- Phần chia sẻ cho trường hoặc đối tác: tạm tính 35-45% học phí thực thu.
-
-Công thức:
-
-> Tổng học phí = số người đã thanh toán × học phí thực thu bình quân
-
-> Doanh thu dự án = tổng học phí - phần chia sẻ cho trường hoặc đối tác - các khoản hoàn trả
-
-## 3. Sản phẩm có thể triển khai ngay
-
-### 3.1. AI Fluency cho sinh viên
-
-- Thời lượng: 4 buổi.
-- Hình thức: online quy mô lớn hoặc bán quyền sử dụng cho trường.
-- Nội dung: hiểu AI, mô tả yêu cầu, đánh giá kết quả, phân công nhiệm vụ, trách nhiệm và an toàn.
-- Đầu ra: bộ bài tập ứng dụng AI vào học tập và công việc.
-
-### 3.2. AI Essentials for Educators
-
-- Thời lượng: 2 buổi.
-- Hình thức: trực tiếp hoặc kết hợp.
-- Đối tượng: giảng viên, giáo viên và cán bộ quản lý.
-- Đầu ra: bộ công cụ AI áp dụng cho công việc giảng dạy.
-- Khung giá: 20-50 triệu đồng/khóa.
-
-### 3.3. AI-Powered Teaching hoặc Faculty AI Builder
-
-- Thời lượng: 4-12 buổi tùy gói.
-- Hình thức: trực tiếp, có thực hành và sản phẩm.
-- Đầu ra: trợ lý môn học, skill, agent, kho tri thức hoặc quy trình sản xuất học liệu.
-- Khung giá: 20-50 triệu đồng/khóa; các phần triển khai riêng được báo giá bổ sung.
-
-### 3.4. Enterprise AI
-
-- Thời lượng: 1-6 buổi tùy bài toán.
-- Hình thức: trực tiếp tại doanh nghiệp hoặc kết hợp.
-- Đầu ra: bộ quy tắc sử dụng AI, workflow, bản mẫu agent hoặc kế hoạch triển khai.
-- Khung giá: 20-100 triệu đồng/khóa.
-
-### 3.5. Vibe Coding Foundation
-
-- Thời lượng: 6-8 buổi.
+- Vibe Coding Foundation: 6–8 buổi.
 - Đối tượng: sinh viên và người học không chuyên lập trình.
-- Hình thức: online hoặc bán quyền sử dụng cho trường.
-- Đầu ra: website, ứng dụng nhỏ hoặc workflow có thể trình diễn.
+- Đầu ra: website, ứng dụng nhỏ, workflow hoặc sản phẩm có thể trình diễn.
 
-## 4. Kế hoạch tháng 1
+### Pilot STEAM
 
-### 4.1. Mục tiêu chính
+- Tối đa 1–2 pilot hợp tác/license trong năm đầu.
+- Không cam kết tự xây hàng chục khóa có phần cứng.
+- Mục tiêu là kiểm chứng vai trò tiếp cận trường, không phải mở một trục vận hành độc lập.
 
-- Bắt đầu đào tạo từ tuần thứ hai.
-- Không bắt buộc tổ chức workshop trước khi mở lớp.
-- Vận hành đồng thời lớp sinh viên online và các khóa trực tiếp có giá trị cao.
-- Thử nghiệm việc bán quyền sử dụng khóa sinh viên cho trường hoặc đối tác.
-- Thu dữ liệu thật để điều chỉnh sản phẩm, giá và mô hình phân phối.
+## 5. Kế hoạch 30 ngày đầu
 
-### 4.2. Lộ trình theo tuần
+### Tuần 1 — Chốt sản phẩm và hợp đồng
 
-#### Tuần 1: Chốt sản phẩm và đầu mối
+- Hoàn thiện AI Fluency cho sinh viên ở hai phiên bản: cấp quyền và tự vận hành online.
+- Hoàn thiện ít nhất một gói giảng viên và một gói doanh nghiệp có thể bán ngay.
+- Chốt giá, phạm vi, lịch, người dạy, chi phí trực tiếp và điều khoản thanh toán.
+- Mở đăng ký sinh viên online.
+- Gửi đề xuất B2B và đề xuất cấp quyền khóa học.
+- Chuẩn bị học liệu, điểm danh, bài tập, rubric, FAQ và quy trình hỗ trợ.
 
-- Hoàn thiện AI Fluency cho sinh viên ở cả hai phiên bản: bán cho trường và dự án tự vận hành online.
-- Hoàn thiện ít nhất một khóa trực tiếp cho giảng viên.
-- Hoàn thiện ít nhất một khóa trực tiếp cho doanh nghiệp.
-- Chốt lịch, giảng viên, học phí, cơ chế chia sẻ và quy trình thanh toán.
-- Làm việc với 2-4 đầu mối có khả năng kích hoạt người học hoặc đơn vị.
-- Mở đăng ký cohort sinh viên online.
-- Gửi gói khóa học sinh viên cho các đơn vị có nhu cầu tự triển khai.
-- Chuẩn bị học liệu, điểm danh, bài tập, rubric và thu sản phẩm.
+### Tuần 2 — Khai giảng và thu dữ liệu
 
-#### Tuần 2: Bắt đầu đào tạo
+- Khai giảng cohort sinh viên đầu tiên.
+- Khai giảng hoặc chốt lịch khóa giảng viên đầu tiên.
+- Theo dõi thanh toán, tham gia buổi đầu và lỗi vận hành.
+- Hoàn thiện ít nhất một thỏa thuận thử nghiệm/cấp quyền khóa sinh viên.
 
-- Khai giảng 1-2 cohort AI Fluency online.
-- Triển khai ít nhất 1 khóa trực tiếp cho giảng viên hoặc chốt lịch triển khai trong tháng.
-- Tiếp tục hoàn thiện hợp đồng bán quyền sử dụng khóa sinh viên.
-- Theo dõi tỷ lệ thanh toán, tham gia buổi đầu và lỗi kỹ thuật.
+### Tuần 3 — Giao B2B và kiểm soát chất lượng
 
-#### Tuần 3: Mở rộng và triển khai B2B
-
-- Mở thêm cohort sinh viên online nếu tỷ lệ tham gia đạt yêu cầu.
-- Triển khai hoặc chốt ít nhất 1 khóa doanh nghiệp.
+- Triển khai khóa doanh nghiệp hoặc khóa giảng viên tiếp theo.
 - Thu bài tập và sản phẩm của sinh viên.
-- Chốt 1-2 đơn vị mua hoặc thử nghiệm gói khóa sinh viên.
-- Xác định nhóm người học có nhu cầu học vibe coding hoặc chương trình nâng cao.
+- Không mở thêm cohort nếu thanh toán, hỗ trợ hoặc chấm bài chưa đạt trần vận hành.
+- Xác định nhóm chuyển sang vibe coding hoặc chương trình nâng cao.
 
-#### Tuần 4: Hoàn thành, đánh giá và bán tiếp
+### Tuần 4 — Hoàn thành, thu tiền và bán tiếp
 
-- Hoàn thành các khóa ngắn đầu tiên.
-- Thu phản hồi, minh chứng và dữ liệu học tập.
-- Mở đăng ký Vibe Coding Foundation.
-- Đề xuất khóa tiếp theo cho trường, giảng viên và doanh nghiệp.
-- Chốt kế hoạch tháng thứ hai dựa trên dữ liệu thực tế.
+- Hoàn thành các khóa ngắn theo lịch.
+- Thu phản hồi, case study và dữ liệu học tập.
+- Đối soát tiền đã thu, công nợ và chi phí trực tiếp.
+- Đề xuất khóa tiếp theo hoặc dự án triển khai.
+- Chốt kế hoạch tháng 2 bằng dữ liệu thật.
 
-### 4.3. KPI tháng 1
+## 6. KPI tháng đầu
 
-| Dòng sản phẩm | Chỉ tiêu cơ sở | Chỉ tiêu tốt |
-|---|---:|---:|
-| Đầu mối có thể triển khai theo mạng lưới | 2 | 4 |
-| Đơn vị được kích hoạt | 5 | 10 |
-| Sinh viên đăng ký online | 1.000 | 1.800 |
-| Sinh viên thanh toán và bắt đầu học | 800 | 1.500 |
-| Sinh viên hoàn thành | 560 | 1.050 |
-| Gói khóa sinh viên bán hoặc thử nghiệm | 1 | 2-3 |
-| Khóa trực tiếp cho giảng viên | 1 | 2-3 |
-| Khóa trực tiếp cho doanh nghiệp | 1 | 2 |
-| Người chuyển sang khóa nâng cao | 80 | 180 |
+| Dòng sản phẩm | KPI |
+|---|---:|
+| Hợp đồng khóa giảng viên đã ký và có lịch | **2** |
+| Hợp đồng khóa doanh nghiệp đã ký và có lịch | **2** |
+| Mục tiêu triển khai khóa giảng viên | **2**, báo cáo riêng khai giảng/hoàn thành |
+| Mục tiêu triển khai khóa doanh nghiệp | **2**, báo cáo riêng khai giảng/hoàn thành |
+| Sinh viên thanh toán và bắt đầu học | **200–300** |
+| Hoàn thành theo kịch bản ngân sách | **100–180** |
+| Mục tiêu hoàn thành theo vận hành | **140–210** |
+| Gói khóa sinh viên bán hoặc thử nghiệm | **Ít nhất 1** |
 
-### 4.4. Doanh thu tháng 1 theo từng dòng
+Doanh thu và dòng tiền tháng đầu sử dụng bảng tại `ke-hoach/muc-tieu-thang-1.md`. Không sử dụng lại các con số 800–1.500 sinh viên hoặc 200,6–388 triệu đồng từ phiên bản cũ.
 
-#### A. Lớp sinh viên online
+## 7. Lộ trình 12 tháng theo giai đoạn
 
-Kịch bản cơ sở:
+### Giai đoạn 1 — Tháng vận hành 1–3: kiểm chứng và tạo dòng tiền
 
-- 800 người thanh toán.
-- Học phí bình quân 220.000 đồng.
-- Tổng học phí: 176 triệu đồng.
-- Nếu chia sẻ 40%, phần dự án còn lại: 105,6 triệu đồng trước chi phí.
+- Bán và giao các khóa AI cho giảng viên và doanh nghiệp.
+- Chạy cohort sinh viên 200–300 người trước khi tăng quy mô.
+- Thử nghiệm ít nhất một cấu hình cấp quyền khóa học.
+- Hoàn thiện dashboard ký hợp đồng–thu tiền–giao khóa–công nợ.
+- Tái sử dụng SOPai, Arkon và henlich.vn; chỉ tích hợp hoặc xây phần thiếu.
 
-Kịch bản tốt:
+Điều kiện chuyển giai đoạn:
 
-- 1.500 người thanh toán.
-- Học phí bình quân 220.000 đồng.
-- Tổng học phí: 330 triệu đồng.
-- Nếu chia sẻ 40%, phần dự án còn lại: 198 triệu đồng trước chi phí.
+- Có dữ liệu thật về chi phí và tỷ lệ hoàn thành.
+- Có ít nhất một case B2B hoàn thành.
+- Quy trình thanh toán, hỗ trợ và chấm bài không vượt trần vận hành.
 
-#### B. Đào tạo trực tiếp cho giảng viên
+### Giai đoạn 2 — Tháng vận hành 4–6: lặp lại sản phẩm hiệu quả
 
-- Chỉ tiêu cơ sở: 1 khóa × 20-50 triệu đồng.
-- Chỉ tiêu tốt: 2-3 khóa × 20-50 triệu đồng.
+- Loại bỏ hoặc sửa các gói có biên thấp và tải vận hành cao.
+- Chuẩn hóa 2–3 gói giảng viên và 2–3 gói doanh nghiệp.
+- Mở Vibe Coding Foundation theo cohort nhỏ, có sản phẩm đầu ra.
+- Hoàn thiện ba cấu hình cấp quyền khóa học.
+- Xây mạng lưới chuyên gia theo hợp đồng khung và cơ chế sở hữu học liệu.
 
-#### C. Đào tạo trực tiếp cho doanh nghiệp
+### Giai đoạn 3 — Tháng vận hành 7–9: mở rộng qua mạng lưới
 
-- Chỉ tiêu cơ sở: 1 khóa × 20-100 triệu đồng.
-- Chỉ tiêu tốt: 2 khóa × 20-100 triệu đồng.
+- Nhân rộng các gói đã có case và unit economics phù hợp.
+- Dùng đầu mối mạng lưới để tạo cơ hội B2B và cấp quyền, không coi mạng lưới là doanh thu tự động.
+- Mở rộng trợ lý AI và tự động hóa hỗ trợ học viên.
+- Có thể chạy pilot STEAM hợp tác/license nếu không làm phân tán hai trục chính.
 
-#### D. Bán khóa sinh viên
+### Giai đoạn 4 — Tháng vận hành 10–12: gia hạn và đóng gói tài sản
 
-Doanh thu chưa cộng vào tổng dự báo cho đến khi chốt giá và phạm vi quyền sử dụng. KPI tháng 1 là hoàn tất ít nhất một giao dịch hoặc một thỏa thuận thử nghiệm có điều kiện thương mại rõ ràng.
+- Bán gia hạn quyền sử dụng theo năm học.
+- Chuyển khách B2B sang đào tạo định kỳ hoặc dự án triển khai.
+- Chuẩn hóa thư viện case, rubric, học liệu và portfolio.
+- Đánh giá khả năng mở thêm trục sản phẩm trong năm 2.
 
-### 4.5. Mức doanh thu tham chiếu tháng 1
+## 8. Chỉ tiêu năm đầu chưa được chốt bằng phép nhân tùy ý
 
-Dùng mức giá giữa để điều hành, không phải cam kết:
+Các con số cũ như 12.000–24.000 lượt sinh viên, 15–36 khóa giảng viên và 10–24 khóa doanh nghiệp được giữ như tham chiếu lịch sử nhưng **không còn là chỉ tiêu điều hành**.
 
-- Khóa giảng viên bình quân: 35 triệu đồng.
-- Khóa doanh nghiệp bình quân: 60 triệu đồng.
+Chỉ tiêu năm đầu chỉ được chốt sau khi có:
 
-Kịch bản cơ sở:
+1. Trần số khóa B2B đội 5 người có thể giao mỗi tháng.
+2. Tỷ lệ ký hợp đồng từ pipeline thực tế.
+3. Lịch thanh toán và tỷ lệ thu tiền đúng hạn.
+4. Unit economics của cohort sinh viên đầu tiên.
+5. Mức hoàn thiện của SOPai, Arkon và henlich.vn.
+6. Năng lực của mạng lưới chuyên gia ngoài.
+7. Ngày bắt đầu chính thức để ánh xạ mùa vụ.
 
-- Sinh viên online sau chia sẻ: 105,6 triệu đồng.
-- 1 khóa giảng viên: 35 triệu đồng.
-- 1 khóa doanh nghiệp: 60 triệu đồng.
-- Tổng tham chiếu: khoảng **200,6 triệu đồng trước chi phí**, chưa tính doanh thu bán khóa sinh viên.
+Công thức điều hành:
 
-Kịch bản tốt:
+> Số khóa có thể ghi vào kế hoạch = nhỏ nhất giữa năng lực bán, năng lực giao, chuyên gia sẵn sàng và khả năng thu tiền
 
-- Sinh viên online sau chia sẻ: 198 triệu đồng.
-- 2 khóa giảng viên: 70 triệu đồng.
-- 2 khóa doanh nghiệp: 120 triệu đồng.
-- Tổng tham chiếu: khoảng **388 triệu đồng trước chi phí**, chưa tính doanh thu bán khóa sinh viên.
+## 9. Dashboard điều hành hằng tuần
 
-## 5. Lộ trình theo từng tháng
+### B2B giảng viên và doanh nghiệp
 
-| Tháng | Trọng tâm | Sinh viên | Giảng viên | Doanh nghiệp | Nền tảng và tài sản |
-|---|---|---|---|---|---|
-| 1 | Triển khai ngay và kiểm chứng mô hình | Mở cohort online; thử bán khóa | 1-3 khóa trực tiếp | 1-2 khóa trực tiếp | Quản lý cohort, học liệu, bài tập và rubric |
-| 2 | Lặp lại mô hình hiệu quả | Mở thêm cohort; chốt 2-4 gói khóa | 2-4 khóa | 1-3 khóa | Cấp quyền khóa học theo đơn vị; báo cáo cơ bản |
-| 3 | Tăng chuyển đổi sang thực hành | AI Fluency sang Vibe Coding | 2-4 khóa chuyên sâu | 2-3 khóa theo phòng ban | Portfolio cơ bản; thư viện nội dung dùng chung |
-| 4 | Đóng gói theo học kỳ | Bán gói học kỳ; duy trì online | Chương trình theo khoa/trường | Gói đào tạo kết hợp tư vấn | Dashboard đơn vị; white-label thử nghiệm |
-| 5 | Nhân rộng đội ngũ | Mở cohort đa trường | Train the Trainer | Bắt đầu gói triển khai sau đào tạo | Course Factory phiên bản đầu |
-| 6 | Chuẩn hóa giữa kỳ | Loại khóa kém hiệu quả | Chuẩn hóa 2-3 gói chủ lực | Chuẩn hóa 2-3 gói chủ lực | Báo cáo, rubric và portfolio ổn định |
-| 7 | Mở chuỗi kỹ năng-nghề | Trải nghiệm nghề và capstone | Giảng viên tham gia cố vấn | Doanh nghiệp đưa bài toán | Skill graph cơ bản |
-| 8 | Thu nhu cầu kỹ năng | Học theo dự án | Đào tạo người hướng dẫn | Ma trận năng lực và nhu cầu thật | Cổng khai báo nhu cầu thử nghiệm |
-| 9 | Triển khai dự án doanh nghiệp | Capstone theo bài toán thật | Hướng dẫn và đánh giá | Đào tạo theo yêu cầu | Đánh giá thực hành và hồ sơ đạt chuẩn |
-| 10 | Mở chương trình nghề ngắn hạn | AI, dữ liệu, vibe coding, media | Bồi dưỡng giảng viên nghề | Đặt hàng chương trình ngắn | Chuỗi kỹ năng-nghề phiên bản đầu |
-| 11 | Bán cho học kỳ/năm tiếp theo | Gia hạn online và quyền sử dụng | Hợp đồng đào tạo định kỳ | Hợp đồng đào tạo định kỳ | Gói nền tảng và học liệu theo năm |
-| 12 | Tổng kết và mở rộng | Chuẩn hóa danh mục | Mạng lưới giảng viên nguồn | Danh mục case B2B | Báo cáo tác động và kế hoạch năm hai |
-
-## 6. Chỉ tiêu năm đầu theo từng dòng
-
-### 6.1. Sinh viên online
-
-- Kịch bản thận trọng: 12.000 lượt thanh toán.
-- Kịch bản cơ sở: 18.000 lượt thanh toán.
-- Kịch bản tăng trưởng: 24.000 lượt thanh toán.
-- Theo dõi riêng tổng học phí, phần chia sẻ, chi phí trực tiếp và phần dự án còn lại.
-
-### 6.2. Khóa sinh viên bán cho trường
-
-- Kịch bản thận trọng: 8-12 gói.
-- Kịch bản cơ sở: 15-20 gói.
-- Kịch bản tăng trưởng: 25-30 gói.
-- Doanh thu chưa dự báo cho đến khi chốt cấu trúc giá chính thức.
-
-### 6.3. Đào tạo giảng viên
-
-- Kịch bản thận trọng: 15 khóa.
-- Kịch bản cơ sở: 24 khóa.
-- Kịch bản tăng trưởng: 36 khóa.
-- Khung giá: 20-50 triệu đồng/khóa.
-
-### 6.4. Đào tạo doanh nghiệp
-
-- Kịch bản thận trọng: 10 khóa.
-- Kịch bản cơ sở: 18 khóa.
-- Kịch bản tăng trưởng: 24 khóa.
-- Khung giá: 20-100 triệu đồng/khóa.
-
-## 7. Kịch bản tài chính năm đầu chưa tính bán khóa sinh viên
-
-### Kịch bản thận trọng
-
-- Sinh viên online: 12.000 lượt × 200.000 đồng học phí × 60% phần dự án = 1,44 tỷ đồng.
-- Giảng viên: 15 khóa × 30 triệu đồng bình quân = 450 triệu đồng.
-- Doanh nghiệp: 10 khóa × 45 triệu đồng bình quân = 450 triệu đồng.
-- Tổng doanh thu tham chiếu: khoảng **2,34 tỷ đồng trước chi phí**.
-
-### Kịch bản cơ sở
-
-- Sinh viên online: 18.000 lượt × 250.000 đồng × 60% = 2,7 tỷ đồng.
-- Giảng viên: 24 khóa × 35 triệu đồng = 840 triệu đồng.
-- Doanh nghiệp: 18 khóa × 60 triệu đồng = 1,08 tỷ đồng.
-- Tổng doanh thu tham chiếu: khoảng **4,62 tỷ đồng trước chi phí**.
-
-### Kịch bản tăng trưởng
-
-- Sinh viên online: 24.000 lượt × 275.000 đồng × 60% = 3,96 tỷ đồng.
-- Giảng viên: 36 khóa × 40 triệu đồng = 1,44 tỷ đồng.
-- Doanh nghiệp: 24 khóa × 75 triệu đồng = 1,8 tỷ đồng.
-- Tổng doanh thu tham chiếu: khoảng **7,2 tỷ đồng trước chi phí**.
-
-Doanh thu từ bán khóa sinh viên, nền tảng, STEAM Lab OS và các dự án triển khai riêng sẽ được cộng thêm sau khi có cấu trúc giá được phê duyệt.
-
-## 8. Dashboard điều hành hằng tuần
+- Cơ hội đủ điều kiện.
+- Đề xuất đã gửi.
+- Hợp đồng đã ký.
+- Tổng giá trị hợp đồng.
+- Tiền ứng trước và tổng tiền đã thu.
+- Khóa đã khai giảng và hoàn thành.
+- Chi phí trực tiếp.
+- Công nợ.
+- Cơ hội gia hạn/triển khai tiếp.
 
 ### Sinh viên online
 
-- Số đăng ký, thanh toán, bắt đầu và hoàn thành.
-- Tổng học phí và phần chia sẻ.
-- Chi phí trực tiếp trên mỗi người hoàn thành.
-- Tỷ lệ chuyển đổi sang khóa tiếp theo.
+- Đăng ký, thanh toán, bắt đầu và hoàn thành.
+- Học phí thực thu và phần chia sẻ.
+- Chi phí trực tiếp và đóng góp.
+- Tải hỗ trợ và thời gian chấm bài.
+- Tỷ lệ chuyển sang chương trình nâng cao.
 
-### Khóa sinh viên bán cho trường
+### Cấp quyền khóa học
 
-- Số đề xuất đã gửi.
-- Số gói đã bán hoặc đang thử nghiệm.
-- Số người học được kích hoạt.
-- Phạm vi quyền sử dụng và thời hạn hợp đồng.
+- Đề xuất đã gửi.
+- Gói đã ký/thử nghiệm.
+- Số người học được cấp quyền.
+- Tiền đã thu.
+- Chi phí onboarding, hỗ trợ và nền tảng.
+- Tỷ lệ gia hạn.
 
-### Giảng viên
+## 10. Các dữ liệu phải thu trước khi dựng lại dòng tiền 12 tháng
 
-- Số khóa đã chốt và đã triển khai.
-- Giá trị hợp đồng.
-- Số sản phẩm hoặc bộ công cụ hoàn thành.
-- Khả năng mở rộng sang chương trình tiếp theo.
+1. Chi phí thật giao một khóa giảng viên.
+2. Chi phí thật giao một khóa doanh nghiệp.
+3. Điều khoản ứng trước và thời gian thu công nợ.
+4. Tỷ lệ hoàn thành cohort sinh viên đầu tiên.
+5. Chi phí giảng viên, trợ giảng, nền tảng và hỗ trợ thật.
+6. Tỷ lệ chuyển đổi sang vibe coding/thực hành.
+7. Giá và chi phí của ba cấu hình cấp quyền khóa học.
+8. Số khóa B2B tối đa có thể giao mỗi tháng.
 
-### Doanh nghiệp
+## 11. Kết luận
 
-- Số cuộc khảo sát nhu cầu.
-- Số khóa đã ký và giá trị hợp đồng.
-- Số workflow, agent hoặc kế hoạch áp dụng được bàn giao.
-- Tỷ lệ chuyển sang dự án triển khai.
+Năm đầu không triển khai đồng thời toàn bộ tầm nhìn hệ sinh thái. Dự án tập trung vào:
 
-## 9. Các điểm phải kiểm chứng trong tháng đầu
+- B2B giảng viên và doanh nghiệp để tạo dòng tiền.
+- Sinh viên online quy mô kiểm soát để tạo dữ liệu và phễu.
+- Cấp quyền khóa học để tạo tài sản có khả năng nhân rộng.
+- Vibe coding để tạo sản phẩm đầu ra và dòng bán lẻ có giá trị cao hơn.
+- Nền tảng tối thiểu dựa trên tài sản đã có và nhu cầu lớp học thật.
 
-1. Học phí nào phù hợp nhất với lớp sinh viên online?
-2. Tỷ lệ đăng ký, thanh toán, bắt đầu và hoàn thành là bao nhiêu?
-3. Trường muốn mua khóa theo học kỳ, theo năm hay theo số người học?
-4. Phạm vi quyền sử dụng nào giúp gói khóa sinh viên dễ bán nhưng vẫn bảo vệ tài sản trí tuệ?
-5. Gói giảng viên nào dễ chốt nhất trong khung 20-50 triệu đồng?
-6. Gói doanh nghiệp nào tạo giá trị rõ nhất trong khung 20-100 triệu đồng?
-7. Bao nhiêu phần trăm khách hàng tiếp tục mua khóa hoặc dự án tiếp theo?
-8. Những tính năng nền tảng nào thực sự cần thiết?
-
-## 10. Kết luận
-
-Tháng đầu không được đánh giá chỉ bằng số người học hoặc số đơn vị tiếp cận. Cần đồng thời tạo ra:
-
-- Quy mô từ lớp sinh viên online.
-- Tài sản trí tuệ và doanh thu định kỳ từ bán quyền sử dụng khóa học.
-- Dòng tiền giá trị cao từ đào tạo trực tiếp cho giảng viên.
-- Dòng tiền B2B và cơ hội triển khai từ doanh nghiệp.
-
-Mô hình này cho phép dự án vừa tăng quy mô người học, vừa có doanh thu trực tiếp, vừa tích lũy học liệu, dữ liệu và quan hệ để xây nền tảng đào tạo nghề dài hạn.
+Mọi bước mở rộng chỉ được thực hiện sau khi có số liệu thật về unit economics, dòng tiền và trần vận hành.
