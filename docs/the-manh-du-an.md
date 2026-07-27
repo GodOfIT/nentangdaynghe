@@ -1,100 +1,177 @@
 # Thế mạnh và nguyên tắc lập kế hoạch dự án
 
-Tài liệu này giúp các nhóm triển khai và các hệ thống AI hiểu đúng bối cảnh của dự án khi xây kế hoạch kinh doanh, sản phẩm và vận hành.
+Tài liệu này giúp các nhóm triển khai và các hệ thống AI hiểu đúng bối cảnh của dự án khi xây dựng kế hoạch kinh doanh, sản phẩm, doanh thu và vận hành.
 
 ## 1. Dự án không bắt đầu từ con số 0
 
-Dự án đã có sẵn năng lực xây dựng và triển khai các chương trình đào tạo về:
+Dự án đã có năng lực xây dựng và triển khai các chương trình về:
 
 - AI cho giáo viên, giảng viên và cán bộ quản lý.
 - AI cho học sinh, sinh viên và người lao động.
 - Vibe coding, xây website, ứng dụng, workflow và AI agent.
 - Ứng dụng AI trong giảng dạy, nghiên cứu, sản xuất học liệu và quản lý công việc.
 - Thiết kế chương trình đào tạo theo hướng có sản phẩm đầu ra.
+- Phát triển nền tảng, công cụ và hệ thống hỗ trợ đào tạo.
 
-Vì vậy, kế hoạch kinh doanh không được giả định rằng tháng đầu tiên chỉ dùng để nghiên cứu hoặc chuẩn bị. Các khóa học có thể bắt đầu tuyển sinh và triển khai từ tuần thứ hai.
+Vì vậy, tháng đầu tiên không chỉ dành cho nghiên cứu hoặc chuẩn bị. Các khóa học có thể bắt đầu tuyển sinh trong tuần đầu và triển khai từ tuần thứ hai.
 
-## 2. Có khả năng triển khai theo mạng lưới thay vì bán lẻ từng lớp
+## 2. Có khả năng triển khai theo mạng lưới
 
-Dự án có lợi thế tiếp cận và phối hợp với mạng lưới cơ sở giáo dục, đối tác đào tạo và các bên liên quan. Khi lập kế hoạch cần ưu tiên:
+Dự án có lợi thế làm việc với các đầu mối có khả năng tập hợp nhiều trường, khoa, cơ sở đào tạo hoặc nhóm người học. Khi lập kế hoạch cần ưu tiên:
 
-- Làm việc với đầu mối có khả năng tập hợp nhiều trường hoặc nhiều đơn vị.
+- Làm việc với đầu mối có khả năng kích hoạt nhiều đơn vị.
 - Triển khai theo cụm trường, hệ thống trường, địa phương hoặc nhóm đối tác.
-- Mỗi thỏa thuận có thể tạo ra nhiều cohort và số lượng người học lớn.
-- Không dùng mô hình bán hàng B2B thông thường với giả định phải tiếp cận hàng trăm đơn vị riêng lẻ để có vài lớp học.
+- Một thỏa thuận có thể tạo ra nhiều cohort và số lượng người học lớn.
+- Không áp dụng máy móc mô hình bán hàng B2B phải tiếp cận hàng trăm đơn vị riêng lẻ.
 
-Số đơn vị tiếp cận không phải KPI quan trọng nhất. KPI quan trọng hơn là số đầu mối hệ thống, số đơn vị được kích hoạt, số cohort mở được và tổng số người học thực tế.
+Số đơn vị tiếp cận không phải KPI quan trọng nhất. KPI quan trọng hơn là số đầu mối đã chốt, số đơn vị được kích hoạt, số cohort mở được và số người học thực tế.
 
-## 3. Có thể tổ chức lớp quy mô lớn ngay từ giai đoạn đầu
+## 3. Ba dòng sản phẩm có mô hình thương mại khác nhau
 
-Các khóa phổ cập AI, AI cho sinh viên và AI cho giáo viên có thể tổ chức theo các hình thức:
+Không được dùng một mô hình giá và một công thức doanh thu cho tất cả đối tượng.
+
+### 3.1. Đào tạo AI cho giảng viên và cán bộ giáo dục
+
+Đặc điểm:
+
+- Chủ yếu đào tạo trực tiếp tại trường hoặc theo hình thức kết hợp.
+- Nội dung cần điều chỉnh theo chuyên ngành, môn học và yêu cầu của đơn vị.
+- Quy mô thường nhỏ hơn lớp sinh viên online nhưng giá trị mỗi hợp đồng cao hơn.
+- Có giảng viên chính, hoạt động thực hành, hỗ trợ xây sản phẩm và đánh giá đầu ra.
+- Có thể kèm tư vấn chính sách sử dụng AI, xây trợ lý môn học, skill, agent hoặc kho tri thức.
+
+Cách tính doanh thu:
+
+> Doanh thu = giá trị gói đào tạo trực tiếp theo cohort hoặc theo đơn vị
+
+Không tính dòng sản phẩm này bằng học phí phổ cập trên từng người học. Giá cần được xác định theo số buổi, số người, mức độ tùy chỉnh, địa điểm và sản phẩm phải bàn giao.
+
+### 3.2. Đào tạo AI cho doanh nghiệp
+
+Đặc điểm:
+
+- Chủ yếu là đào tạo trực tiếp hoặc đào tạo kết hợp tư vấn triển khai.
+- Nội dung phải bám vào phòng ban, dữ liệu, quy trình và bài toán thật.
+- Giá trị không chỉ nằm ở giờ giảng mà còn ở khảo sát nhu cầu, thiết kế tình huống, xây workflow, agent, tài liệu và hỗ trợ áp dụng sau khóa học.
+- Quy mô học viên có thể không lớn nhưng giá trị hợp đồng cao.
+
+Cách tính doanh thu:
+
+> Doanh thu = phí khảo sát và thiết kế + phí đào tạo trực tiếp + phí triển khai hoặc hỗ trợ sau đào tạo
+
+Không dùng mô hình học phí thấp trên từng học viên để lập kế hoạch cho doanh nghiệp.
+
+### 3.3. Đào tạo AI cho sinh viên
+
+Có hai mô hình chính.
+
+#### Mô hình A: Bán khóa học cho trường hoặc đối tác
+
+Dự án bàn giao một gói có thể gồm:
+
+- Chương trình và đề cương.
+- Video, slide, học liệu và bài tập.
+- Rubric và ngân hàng câu hỏi.
+- Hướng dẫn giảng viên hoặc điều phối viên.
+- Quyền sử dụng trong phạm vi, thời hạn và số lượng người học đã thỏa thuận.
+- Tùy chọn white-label, đào tạo giảng viên nguồn hoặc báo cáo kết quả.
+
+Cách tính doanh thu:
+
+> Doanh thu = phí quyền sử dụng hoặc phí chuyển giao gói khóa học + các dịch vụ bổ sung
+
+Ưu tiên bán quyền sử dụng có thời hạn thay vì chuyển toàn bộ quyền sở hữu trí tuệ, trừ khi có thỏa thuận riêng với mức giá phù hợp.
+
+#### Mô hình B: Dự án tự triển khai lớp online
+
+Dự án trực tiếp tổ chức:
+
+- Tuyển sinh hoặc nhận danh sách từ trường.
+- Thu học phí.
+- Tổ chức lớp trực tuyến.
+- Quản lý học liệu, điểm danh, bài tập và hỗ trợ.
+- Thu sản phẩm, đánh giá và cấp xác nhận hoàn thành.
+
+Cách tính doanh thu:
+
+> Tổng học phí = số người đã thanh toán × học phí thực thu bình quân
+
+> Doanh thu dự án = tổng học phí - phần chia sẻ cho trường hoặc đối tác - các khoản hoàn trả
+
+Mô hình này có thể đạt quy mô lớn nhưng phải kiểm soát tỷ lệ tham gia, hoàn thành, chi phí hỗ trợ và chất lượng đầu ra.
+
+### 3.4. Mô hình kết hợp
+
+Một trường có thể mua quyền sử dụng khóa học, đồng thời thuê dự án:
+
+- Giảng một số buổi trực tiếp.
+- Tổ chức buổi khai giảng hoặc tổng kết.
+- Đào tạo giảng viên nguồn.
+- Chấm sản phẩm cuối khóa.
+- Cung cấp nền tảng và báo cáo.
+
+Đây thường là mô hình phù hợp khi trường muốn chủ động vận hành nhưng vẫn cần chuyên gia và hệ thống hỗ trợ.
+
+## 4. Có thể tổ chức lớp quy mô lớn ngay từ giai đoạn đầu
+
+Các khóa dành cho sinh viên và người học không chuyên có thể tổ chức dưới các hình thức:
 
 - Lớp trực tuyến quy mô lớn.
-- Lớp trực tiếp theo trường hoặc cụm trường.
-- Mô hình kết hợp nội dung chung trực tuyến với trợ giảng hoặc giảng viên nguồn tại từng đơn vị.
 - Cohort dùng chung cho nhiều trường.
+- Nội dung chung học trực tuyến, thực hành được hỗ trợ bởi trợ giảng hoặc điều phối viên.
+- Trường mua khóa học và tự tổ chức theo hướng dẫn.
 
-Khi lập KPI tháng đầu tiên, cần ưu tiên mục tiêu hàng trăm đến hàng nghìn người học thay vì chỉ 150–300 người.
+Khi lập KPI tháng đầu, cần ưu tiên hàng trăm đến hàng nghìn sinh viên, đồng thời tách riêng số người được kích hoạt qua khóa bán trọn gói và số người thực sự tham gia lớp online do dự án vận hành.
 
-## 4. Có thể bỏ qua workshop bán hàng nếu đã có đầu mối triển khai
+## 5. Có thể bỏ qua workshop bán hàng
 
-Workshop chỉ là một công cụ tạo nhu cầu, không phải bước bắt buộc. Nếu đã có đầu mối, danh sách người học hoặc đơn vị sẵn sàng phối hợp thì nên:
+Workshop chỉ là công cụ tạo nhu cầu, không phải bước bắt buộc. Nếu đã có đầu mối hoặc đơn vị sẵn sàng phối hợp thì nên:
 
-1. Chốt chương trình và lịch học trong tuần đầu.
-2. Mở đăng ký ngay.
+1. Chốt chương trình, mô hình thương mại và lịch học trong tuần đầu.
+2. Mở đăng ký hoặc bàn giao khóa học ngay.
 3. Bắt đầu đào tạo từ tuần thứ hai.
-4. Thu dữ liệu, sản phẩm và phản hồi ngay trong tháng đầu.
+4. Thu dữ liệu, sản phẩm và phản hồi trong tháng đầu.
 
-Không nên dành cả tháng đầu để tổ chức hội thảo, demo hoặc gửi hàng chục đề xuất nếu các kênh triển khai trực tiếp đã sẵn có.
+Không nên dành cả tháng đầu để tổ chức hội thảo hoặc demo nếu đã có kênh triển khai trực tiếp.
 
-## 5. Mức doanh thu phải được tính từ số người học và cơ chế thanh toán thực tế
+## 6. Doanh thu phải được tính theo từng dòng sản phẩm
 
-Không được suy ngược doanh thu từ một mức giá hợp đồng B2B giả định. Cần tính theo công thức:
+Mỗi kế hoạch tài chính phải tách tối thiểu bốn dòng:
 
-> Doanh thu = số người học trả phí × học phí thực thu trên mỗi người
+1. Học phí từ lớp sinh viên online do dự án vận hành.
+2. Doanh thu bán quyền sử dụng hoặc chuyển giao khóa sinh viên.
+3. Doanh thu đào tạo trực tiếp cho giảng viên và cán bộ giáo dục.
+4. Doanh thu đào tạo, tư vấn và triển khai cho doanh nghiệp.
 
-Nếu trường hoặc đối tác được chia sẻ doanh thu thì doanh thu thuần của dự án phải trừ phần chia sẻ đó. Ngoài ra cần phân biệt:
+Không được lấy số người học của sinh viên để suy ra doanh thu của các hợp đồng B2B, và cũng không được lấy giá hợp đồng B2B để áp cho lớp sinh viên đại trà.
 
-- Tổng học phí thu từ người học.
-- Phần chia sẻ cho trường hoặc đối tác.
-- Doanh thu còn lại của dự án.
-- Chi phí giảng dạy, vận hành và nền tảng.
-- Lợi nhuận đóng góp của từng cohort.
+## 7. Giá thấp chỉ áp dụng cho dòng sản phẩm cần quy mô
 
-Các hợp đồng đào tạo trọn gói chỉ được sử dụng khi có căn cứ rõ ràng về ngân sách và phạm vi triển khai.
+Học phí dễ tiếp cận có thể được dùng cho lớp sinh viên online nhằm:
 
-## 6. Giá thấp có thể là lợi thế tăng trưởng
-
-Trong giai đoạn mở rộng mạng lưới, dự án có thể dùng mức học phí dễ tiếp cận để đạt quy mô lớn. Mục tiêu không chỉ là tối đa hóa doanh thu trên từng học viên mà còn là:
-
-- Phủ nhanh số lượng người học.
-- Tạo dữ liệu năng lực và sản phẩm đầu ra.
+- Phủ nhanh người học.
+- Tạo dữ liệu năng lực.
 - Mở rộng quan hệ với trường.
-- Tạo nguồn học viên cho các chương trình nâng cao.
-- Chuyển đổi một phần người học sang các khóa chuyên sâu, STEAM, vibe coding và đào tạo nghề.
+- Tạo nguồn học viên cho chương trình nâng cao.
 
-Mỗi kế hoạch phải có ít nhất ba tầng sản phẩm:
+Tuy nhiên, không được dùng nguyên tắc giá thấp cho đào tạo trực tiếp dành cho giảng viên hoặc doanh nghiệp vì hai dòng này đòi hỏi mức độ tùy chỉnh, chuyên gia và hỗ trợ cao hơn.
 
-1. Chương trình phổ cập hoặc nhập môn có học phí thấp.
-2. Chương trình thực hành có sản phẩm đầu ra.
-3. Chương trình chuyên sâu hoặc đào tạo theo nhu cầu đơn vị, doanh nghiệp.
+## 8. Nội dung và nền tảng có thể được sản xuất nhanh nhờ AI
 
-## 7. Nội dung và nền tảng có thể được sản xuất nhanh nhờ AI
-
-Dự án có năng lực sử dụng AI để tăng tốc:
+Dự án có thể dùng AI để tăng tốc:
 
 - Thiết kế khung chương trình.
 - Sản xuất học liệu.
 - Xây bài tập và rubric.
 - Tạo video, mô phỏng và nội dung tự học.
-- Xây công cụ, skill, agent và workflow hỗ trợ đào tạo.
+- Xây skill, agent, workflow và công cụ hỗ trợ đào tạo.
 - Cập nhật chương trình dựa trên dữ liệu lớp học.
 
-Vì vậy, kế hoạch không nên giả định thời gian phát triển nội dung dài như mô hình đào tạo truyền thống. Tuy nhiên, mọi chương trình vẫn phải có chuyên gia duyệt, thử nghiệm và kiểm soát chất lượng.
+Mọi chương trình vẫn cần chuyên gia duyệt, thử nghiệm và kiểm soát chất lượng.
 
-## 8. Lợi thế của người sáng lập và đội ngũ
+## 9. Lợi thế của người sáng lập và đội ngũ
 
-Dự án kết hợp được các năng lực thường nằm ở nhiều tổ chức khác nhau:
+Dự án kết hợp được:
 
 - Chuyên môn giáo dục và giảng dạy đại học.
 - Công nghệ phần mềm, AI và tự động hóa.
@@ -103,67 +180,84 @@ Dự án kết hợp được các năng lực thường nằm ở nhiều tổ 
 - Khả năng làm việc với trường học và doanh nghiệp.
 - Khả năng biến nội dung đào tạo thành sản phẩm vận hành được.
 
-Đây là lợi thế giúp dự án vừa đào tạo, vừa xây nền tảng, vừa tạo sản phẩm đầu ra cho người học.
+Đây là lợi thế giúp dự án vừa đào tạo trực tiếp, vừa bán sản phẩm khóa học, vừa vận hành lớp online và vừa phát triển nền tảng.
 
-## 9. Tháng đầu tiên phải tạo đồng thời bốn loại kết quả
+## 10. Tháng đầu tiên phải tạo đồng thời năm loại kết quả
 
-Kế hoạch tháng đầu tiên phải tạo ra:
+1. **Người học thật:** lớp sinh viên online bắt đầu từ tuần thứ hai.
+2. **Hợp đồng thật:** khóa bán cho trường và gói đào tạo trực tiếp được ký hoặc triển khai.
+3. **Doanh thu thật:** tính đúng theo từng mô hình thương mại.
+4. **Dữ liệu thật:** đầu vào, tỷ lệ hoàn thành, sản phẩm và nhu cầu học tiếp.
+5. **Tài sản tái sử dụng:** học liệu, rubric, quy trình, case study và dữ liệu cho nền tảng.
 
-1. **Người học thật:** các cohort bắt đầu từ tuần thứ hai.
-2. **Doanh thu thật:** dựa trên số người học và học phí thực thu.
-3. **Dữ liệu thật:** đầu vào, mức độ hoàn thành, sản phẩm, phản hồi và nhu cầu học tiếp.
-4. **Tài sản có thể tái sử dụng:** học liệu, rubric, quy trình vận hành, case study và dữ liệu cho nền tảng.
+## 11. Nguyên tắc lập KPI
 
-Nếu một hoạt động không đóng góp vào ít nhất một trong bốn kết quả trên thì không nên ưu tiên trong tháng đầu.
+KPI phải tách theo dòng sản phẩm.
 
-## 10. Nguyên tắc lập KPI
+### Sinh viên online
 
-KPI phải được xây từ năng lực triển khai thực tế, không sao chép mô hình bán hàng của một công ty đào tạo nhỏ.
+- Số người đăng ký.
+- Số người thanh toán.
+- Số người bắt đầu học.
+- Số người hoàn thành.
+- Học phí thực thu.
+- Chi phí trên mỗi người hoàn thành.
 
-Thứ tự KPI nên là:
+### Khóa sinh viên bán cho trường
 
-1. Số đầu mối hoặc mạng lưới đã chốt triển khai.
-2. Số đơn vị được kích hoạt qua các đầu mối đó.
-3. Số cohort mở được.
-4. Số người đăng ký.
-5. Số người bắt đầu học.
-6. Số người hoàn thành.
-7. Tổng học phí thực thu.
-8. Doanh thu thuần sau chia sẻ.
-9. Chi phí trên mỗi người học.
-10. Tỷ lệ học viên chuyển sang chương trình tiếp theo.
+- Số gói đã bán.
+- Số trường được cấp quyền sử dụng.
+- Số người học được kích hoạt.
+- Phạm vi và thời hạn quyền sử dụng.
+- Doanh thu gói và chi phí bàn giao.
 
-Không đặt KPI tiếp cận quá nhiều đơn vị nếu số lượng người học mục tiêu thấp. Mỗi chỉ tiêu doanh thu phải có phép tính ngược từ số người học, học phí và tỷ lệ thu tiền.
+### Đào tạo trực tiếp cho giảng viên
 
-## 11. Nguyên tắc phát triển nền tảng
+- Số hợp đồng hoặc cohort.
+- Giá trị hợp đồng.
+- Số người tham gia.
+- Số sản phẩm hoặc bộ công cụ hoàn thành.
+- Mức độ hài lòng và khả năng mở rộng.
 
-Trong ba tháng đầu, không xây toàn bộ hệ sinh thái. Chỉ ưu tiên các tính năng phục vụ lớp học thật:
+### Đào tạo doanh nghiệp
 
-- Tổ chức và quản lý cohort.
+- Số cuộc khảo sát nhu cầu.
+- Số hợp đồng ký.
+- Giá trị hợp đồng.
+- Số quy trình, workflow hoặc agent được áp dụng.
+- Tỷ lệ tiếp tục sang giai đoạn triển khai.
+
+## 12. Nguyên tắc phát triển nền tảng
+
+Trong ba tháng đầu chỉ ưu tiên:
+
+- Tổ chức và quản lý cohort online.
 - Quản lý người học.
 - Học liệu và nhiệm vụ.
 - Thu sản phẩm đầu ra.
 - Rubric và đánh giá.
 - Portfolio cơ bản.
-- Báo cáo cho đơn vị triển khai.
+- Cấp quyền sử dụng khóa học cho từng đơn vị.
+- Báo cáo số người học và tiến độ cho trường.
 
-Những phân hệ như thị trường việc làm, đặt hàng nhân lực và ghép ứng viên chỉ phát triển sâu khi đã có người học, hồ sơ năng lực và nhu cầu thật từ doanh nghiệp.
+Các phân hệ việc làm và đặt hàng nhân lực chỉ phát triển sâu khi đã có hồ sơ năng lực và nhu cầu thật.
 
-## 12. Nguyên tắc bảo mật bối cảnh chiến lược
+## 13. Nguyên tắc bảo mật bối cảnh chiến lược
 
-Một số lợi thế về quan hệ, cơ chế phối hợp và điều kiện triển khai thuộc bối cảnh nội bộ. Khi viết tài liệu công khai, proposal hoặc nội dung truyền thông:
+Một số lợi thế về quan hệ, cơ chế phối hợp và điều kiện triển khai thuộc bối cảnh nội bộ. Khi viết tài liệu công khai:
 
-- Không công bố các thông tin nội bộ chưa được cho phép.
+- Không công bố thông tin nội bộ chưa được cho phép.
 - Chỉ mô tả ở mức có khả năng phối hợp theo mạng lưới và triển khai quy mô lớn.
-- Không sử dụng tên cơ quan, cá nhân hoặc cam kết hỗ trợ nếu chưa có văn bản và chưa được phép công bố.
+- Không sử dụng tên cơ quan, cá nhân hoặc cam kết hỗ trợ nếu chưa được phép công bố.
 
-## 13. Kết luận dành cho các hệ thống AI lập kế hoạch
+## 14. Kết luận dành cho các hệ thống AI
 
-Khi xây kế hoạch cho dự án này, phải mặc định rằng:
+Khi lập kế hoạch cho dự án này phải mặc định rằng:
 
 - Có thể bắt đầu đào tạo từ tuần thứ hai.
-- Không bắt buộc phải tổ chức workshop trước khi mở lớp.
+- Không bắt buộc tổ chức workshop trước khi mở lớp.
+- Đào tạo giảng viên và doanh nghiệp là sản phẩm trực tiếp, tùy chỉnh và có giá trị cao.
+- Sinh viên có hai mô hình chính: bán quyền sử dụng khóa học hoặc dự án tự vận hành lớp online.
+- Không dùng chung một công thức doanh thu cho tất cả đối tượng.
 - Có khả năng triển khai theo mạng lưới với quy mô người học lớn.
-- Giá và doanh thu phải tính từ số người học thực tế.
-- Khóa AI là sản phẩm mở đầu, nhưng dữ liệu và hồ sơ năng lực mới là tài sản dài hạn.
-- Nền tảng được xây từ nhu cầu lớp học thật, không xây đầy đủ trước rồi mới đi bán.
+- Nền tảng được xây từ nhu cầu lớp học thật.
