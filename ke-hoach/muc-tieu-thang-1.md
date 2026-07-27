@@ -39,32 +39,35 @@ Doanh thu bán quyền sử dụng khóa học chưa được cộng vào kế h
 
 Với lớp sinh viên online, giả định quản trị tháng đầu:
 
-- Học phí bình quân: 220.000 đồng/người.
-- Phần dự án được hưởng sau chia sẻ: 60%.
+- Mục tiêu thực tế: **200-300 sinh viên thanh toán và bắt đầu học**.
+- Học phí bình quân: **220.000 đồng/người**.
+- Phần dự án được hưởng sau chia sẻ: **60%**.
+- Mục tiêu hoàn thành: khoảng **140-225 sinh viên**, tương ứng tỷ lệ hoàn thành 70-75%.
 
-| Chỉ tiêu | Kịch bản cơ sở | Kịch bản tốt |
+| Chỉ tiêu | Mức 200 sinh viên | Mức 300 sinh viên |
 |---|---:|---:|
-| Sinh viên thanh toán và bắt đầu học | 800 | 1.500 |
-| Tổng học phí | 176 triệu đồng | 330 triệu đồng |
-| Phần dự án sau chia sẻ | 105,6 triệu đồng | 198 triệu đồng |
+| Sinh viên thanh toán và bắt đầu học | 200 | 300 |
+| Tổng học phí | 44 triệu đồng | 66 triệu đồng |
+| Phần dự án sau chia sẻ | 26,4 triệu đồng | 39,6 triệu đồng |
+| Sinh viên hoàn thành dự kiến | 140-150 | 210-225 |
 
 ## 3. Tổng doanh thu tham chiếu tháng 1
 
-### Kịch bản cơ sở về số sinh viên
+### Trường hợp có 200 sinh viên online
 
-- Sinh viên online sau chia sẻ: **105,6 triệu đồng**.
+- Sinh viên online sau chia sẻ: **26,4 triệu đồng**.
 - 2 khóa giảng viên: **40-100 triệu đồng**.
 - 2 khóa doanh nghiệp: **40-200 triệu đồng**.
-- Tổng theo toàn bộ khung giá: **185,6-405,6 triệu đồng trước chi phí**.
-- Tổng theo mức giá quản trị tham chiếu: **295,6 triệu đồng trước chi phí**.
+- Tổng theo toàn bộ khung giá: **106,4-326,4 triệu đồng trước chi phí**.
+- Tổng theo mức giá quản trị tham chiếu: **216,4 triệu đồng trước chi phí**.
 
-### Kịch bản tốt về số sinh viên
+### Trường hợp có 300 sinh viên online
 
-- Sinh viên online sau chia sẻ: **198 triệu đồng**.
+- Sinh viên online sau chia sẻ: **39,6 triệu đồng**.
 - 2 khóa giảng viên: **40-100 triệu đồng**.
 - 2 khóa doanh nghiệp: **40-200 triệu đồng**.
-- Tổng theo toàn bộ khung giá: **278-498 triệu đồng trước chi phí**.
-- Tổng theo mức giá quản trị tham chiếu: **388 triệu đồng trước chi phí**.
+- Tổng theo toàn bộ khung giá: **119,6-339,6 triệu đồng trước chi phí**.
+- Tổng theo mức giá quản trị tham chiếu: **229,6 triệu đồng trước chi phí**.
 
 Các con số trên chưa tính doanh thu bán quyền sử dụng khóa sinh viên và chưa phải lợi nhuận.
 
@@ -74,14 +77,16 @@ Các con số trên chưa tính doanh thu bán quyền sử dụng khóa sinh vi
 |---|---:|
 | Khóa trực tiếp cho giảng viên | **2 khóa** |
 | Khóa trực tiếp cho doanh nghiệp | **2 khóa** |
-| Sinh viên thanh toán và học online | **800-1.500 người** |
+| Sinh viên thanh toán và học online | **200-300 người** |
+| Sinh viên hoàn thành | **140-225 người** |
 | Gói khóa sinh viên bán hoặc thử nghiệm | **Ít nhất 1 gói** |
 | Thời điểm bắt đầu đào tạo | **Từ tuần thứ hai** |
 
 ## 5. Nguyên tắc đánh giá
 
 - Hai khóa giảng viên và hai khóa doanh nghiệp là **mục tiêu cơ sở**, không phải chỉ tiêu tốt.
+- Mục tiêu 200-300 sinh viên phù hợp với tháng đầu nhằm kiểm chứng vận hành, học phí, tỷ lệ tham gia và chất lượng trước khi tăng quy mô.
 - Không đánh đồng số khóa B2B với số cohort sinh viên online.
 - Doanh thu từng dòng phải được theo dõi riêng.
 - Doanh thu bán quyền sử dụng khóa sinh viên chỉ được ghi nhận khi đã có giá và điều kiện thương mại rõ ràng.
-- Cuối tháng phải đánh giá số khóa đã ký, số khóa đã triển khai, số tiền đã thu và số hợp đồng có khả năng mở rộng.
+- Cuối tháng phải đánh giá số khóa đã ký, số khóa đã triển khai, số tiền đã thu, tỷ lệ hoàn thành và số hợp đồng có khả năng mở rộng.
