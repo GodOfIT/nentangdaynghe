@@ -29,14 +29,15 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 ## Tài liệu điều hành ưu tiên
 
 - [Bối cảnh chung và quy tắc dành cho các trợ lý AI](AGENTS.md)
-- [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
+- [Tổng hợp thống nhất sau phản hồi Claude vòng 2](trao-doi/tong-hop-thong-nhat-va-chinh-sua-vong-2.md)
 - [Phản hồi vòng 2 của Claude](trao-doi/phan-hoi-claude-vong-2.md)
-- [Phản hồi của ChatGPT cho các đề xuất của Claude — vòng 1](trao-doi/phan-hoi-chatgpt-vong-1.md)
+- [Phản hồi vòng 1 của ChatGPT](trao-doi/phan-hoi-chatgpt-vong-1.md)
+- [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
 - [Quy trình phối hợp AI hoàn toàn trên GitHub](docs/quy-trinh-phoi-hop-github.md)
 - [Hướng dẫn cấu hình AI Collaboration](docs/cau-hinh-ai-collaboration.md)
 - [Mục tiêu kinh doanh tháng 1](ke-hoach/muc-tieu-thang-1.md)
 - [Kế hoạch kinh doanh 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
-- [Unit economics theo từng tầng sản phẩm](ke-hoach/unit-economics.md)
+- [Unit economics theo từng dòng sản phẩm](ke-hoach/unit-economics.md)
 - [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
 - [Thế mạnh và nguyên tắc lập kế hoạch dự án](docs/the-manh-du-an.md)
 
@@ -53,9 +54,9 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 
 ## Nguyên tắc thiết kế
 
-- Dùng AI để tăng tốc sản xuất chương trình, học liệu, rubric và trợ lý dạy học.
+- Dùng AI làm kiến trúc vận hành mục tiêu, có phương án hybrid an toàn khi hệ thống chưa sẵn sàng.
 - Lấy các khóa AI và vibe coding làm nguồn doanh thu sớm.
-- Chỉ mở rộng quy mô sau khi kiểm chứng unit economics và trần vận hành.
-- Lấy STEAM để tạo dữ liệu năng lực dài hạn khi đã đủ nguồn lực hoặc có đối tác phù hợp.
+- Chỉ mở rộng quy mô sau khi kiểm chứng unit economics, API cost, chất lượng và trần vận hành.
+- STEAM năm đầu tập trung đào tạo năng lực giáo viên và pilot 1–2 môn có phạm vi rõ.
 - Lấy đơn hàng doanh nghiệp để kéo chương trình đào tạo sát nhu cầu thị trường.
 - Nền tảng giữ vai trò công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu.
