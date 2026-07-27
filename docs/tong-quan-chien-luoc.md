@@ -1,44 +1,43 @@
-# Tong quan chien luoc
+# Tổng quan chiến lược
 
-## Boi canh
+## Bối cảnh
 
-Nen tang day nghe truc tuyen duoc thiet ke trong boi canh toc do san xuat noi dung, hoc lieu va ung dung da thay doi nho AI. Vi vay, ke hoach khong nen di theo mo hinh "thu mot mon, mot nghe, vai truong roi cho danh gia". Huong phu hop hon la trien khai nhieu dong san pham song song, vua tao doanh thu som vua xay du lieu nang luc va mang luoi truong.
+Nền tảng dạy nghề trực tuyến được thiết kế trong bối cảnh tốc độ sản xuất nội dung, học liệu và ứng dụng đã thay đổi mạnh nhờ AI. Vì vậy, kế hoạch không nên đi theo mô hình “thử một môn, một nghề, triển khai tại vài trường rồi chờ đánh giá”. Hướng phù hợp hơn là triển khai đồng thời nhiều dòng sản phẩm, vừa tạo doanh thu sớm, vừa xây dựng dữ liệu năng lực và mạng lưới trường học.
 
-## Dinh vi nen tang
+## Định vị nền tảng
 
-Nen tang la he sinh thai ket noi:
+Nền tảng là hệ sinh thái kết nối:
 
-- Truong pho thong.
-- Trung tam STEAM.
-- Truong trung cap, cao dang, dai hoc.
-- Giao vien va giang vien.
-- Hoc sinh, sinh vien va nguoi lao dong.
-- Doanh nghiep co nhu cau nhan luc.
-- Don vi dich vu viec lam va don vi duoc cap phep dua nguoi lao dong di lam viec o nuoc ngoai.
+- Trường phổ thông.
+- Trung tâm STEAM.
+- Trường trung cấp, cao đẳng và đại học.
+- Giáo viên và giảng viên.
+- Học sinh, sinh viên và người lao động.
+- Doanh nghiệp có nhu cầu nhân lực.
+- Đơn vị dịch vụ việc làm và đơn vị được cấp phép đưa người lao động đi làm việc ở nước ngoài.
 
-Nen tang nen dung o vi tri:
+Nền tảng nên giữ vị trí:
 
-> Cong nghe + dao tao + danh gia nang luc + dieu phoi du lieu.
+> Công nghệ + đào tạo + đánh giá năng lực + điều phối dữ liệu.
 
-Khong nen tu nhan la doanh nghiep xuat khau lao dong hoac truc tiep cung ung viec lam neu chua co giay phep phu hop.
+Nền tảng không nên tự nhận là doanh nghiệp xuất khẩu lao động hoặc trực tiếp cung ứng việc làm khi chưa có giấy phép phù hợp.
 
-## Mo hinh tang truong
+## Mô hình tăng trưởng
 
-Co hai dong tang truong chinh:
+Có hai dòng tăng trưởng chính:
 
-1. Dong doanh thu som: cac khoa ung dung AI, vibe coding, AI cho giao vien, AI cho giang vien va AI cho doanh nghiep.
-2. Dong he sinh thai dai han: STEAM, huong nghiep, dao tao nghe, ho so nang luc va dat hang nhan luc.
+1. **Dòng doanh thu sớm:** các khóa ứng dụng AI, vibe coding, AI cho giáo viên, AI cho giảng viên và AI cho doanh nghiệp.
+2. **Dòng hệ sinh thái dài hạn:** STEAM, hướng nghiệp, đào tạo nghề, hồ sơ năng lực và đặt hàng nhân lực.
 
-Hai dong nay phai ho tro nhau. Lop AI mo cua vao truong. Chuong trinh STEAM tao du lieu va thuong hieu. Chuoi nghe tao ket noi voi doanh nghiep. Nen tang giu lai du lieu, quy trinh va kha nang mo rong.
+Hai dòng này phải hỗ trợ lẫn nhau. Các lớp AI giúp mở cánh cửa vào trường học. Chương trình STEAM tạo dữ liệu và thương hiệu. Chuỗi nghề tạo kết nối với doanh nghiệp. Nền tảng giữ lại dữ liệu, quy trình và khả năng mở rộng.
 
-## San pham dau tien can ban
+## Những sản phẩm đầu tiên cần bán
 
 - AI Essentials for Educators.
 - AI-Powered Teaching.
 - Faculty AI Builder.
-- AI va vibe coding cho hoc sinh, sinh vien.
+- AI và vibe coding cho học sinh, sinh viên.
 - STEAM Lab OS.
 - Career Pipeline.
 - Workforce Order.
 - Enterprise AI.
-
