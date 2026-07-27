@@ -1,273 +1,269 @@
-# Unit economics — kinh tế đơn vị theo từng tầng sản phẩm
+# Unit economics — kinh tế đơn vị theo từng dòng sản phẩm
 
-> Tài liệu này là căn cứ định lượng bắt buộc cho mọi kế hoạch doanh thu.
-> Đọc cùng `AGENTS.md` mục 5 và `ke-hoach/chi-phi-va-dong-tien.md`.
+> Tài liệu này là khung tính, không phải bảng giá hay dự báo lợi nhuận đã được xác nhận.
 >
-> Mọi con số dưới đây là `[giả định]` cho đến khi cohort đầu tiên chạy xong và có số thật.
-> Sau cohort đầu, cập nhật ngay và ghi `[thực tế, <ngày>]`.
+> Mọi con số chưa có hóa đơn, hợp đồng hoặc dữ liệu cohort thật đều ghi `[giả định]`.
+>
+> Đọc cùng `AGENTS.md`, `ke-hoach/muc-tieu-thang-1.md` và `ke-hoach/chi-phi-va-dong-tien.md`.
 
 Cập nhật: 2026-07-27
 
-> **Quyết định mới nhất:** KPI tháng 1 là 2 khóa giảng viên, 2 khóa doanh nghiệp và 200–300 sinh viên online. Khóa giảng viên có giá 20–50 triệu đồng/khóa; khóa doanh nghiệp 20–100 triệu đồng/khóa. Các bảng dưới đây là giả định để kiểm tra biên, không thay thế `ke-hoach/muc-tieu-thang-1.md`.
-
----
-
-## 0. Vì sao cần tài liệu này
-
-Kế hoạch cũ tính doanh thu bằng công thức `số người học × học phí`. Công thức đó cho ra **doanh thu gộp**, không phải tiền dự án giữ lại. Khoảng cách giữa hai con số là 60–93% tùy cấu hình — đủ lớn để biến một kế hoạch có lãi thành một kế hoạch lỗ.
-
-Tài liệu này bóc từng đồng, cho cả ba tầng sản phẩm.
-
-**Khái niệm dùng thống nhất:**
+## 1. Khái niệm dùng thống nhất
 
 | Thuật ngữ | Định nghĩa |
 |---|---|
-| Học phí gộp | Số tiền người học trả |
-| Doanh thu thuần | Học phí gộp trừ phần chia đối tác và phí thanh toán |
-| Chi phí biến đổi | Chi phí phát sinh theo từng cohort: giảng viên, trợ giảng, vận hành lớp |
-| **Đóng góp** | Doanh thu thuần trừ chi phí biến đổi. **Đây là con số dùng để phủ chi phí cố định.** |
-| Chi phí cố định | 135–170 triệu/tháng, không đổi theo số cohort |
+| Giá trị hợp đồng | Tổng giá trị đã ký, chưa nói tiền đã thu hay đã ghi nhận |
+| Tiền đã thu | Tiền thực tế đã vào tài khoản |
+| Học phí gộp | Tổng số tiền người học trả |
+| Phần dự án sau chia sẻ | Học phí gộp trừ phần đối tác và hoàn trả |
+| Doanh thu thuần để tính đóng góp | Phần dự án sau chia sẻ trừ phí thanh toán |
+| Chi phí trực tiếp | Chi phí phát sinh để giao một cohort/hợp đồng |
+| Đóng góp | Doanh thu thuần trừ chi phí trực tiếp |
+| Chi phí cố định | Chi phí tồn tại dù không mở cohort hoặc chưa ký hợp đồng |
+| Dòng tiền | Tiền vào trừ tiền ra trong kỳ, phụ thuộc thời điểm thu và chi |
 
-Quy tắc: khi nói "doanh thu" trong mọi tài liệu kế hoạch, phải ghi rõ đang nói con số nào.
+Không sử dụng “doanh thu” một mình nếu có nguy cơ nhầm giữa giá trị hợp đồng, học phí gộp, tiền đã thu và đóng góp.
 
----
+## 2. Nguyên tắc chung
 
-## 1. Giả định chi phí đầu vào
+1. Tách bốn dòng sản phẩm:
+   - sinh viên online;
+   - cấp quyền khóa học;
+   - đào tạo giảng viên;
+   - đào tạo doanh nghiệp.
+2. Vibe coding bán lẻ được theo dõi riêng như một dòng thực hành giá trị cao.
+3. Không áp một tỷ lệ chi phí trực tiếp cố định cho mọi hợp đồng B2B.
+4. Không dùng bảng giả định để suy ngược chỉ tiêu năm.
+5. Mỗi hợp đồng/cohort đầu tiên phải có bảng dự toán và bảng thực tế riêng.
+6. Chỉ tăng quy mô sau khi đo được tải hỗ trợ, đối soát, chấm bài và chất lượng đầu ra.
 
-| Khoản | Mức | Ghi chú |
-|---|---:|---|
-| Giảng viên (khóa phổ cập 4 buổi) | 10 triệu/cohort | Cố định theo cohort, không theo số người |
-| Giảng viên (khóa thực hành 6–8 buổi) | 20–25 triệu/cohort | Hoặc chia 25–35% doanh thu thuần nếu là chuyên gia ngoài |
-| Trợ giảng | 4 triệu/người/cohort | 1 trợ giảng phục vụ ~60–80 học viên phổ cập |
-| Phí cổng thanh toán | 2,5% | Có thể giảm còn 1,1–1,5% nếu dùng VietQR/chuyển khoản định danh |
-| Nền tảng, học liệu vận hành | 10.000đ/người | Hosting, LLM API, lưu trữ sản phẩm |
-| Hỗ trợ học viên, đối soát | 10.000đ/người | Giảm mạnh nếu tự động hóa — xem mục 5 |
-| Chia đối tác/trường | 15–40% học phí gộp | Biến số quan trọng nhất — xem mục 6 |
+## 3. Sinh viên online — AI Fluency
 
----
+### 3.1. Công thức
 
-## 2. Tầng 1 — Khóa phổ cập
+> Học phí gộp = số người thanh toán × học phí thực thu bình quân
 
-**Sản phẩm:** AI Fluency cho sinh viên và các khóa phổ cập bán theo học phí/người.
-**Học phí:** 220.000đ `[giả định]`
+> Doanh thu thuần = học phí gộp - phần đối tác - hoàn trả - phí thanh toán
 
-> AI Essentials for Educators khi đào tạo trực tiếp cho giảng viên được xếp vào dòng B2B, khung giá 20–50 triệu đồng/khóa; không dùng bảng học phí/người ở phần này.
+> Đóng góp = doanh thu thuần - giảng viên - trợ giảng - nền tảng - hỗ trợ - đối soát - chi phí trực tiếp khác
 
-### 2.1. Bảng đóng góp theo cấu hình
+### 3.2. Giả định tháng đầu
 
-Tính trên mỗi người học:
+- Quy mô: 200–300 người.
+- Học phí: 220.000 đồng/người `[giả định]`.
+- Phần đối tác: 40% học phí gộp `[giả định]`.
+- Phí thanh toán: 2,5% học phí gộp `[giả định]`.
+- Giảng viên: 10 triệu đồng/cohort `[giả định, độ tin cậy thấp]`.
+- Trợ giảng: 4 triệu đồng/người/cohort `[giả định, độ tin cậy thấp]`.
+- Nền tảng và hỗ trợ: 20.000 đồng/người `[giả định, độ tin cậy thấp]`.
 
-| Khoản | 200 người, chia 40% | 500 người, chia 40% | 500 người, chia 20% | 500 người, chia 20%, trợ giảng AI |
-|---|---:|---:|---:|---:|
-| Học phí gộp | 220.000 | 220.000 | 220.000 | 220.000 |
-| Chia đối tác | −88.000 | −88.000 | −44.000 | −44.000 |
-| Phí thanh toán | −6.000 | −6.000 | −6.000 | −6.000 |
-| **Doanh thu thuần** | **126.000** | **126.000** | **170.000** | **170.000** |
-| Giảng viên | −50.000 | −20.000 | −20.000 | −20.000 |
-| Trợ giảng | −40.000 | −32.000 | −32.000 | −8.000 |
-| Nền tảng, học liệu | −10.000 | −10.000 | −10.000 | −10.000 |
-| Hỗ trợ, đối soát | −10.000 | −10.000 | −10.000 | −3.000 |
-| **Đóng góp/người** | **16.000** | **54.000** | **98.000** | **129.000** |
-| **Biên đóng góp** | **7%** | **25%** | **45%** | **59%** |
-| **Đóng góp/cohort** | **3,2 tr** | **27 tr** | **49 tr** | **64,5 tr** |
-
-### 2.2. Số cohort cần để hòa chi phí cố định
-
-Lấy chi phí cố định 150 triệu/tháng:
-
-| Cấu hình | Cohort/tháng | Người học/tháng |
-|---|---:|---:|
-| 200 người, chia 40% | 47 | 9.400 |
-| 500 người, chia 40% | 5,6 | 2.800 |
-| 500 người, chia 20% | 3,1 | 1.550 |
-| 500 người, chia 20%, trợ giảng AI | 2,3 | 1.150 |
-
-### 2.3. Kết luận tầng 1
-
-**Cấu hình mặc định trong kế hoạch cũ (200 người, chia 40%) là không khả thi.** Biên 7% nghĩa là mỗi cohort 200 người chỉ để lại 3,2 triệu — chưa bằng một ngày công của đội.
-
-Ngay cấu hình tốt nhất vẫn cần 1.150 người/tháng để hòa vốn cố định, tức toàn bộ năng lực đội dồn vào phổ cập và không còn gì cho B2B.
-
-**Vì vậy tầng 1 không được coi là nguồn thu.** Vai trò của nó:
-
-- Mở quan hệ với trường và đầu mối
-- Tạo dữ liệu năng lực và case study
-- Tạo nguồn học viên cho tầng 2 và tầng 3
-
-**KPI đúng cho tầng 1:** tỷ lệ chuyển đổi lên tầng 2, số hợp đồng B2B sinh ra từ quan hệ, và **đóng góp ≥ 0** (không lỗ). Không phải doanh thu.
-
-### 2.4. Ngưỡng dừng
-
-Không mở cohort phổ cập nếu:
-
-- Quy mô dự kiến dưới 300 người **và** tỷ lệ chia trên 25%
-- Chưa có cổng thanh toán tự động đối soát
-- Chưa xác định ai chịu trách nhiệm hỗ trợ học viên tại đơn vị
-
----
-
-## 3. Tầng 2 — Khóa thực hành
-
-**Sản phẩm:** Vibe Coding Foundation (6–8 buổi), AI thực hành nâng cao
-**Học phí:** 2.500.000đ `[giả định]`
-**Quy mô cohort:** 30–50 người
-**Kênh bán:** trực tiếp, chủ yếu từ học viên tầng 1 — **thường không qua trường nên không mất phần chia**
-
-### 3.1. Bảng đóng góp
-
-Tính trên mỗi người học, cohort 40 người:
-
-| Khoản | Bán trực tiếp | Qua trường, chia 20% |
-|---|---:|---:|
-| Học phí gộp | 2.500.000 | 2.500.000 |
-| Chia đối tác | 0 | −500.000 |
-| Phí thanh toán | −62.500 | −62.500 |
-| **Doanh thu thuần** | **2.437.500** | **1.937.500** |
-| Giảng viên (25 tr/cohort) | −625.000 | −625.000 |
-| Trợ giảng (2 người) | −200.000 | −200.000 |
-| Nền tảng, hạ tầng dev, LLM API | −150.000 | −150.000 |
-| Chấm sản phẩm, phản hồi | −100.000 | −100.000 |
-| Hỗ trợ, đối soát | −30.000 | −30.000 |
-| **Đóng góp/người** | **1.332.500** | **832.500** |
-| **Biên đóng góp** | **53%** | **33%** |
-| **Đóng góp/cohort 40 người** | **53,3 tr** | **33,3 tr** |
-
-### 3.2. Kết luận tầng 2
-
-Một cohort 40 người bán trực tiếp cho đóng góp **53 triệu** — tương đương 17 cohort phổ cập 200 người.
-
-Đây là tầng có hiệu quả tốt nhất trong mảng bán lẻ. Ưu tiên bán trực tiếp, tránh đưa qua trường trừ khi trường thực sự làm tuyển sinh.
-
-**Chỉ số cần theo dõi:** tỷ lệ chuyển đổi từ tầng 1. Repo cũ đặt 10–15%, sau tăng 15–20%. Với học phí gấp 11 lần tầng 1, mức 5–8% đã là tốt trong 3 tháng đầu. Đặt kỳ vọng ở 6%, mừng nếu vượt.
-
-Nếu 1.000 người học tầng 1 → 60 người lên tầng 2 → 1,5 cohort → đóng góp ~80 triệu. Con số này mới là giá trị thật của một đợt phổ cập 1.000 người.
-
----
-
-## 4. Tầng 3 — B2B
-
-**Sản phẩm:** Faculty AI Builder, AI Essentials for Educators trực tiếp, Enterprise AI, AI School Starter và số hóa chương trình.
-
-**Khung giá đã chốt:**
-
-- Khóa trực tiếp cho giảng viên: **20–50 triệu đồng/khóa**.
-- Khóa trực tiếp cho doanh nghiệp: **20–100 triệu đồng/khóa**.
-
-Bảng hợp đồng 100 triệu bên dưới phù hợp hơn với một khóa doanh nghiệp ở nhóm trên; không dùng nguyên xi cho khóa giảng viên.
-
-### 4.1. Bảng đóng góp, hợp đồng 100 triệu
+### 3.3. Kịch bản minh họa 200 người
 
 | Khoản | Số tiền |
 |---|---:|
-| Giá trị hợp đồng | 100.000.000 |
-| Thuế, phí giao dịch | −2.000.000 |
-| Giảng viên/chuyên gia (30%) | −30.000.000 |
-| Sản xuất nội dung riêng | −8.000.000 |
-| Hạ tầng, LLM API, công cụ | −3.000.000 |
-| Chi phí bán hàng, đi lại, tiếp xúc | −5.000.000 |
-| **Đóng góp** | **52.000.000** |
-| **Biên đóng góp** | **52%** |
+| Học phí gộp | 44,0 triệu |
+| Phần đối tác 40% | −17,6 triệu |
+| Phí thanh toán 2,5% | −1,1 triệu |
+| Doanh thu thuần | 25,3 triệu |
+| Giảng viên | −10,0 triệu |
+| 3 trợ giảng | −12,0 triệu |
+| Nền tảng và hỗ trợ | −4,0 triệu |
+| **Đóng góp minh họa** | **−0,7 triệu** |
 
-### 4.2. So sánh hiệu quả trên mỗi giờ công
+Bảng trên chỉ chứng minh rằng **với bộ giả định hiện tại**, cohort 200 người có thể hòa vốn hoặc lỗ nhẹ. Nó không chứng minh chi phí thực tế sẽ đúng như vậy.
 
-| Hướng | Công sức ước tính | Đóng góp | Đóng góp/tuần-người |
-|---|---|---:|---:|
-| 1 hợp đồng B2B 100 triệu | 1 người × 3,5 tuần | 52 tr | **~15 tr** |
-| 1 cohort thực hành 40 người | 1 người × 3 tuần | 53 tr | **~18 tr** |
-| 1 cohort phổ cập 500 người, chia 20% | 1,5 người × 2 tuần | 49 tr | **~16 tr** |
-| 1 cohort phổ cập 200 người, chia 40% | 1 người × 2 tuần | 3,2 tr | **~1,6 tr** |
+### 3.4. Vai trò của khóa phổ cập
 
-**Đọc bảng này:** ba hướng đầu tương đương nhau về hiệu quả trên giờ công. Hướng thứ tư kém hơn một bậc.
+- Kiểm chứng willingness-to-pay.
+- Tạo dữ liệu năng lực và case study.
+- Mở quan hệ với trường và đầu mối.
+- Tạo nguồn học viên cho vibe coding hoặc khóa thực hành.
+- Tạo cơ hội bán B2B hoặc cấp quyền khóa học.
 
-Nghĩa là **không có một "kênh tốt nhất" duy nhất** — điều quan trọng là tránh cấu hình xấu (cohort nhỏ + chia cao), chứ không phải chọn kênh nào.
+KPI chính:
 
-Tuy nhiên B2B có ba lợi thế mà hai kênh kia không có:
+- Đóng góp thực tế không âm hoặc mức lỗ kiểm chứng được phê duyệt trước.
+- Tỷ lệ hoàn thành.
+- Chi phí trên mỗi người hoàn thành.
+- Số giờ hỗ trợ và đối soát.
+- Tỷ lệ chuyển lên sản phẩm tiếp theo.
+- Số cơ hội B2B sinh ra.
 
-- **Trả trước hoặc trả theo mốc** → giải quyết vốn lưu động
-- **Không phụ thuộc mùa vụ** trường học
-- **Không tạo tải vận hành** hàng nghìn giao dịch nhỏ
+### 3.5. Tỷ lệ hoàn thành
 
-Vì vậy ưu tiên B2B trong 6 tháng đầu, khi dòng tiền là ràng buộc lớn nhất.
+- Kịch bản ngân sách: 50–60%.
+- Mục tiêu vận hành: khoảng 70%.
+- Sau cohort đầu, thay bằng dữ liệu thật.
 
----
+Không mở rộng chỉ vì số đăng ký cao. Chỉ mở rộng khi thanh toán, hỗ trợ, chấm bài và đóng góp nằm trong trần vận hành.
 
-## 5. Ba đòn bẩy cải thiện biên
+## 4. Cấp quyền sử dụng khóa học
 
-### 5.1. Quy mô cohort — đòn bẩy mạnh nhất, dễ nhất
+### 4.1. Công thức
 
-Chi phí giảng viên cố định theo cohort. Tăng từ 200 lên 500 người làm biên nhảy từ 7% lên 25% mà không cần đàm phán gì với ai.
+> Giá trị hợp đồng = phí quyền sử dụng + phí tùy chỉnh + phí nền tảng + phí onboarding/đào tạo giảng viên nguồn + phí hỗ trợ
 
-**Hành động:** không mở cohort phổ cập dưới 300 người. Gom nhiều đơn vị vào một cohort chung thay vì mở riêng cho từng trường.
+> Đóng góp = tiền/doanh thu được ghi nhận - chi phí bán hàng - cập nhật nội dung - onboarding - nền tảng - hỗ trợ - kỹ thuật - thuế/phí trực tiếp
 
-### 5.2. Tự động hóa trợ giảng và hỗ trợ bằng AI
+### 4.2. Ba cấu hình cần đo
 
-Trợ giảng + hỗ trợ + đối soát chiếm 50.000đ/người ở cấu hình 200, tức 23% học phí gộp.
-
-Mục tiêu đưa xuống 11.000đ/người:
-
-| Việc | Cách tự động hóa | Công cụ có sẵn |
+| Cấu hình | Thành phần chính | Chi phí phải tính |
 |---|---|---|
-| Trả lời câu hỏi tuyến đầu | Trợ lý AI qua Zalo OA, có kho tri thức khóa học | **Arkon** |
-| Đối soát thanh toán | VietQR định danh theo mã học viên, tự khớp | Tích hợp mới |
-| Nhắc lịch, điểm danh, nhắc nộp bài | Workflow tự động theo state machine | **SOPai** |
-| Chấm sơ bộ sản phẩm theo rubric | LLM chấm vòng 1, người duyệt vòng 2 | Arkon + SOPai |
+| Nội dung | Học liệu và quyền sử dụng có thời hạn | cập nhật, quản lý IP, hỗ trợ tối thiểu |
+| Nội dung + nền tảng | thêm quản lý người học và báo cáo | hosting, kỹ thuật, hỗ trợ, báo cáo |
+| Triển khai đầy đủ | tùy chỉnh, onboarding, đào tạo giảng viên nguồn | chuyên gia, vận hành, hỗ trợ và quản trị dự án |
 
-**Đây phải là năng lực lõi.** Một dự án về AI mà vẫn cần 4 trợ giảng người thật cho 500 học viên là mâu thuẫn nội tại — và cũng là chỗ khó thuyết phục khách hàng B2B nhất.
+Chưa đặt giá chính thức cho đến khi chốt:
 
-### 5.3. Tỷ lệ chia với đối tác
+- thời hạn;
+- số người học;
+- phạm vi white-label;
+- quyền truy cập file nguồn;
+- mức hỗ trợ;
+- nền tảng và báo cáo;
+- điều kiện gia hạn.
 
-Từ 40% xuống 20% làm biên nhảy từ 25% lên 45%.
+## 5. B2B giảng viên
 
-**Nguyên tắc đàm phán:** tỷ lệ chia phải tương ứng với lao động đối tác thực sự bỏ ra, viết thành SOW trong hợp đồng.
+### 5.1. Khung giá
 
-| Đối tác làm gì | Tỷ lệ hợp lý |
-|---|---:|
-| Chỉ gửi thông báo, cho mượn danh | 10–15% |
-| Thêm: tuyển sinh, gom danh sách | 20–25% |
-| Thêm: thu tiền hộ, đối soát | 30% |
-| Thêm: điều phối viên tại chỗ, hỗ trợ học viên, thu sản phẩm | 35–40% |
+- **20–50 triệu đồng/khóa**.
 
-Mức 40% chỉ dành cho trường hợp cuối — khi đối tác gánh phần lớn tải vận hành mà 5 người không tự làm được. Khi đó 40% là **mua lao động**, không phải nhượng bộ.
+### 5.2. Bảng chi phí bắt buộc cho từng hợp đồng
 
----
+| Nhóm chi phí | Cách ghi |
+|---|---|
+| Khảo sát và thiết kế | số giờ × đơn giá nội bộ hoặc phí chuyên gia |
+| Giảng viên/chuyên gia | phí cố định hoặc tỷ lệ theo hợp đồng |
+| Tùy chỉnh học liệu | số giờ và công cụ |
+| Đi lại, địa điểm | chi phí thực tế |
+| Trợ giảng/vận hành | theo buổi hoặc theo khóa |
+| Nền tảng, LLM API | theo phạm vi sử dụng |
+| Sản phẩm bàn giao | số giờ xây và kiểm thử |
+| Hỗ trợ sau khóa | số giờ/cam kết SLA |
+| Thuế, phí giao dịch | theo hóa đơn và phương thức thanh toán |
 
-## 6. Tổng hợp: đóng góp 12 tháng theo kịch bản
+Không dùng tỷ lệ 40% chi phí trực tiếp làm số chắc chắn. Đây chỉ có thể là kịch bản nháp để kiểm tra nhanh.
 
-| Nguồn | Kịch bản thận trọng | Kịch bản cơ sở |
-|---|---:|---:|
-| **Phổ cập** | 8.000 lượt × 45.000 = **360 tr** | 12.000 lượt × 55.000 = **660 tr** |
-| **Thực hành** | 250 người × 1,33 tr = **332 tr** | 400 người × 1,33 tr = **532 tr** |
-| **B2B** | 12 HĐ × 35 tr = **420 tr** | 20 HĐ × 70 tr = **1.400 tr** |
-| **Tổng đóng góp** | **1,11 tỷ** | **2,59 tỷ** |
-| Chi phí cố định | −1,6 tỷ | −2,0 tỷ |
-| **Kết quả** | **−490 tr** | **+590 tr** |
+## 6. B2B doanh nghiệp
 
-**Biến số quyết định là cột B2B**, chênh gần 1 tỷ giữa hai kịch bản. Phổ cập và thực hành cộng lại chỉ chênh 500 triệu.
+### 6.1. Khung giá
 
-Hệ quả cho việc phân bổ thời gian đội: **thời gian của người làm B2B là tài nguyên đắt nhất của dự án.** Mọi việc có thể đẩy sang AI hoặc chuyên gia ngoài đều nên đẩy, để bảo vệ quỹ thời gian này.
+- **20–100 triệu đồng/khóa**.
 
----
+### 6.2. Các biến số quyết định biên
 
-## 7. Những con số phải đo trong cohort đầu tiên
+- Mức khảo sát và tùy chỉnh.
+- Có dùng dữ liệu/quy trình thật hay không.
+- Có bàn giao workflow/agent hay chỉ đào tạo.
+- Số phòng ban và người tham gia.
+- Hỗ trợ sau đào tạo.
+- Chi phí chuyên gia ngoài.
+- Điều khoản nghiệm thu và thanh toán.
 
-Toàn bộ tài liệu này là giả định. Cohort đầu tiên phải trả lời:
+Một hợp đồng 100 triệu không được dùng làm đại diện cho toàn bộ dòng doanh nghiệp, càng không được dùng cho khóa giảng viên.
 
-| Chỉ số | Cách đo | Dùng để sửa gì |
-|---|---|---|
-| Tỷ lệ đăng ký → thanh toán | Đếm | Dự báo doanh thu |
-| Tỷ lệ thanh toán → học buổi 1 | Điểm danh | Quy mô cohort thật |
-| Tỷ lệ hoàn thành | Nộp sản phẩm cuối | Kỳ vọng 50%, không phải 70% |
-| Số giờ hỗ trợ học viên thực tế | Ghi log | Chi phí trợ giảng thật |
-| Số giờ đối soát thanh toán | Ghi log | Mức độ cấp thiết của tự động hóa |
-| Tỷ lệ chuyển lên tầng 2 | Đếm sau 30 ngày | Giá trị thật của phổ cập |
-| Chi phí trực tiếp/người hoàn thành | Tổng chi biến đổi ÷ số hoàn thành | Xác nhận hoặc bác bỏ bảng mục 2 |
+## 7. Vibe coding và khóa thực hành
 
-**Không mở rộng quy mô cho đến khi có đủ bảy con số này.**
+Dòng này có thể có giá trị trên mỗi người cao hơn khóa phổ cập nhưng mọi con số hiện vẫn cần kiểm chứng.
 
----
+Bảng cần lập cho cohort đầu:
 
-## 8. Changelog
+- Học phí thực thu.
+- Quy mô tối thiểu và tối đa.
+- Chi phí giảng viên.
+- Chi phí môi trường dev, API và hạ tầng.
+- Chi phí chấm sản phẩm.
+- Tỷ lệ hoàn thành.
+- Tỷ lệ hoàn tiền.
+- Đóng góp/cohort.
 
-| Ngày | Thay đổi | Bởi |
-|---|---|---|
-| 2026-07-27 | Tạo tài liệu. Bóc đóng góp cho 3 tầng sản phẩm, xác định phổ cập không phải nguồn thu, xác định B2B là biến số quyết định. Toàn bộ là giả định chờ cohort đầu kiểm chứng. | Claude |
+Không sử dụng giả định 2,5 triệu đồng/người hoặc biên 53% như số đã chốt trước khi có sản phẩm, giá bán và cohort thật.
+
+## 8. Các đòn bẩy cải thiện đóng góp
+
+### 8.1. Tự động hóa tải vận hành
+
+- Trả lời tuyến đầu bằng Arkon/trợ lý AI.
+- Nhắc lịch, điểm danh và nhắc nộp bài bằng SOPai.
+- Thanh toán định danh và đối soát tự động.
+- Chấm sơ bộ theo rubric bằng AI, người duyệt vòng cuối.
+
+### 8.2. Tỷ lệ chia đối tác theo SOW
+
+Tỷ lệ chia phải tương ứng với phần việc thật của đối tác, ví dụ:
+
+- truyền thông/tuyển sinh;
+- thu tiền và đối soát;
+- điều phối tại chỗ;
+- hỗ trợ học viên;
+- thu sản phẩm;
+- cung cấp địa điểm hoặc thiết bị.
+
+Không chốt tỷ lệ chỉ dựa trên tên hoặc khả năng giới thiệu của đối tác.
+
+### 8.3. Điều khoản thanh toán B2B
+
+Ưu tiên tiền ứng trước đủ trang trải chi phí trực tiếp dự kiến. Theo dõi riêng:
+
+- giá trị hợp đồng;
+- tiền đã thu;
+- doanh thu ghi nhận;
+- công nợ;
+- thời gian thu tiền.
+
+## 9. Không còn bảng đóng góp 12 tháng suy ra tùy ý
+
+Bảng cũ dùng 8.000–12.000 lượt phổ cập, 250–400 học viên thực hành và 12–20 hợp đồng B2B đã được loại khỏi bản điều hành vì chưa có căn cứ về:
+
+- năng lực bán;
+- năng lực giao;
+- chuyên gia sẵn sàng;
+- lịch thanh toán;
+- mùa vụ;
+- chi phí thật.
+
+Chỉ dựng lại sau khi anh Đức chốt trần số khóa B2B mỗi tháng và dự án có dữ liệu cohort đầu tiên.
+
+## 10. Bộ dữ liệu phải thu
+
+### Cohort sinh viên đầu tiên
+
+- Đăng ký → thanh toán.
+- Thanh toán → tham gia buổi 1.
+- Bắt đầu → hoàn thành.
+- Số giờ hỗ trợ.
+- Số giờ đối soát.
+- Chi phí giảng viên và trợ giảng.
+- Chi phí nền tảng/API.
+- Chi phí trên mỗi người hoàn thành.
+- Tỷ lệ chuyển lên sản phẩm tiếp theo.
+
+### Mỗi hợp đồng B2B đầu tiên
+
+- Giá trị hợp đồng.
+- Tiền ứng trước và lịch thu.
+- Giờ khảo sát, thiết kế và tùy chỉnh.
+- Chi phí chuyên gia.
+- Chi phí đi lại, nền tảng và công cụ.
+- Giờ hỗ trợ sau khóa.
+- Đóng góp thực tế.
+- Công nợ và thời gian thu tiền.
+
+### Gói cấp quyền đầu tiên
+
+- Giá bán.
+- Phạm vi quyền sử dụng.
+- Số người học.
+- Chi phí onboarding.
+- Chi phí hỗ trợ và kỹ thuật.
+- Mức sử dụng nền tảng.
+- Khả năng gia hạn.
+
+## 11. Nguyên tắc ra quyết định
+
+- Không tăng quy mô khi chưa biết đóng góp và tải vận hành.
+- Không loại một sản phẩm chỉ vì kịch bản giả định đầu tiên cho kết quả xấu.
+- Không coi hợp đồng đã ký là tiền đã thu.
+- Không dùng một bảng chi phí chung cho mọi khóa B2B.
+- Không chốt dự báo năm trước khi có dữ liệu thật và trần năng lực.
