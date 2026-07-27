@@ -1,42 +1,41 @@
-# Mo hinh doanh thu
+# Mô hình doanh thu
 
-## Nguyen tac
+## Nguyên tắc
 
-Doanh thu khong phai cho den khi STEAM hoac cung ung nhan luc truong thanh. Nen tang can co dong tien som tu dao tao AI, vibe coding va tu van ung dung AI cho truong hoc, dai hoc va doanh nghiep.
+Nền tảng cần tạo dòng tiền ngay từ giai đoạn đầu, thay vì chờ đến khi mảng STEAM hoặc hệ sinh thái nhân lực phát triển hoàn chỉnh. Nguồn thu ban đầu đến từ đào tạo AI, vibe coding và tư vấn ứng dụng AI cho trường học, trường đại học và doanh nghiệp.
 
-## Doanh thu ngay
+## Nguồn thu giai đoạn đầu
 
-- Dao tao AI cho giao vien, giang vien.
-- AI va vibe coding cho hoc sinh, sinh vien.
-- Dao tao ung dung AI cho doanh nghiep.
-- Tu van xay chuong trinh va tro ly AI cho truong.
+- Đào tạo AI cho giáo viên và giảng viên.
+- Đào tạo AI và vibe coding cho học sinh, sinh viên.
+- Đào tạo ứng dụng AI cho doanh nghiệp.
+- Tư vấn xây dựng chương trình và trợ lý AI cho nhà trường.
 
-## Doanh thu tang truong
+## Nguồn thu trong giai đoạn tăng trưởng
 
-- Phi nen tang theo truong/nam.
-- Ban quyen thu vien khoa STEAM.
-- Phi dao tao giao vien nguon.
-- Phi van hanh phong STEAM.
-- Phi so hoa chuong trinh nghe.
-- Phi phat trien chuong trinh theo don hang.
+- Phí sử dụng nền tảng theo trường và theo năm.
+- Phí bản quyền thư viện khóa học STEAM.
+- Phí đào tạo giáo viên nguồn.
+- Phí hỗ trợ vận hành phòng STEAM.
+- Phí số hóa chương trình đào tạo nghề.
+- Phí phát triển chương trình theo yêu cầu.
 
-## Doanh thu he sinh thai
+## Nguồn thu từ hệ sinh thái
 
-- Phi su dung cong dat hang nhan luc.
-- Phi quan ly cohort dao tao.
-- Phi danh gia va xac thuc nang luc.
-- Phan mem cho don vi dich vu viec lam.
-- Phi tuyen dung qua doi tac co chuc nang phu hop.
+- Phí sử dụng cổng đặt hàng nhân lực.
+- Phí quản lý các cohort đào tạo.
+- Phí đánh giá và xác thực năng lực.
+- Phí sử dụng phần mềm dành cho đơn vị dịch vụ việc làm.
+- Phí dịch vụ thông qua các đối tác có chức năng phù hợp.
 
-## Cong thuc ke hoach
+## Công thức lập kế hoạch
 
-| Nguon | Cong thuc ke hoach |
+| Nguồn | Công thức kế hoạch |
 |---|---|
-| Dao tao AI/vibe coding | 50 hop dong x 60-120 trieu |
-| STEAM Lab OS | 60-100 truong x 80-200 trieu/nam |
-| Chuong trinh nghe theo don | 15-25 chuong trinh x 150-400 trieu |
-| Nen tang dat hang nhan luc | 20-30 doanh nghiep x 50-150 trieu |
-| Du an AI cho truong/doanh nghiep | Tinh rieng theo pham vi trien khai |
+| Đào tạo AI/vibe coding | 50 hợp đồng x 60-120 triệu đồng |
+| STEAM Lab OS | 60-100 trường x 80-200 triệu đồng/năm |
+| Chương trình nghề theo yêu cầu | 15-25 chương trình x 150-400 triệu đồng |
+| Nền tảng đặt hàng nhân lực | 20-30 doanh nghiệp x 50-150 triệu đồng |
+| Dự án AI cho trường học và doanh nghiệp | Tính riêng theo phạm vi triển khai |
 
-Kich ban tren co the tao quy mo hop dong khoang 13-35 ty dong trong 12 thang, chua tinh phan cung va cac du an AI tuy chinh. Day la mo hinh tai chinh de to chuc ban hang, khong phai cam ket doanh thu.
-
+Theo kịch bản lập kế hoạch này, tổng quy mô hợp đồng mục tiêu trong 12 tháng nằm trong khoảng 13-35 tỷ đồng, chưa bao gồm phần cứng và các dự án AI tùy chỉnh. Đây là số liệu phục vụ việc xây dựng kế hoạch kinh doanh, không phải cam kết doanh thu.
