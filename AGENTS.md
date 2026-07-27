@@ -288,11 +288,11 @@ Repo chưa có risk register. Ba rủi ro dưới đây chỉ xuất hiện ở 
 
 | # | Việc | File | Trạng thái |
 |---:|---|---|---|
-| 1 | Sửa giả định nhân sự và bổ sung nguyên tắc kiểm tra trần vận hành | `docs/the-manh-du-an.md` | Chưa làm |
-| 2 | Gắn nhãn deprecated cho bảng công thức hợp đồng | `docs/mo-hinh-doanh-thu.md` | Chưa làm |
-| 3 | Gắn nhãn "tầm nhìn, không phải cam kết" | `ke-hoach/ke-hoach-12-thang.md` | Chưa làm |
+| 1 | Sửa giả định nhân sự và bổ sung nguyên tắc kiểm tra trần vận hành | `docs/the-manh-du-an.md` | **Chưa làm — ưu tiên cao nhất.** File này dạy AI cách lập kế hoạch, sai ở đây lan ra mọi nơi |
+| 2 | Dọn bảng công thức hợp đồng 13–35 tỷ | `docs/mo-hinh-doanh-thu.md` | **Xong** — file đã viết lại thành bốn dòng doanh thu |
+| 3 | Gắn nhãn "tầm nhìn, không phải cam kết" | `ke-hoach/ke-hoach-12-thang.md` | **Xong** — banner đã thêm 27/07 |
 | 4 | Viết unit economics đầy đủ các dòng sản phẩm + ngưỡng hòa vốn | `ke-hoach/unit-economics.md` | Đã có bản giả định, cần cập nhật sau dữ liệu thật |
-| 5 | Viết chi phí, dòng tiền theo tháng, vốn lưu động | `ke-hoach/chi-phi-va-dong-tien.md` | Đã có bản giả định, cần cập nhật sau dữ liệu thật |
+| 5 | Viết chi phí, dòng tiền theo tháng, vốn lưu động | `ke-hoach/chi-phi-va-dong-tien.md` | Có bản giả định. **Bảng dòng tiền mục 3 dựng theo mô hình cũ, cần dựng lại theo bốn dòng doanh thu** |
 | 6 | Bản đồ tái sử dụng SOPai / Arkon / henlich | `nen-tang/ban-do-tai-su-dung.md` | Chưa có |
 | 7 | Cơ chế thu phí hợp pháp với trường công | `phap-ly/co-che-thu-phi-truong-cong.md` | Chưa có |
 | 8 | Cơ chế mạng lưới chuyên gia: chia, IP, không đi vòng | `van-hanh/mang-luoi-chuyen-gia.md` | Chưa có |
@@ -300,6 +300,7 @@ Repo chưa có risk register. Ba rủi ro dưới đây chỉ xuất hiện ở 
 | 10 | Sửa lộ trình tháng theo mùa vụ năm học | `ke-hoach/ke-hoach-kinh-doanh-12-thang.md` | Chưa làm |
 | 11 | Chốt KPI tháng 1: 2 khóa giảng viên, 2 khóa doanh nghiệp, 200–300 sinh viên online | `ke-hoach/muc-tieu-thang-1.md` | Đã cập nhật |
 | 12 | Phân tích cạnh tranh, đặc biệt với chương trình AI miễn phí | `docs/canh-tranh.md` | Chưa có |
+| 13 | Dựng lại bảng dòng tiền 12 tháng theo bốn dòng doanh thu | `ke-hoach/chi-phi-va-dong-tien.md` | Chưa làm |
 
 ---
 
@@ -334,3 +335,4 @@ Repo chưa có risk register. Ba rủi ro dưới đây chỉ xuất hiện ở 
 |---|---|---|
 | 2026-07-27 | Tạo file. Ghi nhận nguồn lực thật 5 người, tính lại unit economics, xác định nút thắt vận hành, đề xuất cắt còn 2 trục và đảo thứ tự B2B trước phổ cập. | Claude |
 | 2026-07-27 | Bổ sung quyết định mới nhất: 2 khóa giảng viên, 2 khóa doanh nghiệp, 200–300 sinh viên; cập nhật khung giá và công thức doanh thu. | ChatGPT |
+| 2026-07-27 | Thêm `THAO-LUAN.md` (giao thức trao đổi hai chiều, nghĩa vụ báo cáo, 10 vấn đề mở). Gắn banner cho `bo-may-van-hanh.md` và `ke-hoach-12-thang.md`. Rà soát toàn repo: phát hiện bảng dòng tiền tháng 1 lệch nhau (−135 tr so với −37 tr), đã đánh dấu. | Claude |

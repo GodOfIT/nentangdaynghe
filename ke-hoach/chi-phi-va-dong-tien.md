@@ -6,6 +6,20 @@
 >
 > Mọi con số là `[giả định]` cho đến khi có 3 tháng vận hành thật.
 
+> **[CẦN TÍNH LẠI — 27/07/2026]** Bảng dòng tiền 12 tháng ở mục 3 được dựng theo mô hình
+> ba tầng cũ (phổ cập / thực hành / B2B) trước khi có `ke-hoach/muc-tieu-thang-1.md` và
+> trước khi `docs/mo-hinh-doanh-thu.md` tách thành bốn dòng doanh thu.
+>
+> **Hệ quả cụ thể:** bảng mục 3 ghi dòng tiền tháng 1 là **âm 135 triệu**. Tính lại theo
+> KPI hiện hành (2 khóa giảng viên + 2 khóa doanh nghiệp + 200 sinh viên online) thì con số
+> là **khoảng âm 37 triệu**. Xem `THAO-LUAN.md` vấn đề 3 để biết cách tính.
+>
+> Dùng con số âm 37 triệu. Bảng mục 3 giữ lại để tham chiếu phương pháp, không dùng để
+> điều hành, cho đến khi được dựng lại theo bốn dòng doanh thu.
+>
+> Phần chi phí cố định ở mục 1 và 2, cùng các ngưỡng cảnh báo ở mục 5, vẫn dùng được
+> bình thường vì không phụ thuộc mô hình doanh thu.
+
 Cập nhật: 2026-07-27
 
 ---
@@ -71,7 +85,7 @@ Không tính vào chi phí cố định, đã trừ trong bảng đóng góp c�
 
 ---
 
-## 3. Dòng tiền 12 tháng — kịch bản cơ sở
+## 3. Dòng tiền 12 tháng — kịch bản cơ sở `[MÔ HÌNH CŨ, CẦN DỰNG LẠI]`
 
 > **Lưu ý về tháng 1:** mục tiêu điều hành mới nhất là 2 khóa giảng viên, 2 khóa doanh nghiệp và 200–300 sinh viên online. Bảng dưới đây là kịch bản dòng tiền thận trọng, chỉ ghi nhận B2B khi hợp đồng đã ký và tiền thực sự về. Không dùng cột tháng 1 trong bảng này để thay thế KPI tại `ke-hoach/muc-tieu-thang-1.md`.
 
