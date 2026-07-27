@@ -1,5 +1,12 @@
 # Kế hoạch triển khai 12 tháng
 
+> **[TẦM NHÌN, KHÔNG PHẢI CAM KẾT — 2026-07-27]** Tài liệu này mô tả hình dung sản phẩm đầy đủ
+> cho bộ máy 25–40 người. Với nguồn lực thực tế 5 người, các chỉ tiêu dưới đây (60–100 trường,
+> 15.000–25.000 người học, 40–60 khóa STEAM) **không phải cam kết triển khai 12 tháng**.
+>
+> Nguồn ưu tiên cho KPI: `ke-hoach/muc-tieu-thang-1.md` và `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`.
+> Xem `AGENTS.md` mục 3 và 8, và `THAO-LUAN.md` vấn đề 7 về STEAM.
+
 ## Mục tiêu tổng thể
 
 Trong vòng 12 tháng, nền tảng cần đạt được các trạng thái sau:

@@ -1,5 +1,10 @@
 # Bộ máy vận hành
 
+> **[CẦN CẬP NHẬT 2026-07-27]** Mục "Nhân sự cốt lõi" dưới đây ghi 25–40 người, dựa trên
+> giả định bộ máy lớn. Nguồn lực thực tế là **5 người core + mạng lưới chuyên gia thuê ngoài**.
+> Xem `AGENTS.md` mục 2. Phần Course Factory và quy trình sản xuất vẫn dùng được, nhưng
+> công suất phải chia lại theo quy mô đội thật.
+
 ## Tư duy vận hành
 
 Để triển khai tại nhiều trường, nền tảng không thể vận hành giống một trung tâm đào tạo truyền thống. Cần tổ chức theo mô hình sản xuất chương trình, đào tạo giáo viên nguồn, điều phối theo địa phương và vận hành dựa trên dữ liệu.

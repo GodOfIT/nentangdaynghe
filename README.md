@@ -29,6 +29,7 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 ## Tài liệu điều hành ưu tiên
 
 - [Bối cảnh chung và quy tắc dành cho các trợ lý AI](AGENTS.md)
+- [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
 - [Mục tiêu kinh doanh tháng 1](ke-hoach/muc-tieu-thang-1.md)
 - [Kế hoạch kinh doanh 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
 - [Unit economics theo từng tầng sản phẩm](ke-hoach/unit-economics.md)
