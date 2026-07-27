@@ -2,7 +2,7 @@
 
 > Tài liệu này là khung quản trị dòng tiền. Mọi con số chưa có chứng từ hoặc quyết định của anh Đức đều là `[giả định]`.
 >
-> Các con số “tháng 1 âm 135 triệu” và “tháng 1 âm 37 triệu” trong phiên bản cũ **không còn được dùng như dự báo**. Số thứ nhất dựa trên mô hình doanh thu cũ; số thứ hai vẫn dựa trên giả định chi phí B2B 40% và giả định toàn bộ hợp đồng được thu tiền trong tháng.
+> Các con số “tháng 1 âm 135 triệu” và “tháng 1 âm 37 triệu” trong phiên bản cũ **không còn được dùng như dự báo**.
 >
 > Đọc cùng `ke-hoach/muc-tieu-thang-1.md` và `ke-hoach/unit-economics.md`.
 
@@ -16,11 +16,10 @@ Cập nhật: 2026-07-27
 4. Không dùng một tỷ lệ chi phí trực tiếp chung cho mọi khóa B2B.
 5. Không dựng bảng 12 tháng khi chưa biết trần năng lực giao khóa và lịch thanh toán.
 6. Tiền ứng trước B2B phải ưu tiên trang trải chi phí trực tiếp dự kiến.
-7. Dòng sinh viên online phải theo dõi học phí gộp, phần đối tác, phí thanh toán, chi phí trực tiếp và đóng góp riêng.
+7. Dòng sinh viên online phải theo dõi cả cấu hình AI-first và hybrid.
+8. Chi phí xây tự động hóa và thời gian của dev phải được ghi nhận, không coi là miễn phí.
 
 ## 2. Chi phí cố định hàng tháng `[giả định]`
-
-Đội core 5 người, Hà Nội.
 
 ### 2.1. Nhân sự
 
@@ -65,73 +64,125 @@ Không lấy 150 triệu làm số mặc định nếu chưa chốt cấu trúc 
 
 ## 3. Chi phí trực tiếp theo sản phẩm
 
-### 3.1. Sinh viên online
+### 3.1. Sinh viên online — AI-first
 
-Phải ghi theo cohort:
+Giả định để chạy độ nhạy, chưa phải dữ liệu thật:
 
-- Giảng viên.
-- Trợ giảng.
-- Phí thanh toán.
-- Phần đối tác.
-- Nền tảng và LLM API.
-- Hỗ trợ học viên.
-- Đối soát.
-- Chấm sản phẩm.
-- Hoàn trả nếu có.
+- Giảng viên: 10 triệu/cohort.
+- Một điều phối viên: 4 triệu/cohort.
+- Phí thanh toán/đối soát: 0,8% học phí gộp.
+- LLM API: 14.000 đồng/người/khóa.
+- Nền tảng/lưu trữ: 6.000 đồng/người.
 
-Các mức 10 triệu/giảng viên, 4 triệu/trợ giảng và 20.000 đồng/người cho nền tảng + hỗ trợ chỉ là giả định cần đo lại.
+Chi phí còn có thể bị bỏ sót:
 
-### 3.2. B2B giảng viên và doanh nghiệp
+- xây và bảo trì workflow;
+- RAG, embedding, reranking;
+- Zalo OA/kênh nhắn tin;
+- logging, giám sát và kiểm thử;
+- hỗ trợ ngoại lệ;
+- người duyệt chấm bài;
+- xử lý tài khoản, hoàn tiền và khiếu nại;
+- thời gian của dev.
+
+### 3.2. Sinh viên online — hybrid dự phòng
+
+- AI gợi ý, người trả lời/duyệt.
+- Đối soát bán tự động.
+- Trợ giảng tăng theo tải thật.
+- Người kiểm tra các bài chấm có rủi ro.
+
+Cấu hình này có thể tạo đóng góp thấp hơn nhưng giảm rủi ro khi AI-first chưa sẵn sàng.
+
+### 3.3. B2B giảng viên và doanh nghiệp
 
 Mỗi hợp đồng phải có dự toán riêng:
 
-- Khảo sát và thiết kế.
-- Chuyên gia/giảng viên.
-- Tùy chỉnh nội dung.
-- Đi lại, địa điểm.
-- Trợ giảng và vận hành.
-- Nền tảng, API và công cụ.
-- Sản phẩm bàn giao.
-- Hỗ trợ sau khóa.
-- Thuế và phí trực tiếp.
+- khảo sát và thiết kế;
+- chuyên gia/giảng viên;
+- tùy chỉnh nội dung;
+- đi lại, địa điểm;
+- trợ giảng và vận hành;
+- nền tảng, API và công cụ;
+- sản phẩm bàn giao;
+- hỗ trợ sau khóa;
+- thuế và phí trực tiếp.
 
 Không dùng mức “40% giá trị hợp đồng” như số thực tế.
 
-### 3.3. Cấp quyền khóa học
+### 3.4. Cấp quyền khóa học
 
 Phải tính:
 
-- Chi phí bán hàng và đàm phán.
-- Tùy chỉnh.
-- Onboarding.
-- Đào tạo giảng viên nguồn.
-- Hosting và kỹ thuật.
-- Báo cáo.
-- Hỗ trợ.
-- Cập nhật nội dung.
-- Kiểm soát phạm vi sử dụng.
+- bán hàng và đàm phán;
+- tùy chỉnh;
+- onboarding;
+- đào tạo giảng viên nguồn;
+- hosting và kỹ thuật;
+- báo cáo;
+- hỗ trợ;
+- cập nhật nội dung;
+- kiểm soát phạm vi sử dụng.
 
-## 4. Khung dòng tiền tháng đầu
+### 3.5. Đào tạo năng lực giáo viên STEAM
 
-### 4.1. Dòng tiền vào
+Phải có bảng riêng cho từng pilot:
+
+- thiết kế 1–2 môn;
+- chuyên gia và nghiệm thu;
+- đi lại/đào tạo tập trung;
+- học liệu hướng dẫn học sinh;
+- điều phối viên tại chỗ;
+- hỗ trợ từ xa;
+- phần mềm/trợ lý AI nếu có;
+- thiết bị nếu cần.
+
+Không dùng bảng chi phí sinh viên đại học cho nhóm giáo viên vùng khó.
+
+## 4. Chi phí xây tự động hóa
+
+AI-first làm giảm chi phí biến đổi nhưng tạo chi phí đầu tư ban đầu và chi phí duy trì.
+
+Mỗi hạng mục phải ghi:
+
+| Hạng mục | Giờ dev | Chi phí công cụ/API | Chi phí vận hành tháng | Trạng thái |
+|---|---:|---:|---:|---|
+| Đăng ký và mã học viên | Chưa đo | Chưa đo | Chưa đo | Cần audit |
+| Đối soát thanh toán | Chưa đo | Chưa đo | Chưa đo | Cần audit |
+| FAQ/RAG tuyến đầu | Chưa đo | Chưa đo | Chưa đo | Cần audit |
+| Nhắc lịch/điểm danh | Chưa đo | Chưa đo | Chưa đo | Cần audit |
+| Chấm sơ bộ theo rubric | Chưa đo | Chưa đo | Chưa đo | Cần audit |
+
+Nguyên tắc:
+
+- Không coi giờ dev là miễn phí.
+- Không xây cả năm hạng mục cùng lúc trước khi audit tài sản có sẵn.
+- Nếu dự án tự thu hàng trăm giao dịch, ưu tiên đối soát.
+- Nếu đối tác thu và đối soát, có thể ưu tiên trợ lý AI hoặc workflow lớp học.
+
+## 5. Khung dòng tiền tháng đầu
+
+### 5.1. Dòng tiền vào
 
 | Nguồn | Giá trị/thông tin hiện có | Tiền tháng đầu |
 |---|---:|---:|
-| Sinh viên online | 200–300 người × 220.000 đồng `[giả định]` | 44–66 triệu học phí gộp; thời điểm chi phần đối tác cần chốt |
-| 2 khóa giảng viên | 40–100 triệu giá trị hợp đồng | Phụ thuộc tiền ứng trước và lịch thu |
-| 2 khóa doanh nghiệp | 40–200 triệu giá trị hợp đồng | Phụ thuộc tiền ứng trước và lịch thu |
+| Sinh viên online | 200–300 người × 220.000 đồng `[giả định]` | 44–66 triệu học phí gộp |
+| 2 khóa giảng viên | 40–100 triệu giá trị hợp đồng | Phụ thuộc ứng trước và lịch thu |
+| 2 khóa doanh nghiệp | 40–200 triệu giá trị hợp đồng | Phụ thuộc ứng trước và lịch thu |
 | Cấp quyền khóa sinh viên | Ít nhất 1 thử nghiệm/giao dịch | Chưa có giá và lịch thu |
+| STEAM | Chưa chốt người trả tiền và phạm vi | Không đưa vào dự báo |
 
-### 4.2. Dòng tiền ra
+### 5.2. Dòng tiền ra
 
-- Chi phí cố định thực tế trong tháng.
-- Chi phí trực tiếp của cohort sinh viên.
-- Chi phí trực tiếp của từng khóa B2B đã triển khai.
+- Chi phí cố định thực tế.
+- Chi phí trực tiếp AI-first hoặc hybrid.
+- Chi phí từng khóa B2B đã triển khai.
 - Chi phí bán hàng và đi lại.
 - Thuế, phí thanh toán và phần đối tác.
-- Chi đầu tư nền tảng chỉ khi thật sự cần.
+- Chi phí xây hoặc tích hợp tự động hóa.
+- Chi phí STEAM chỉ khi scope được phê duyệt.
 
-### 4.3. Công thức báo cáo
+### 5.3. Công thức báo cáo
 
 > Dòng tiền thuần tháng = tổng tiền thực thu - tổng tiền thực chi
 
@@ -139,14 +190,12 @@ Phải tính:
 
 > Runway = tiền mặt khả dụng ÷ chi tiền bình quân theo kịch bản thực tế
 
-Không dùng tổng giá trị hợp đồng để thay tổng tiền thực thu.
-
-## 5. Bảng theo dõi từng hợp đồng B2B
+## 6. Bảng theo dõi từng hợp đồng B2B
 
 | Trường | Nội dung |
 |---|---|
 | Mã hợp đồng | định danh |
-| Nhóm khách hàng | giảng viên/doanh nghiệp |
+| Nhóm khách hàng | giảng viên/doanh nghiệp/STEAM |
 | Giá trị hợp đồng | tổng đã ký |
 | Ngày ký | ngày thực tế |
 | Lịch triển khai | ngày bắt đầu/kết thúc |
@@ -158,68 +207,55 @@ Không dùng tổng giá trị hợp đồng để thay tổng tiền thực thu
 | Công nợ | còn phải thu |
 | Đóng góp thực tế | doanh thu thuần trừ chi phí trực tiếp |
 
-## 6. Điều khoản thương mại bảo vệ dòng tiền
-
-Khuyến nghị để đàm phán, không phải quy định cứng:
+## 7. Điều khoản thương mại bảo vệ dòng tiền
 
 - Có tiền ứng trước trước khi bắt đầu tùy chỉnh hoặc đặt lịch chuyên gia.
-- Tiền ứng trước tối thiểu phải đủ trang trải chi phí trực tiếp dự kiến đã cam kết.
+- Tiền ứng trước tối thiểu nên đủ trang trải chi phí trực tiếp dự kiến đã cam kết.
 - Chia thanh toán theo mốc có đầu ra rõ ràng.
-- Không để toàn bộ tiền thanh toán sau nghiệm thu nếu dự án phải ứng chi lớn.
+- Không để toàn bộ tiền thanh toán sau nghiệm thu nếu phải ứng chi lớn.
 - Ghi rõ phạm vi thay đổi, số vòng chỉnh sửa và hỗ trợ sau khóa.
-- Ghi rõ trách nhiệm của đối tác trong tuyển sinh, thu tiền, điều phối và hỗ trợ.
+- Ghi rõ trách nhiệm đối tác trong tuyển sinh, thu tiền, điều phối và hỗ trợ.
 
-## 7. Chưa dựng bảng dòng tiền 12 tháng
-
-Bảng 12 tháng cũ đã được loại khỏi bản điều hành vì dựa trên:
-
-- ba tầng doanh thu cũ;
-- số hợp đồng B2B chưa có căn cứ;
-- lịch mùa vụ chưa ánh xạ sang tháng dương lịch;
-- giả định thanh toán 50/50 chưa được chốt;
-- chi phí B2B và cohort chưa có số thật.
+## 8. Chưa dựng bảng dòng tiền 12 tháng
 
 Chỉ dựng lại khi có tối thiểu:
 
 1. Ngày bắt đầu chính thức.
 2. Chi phí cố định thực tế.
 3. Founder có nhận lương hay không.
-4. Trần số khóa giảng viên và doanh nghiệp có thể giao mỗi tháng.
+4. Trần số khóa B2B có thể giao mỗi tháng.
 5. Pipeline và tỷ lệ ký thực tế.
 6. Điều khoản thanh toán của các hợp đồng đầu tiên.
-7. Unit economics cohort sinh viên đầu tiên.
+7. Unit economics AI-first và hybrid.
 8. Giá và chi phí gói cấp quyền đầu tiên.
+9. Phạm vi và nguồn tiền STEAM.
 
-## 8. Nhu cầu vốn và runway
+## 9. Nhu cầu vốn và runway
 
-Không còn sử dụng mức 800 triệu–1 tỷ như một kết luận đã chốt.
-
-Cách tính sau khi có dữ liệu:
+Không sử dụng mức 800 triệu–1 tỷ như kết luận đã chốt.
 
 > Vốn lưu động tối thiểu = điểm âm lũy kế sâu nhất + chi đầu tư bắt buộc + dự phòng rủi ro
 
-Phải lập ít nhất ba kịch bản:
+Lập ít nhất ba kịch bản:
 
 - B2B ký và thu đúng kế hoạch.
 - B2B ký đủ nhưng thu chậm.
 - B2B chỉ đạt 50% mục tiêu.
 
-Biến số quan trọng nhất không chỉ là số hợp đồng mà là **tiền thu đúng hạn**.
+Mỗi kịch bản sinh viên phải có AI-first và hybrid.
 
-## 9. Ngưỡng cảnh báo
+## 10. Ngưỡng cảnh báo
 
 | Ngưỡng | Hành động |
 |---|---|
 | Tiền mặt còn dưới 3 tháng chi cố định thực tế | Dừng chi đầu tư chưa cần thiết; ưu tiên thu công nợ và hợp đồng ứng trước |
-| Hợp đồng B2B ký nhưng tiền ứng trước không đủ chi trực tiếp | Không khởi động phần tùy chỉnh tốn chi phí trước khi điều chỉnh điều khoản |
-| Cohort sinh viên có đóng góp âm ngoài mức kiểm chứng được duyệt | Dừng mở rộng; sửa tỷ lệ chia, tải hỗ trợ hoặc cấu trúc học phí |
-| Công nợ quá hạn tăng hai kỳ liên tiếp | Dừng bán chịu cho khách mới có cấu trúc tương tự |
+| Hợp đồng B2B ký nhưng ứng trước không đủ chi trực tiếp | Không khởi động phần tùy chỉnh tốn chi phí trước khi điều chỉnh điều khoản |
+| Cohort có API cost/ticket cao hơn kịch bản | Giữ quy mô, chuyển hybrid và tối ưu trước khi mở rộng |
+| Tỷ lệ chuyển người thật vượt ngưỡng thiết kế | Bổ sung điều phối hoặc giảm phạm vi trợ lý AI |
 | Tải hỗ trợ/chấm bài vượt trần đội | Không mở cohort mới; tự động hóa hoặc bố trí chuyên gia theo đợt |
 | Doanh thu/đóng góp thấp hơn kế hoạch hai tháng liên tiếp | Chuyển về kịch bản tối giản và rà lại pipeline |
 
-## 10. Báo cáo tài chính hàng tuần
-
-Mỗi tuần phải có:
+## 11. Báo cáo tài chính hàng tuần
 
 - Tiền mặt đầu kỳ và cuối kỳ.
 - Tiền đã thu theo từng dòng sản phẩm.
@@ -227,14 +263,18 @@ Mỗi tuần phải có:
 - Giá trị hợp đồng mới ký.
 - Tiền ứng trước mới thu.
 - Công nợ đến hạn và quá hạn.
+- Chi phí API và hạ tầng.
+- Giờ dev cho tự động hóa.
+- Ticket, ngoại lệ và giờ điều phối.
 - Dự báo tiền vào/ra 4 tuần tiếp theo.
-- Rủi ro lớn nhất có thể làm thiếu tiền.
 
-## 11. Các quyết định còn cần anh Đức
+## 12. Các quyết định còn cần anh Đức
 
 1. Founder có nhận lương trong 6 tháng đầu không.
 2. Chi phí thực tế của đội 4–5 người.
 3. Nguồn tiền mặt hoặc runway hiện có.
 4. Trần số khóa B2B có thể giao mỗi tháng.
-5. Điều khoản ứng trước mục tiêu cho các hợp đồng đầu tiên.
-6. Pháp nhân và quy trình thu học phí, hóa đơn và thuế.
+5. Điều khoản ứng trước mục tiêu.
+6. Mức hoàn thiện SOPai, Arkon và henlich.vn.
+7. Pháp nhân và quy trình thu học phí, hóa đơn và thuế.
+8. Phạm vi và nguồn chi trả STEAM.
