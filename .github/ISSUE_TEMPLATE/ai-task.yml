@@ -1,0 +1,74 @@
+name: Nhiệm vụ cộng tác AI
+description: Giao một nhiệm vụ để ChatGPT và Claude xử lý, phản biện và báo cáo trên GitHub
+title: "[AI] "
+labels:
+  - ai:new
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Điền đủ thông tin dưới đây. Sau khi tạo Issue, chạy workflow **AI Collaboration** trong tab Actions và nhập số Issue.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Mục tiêu
+      description: Kết quả cuối cùng cần đạt là gì?
+      placeholder: Mô tả ngắn gọn mục tiêu cần hai AI xử lý.
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Đầu ra cần nhận
+      description: Liệt kê tài liệu, phân tích, file hoặc quyết định cần chuẩn bị.
+      placeholder: |
+        - Bản kế hoạch...
+        - File cần cập nhật...
+        - Báo cáo cuối...
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: File hoặc khu vực liên quan
+      description: Ghi đường dẫn file cần đọc hoặc được phép sửa. Để trống nếu là nhiệm vụ mới.
+      placeholder: |
+        AGENTS.md
+        ke-hoach/muc-tieu-thang-1.md
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Tiêu chí nghiệm thu
+      description: Điều kiện nào để coi nhiệm vụ đã đạt?
+      placeholder: Nêu các tiêu chí đo được hoặc kiểm tra được.
+    validations:
+      required: true
+
+  - type: textarea
+    id: known_data
+    attributes:
+      label: Dữ liệu và quyết định đã có
+      description: Ghi các số liệu, ràng buộc hoặc quyết định anh đã chốt.
+      placeholder: Không để AI tự đoán các dữ liệu nội bộ quan trọng.
+
+  - type: textarea
+    id: forbidden_decisions
+    attributes:
+      label: Việc AI không được tự quyết
+      description: Giá, KPI, ngân sách, pháp lý hoặc lựa chọn chiến lược nào phải trình anh?
+      placeholder: Liệt kê những điểm phải chuyển sang HUMAN_DECISION.
+
+  - type: dropdown
+    id: merge_policy
+    attributes:
+      label: Chính sách thay đổi repo
+      options:
+        - Chỉ phân tích và báo cáo, không sửa file
+        - Được tạo bản nháp thay đổi, anh duyệt trước khi merge
+        - Được tự động sửa các nội dung không ảnh hưởng chiến lược
+    validations:
+      required: true
