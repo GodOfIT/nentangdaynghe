@@ -1,37 +1,36 @@
-# Chuoi STEAM den nghe nghiep
+# Chuỗi STEAM đến nghề nghiệp
 
-## Nguyen tac
+## Nguyên tắc
 
-Co the xay nhieu chuoi nghe song song vi AI giup tang toc san xuat hoc lieu, bai tap, code mau, rubric va mo phong. Chuoi nao co kha nang noi tu STEAM len huong nghiep va viec lam thi uu tien trien khai truoc.
+Có thể xây dựng nhiều chuỗi nghề song song vì AI giúp tăng tốc quá trình sản xuất học liệu, bài tập, code mẫu, rubric và nội dung mô phỏng. Những chuỗi có khả năng kết nối rõ ràng từ STEAM phổ thông đến hướng nghiệp và cơ hội việc làm cần được ưu tiên triển khai trước.
 
-Moi chuoi co ba cap:
+Mỗi chuỗi gồm ba cấp độ:
 
-- Cap kham pha: 12-15 buoi STEAM.
-- Cap huong nghiep: 20-30 gio, mo phong cong viec.
-- Cap nghe nghiep: dao tao theo chuan dau ra hoac don hang doanh nghiep.
+- **Cấp khám phá:** 12-15 buổi STEAM.
+- **Cấp hướng nghiệp:** 20-30 giờ trải nghiệm và mô phỏng công việc.
+- **Cấp nghề nghiệp:** đào tạo theo chuẩn đầu ra hoặc theo đơn đặt hàng của doanh nghiệp.
 
-## Tam chuoi uu tien
+## Tám chuỗi ưu tiên
 
-| Chuoi | STEAM pho thong | Huong nghiep | Dao tao nghe/dai hoc | Dau ra |
+| Chuỗi | STEAM phổ thông | Hướng nghiệp | Đào tạo nghề/đại học | Đầu ra |
 |---|---|---|---|---|
-| AI va du lieu | Phan loai anh, phan tich du lieu truong hoc | Trai nghiem nghe AI-Data | AI ung dung, du lieu, ML co ban | AI operator, data assistant |
-| Vibe coding | Website, game, ung dung nho | Phat trien san pham so | Web/app, automation, agent | Junior developer, automation builder |
-| Robotics-IoT | Robot, lop hoc thong minh | Co dien tu, tu dong hoa | PLC, IoT, bao tri | Ky thuat vien tu dong hoa |
-| Dien-nang luong | Nha tiet kiem dien | Dien dan dung, dien cong nghiep | Dien, nang luong, van hanh | Ky thuat vien dien |
-| Dien lanh-HVAC | Mo hinh dieu hoa thong minh | Dien lanh, toa nha | HVAC, bao tri, van hanh | Ky thuat vien HVAC |
-| CAD-3D-CNC | Thiet ke va in san pham 3D | Thiet ke, che tao | CAD/CAM/CNC | Ky thuat vien thiet ke, gia cong |
-| Nong nghiep thong minh | Vuon cay tu tuoi | Cong nghe nong nghiep | IoT nong nghiep, van hanh | Ky thuat vien trang trai |
-| Truyen thong so | Video, thiet ke, noi dung AI | Marketing va san xuat so | Content, media, thuong mai dien tu | AI content/media operator |
+| AI và dữ liệu | Phân loại hình ảnh, phân tích dữ liệu trường học | Trải nghiệm nghề AI - Data | AI ứng dụng, dữ liệu và ML cơ bản | AI operator, data assistant |
+| Vibe coding | Website, trò chơi và ứng dụng nhỏ | Phát triển sản phẩm số | Web/app, automation và agent | Junior developer, automation builder |
+| Robotics - IoT | Robot và lớp học thông minh | Cơ điện tử, tự động hóa | PLC, IoT và bảo trì | Kỹ thuật viên tự động hóa |
+| Điện - năng lượng | Mô hình nhà tiết kiệm điện | Điện dân dụng, điện công nghiệp | Điện, năng lượng và vận hành | Kỹ thuật viên điện |
+| Điện lạnh - HVAC | Mô hình điều hòa thông minh | Điện lạnh và vận hành tòa nhà | HVAC, bảo trì và vận hành | Kỹ thuật viên HVAC |
+| CAD - 3D - CNC | Thiết kế và in sản phẩm 3D | Thiết kế và chế tạo | CAD/CAM/CNC | Kỹ thuật viên thiết kế, gia công |
+| Nông nghiệp thông minh | Vườn cây tự tưới | Công nghệ nông nghiệp | IoT nông nghiệp và vận hành | Kỹ thuật viên trang trại |
+| Truyền thông số | Video, thiết kế và nội dung AI | Marketing và sản xuất nội dung số | Content, media và thương mại điện tử | AI content/media operator |
 
-## Ho so nang luc
+## Hồ sơ năng lực
 
-Moi nguoi hoc can co ho so gom:
+Mỗi người học cần có một hồ sơ năng lực gồm:
 
-- San pham cuoi khoa.
-- Code, thiet ke, file du lieu hoac ban ve.
-- Video hoac hinh anh minh chung qua trinh.
-- Ket qua rubric.
-- Nhan xet cua giao vien.
-- Phien ban san pham qua tung lan cai tien.
-- De xuat lo trinh tiep theo.
-
+- Sản phẩm cuối khóa.
+- Code, thiết kế, tệp dữ liệu hoặc bản vẽ.
+- Video hoặc hình ảnh minh chứng quá trình thực hiện.
+- Kết quả đánh giá theo rubric.
+- Nhận xét của giáo viên.
+- Các phiên bản sản phẩm qua từng lần cải tiến.
+- Đề xuất lộ trình học tập hoặc nghề nghiệp tiếp theo.
