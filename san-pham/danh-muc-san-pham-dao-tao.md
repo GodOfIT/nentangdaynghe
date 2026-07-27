@@ -1,62 +1,61 @@
-# Danh muc san pham dao tao
+# Danh mục sản phẩm đào tạo
 
-## Nhom A: Dao tao AI cho giao vien va giang vien
+## Nhóm A: Đào tạo AI cho giáo viên và giảng viên
 
 ### AI Essentials for Educators
 
-- Thoi luong: 2 buoi.
-- Doi tuong: giao vien, giang vien va can bo quan ly.
-- Muc tieu: hieu dung ve AI, su dung an toan, soan bai, tao hoc lieu, nghien cuu va quan ly cong viec.
-- Ung dung: phu cap AI cap truong hoac cum truong.
+- Thời lượng: 2 buổi.
+- Đối tượng: giáo viên, giảng viên và cán bộ quản lý.
+- Mục tiêu: hiểu đúng về AI, sử dụng AI an toàn, soạn bài, tạo học liệu, hỗ trợ nghiên cứu và quản lý công việc.
+- Ứng dụng: phổ cập năng lực AI ở cấp trường hoặc cụm trường.
 
 ### AI-Powered Teaching
 
-- Thoi luong: 4-6 buoi.
-- Thiet ke bai giang voi AI.
-- Tao cau hoi, rubric, tinh huong va hoc lieu da phuong tien.
-- Ca nhan hoa hoat dong hoc tap.
-- Xay tro ly AI cho mon hoc.
-- Danh gia san pham do hoc sinh su dung AI tao ra.
-- Dau ra: moi giang vien hoan thanh mot bo cong cu AI ap dung cho mon minh day.
+- Thời lượng: 4-6 buổi.
+- Thiết kế bài giảng với AI.
+- Tạo câu hỏi, rubric, tình huống và học liệu đa phương tiện.
+- Cá nhân hóa hoạt động học tập.
+- Xây dựng trợ lý AI cho môn học.
+- Đánh giá các sản phẩm do học sinh sử dụng AI để tạo ra.
+- Đầu ra: mỗi giảng viên hoàn thành một bộ công cụ AI có thể áp dụng trực tiếp cho môn học mình phụ trách.
 
 ### Faculty AI Builder
 
-- Thoi luong: 8-12 buoi.
-- Xay skill, agent, kho tri thuc va quy trinh AI rieng.
-- Ung dung: tro ly nghien cuu, tro ly cham bai, he thong lam video bai giang, quan ly hoc lieu, ho tro sinh vien.
-- Phu hop voi dai hoc, cao dang va trung cap.
+- Thời lượng: 8-12 buổi.
+- Xây dựng skill, agent, kho tri thức và quy trình AI riêng.
+- Ứng dụng: trợ lý nghiên cứu, trợ lý chấm bài, hệ thống làm video bài giảng, quản lý học liệu và hỗ trợ sinh viên.
+- Phù hợp với trường đại học, cao đẳng và trung cấp.
 
-## Nhom B: AI va vibe coding cho nguoi hoc
+## Nhóm B: AI và vibe coding cho người học
 
-| Doi tuong | Chuong trinh |
+| Đối tượng | Chương trình |
 |---|---|
-| THCS | AI Creator, thiet ke tro choi, truyen tuong tac, website don gian |
-| THPT | AI Productivity, nghien cuu voi AI, vibe coding, xay san pham so |
-| Trung cap/cao dang | AI nghe nghiep, automation, website, ung dung quan ly, AI agent |
-| Dai hoc | AI for Study and Work, AI Research, Vibe Coding Startup |
-| Doanh nghiep | AI Productivity, AI Workflow, AI Agent Builder, Vibe Coding noi bo |
+| THCS | AI Creator, thiết kế trò chơi, truyện tương tác và website đơn giản |
+| THPT | AI Productivity, nghiên cứu với AI, vibe coding và xây dựng sản phẩm số |
+| Trung cấp/cao đẳng | AI nghề nghiệp, automation, website, ứng dụng quản lý và AI agent |
+| Đại học | AI for Study and Work, AI Research, Vibe Coding Startup |
+| Doanh nghiệp | AI Productivity, AI Workflow, AI Agent Builder và vibe coding nội bộ |
 
-## Yeu cau dau ra
+## Yêu cầu đầu ra
 
-Moi khoa khong chi dung o viec hoc prompt. Hoc vien can co san pham hoat dong duoc:
+Mỗi khóa học không chỉ dừng ở việc học cách viết prompt. Học viên cần tạo ra ít nhất một sản phẩm có thể hoạt động hoặc trình diễn được, chẳng hạn như:
 
-- Website hoac landing page.
-- Ung dung noi bo.
-- Workflow tu dong hoa.
-- Tro ly AI cho mot quy trinh cu the.
-- San pham STEAM co minh chung thuc hanh.
-- Portfolio ca nhan.
+- Website hoặc landing page.
+- Ứng dụng nội bộ.
+- Workflow tự động hóa.
+- Trợ lý AI cho một quy trình cụ thể.
+- Sản phẩm STEAM có minh chứng thực hành.
+- Portfolio cá nhân.
 
-## Goi thuong mai
+## Các gói thương mại
 
-| Goi | Thanh phan |
+| Gói | Thành phần |
 |---|---|
-| AI School Starter | Dao tao AI cho giao vien va AI cho hoc sinh |
-| AI University | AI cho giang vien va AI/vibe coding cho sinh vien |
-| STEAM Lab OS | Nen tang, chuong trinh, dao tao giao vien, bao cao van hanh |
-| STEAM Lab Full | Lab OS, thu vien nhieu khoa, ho tro chuyen gia, su kien trinh dien |
-| Vocational AI | AI cho giang vien nghe, AI cho hoc vien, so hoa chuong trinh |
-| Career Pipeline | Khung nang luc, huong nghiep, ho so nang luc, ket noi doanh nghiep |
-| Workforce Order | Chuan hoa don hang, dao tao theo yeu cau, danh gia, ghep ung vien |
-| Enterprise AI | Dao tao AI/vibe coding va xay quy trinh hoac agent that cho doanh nghiep |
-
+| AI School Starter | Đào tạo AI cho giáo viên và AI cho học sinh |
+| AI University | AI cho giảng viên và AI/vibe coding cho sinh viên |
+| STEAM Lab OS | Nền tảng, chương trình, đào tạo giáo viên và báo cáo vận hành |
+| STEAM Lab Full | Lab OS, thư viện nhiều khóa học, hỗ trợ chuyên gia và sự kiện trình diễn |
+| Vocational AI | AI cho giảng viên nghề, AI cho học viên và số hóa chương trình đào tạo nghề |
+| Career Pipeline | Khung năng lực, hướng nghiệp, hồ sơ năng lực và kết nối doanh nghiệp |
+| Workforce Order | Chuẩn hóa đơn hàng, đào tạo theo yêu cầu, đánh giá và ghép ứng viên |
+| Enterprise AI | Đào tạo AI/vibe coding và xây dựng quy trình hoặc agent thực tế cho doanh nghiệp |
