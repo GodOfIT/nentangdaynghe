@@ -1,36 +1,35 @@
-# Vai tro phap ly va nguyen tac an toan
+# Vai trò pháp lý và nguyên tắc an toàn
 
-## Vai tro nen thiet ke
+## Vai trò nên được thiết kế
 
-Nen tang nen dung o vi tri:
+Nền tảng nên giữ vị trí:
 
-> Cong nghe + dao tao + danh gia nang luc + dieu phoi du lieu.
+> Công nghệ + đào tạo + đánh giá năng lực + điều phối dữ liệu.
 
-Nen tang khong nen tu nhan la doanh nghiep xuat khau lao dong hoac truc tiep cung ung viec lam khi chua co giay phep phu hop.
+Nền tảng không nên tự nhận là doanh nghiệp xuất khẩu lao động hoặc trực tiếp cung ứng việc làm khi chưa có giấy phép phù hợp.
 
-## Mo hinh hop tac an toan
+## Mô hình hợp tác an toàn
 
-| Hoat dong | Don vi dam nhiem |
+| Hoạt động | Đơn vị đảm nhiệm |
 |---|---|
-| Xay nen tang va khung nang luc | Cong ty nen tang |
-| To chuc STEAM | Truong pho thong va giao vien |
-| Dao tao nghe, cap van bang/chung chi | Co so du tham quyen |
-| Gioi thieu, cung ung viec lam | Doanh nghiep dich vu viec lam co giay phep |
-| Dua nguoi lao dong ra nuoc ngoai | Doanh nghiep duoc cap phep theo quy dinh phap luat |
-| Tuyen dung va ky hop dong | Doanh nghiep su dung lao dong va nguoi lao dong |
+| Xây dựng nền tảng và khung năng lực | Công ty vận hành nền tảng |
+| Tổ chức chương trình STEAM | Trường phổ thông và giáo viên |
+| Đào tạo nghề, cấp văn bằng hoặc chứng chỉ | Cơ sở có thẩm quyền |
+| Giới thiệu và cung ứng việc làm | Doanh nghiệp dịch vụ việc làm có giấy phép |
+| Đưa người lao động đi làm việc ở nước ngoài | Doanh nghiệp được cấp phép theo quy định pháp luật |
+| Tuyển dụng và ký hợp đồng lao động | Doanh nghiệp sử dụng lao động và người lao động |
 
-## Nguyen tac du lieu
+## Nguyên tắc dữ liệu
 
-- Chi thu thap du lieu can thiet cho dao tao, danh gia va ket noi co hoi.
-- Minh bach viec su dung du lieu voi nguoi hoc.
-- Khong ban du lieu ca nhan.
-- Bao cao thi truong lao dong chi nen o dang tong hop.
-- Ho so nang luc can co co che cho phep nguoi hoc xem va yeu cau dieu chinh thong tin sai.
+- Chỉ thu thập dữ liệu cần thiết cho hoạt động đào tạo, đánh giá và kết nối cơ hội.
+- Minh bạch với người học về mục đích và cách thức sử dụng dữ liệu.
+- Không bán dữ liệu cá nhân.
+- Báo cáo về thị trường lao động chỉ nên được cung cấp dưới dạng dữ liệu tổng hợp.
+- Hồ sơ năng lực cần có cơ chế cho phép người học xem và yêu cầu điều chỉnh thông tin sai.
 
-## Nguyen tac viec lam quoc te
+## Nguyên tắc đối với việc làm quốc tế
 
-- Chi ket noi voi don vi duoc cap phep.
-- Cong khai chi phi, hop dong va trang thai ho so.
-- Co kenh canh bao doi tac, chi phi hoac dieu kien bat thuong.
-- Nguoi hoc/nguoi lao dong phai tu nguyen tham gia va duoc giai thich ro quyen loi, nghia vu.
-
+- Chỉ kết nối với các đơn vị có giấy phép phù hợp.
+- Công khai chi phí, hợp đồng và trạng thái hồ sơ.
+- Có kênh cảnh báo đối tác, chi phí hoặc điều kiện bất thường.
+- Người học hoặc người lao động phải tự nguyện tham gia và được giải thích rõ quyền lợi, nghĩa vụ.
