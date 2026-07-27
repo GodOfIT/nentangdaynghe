@@ -26,6 +26,8 @@ Thông điệp cốt lõi:
 
 - [Tổng quan chiến lược](docs/tong-quan-chien-luoc.md)
 - [Kế hoạch triển khai 12 tháng](ke-hoach/ke-hoach-12-thang.md)
+- [Kế hoạch kinh doanh 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
+- [Thế mạnh và nguyên tắc lập kế hoạch dự án](docs/the-manh-du-an.md)
 - [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
 - [Chuỗi STEAM đến nghề nghiệp](san-pham/chuoi-steam-den-nghe.md)
 - [Mô hình nền tảng](nen-tang/mo-hinh-nen-tang.md)
