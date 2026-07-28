@@ -29,17 +29,24 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 ## Tài liệu điều hành ưu tiên
 
 - [Bối cảnh chung và quy tắc dành cho các trợ lý AI](AGENTS.md)
+- [Báo cáo thống nhất vòng 3](trao-doi/bao-cao-thong-nhat-vong-3.md)
+- [Định hướng AI trong đào tạo giáo viên năm 2026](docs/dinh-huong-ai-trong-dao-tao-giao-vien-2026.md)
 - [Tổng hợp thống nhất sau phản hồi Claude vòng 2](trao-doi/tong-hop-thong-nhat-va-chinh-sua-vong-2.md)
 - [Phản hồi vòng 2 của Claude](trao-doi/phan-hoi-claude-vong-2.md)
 - [Phản hồi vòng 1 của ChatGPT](trao-doi/phan-hoi-chatgpt-vong-1.md)
 - [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
-- [Quy trình phối hợp AI hoàn toàn trên GitHub](docs/quy-trinh-phoi-hop-github.md)
-- [Hướng dẫn cấu hình AI Collaboration](docs/cau-hinh-ai-collaboration.md)
 - [Mục tiêu kinh doanh tháng 1](ke-hoach/muc-tieu-thang-1.md)
 - [Kế hoạch kinh doanh 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
 - [Unit economics theo từng dòng sản phẩm](ke-hoach/unit-economics.md)
 - [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
 - [Thế mạnh và nguyên tắc lập kế hoạch dự án](docs/the-manh-du-an.md)
+
+## Tài liệu phối hợp AI thử nghiệm
+
+- [Quy trình phối hợp AI hoàn toàn trên GitHub](docs/quy-trinh-phoi-hop-github.md)
+- [Hướng dẫn cấu hình AI Collaboration](docs/cau-hinh-ai-collaboration.md)
+
+> Hiện tại dự án đang phối hợp ChatGPT–Claude thủ công qua các file trong repo. Không chạy workflow API nếu chưa được anh Đức yêu cầu.
 
 ## Các tài liệu chiến lược và sản phẩm
 
@@ -56,6 +63,7 @@ Việc triển khai theo từng giai đoạn và nguồn lực thực tế đư�
 
 - Dùng AI làm kiến trúc vận hành mục tiêu, có phương án hybrid an toàn khi hệ thống chưa sẵn sàng.
 - Lấy các khóa AI và vibe coding làm nguồn doanh thu sớm.
+- Với khối giáo dục, chuyển từ dạy công cụ sang AI+ / AIx, chuẩn đầu ra, sư phạm AI, đánh giá và dữ liệu năng lực.
 - Chỉ mở rộng quy mô sau khi kiểm chứng unit economics, API cost, chất lượng và trần vận hành.
 - STEAM năm đầu tập trung đào tạo năng lực giáo viên và pilot 1–2 môn có phạm vi rõ.
 - Lấy đơn hàng doanh nghiệp để kéo chương trình đào tạo sát nhu cầu thị trường.
