@@ -1,124 +1,255 @@
 # Mô hình doanh thu
 
+> Chiến lược hiện hành: **education-first**. Dòng tiền giai đoạn đầu đến từ người học, giáo viên, giảng viên và tổ chức giáo dục. Doanh nghiệp là thị trường phát triển có chọn lọc, không phải giả định doanh thu nền.
+
 ## 1. Nguyên tắc
 
-Nền tảng cần tạo dòng tiền ngay từ giai đoạn đầu, nhưng không được dùng một công thức giá cho tất cả nhóm khách hàng.
+Nền tảng cần tạo dòng tiền sớm nhưng không phụ thuộc vào một nhóm khách hàng có chu kỳ bán hàng dài.
 
-Mô hình doanh thu được chia thành bốn dòng chính:
+Thứ tự ưu tiên doanh thu:
 
-1. Đào tạo trực tiếp cho giảng viên và cán bộ giáo dục.
-2. Đào tạo trực tiếp cho doanh nghiệp.
-3. Bán quyền sử dụng khóa học dành cho sinh viên.
-4. Tự vận hành lớp online dành cho sinh viên.
+1. Lớp cộng đồng và cohort cho giáo viên, giảng viên, sinh viên và người đi làm.
+2. Đào tạo trực tiếp cho trường, khoa, trung tâm và tổ chức giáo dục.
+3. Cấp quyền chương trình, học liệu, đào tạo giảng viên nguồn và nền tảng.
+4. Workshop, khảo sát và pilot doanh nghiệp.
+5. Triển khai doanh nghiệp quy mô lớn sau khi có case study và năng lực giao hàng ổn định.
 
-Các nguồn thu từ nền tảng, STEAM, hướng nghiệp và đặt hàng nhân lực được phát triển sau khi bốn dòng ban đầu đã có dữ liệu thực tế.
+Không dùng doanh thu doanh nghiệp chưa có hợp đồng để bù cho kế hoạch giáo dục chưa đạt.
 
-## 2. Đào tạo trực tiếp cho giảng viên
+## 2. Thang sản phẩm
 
-Đặc điểm:
+> Nội dung miễn phí → workshop ngắn → khóa 4 buổi → khóa chuyên sâu → cấp quyền/nền tảng → tư vấn hoặc triển khai riêng.
 
-- Tổ chức trực tiếp hoặc kết hợp.
-- Nội dung điều chỉnh theo môn học, chuyên ngành và nhu cầu nhà trường.
-- Có hoạt động thực hành và sản phẩm đầu ra.
-- Có thể kèm tư vấn, đào tạo giảng viên nguồn hoặc xây công cụ AI.
+Thang sản phẩm giúp:
 
-Khung giá:
+- giảm rào cản mua lần đầu;
+- tạo dòng tiền trước khi bán gói lớn;
+- đo nhu cầu bằng hành vi thanh toán;
+- tạo case study và dữ liệu chất lượng;
+- nâng cấp khách hàng theo nhu cầu thật.
 
-> **20-50 triệu đồng/khóa**
+## 3. Lớp cộng đồng và cohort người học
+
+### Đối tượng
+
+- giáo viên phổ thông;
+- giảng viên đại học, cao đẳng và giáo dục nghề nghiệp;
+- sinh viên;
+- người đi làm cần năng lực AI thực hành.
+
+### Cấu hình
+
+- workshop 1 buổi;
+- khóa ngắn hạn 2–4 buổi;
+- khóa chuyên sâu 6–15 buổi;
+- cohort theo môn học, ngành học hoặc nhu cầu nghề nghiệp.
+
+### Công thức
+
+> Học phí gộp = số người thanh toán × học phí thực thu bình quân
+
+> Doanh thu dự án = học phí gộp - phần chia sẻ đối tác - hoàn trả - phí thanh toán
+
+> Đóng góp cohort = doanh thu dự án - toàn bộ chi phí trực tiếp để giao khóa
+
+Các chỉ số phải tách riêng:
+
+- đăng ký;
+- thanh toán;
+- bắt đầu học;
+- hoàn thành;
+- nâng cấp sang khóa tiếp theo;
+- chi phí trên người bắt đầu;
+- chi phí trên người hoàn thành;
+- tỷ lệ hoàn tiền và khiếu nại.
+
+## 4. Đào tạo cho trường và tổ chức giáo dục
+
+### Sản phẩm
+
+- khóa AI cho giáo viên/giảng viên;
+- khóa AI 4 buổi cho giáo viên phổ thông;
+- chương trình AI cho sinh viên;
+- Vibe Coding;
+- AI+ / AIx Curriculum Sprint;
+- đào tạo giảng viên nguồn;
+- STEAM và chương trình theo yêu cầu.
+
+### Đặc điểm
+
+- đơn vị tập hợp người học;
+- dự án cung cấp chương trình, giảng viên, học liệu và đánh giá;
+- có thể tổ chức trực tiếp, trực tuyến hoặc kết hợp;
+- có thể tính theo khóa, cohort, số người học hoặc gói năm.
+
+### Công thức
+
+> Doanh thu = phí đào tạo + phí tùy chỉnh + phí nền tảng + phí báo cáo/hỗ trợ nếu có
+
+Khung giá tham chiếu cho khóa giáo viên/giảng viên tổ chức theo đơn vị:
+
+> **20–50 triệu đồng/khóa** `[giả định theo phạm vi]`
+
+Giá thực tế phải dựa trên thời lượng, số người, mức tùy chỉnh, giảng viên, địa điểm, nền tảng và sản phẩm bàn giao.
+
+## 5. B2B2C qua trường, trung tâm và đối tác
+
+Tổ chức giáo dục vừa là khách hàng vừa là kênh phân phối.
+
+Các mô hình:
+
+1. Đơn vị mua trọn gói và tổ chức người học.
+2. Chia sẻ học phí theo số người thực thu.
+3. Dự án cấp quyền chương trình, đơn vị tự dạy.
+4. Dự án đào tạo giảng viên nguồn và giám sát chất lượng.
+5. Đơn vị dùng nền tảng, rubric và báo cáo của dự án.
 
 Công thức:
 
-> Doanh thu = số khóa đã nghiệm thu × giá trị thực thu của từng khóa
+> Doanh thu dự án = phí cố định + phần chia sẻ học phí + phí nền tảng + phí hỗ trợ
 
-Không tính dòng này theo học phí phổ cập trên từng người học.
+Hợp đồng phải chốt rõ:
 
-## 3. Đào tạo trực tiếp cho doanh nghiệp
+- ai tuyển sinh;
+- ai thu tiền;
+- tỷ lệ chia sẻ;
+- điều kiện hoàn trả;
+- dữ liệu người học;
+- trách nhiệm giảng dạy và hỗ trợ;
+- quyền sử dụng học liệu;
+- báo cáo và tiêu chí nghiệm thu.
 
-Đặc điểm:
+## 6. Cấp quyền chương trình
 
-- Nội dung gắn với phòng ban, quy trình và bài toán thực tế.
-- Có thể kèm khảo sát, tư vấn, workflow, agent hoặc hỗ trợ triển khai.
-- Giá trị hợp đồng phụ thuộc phạm vi và đầu ra, không chỉ phụ thuộc số học viên.
+Ba cấu hình:
 
-Khung giá:
+### 6.1. Nội dung
 
-> **20-100 triệu đồng/khóa**
+- đề cương;
+- slide, video và học liệu;
+- bài tập, rubric và ngân hàng câu hỏi;
+- tài liệu giảng viên.
+
+### 6.2. Nội dung + nền tảng
+
+Bổ sung:
+
+- quản lý người học;
+- giao và nộp bài;
+- rubric;
+- báo cáo;
+- hồ sơ minh chứng.
+
+### 6.3. Triển khai đầy đủ
+
+Bổ sung:
+
+- tùy chỉnh;
+- đào tạo giảng viên nguồn;
+- onboarding;
+- hỗ trợ vận hành;
+- đánh giá chất lượng;
+- báo cáo định kỳ.
 
 Công thức:
 
-> Doanh thu = phí đào tạo + phí tùy chỉnh + phí triển khai hoặc hỗ trợ sau đào tạo nếu có
+> Doanh thu = phí quyền sử dụng + phí tùy chỉnh + phí nền tảng + phí đào tạo nguồn + phí hỗ trợ
 
-## 4. Sinh viên — bán quyền sử dụng khóa học
+Ưu tiên cấp quyền có thời hạn. Không chuyển toàn bộ quyền sở hữu trí tuệ nếu chưa có định giá và thỏa thuận riêng.
 
-Dự án có thể bán quyền sử dụng khóa học cho trường hoặc đối tác để họ tự tổ chức.
+## 7. Doanh nghiệp
 
-Gói sản phẩm có thể gồm:
+### 7.1. Vai trò trong giai đoạn đầu
 
-- Đề cương, video, slide và học liệu.
-- Bài tập, rubric và ngân hàng câu hỏi.
-- Tài liệu cho giảng viên hoặc điều phối viên.
-- Quyền sử dụng theo học kỳ, theo năm hoặc theo số người học.
-- Tùy chọn white-label, nền tảng và đào tạo giảng viên nguồn.
+Doanh nghiệp là dòng doanh thu cơ hội và là thị trường mở rộng, không phải nguồn thu bắt buộc trong tháng đầu.
 
-Công thức:
+Lý do:
 
-> Doanh thu = phí quyền sử dụng + phí tùy chỉnh + phí nền tảng và hỗ trợ nếu có
+- chu kỳ bán hàng dài;
+- cần hiểu quy trình và dữ liệu;
+- chi phí tùy chỉnh cao;
+- quyết định thường có nhiều bên;
+- dự án cần case study trước khi bán gói lớn.
 
-Giá bán chỉ được đưa vào kế hoạch khi đã chốt rõ phạm vi quyền sử dụng. Ưu tiên cấp quyền có thời hạn thay vì chuyển toàn bộ quyền sở hữu trí tuệ.
+### 7.2. Phễu sản phẩm
 
-## 5. Sinh viên — dự án tự vận hành lớp online
+1. Workshop nhận thức hoặc AI Foundation.
+2. AI Readiness/khảo sát quy trình.
+3. Đào tạo nhóm nhỏ hoặc theo phòng ban.
+4. Pilot một workflow, agent hoặc công cụ nội bộ.
+5. Đo hiệu quả và nghiệm thu.
+6. Triển khai mở rộng.
 
-Dự án trực tiếp tuyển sinh hoặc nhận danh sách từ trường, thu học phí, tổ chức lớp, quản lý bài tập và đánh giá đầu ra.
+### 7.3. Công thức
 
-Công thức:
+> Doanh thu doanh nghiệp = phí workshop + phí khảo sát + phí đào tạo + phí pilot + phí triển khai/hỗ trợ
 
-> Tổng học phí = số người thanh toán × học phí thực thu bình quân
+Khung giá khóa đào tạo doanh nghiệp trước đây **20–100 triệu đồng/khóa** chỉ là khung tham chiếu. Không dùng để dự báo nếu chưa có phạm vi và hợp đồng.
 
-> Doanh thu dự án = tổng học phí - phần chia sẻ cho trường hoặc đối tác - các khoản hoàn trả
+### 7.4. Điều kiện nhận pilot
 
-Các chỉ số phải theo dõi:
+- có người phụ trách phía doanh nghiệp;
+- bài toán cụ thể;
+- dữ liệu và quyền truy cập rõ;
+- tiêu chí thành công;
+- phạm vi nhỏ;
+- thời gian và chi phí được chốt;
+- có điều khoản nghiệm thu và sử dụng case study.
 
-- Số người đăng ký.
-- Số người thanh toán.
-- Số người bắt đầu học.
-- Số người hoàn thành.
-- Tổng học phí thực thu.
-- Phần chia sẻ đối tác.
-- Chi phí trực tiếp trên mỗi người hoàn thành.
+## 8. Nguồn thu nền tảng và dịch vụ bổ sung
 
-## 6. Nguồn thu trong giai đoạn tăng trưởng
+Phát triển khi đã có lớp thật và dữ liệu sử dụng:
 
-- Phí sử dụng nền tảng theo trường và theo năm.
-- Phí bản quyền thư viện khóa học AI, vibe coding và STEAM.
-- Phí đào tạo giảng viên nguồn.
-- Phí white-label và tùy chỉnh chương trình.
-- Phí hỗ trợ vận hành phòng STEAM.
-- Phí số hóa chương trình đào tạo nghề.
-- Phí phát triển chương trình theo yêu cầu.
+- phí nền tảng theo trường/cohort/năm;
+- phí báo cáo và đánh giá năng lực;
+- phí white-label có kiểm soát;
+- phí tích hợp;
+- phí hỗ trợ vận hành;
+- phí số hóa chương trình đào tạo nghề;
+- phí phát triển chương trình theo yêu cầu;
+- add-on Grapuco cho Vibe Coding sau khi chốt thương mại.
 
-## 7. Nguồn thu từ hệ sinh thái
+## 9. Tỷ trọng định hướng
 
-- Phí sử dụng cổng đặt hàng nhân lực.
-- Phí quản lý cohort đào tạo theo yêu cầu.
-- Phí đánh giá và xác thực năng lực.
-- Phí sử dụng phần mềm dành cho đơn vị dịch vụ việc làm.
-- Phí dịch vụ thông qua các đối tác có chức năng phù hợp.
+Tỷ trọng dưới đây là `[giả định quản trị]`:
 
-## 8. Công thức lập kế hoạch năm đầu
+### Giai đoạn 0–3 tháng
+
+- 50–60%: lớp cộng đồng và cohort;
+- 25–35%: trường/tổ chức giáo dục và cấp quyền;
+- 0–15%: doanh nghiệp và nguồn khác.
+
+### Giai đoạn 4–6 tháng
+
+- 40–55%: lớp cộng đồng và cohort;
+- 35–45%: tổ chức giáo dục, cấp quyền và nền tảng;
+- 5–15%: doanh nghiệp.
+
+### Giai đoạn 7–12 tháng
+
+- 30–45%: lớp cộng đồng và cohort;
+- 35–50%: tổ chức giáo dục, cấp quyền và nền tảng;
+- 10–25%: doanh nghiệp nếu đã có case study.
+
+Tỷ trọng thực tế phải cập nhật theo tiền thực thu và đóng góp, không theo pipeline.
+
+## 10. Công thức lập kế hoạch
 
 | Nguồn | Công thức |
 |---|---|
-| Sinh viên online | Số người thanh toán × học phí bình quân × tỷ lệ dự án được hưởng |
-| Bán khóa sinh viên | Số gói đã bán × giá thực thu của từng gói |
-| Đào tạo giảng viên | Số khóa × 20-50 triệu đồng |
-| Đào tạo doanh nghiệp | Số khóa × 20-100 triệu đồng |
-| Nền tảng và học liệu | Số đơn vị × phí theo hợp đồng |
-| Chương trình theo yêu cầu | Tính theo phạm vi, đầu ra và thời gian triển khai |
+| Lớp cộng đồng | Số người thanh toán × học phí thực thu - chia sẻ/hoàn trả/phí |
+| Cohort qua trường | Phí cố định + phần chia sẻ học phí + phí nền tảng/hỗ trợ |
+| Khóa giáo viên/giảng viên | Số khóa nghiệm thu × giá thực thu |
+| Cấp quyền chương trình | Phí quyền sử dụng + tùy chỉnh + nền tảng + hỗ trợ |
+| Doanh nghiệp | Workshop + khảo sát + đào tạo + pilot + triển khai thực thu |
+| Nền tảng | Số đơn vị/cohort × phí theo hợp đồng |
 
-## 9. Nguyên tắc ghi nhận
+## 11. Nguyên tắc ghi nhận
 
-- Chỉ ghi nhận doanh thu khi có căn cứ rõ về hợp đồng, học phí hoặc phạm vi quyền sử dụng.
-- Không lấy giá hợp đồng B2B áp cho lớp sinh viên đại trà.
-- Không lấy học phí sinh viên để định giá đào tạo trực tiếp cho giảng viên hoặc doanh nghiệp.
-- Phải tách tổng học phí, phần chia sẻ, doanh thu còn lại và chi phí trực tiếp.
-- Các con số trong kế hoạch là giả định quản trị, không phải cam kết doanh thu.
+- Chỉ ghi nhận doanh thu khi có căn cứ rõ.
+- Tách học phí gộp, doanh thu dự án, tiền đã thu và đóng góp.
+- Không lấy giá trị pipeline làm doanh thu.
+- Không lấy giá khóa doanh nghiệp áp cho lớp cộng đồng.
+- Không dùng doanh thu doanh nghiệp chưa ký trong kịch bản cơ sở.
+- Mọi con số chưa có dữ liệu thực tế phải ghi `[giả định]`.
+- Mỗi tháng phải xếp hạng dòng sản phẩm theo: tiền thực thu, đóng góp, thời gian giao hàng, khả năng lặp lại và giá trị case study.
