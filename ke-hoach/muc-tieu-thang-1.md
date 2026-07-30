@@ -2,66 +2,94 @@
 
 > Tài liệu này là nguồn tham chiếu ưu tiên cho 30 ngày vận hành đầu tiên.
 >
-> Dự án đã có trường sẵn sàng và chương trình giảng dạy đã soạn. Tháng đầu là tháng **kích hoạt triển khai**, không phải tháng tìm kiếm nhu cầu.
+> Dự án đã có trường sẵn sàng và chương trình giảng dạy đã soạn. Tháng đầu là tháng **kích hoạt triển khai giáo dục và kiểm chứng vận hành**, không phải tháng phụ thuộc vào hợp đồng doanh nghiệp.
 >
 > Nền tảng, dữ liệu, workflow và hạ tầng được xây mới. Không sử dụng SOPai, Arkon hoặc henlich.vn.
 
-## 1. Kết quả cần đạt trong 30 ngày
+## 1. Mục tiêu điều hành
 
-### 1.1. Trường và sinh viên
+Tháng đầu áp dụng chiến lược **education-first**:
+
+1. Kích hoạt các trường/cơ sở giáo dục đã sẵn sàng.
+2. Mở lớp sinh viên và khóa ngắn hạn cho giáo viên/giảng viên.
+3. Dùng khóa 4 buổi làm sản phẩm đầu vào để tạo dòng tiền và case study.
+4. Chuẩn hóa chương trình để có thể bán theo lớp, theo trường hoặc cấp quyền.
+5. Xây MVP nền tảng theo nhu cầu lớp thật.
+6. Tiếp cận doanh nghiệp có chọn lọc để tìm bài toán và pilot; không đặt doanh thu doanh nghiệp làm kịch bản cơ sở.
+
+## 2. Kết quả cần đạt trong 30 ngày
+
+### 2.1. Trường và sinh viên
 
 - Kích hoạt **2–3 trường/cơ sở giáo dục** đã sẵn sàng.
 - Có **200–300 sinh viên thanh toán và bắt đầu học**.
 - Bắt đầu đào tạo từ tuần thứ hai.
 - Mỗi trường có đầu mối phối hợp danh sách, truyền thông, lớp học và xử lý tình huống tại chỗ.
+- Có lịch triển khai đợt tiếp theo trước khi kết thúc tháng.
 
-### 1.2. Chương trình sinh viên
+### 2.2. Chương trình sinh viên
 
-Triển khai từ các chương trình đã soạn:
+Ưu tiên hai chương trình đã soạn:
 
 1. **Ứng dụng AI theo khung năng lực**.
 2. **Phát triển ứng dụng và tự động hóa với AI – Vibe Coding**.
 
 Mỗi chương trình phải có:
 
-- đề cương và cấu trúc 12–15 buổi;
+- đề cương 12–15 buổi;
 - học liệu và bài tập;
 - sản phẩm cuối khóa;
 - rubric;
 - tiêu chí hoàn thành;
 - hồ sơ minh chứng;
-- tài liệu giảng viên/điều phối viên.
+- tài liệu giảng viên và điều phối viên.
 
-### 1.3. Đào tạo trực tiếp B2B
+### 2.3. Khóa dành cho giáo viên và giảng viên
 
-#### Khóa AI cho giảng viên
+#### Khóa ngắn hạn 4 buổi
 
-- Mục tiêu: **2 hợp đồng đã ký và có lịch triển khai**.
-- Mục tiêu giao hàng: triển khai đủ **2 khóa** nếu lịch của trường cho phép.
-- Khung giá: **20–50 triệu đồng/khóa**.
-- Giá trị hợp đồng dự kiến: **40–100 triệu đồng**.
+- Mở hoặc ký tối thiểu **1 khóa AI 4 buổi dành cho giáo viên phổ thông**.
+- Có thể tổ chức dưới dạng lớp cộng đồng, lớp cho một trường hoặc lớp liên trường.
+- Sản phẩm đầu ra: kế hoạch bài dạy, học liệu, bộ đánh giá, checklist kiểm chứng và quy tắc sử dụng AI.
+- Dùng khóa này làm sản phẩm đầu vào để dẫn sang bản 12 buổi, đào tạo giảng viên nguồn hoặc gói cấp trường.
 
-#### Khóa AI cho doanh nghiệp
+#### Các khóa giáo viên/giảng viên khác
 
-- Mục tiêu: **2 hợp đồng đã ký và có lịch triển khai**.
-- Mục tiêu giao hàng: triển khai đủ **2 khóa** nếu lịch của doanh nghiệp cho phép.
-- Khung giá: **20–100 triệu đồng/khóa**.
-- Giá trị hợp đồng dự kiến: **40–200 triệu đồng**.
+- Mục tiêu tổng: **tối thiểu 2 hợp đồng hoặc lớp đã chốt và có lịch triển khai**.
+- Khung giá đào tạo tổ chức: **20–50 triệu đồng/khóa** `[giả định theo phạm vi]`.
+- Lớp cộng đồng có thể định giá theo người học; phải theo dõi riêng học phí gộp, phần chia sẻ và doanh thu dự án.
 
-Giá trị hợp đồng, tiền đã thu, khóa đã khai giảng và khóa đã hoàn thành phải báo cáo riêng.
-
-### 1.4. Cấp quyền chương trình
+### 2.4. Cấp quyền chương trình và B2B2C giáo dục
 
 - Có ít nhất **1 gói chương trình sinh viên được bán, cấp quyền hoặc triển khai theo thỏa thuận thương mại rõ ràng**.
 - Chốt phạm vi: nội dung, số người học, thời hạn, nền tảng, báo cáo, hỗ trợ và quyền chỉnh sửa.
+- Xác định tối thiểu **2 đối tác phân phối tiềm năng**: trường, trung tâm, khoa, hiệp hội hoặc đơn vị đào tạo.
 
-## 2. KPI lớp sinh viên
+### 2.5. Doanh nghiệp
 
-### 2.1. Giả định thương mại
+Doanh nghiệp không phải KPI doanh thu bắt buộc trong tháng đầu.
+
+Mục tiêu khám phá thị trường:
+
+- lập danh sách 10–20 doanh nghiệp phù hợp từ quan hệ sẵn có hoặc giới thiệu;
+- thực hiện **3–5 cuộc trao đổi nhu cầu có biên bản**;
+- xác định tối thiểu 2 bài toán đủ cụ thể để đánh giá;
+- có tối đa 1 workshop hoặc pilot nhỏ nếu phạm vi, người phụ trách và tiêu chí thành công rõ;
+- không nhận dự án lớn chỉ dựa trên mô tả chung hoặc kỳ vọng chưa đo được.
+
+Phễu doanh nghiệp:
+
+> Workshop → khảo sát → đào tạo nhóm nhỏ → pilot → case study → triển khai mở rộng.
+
+Không đưa giá trị pipeline hoặc cơ hội đang trao đổi vào doanh thu tháng đầu.
+
+## 3. KPI lớp sinh viên
+
+### 3.1. Giả định thương mại
 
 - Học phí bình quân: **220.000 đồng/người** `[giả định]`.
 - Phần dự án sau chia sẻ: **60% học phí thực thu** `[giả định]`.
-- Không dùng đặt cọc hoàn lại.
+- Không dùng đặt cọc hoàn lại để làm đẹp số đăng ký.
 
 | Chỉ tiêu | 200 sinh viên | 300 sinh viên |
 |---|---:|---:|
@@ -71,20 +99,31 @@ Giá trị hợp đồng, tiền đã thu, khóa đã khai giảng và khóa đ�
 | Hoàn thành theo kịch bản ngân sách 50–60% | 100–120 | 150–180 |
 | Mục tiêu vận hành nội bộ khoảng 70% | 140 | 210 |
 
-Phần dự án sau chia sẻ chưa phải lợi nhuận. Phải trừ chi phí giảng dạy, vận hành, công cụ, nền tảng mới, thanh toán và hỗ trợ.
+Phần dự án sau chia sẻ chưa phải lợi nhuận. Phải trừ chi phí giảng dạy, vận hành, công cụ, nền tảng, thanh toán và hỗ trợ.
 
-## 3. Nền tảng mới trong tháng đầu
+## 4. Cơ cấu doanh thu mục tiêu tháng đầu
 
-### 3.1. Nguyên tắc
+Đây là định hướng, không phải cam kết:
+
+- **50–60%:** lớp cộng đồng và cohort người học;
+- **25–35%:** hợp đồng với trường, khóa giáo viên/giảng viên và cấp quyền;
+- **0–15%:** doanh nghiệp hoặc nguồn khác nếu có cơ hội thực tế.
+
+Kịch bản cơ sở phải vẫn vận hành được khi doanh thu doanh nghiệp bằng 0.
+
+## 5. Nền tảng mới trong tháng đầu
+
+### 5.1. Nguyên tắc
 
 - Xây mới hoàn toàn.
 - Không chờ hoàn thiện mới mở lớp.
-- Chỉ xây những chức năng phục vụ trực tiếp 2–3 trường và cohort đang chạy.
+- Chỉ xây chức năng phục vụ trực tiếp các trường và cohort đang chạy.
+- Ưu tiên trải nghiệm của trường, giảng viên, điều phối viên và người học.
 - Phần chưa có được xử lý bằng quy trình thủ công hoặc SaaS tạm thời.
 
-### 3.2. MVP bắt buộc
+### 5.2. MVP bắt buộc
 
-Đến cuối tháng đầu cần có tối thiểu:
+Đến cuối tháng cần có tối thiểu:
 
 - quản lý trường, chương trình và cohort;
 - nhập/quản lý danh sách người học;
@@ -98,7 +137,7 @@ Phần dự án sau chia sẻ chưa phải lợi nhuận. Phải trừ chi phí 
 - phân quyền quản trị, giảng viên, điều phối viên và người học;
 - nhật ký hoạt động tối thiểu.
 
-### 3.3. Những chức năng chưa bắt buộc tháng đầu
+### 5.3. Chưa bắt buộc
 
 - AI tutor hoàn chỉnh;
 - chấm tự động toàn bộ;
@@ -106,73 +145,66 @@ Phần dự án sau chia sẻ chưa phải lợi nhuận. Phải trừ chi phí 
 - skill graph đầy đủ;
 - việc làm và đặt hàng nhân lực;
 - white-label sâu;
-- các tính năng STEAM chuyên biệt chưa có lớp thật.
+- module riêng cho doanh nghiệp;
+- các tính năng STEAM chưa có lớp thật.
 
-## 4. Liên kết Grapuco trong tháng đầu
+## 6. Liên kết Grapuco trong tháng đầu
 
-Grapuco là đối tác ngoài. Tháng đầu không được coi tích hợp đã hoàn thành nếu chưa có thỏa thuận.
+Grapuco là đối tác ngoài. Không được coi tích hợp đã hoàn thành nếu chưa có thỏa thuận.
 
-### 4.1. Việc cần thực hiện
+Việc cần thực hiện:
 
-- Chốt đầu mối làm việc giữa hai bên.
-- Xác định phạm vi dùng Grapuco trong chương trình Vibe Coding.
-- Chọn hình thức tích hợp: API, MCP, tài khoản riêng hoặc liên kết ngoài.
-- Chốt loại dữ liệu được phép gửi.
-- Chốt quyền sở hữu code và sản phẩm người học.
-- Chốt giá, quota, hỗ trợ và SLA.
-- Chuẩn bị phương án lớp học vẫn hoạt động khi Grapuco chưa sẵn sàng.
+- chốt đầu mối làm việc;
+- xác định phạm vi trong Vibe Coding;
+- chọn hình thức tích hợp;
+- chốt loại dữ liệu được phép gửi;
+- chốt quyền sở hữu code và sản phẩm người học;
+- chốt giá, quota, hỗ trợ và SLA;
+- có phương án lớp vẫn hoạt động khi Grapuco chưa sẵn sàng.
 
-### 4.2. Kịch bản ứng dụng đầu tiên
+Grapuco không phải hạng mục ưu tiên hơn việc mở lớp, quản lý người học, nộp bài, rubric và báo cáo.
 
-Trong Vibe Coding, Grapuco có thể được dùng để:
+## 7. Kế hoạch theo tuần
 
-- tạo bản đồ codebase;
-- hiển thị module, dependency và call graph;
-- hỗ trợ học viên hiểu code do AI tạo;
-- lập đặc tả trước khi sửa;
-- phân tích tác động của thay đổi;
-- hỗ trợ trình bày kiến trúc sản phẩm cuối khóa.
-
-Tích hợp Grapuco không thay thế GitHub, môi trường code hoặc quy trình đánh giá của khóa học.
-
-## 5. Kế hoạch theo tuần
-
-### Tuần 1 — Chốt trường, lớp và nền tảng tối thiểu
+### Tuần 1 — Chốt trường, lớp và sản phẩm đầu vào
 
 - Chốt 2–3 trường, số sinh viên và ngày khai giảng.
 - Chốt chương trình từng trường.
 - Chốt cơ chế học phí, hợp đồng và đầu mối phối hợp.
 - Hoàn thiện học liệu và rubric cần dùng ngay.
-- Thiết kế dữ liệu và kiến trúc MVP mới.
-- Xây phần quản lý trường, cohort, người học và học liệu.
-- Làm việc với Grapuco về phạm vi hợp tác Vibe Coding.
+- Chuẩn hóa khóa giáo viên phổ thông 4 buổi để bán và tổ chức.
+- Thiết kế dữ liệu và kiến trúc MVP.
+- Mời/tiếp cận các đối tác phân phối giáo dục.
+- Lập danh sách doanh nghiệp để khám phá nhu cầu, không ép KPI bán hàng.
 
 ### Tuần 2 — Khai giảng
 
 - Khai giảng cohort sinh viên đầu tiên.
-- Bắt đầu ít nhất một khóa giảng viên hoặc doanh nghiệp.
+- Bắt đầu ít nhất một khóa giáo viên/giảng viên hoặc lớp 4 buổi.
 - Vận hành chức năng đã có; phần thiếu xử lý thủ công.
 - Theo dõi lỗi tài khoản, hỗ trợ, điểm danh và nộp bài.
-- Tiếp tục xây rubric, báo cáo và dashboard.
+- Thực hiện các cuộc trao đổi doanh nghiệp đầu tiên nếu có lịch.
 
-### Tuần 3 — Mở các lớp tiếp theo
+### Tuần 3 — Mở lớp tiếp theo và chuẩn hóa
 
 - Kích hoạt các trường/cohort còn lại trong đợt 1.
-- Triển khai thêm khóa B2B.
+- Triển khai thêm khóa giáo dục.
 - Thu bài tập và sản phẩm.
 - Hoàn thiện quản lý đánh giá và hồ sơ minh chứng.
-- Thử nghiệm Grapuco ở phạm vi nhỏ nếu thỏa thuận đã chốt.
+- Chuẩn hóa bộ tài liệu bán hàng/cấp quyền.
+- Chỉ nhận pilot doanh nghiệp khi phạm vi nhỏ và tiêu chí rõ.
 
-### Tuần 4 — Báo cáo và chuẩn bị mở rộng
+### Tuần 4 — Báo cáo và chuẩn bị đợt 2
 
 - Tổng hợp số người học, mức tham gia và tiến độ.
 - Đối soát tiền đã thu và công nợ.
 - Báo cáo chi phí trực tiếp theo từng dòng sản phẩm.
-- Ghi nhận các thiếu hụt của nền tảng mới.
+- Đánh giá hiệu quả khóa 4 buổi và tỷ lệ nâng cấp.
+- Ghi nhận thiếu hụt của nền tảng.
 - Chốt danh sách trường và lịch đợt 2.
-- Đánh giá việc sử dụng Grapuco và quyết định phạm vi tháng 2.
+- Tổng hợp bài toán doanh nghiệp; quyết định có pilot tháng 2 hay không.
 
-## 6. KPI chính thức tháng 1
+## 8. KPI chính thức tháng 1
 
 | Nhóm | KPI |
 |---|---:|
@@ -180,31 +212,39 @@ Tích hợp Grapuco không thay thế GitHub, môi trường code hoặc quy tr�
 | Sinh viên thanh toán và bắt đầu học | **200–300** |
 | Sinh viên hoàn thành theo kịch bản ngân sách | **100–180** |
 | Mục tiêu hoàn thành nội bộ | **140–210** |
-| Hợp đồng khóa giảng viên đã ký và có lịch | **2** |
-| Hợp đồng khóa doanh nghiệp đã ký và có lịch | **2** |
+| Khóa/hợp đồng giáo viên, giảng viên đã chốt | **Tối thiểu 2** |
+| Khóa giáo viên phổ thông 4 buổi | **Tối thiểu 1 lớp hoặc hợp đồng** |
 | Gói chương trình sinh viên được cấp quyền/triển khai | **Ít nhất 1** |
+| Đối tác phân phối giáo dục tiềm năng | **Ít nhất 2** |
+| Cuộc trao đổi doanh nghiệp có biên bản | **3–5** |
+| Pilot doanh nghiệp | **0–1, không bắt buộc** |
+| Doanh thu doanh nghiệp bắt buộc | **0** |
 | Nền tảng MVP mới | **Vận hành được cho 2–3 trường** |
 | Báo cáo từng trường | **Có dữ liệu tiến độ và kết quả** |
-| Phạm vi hợp tác Grapuco | **Có biên bản/thỏa thuận kỹ thuật–thương mại hoặc kết luận chưa tích hợp** |
 | Thời điểm bắt đầu đào tạo | **Từ tuần thứ hai** |
 
-## 7. Dashboard báo cáo tuần
+## 9. Dashboard báo cáo tuần
 
-### Trường và lớp
+### Giáo dục
 
-- trường đã chốt;
-- trường đã khai giảng;
+- trường đã chốt và đã khai giảng;
 - cohort đang chạy;
-- số sinh viên đăng ký, thanh toán, bắt đầu và hoàn thành.
+- số người đăng ký, thanh toán, bắt đầu và hoàn thành;
+- khóa giáo viên/giảng viên;
+- doanh thu theo lớp, trường và chương trình;
+- tỷ lệ nâng cấp từ workshop/4 buổi sang chương trình dài hơn;
+- đối tác phân phối và cấp quyền.
 
-### B2B
+### Doanh nghiệp
 
-- hợp đồng đã ký;
-- giá trị hợp đồng;
-- tiền đã thu;
-- khóa đã khai giảng/hoàn thành;
-- sản phẩm bàn giao;
-- công nợ.
+- số cuộc trao đổi;
+- bài toán đã xác định;
+- người quyết định và người phụ trách;
+- workshop/pilot;
+- tiêu chí nghiệm thu;
+- tiền thực thu;
+- chi phí bán hàng và tùy chỉnh;
+- case study có thể công bố.
 
 ### Nền tảng
 
@@ -212,26 +252,17 @@ Tích hợp Grapuco không thay thế GitHub, môi trường code hoặc quy tr�
 - lỗi và yêu cầu hỗ trợ;
 - số giờ dev;
 - chi phí hạ tầng;
-- dữ liệu và báo cáo đã đáp ứng được.
+- dữ liệu và báo cáo đã đáp ứng;
+- phần việc vẫn đang xử lý thủ công.
 
-### Grapuco
+## 10. Điều kiện kết thúc tháng thành công
 
-- trạng thái thỏa thuận;
-- trạng thái tích hợp;
-- số lớp/người dùng thử;
-- lỗi kỹ thuật;
-- chi phí;
-- phản hồi giảng viên và người học;
-- dữ liệu đã chia sẻ.
+Tháng đầu được xem là thành công khi:
 
-## 8. Các quyết định anh Đức cần chốt
-
-- Danh sách 2–3 trường đợt đầu.
-- Số sinh viên từng trường.
-- Chương trình và ngày khai giảng từng trường.
-- Cơ chế thu học phí/chia sẻ.
-- Pháp nhân và hóa đơn.
-- Quy mô đội xây nền tảng mới.
-- Ngân sách MVP tháng đầu.
-- Grapuco là công cụ bắt buộc hay tùy chọn trong Vibe Coding.
-- Hình thức thương mại với Grapuco.
+- lớp giáo dục đã thực sự chạy;
+- có tiền thực thu từ người học hoặc đơn vị giáo dục;
+- khóa 4 buổi đã được kiểm chứng;
+- nền tảng phục vụ được các cohort đầu tiên;
+- chi phí giao hàng và tải hỗ trợ được đo;
+- có pipeline giáo dục cho tháng 2;
+- chiến lược vẫn bền vững ngay cả khi chưa có doanh thu doanh nghiệp.
