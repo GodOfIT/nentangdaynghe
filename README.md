@@ -1,70 +1,79 @@
 # Nền tảng dạy nghề trực tuyến
 
-Repo này ghi lại chiến lược, mô hình sản phẩm và kế hoạch triển khai cho nền tảng đào tạo nghề trực tuyến kết hợp STEAM, AI, vibe coding, giáo dục nghề nghiệp và đặt hàng nhân lực.
+Repo ghi lại chiến lược, sản phẩm và kế hoạch triển khai nền tảng đào tạo AI, Vibe Coding, STEAM và giáo dục nghề nghiệp.
 
-Tên ý tưởng bằng tiếng Việt: **Nền tảng dạy nghề trực tuyến**.
-
-> Các trợ lý AI và thành viên mới cần đọc [AGENTS.md](AGENTS.md) trước khi sử dụng các số liệu và kế hoạch trong repo. Một số tài liệu cũ được giữ lại như tầm nhìn dài hạn và có thể không còn là kế hoạch điều hành hiện tại.
+> **Quy tắc quan trọng:** đọc [AGENTS.md](AGENTS.md) trước mọi tài liệu khác.
+>
+> Dự án chỉ kế thừa các chương trình giảng dạy do anh Đức đã soạn. Nền tảng, source code, dữ liệu, workflow và hạ tầng được xây mới hoàn toàn.
+>
+> SOPai, Arkon và henlich.vn không thuộc kiến trúc hoặc kế hoạch hiện hành.
 
 ## Định vị
 
-Nền tảng không chỉ là một LMS. Đây là hệ sinh thái điều phối giữa nhà trường, người học, giáo viên, cơ sở giáo dục nghề nghiệp, doanh nghiệp đặt hàng nhân lực và các đơn vị được cấp phép trong hoạt động việc làm.
+> Nền tảng công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu giúp nhà trường triển khai các chương trình có sản phẩm đầu ra.
 
-Thông điệp cốt lõi:
+Các hướng triển khai năm đầu:
 
-> Doanh nghiệp đặt hàng năng lực. Nhà trường đào tạo theo nhu cầu. Nền tảng xác thực kết quả. Người học tiếp cận cơ hội việc làm trong nước và quốc tế một cách minh bạch.
+- Ứng dụng AI theo khung năng lực.
+- Vibe Coding.
+- AI cho giáo viên và giảng viên.
+- AI cho doanh nghiệp.
+- Cấp quyền chương trình và nền tảng.
+- Đào tạo giáo viên triển khai STEAM và các môn mới theo đơn đặt hàng.
 
-## Năm trục chiến lược dài hạn
+## Điểm xuất phát
 
-| Trục | Sản phẩm | Vai trò |
-|---|---|---|
-| Đào tạo AI | AI cho giáo viên, giảng viên, học sinh, sinh viên và doanh nghiệp | Tạo doanh thu ngay |
-| Vibe coding | Website, ứng dụng, automation, AI agent | Tạo đầu ra nhanh, hấp dẫn |
-| STEAM Lab OS | Chương trình, học liệu, vận hành phòng học, đánh giá học sinh | Phủ mạng lưới trường phổ thông |
-| Chuỗi STEAM - nghề | Từ STEAM đến hướng nghiệp, đào tạo nghề và việc làm | Tạo hồ sơ năng lực xuyên suốt |
-| Đặt hàng nhân lực | Doanh nghiệp đặt hàng năng lực, nhà trường tổ chức đào tạo | Tạo thị trường hai phía |
+- Đã có các trường/cơ sở giáo dục sẵn sàng phối hợp.
+- Đã có các chương trình giảng dạy cốt lõi.
+- Không bắt đầu từ bước tìm trường đầu tiên.
+- Lớp học được triển khai song song với việc xây nền tảng mới.
 
-Việc triển khai theo từng giai đoạn và nguồn lực thực tế được quy định trong `AGENTS.md` và các tài liệu kế hoạch ưu tiên bên dưới.
+## Grapuco
+
+Grapuco là **đối tác công nghệ bên ngoài**, không phải tài sản nội bộ và không phải dependency bắt buộc.
+
+Vai trò dự kiến:
+
+- hỗ trợ Vibe Coding bằng bản đồ codebase;
+- trực quan module, dependency, call graph và flow;
+- hỗ trợ spec-first và phân tích tác động thay đổi;
+- cung cấp context cho AI coding tools;
+- hỗ trợ đội phát triển hiểu codebase mới.
+
+Nền tảng phải hoạt động được khi Grapuco chưa tích hợp hoặc tạm gián đoạn. Dữ liệu người học không được chia sẻ theo mặc định.
+
+Xem [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md).
 
 ## Tài liệu điều hành ưu tiên
 
-- [Bối cảnh chung và quy tắc dành cho các trợ lý AI](AGENTS.md)
-- [Báo cáo thống nhất vòng 3](trao-doi/bao-cao-thong-nhat-vong-3.md)
-- [Định hướng AI trong đào tạo giáo viên năm 2026](docs/dinh-huong-ai-trong-dao-tao-giao-vien-2026.md)
-- [Tổng hợp thống nhất sau phản hồi Claude vòng 2](trao-doi/tong-hop-thong-nhat-va-chinh-sua-vong-2.md)
-- [Phản hồi vòng 2 của Claude](trao-doi/phan-hoi-claude-vong-2.md)
-- [Phản hồi vòng 1 của ChatGPT](trao-doi/phan-hoi-chatgpt-vong-1.md)
-- [Thảo luận các vấn đề còn mở](THAO-LUAN.md)
-- [Mục tiêu kinh doanh tháng 1](ke-hoach/muc-tieu-thang-1.md)
-- [Kế hoạch kinh doanh 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
-- [Unit economics theo từng dòng sản phẩm](ke-hoach/unit-economics.md)
-- [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
-- [Thế mạnh và nguyên tắc lập kế hoạch dự án](docs/the-manh-du-an.md)
+1. [AGENTS.md — nguồn sự thật điều hành](AGENTS.md)
+2. [Mục tiêu tháng đầu](ke-hoach/muc-tieu-thang-1.md)
+3. [Kế hoạch kinh doanh và triển khai 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
+4. [Mô hình nền tảng greenfield](nen-tang/mo-hinh-nen-tang.md)
+5. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
+6. [Unit economics](ke-hoach/unit-economics.md)
+7. [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
+8. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
+9. [Định hướng AI trong đào tạo giáo viên năm 2026](docs/dinh-huong-ai-trong-dao-tao-giao-vien-2026.md)
 
-## Tài liệu phối hợp AI thử nghiệm
+## Chương trình và sản phẩm
 
-- [Quy trình phối hợp AI hoàn toàn trên GitHub](docs/quy-trinh-phoi-hop-github.md)
-- [Hướng dẫn cấu hình AI Collaboration](docs/cau-hinh-ai-collaboration.md)
-
-> Hiện tại dự án đang phối hợp ChatGPT–Claude thủ công qua các file trong repo. Không chạy workflow API nếu chưa được anh Đức yêu cầu.
-
-## Các tài liệu chiến lược và sản phẩm
-
-- [Tổng quan chiến lược](docs/tong-quan-chien-luoc.md)
-- [Kế hoạch triển khai 12 tháng](ke-hoach/ke-hoach-12-thang.md)
 - [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
 - [Chuỗi STEAM đến nghề nghiệp](san-pham/chuoi-steam-den-nghe.md)
-- [Mô hình nền tảng](nen-tang/mo-hinh-nen-tang.md)
 - [Mô hình doanh thu](docs/mo-hinh-doanh-thu.md)
 - [Vai trò pháp lý và nguyên tắc an toàn](phap-ly/vai-tro-phap-ly.md)
-- [Bộ máy vận hành](docs/bo-may-van-hanh.md)
+
+## Tài liệu lịch sử và trao đổi
+
+Các file trong `trao-doi/`, `THAO-LUAN.md` và một số tài liệu chiến lược cũ được giữ để truy vết quá trình suy luận. Chúng **không phải nguồn điều hành hiện tại** nếu mâu thuẫn với `AGENTS.md`.
 
 ## Nguyên tắc thiết kế
 
-- Dùng AI làm kiến trúc vận hành mục tiêu, có phương án hybrid an toàn khi hệ thống chưa sẵn sàng.
-- Lấy các khóa AI và vibe coding làm nguồn doanh thu sớm.
-- Với khối giáo dục, chuyển từ dạy công cụ sang AI+ / AIx, chuẩn đầu ra, sư phạm AI, đánh giá và dữ liệu năng lực.
-- Chỉ mở rộng quy mô sau khi kiểm chứng unit economics, API cost, chất lượng và trần vận hành.
-- STEAM năm đầu tập trung đào tạo năng lực giáo viên và pilot 1–2 môn có phạm vi rõ.
-- Lấy đơn hàng doanh nghiệp để kéo chương trình đào tạo sát nhu cầu thị trường.
-- Nền tảng giữ vai trò công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu.
+- Chỉ kế thừa chương trình giảng dạy.
+- Xây nền tảng mới theo hướng greenfield, modular và API-first.
+- Triển khai lớp ngay với các trường đã sẵn sàng.
+- Dùng quy trình thủ công/SaaS tạm thời cho phần MVP chưa có.
+- Dữ liệu cốt lõi do dự án kiểm soát.
+- Đối tác ngoài đi qua lớp tích hợp và hợp đồng rõ ràng.
+- Grapuco là add-on cho Vibe Coding và phát triển codebase, không phải điểm lỗi duy nhất.
+- AI hỗ trợ; con người chịu trách nhiệm cuối cùng về nội dung và đánh giá.
