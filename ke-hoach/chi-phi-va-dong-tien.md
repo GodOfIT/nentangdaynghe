@@ -1,280 +1,336 @@
 # Chi phí, dòng tiền và vốn lưu động
 
-> Tài liệu này là khung quản trị dòng tiền. Mọi con số chưa có chứng từ hoặc quyết định của anh Đức đều là `[giả định]`.
+> Tài liệu này áp dụng cho mô hình mới. Không kế thừa hạ tầng, nhân sự, workflow, phần mềm hoặc chi phí từ SOPai, Arkon, henlich.vn hay dự án khác.
 >
-> Các con số “tháng 1 âm 135 triệu” và “tháng 1 âm 37 triệu” trong phiên bản cũ **không còn được dùng như dự báo**.
+> Chỉ các chương trình giảng dạy đã soạn được kế thừa.
 >
-> Đọc cùng `ke-hoach/muc-tieu-thang-1.md` và `ke-hoach/unit-economics.md`.
+> Mọi số chưa có chứng từ, hợp đồng hoặc quyết định của anh Đức đều là `[giả định]`.
 
-Cập nhật: 2026-07-27
+Cập nhật: 2026-07-30
 
-## 1. Nguyên tắc quản trị dòng tiền
+## 1. Nguyên tắc quản trị
 
 1. Giá trị hợp đồng không phải tiền đã thu.
 2. Doanh thu ghi nhận không phải dòng tiền.
-3. Mỗi hợp đồng phải có lịch thu và lịch chi.
-4. Không dùng một tỷ lệ chi phí trực tiếp chung cho mọi khóa B2B.
-5. Không dựng bảng 12 tháng khi chưa biết trần năng lực giao khóa và lịch thanh toán.
-6. Tiền ứng trước B2B phải ưu tiên trang trải chi phí trực tiếp dự kiến.
-7. Dòng sinh viên online phải theo dõi cả cấu hình AI-first và hybrid.
-8. Chi phí xây tự động hóa và thời gian của dev phải được ghi nhận, không coi là miễn phí.
+3. Mỗi hợp đồng/cohort có lịch thu và lịch chi riêng.
+4. Không dùng một tỷ lệ chi phí chung cho mọi sản phẩm.
+5. Chi phí xây nền tảng mới phải được ghi riêng khỏi chi phí vận hành lớp.
+6. Không coi giờ dev, cloud, AI/API hoặc công cụ đối tác là miễn phí.
+7. Grapuco được ghi là chi phí/đối tác ngoài nếu có hợp đồng hoặc sử dụng thực tế.
+8. Không đưa chi phí hoặc doanh thu Grapuco vào dự báo khi chưa có thỏa thuận.
+9. Không dùng các bảng dòng tiền cũ làm dự báo cho mô hình mới.
 
-## 2. Chi phí cố định hàng tháng `[giả định]`
+## 2. Nhóm chi phí của dự án mới
 
-### 2.1. Nhân sự
+### 2.1. Nhân sự nội bộ
 
-| Vai trò | Chi phí gồm lương và nghĩa vụ liên quan/tháng `[giả định]` |
-|---|---:|
-| Điều hành, quan hệ đối tác, bán hàng | 36–43 triệu |
-| Phát triển nền tảng | 30–36 triệu |
-| Nội dung, thiết kế học tập 1 | 22–27 triệu |
-| Nội dung, thiết kế học tập 2 | 18–24 triệu |
-| Hành chính, vận hành, đối soát | 15–18 triệu |
-| **Tổng nhân sự** | **121–148 triệu** |
+Cần lập ngân sách mới cho:
 
-Các mức này chưa được xác nhận bằng bảng lương thực tế.
+- điều hành và quan hệ trường;
+- kinh doanh và hợp đồng;
+- quản lý chương trình;
+- vận hành lớp và hỗ trợ;
+- phát triển sản phẩm/nền tảng;
+- tài chính, kế toán và đối soát;
+- quản trị dữ liệu và chất lượng.
 
-Các biến cần anh Đức quyết:
+Không kế thừa cơ cấu hoặc bảng lương của dự án khác. Mỗi vai trò phải có:
 
-- Founder có nhận lương trong 6 tháng đầu hay không.
-- Đội vận hành thực tế là 4 hay 5 người trong giai đoạn đầu.
-- Người dạy chính tính vào chi phí cố định hay chi phí trực tiếp theo khóa.
+- hình thức toàn thời gian/bán thời gian/thuê ngoài;
+- chi phí thực tế;
+- thời gian cam kết;
+- đầu ra;
+- người phê duyệt.
 
-### 2.2. Chi phí vận hành
+### 2.2. Giảng viên và chuyên gia
 
-| Khoản | Mức/tháng `[giả định]` |
-|---|---:|
-| Văn phòng/coworking | 6–10 triệu |
-| Kế toán thuê ngoài | 3–5 triệu |
-| Pháp lý và tư vấn | 2–5 triệu |
-| Cloud, domain, email | 3–5 triệu |
-| Subscription AI và công cụ | 5–8 triệu |
-| LLM API | 4–10 triệu, phụ thuộc sử dụng |
-| Thiết kế, video, quản lý khác | 2–4 triệu |
-| **Tổng vận hành** | **25–47 triệu** |
+- giảng viên chính;
+- trợ giảng;
+- chuyên gia kiểm duyệt nội dung;
+- chuyên gia theo ngành/môn;
+- giảng viên nguồn tại trường;
+- người chấm/duyệt sản phẩm.
 
-### 2.3. Hai kịch bản chi phí cố định
+Tính theo cohort, buổi, giờ hoặc hợp đồng riêng.
 
-| Kịch bản | Chi phí/tháng `[giả định]` |
-|---|---:|
-| Tối giản: founder chưa nhận lương, 4 người | 92–126 triệu |
-| Cơ sở: 5 người, founder nhận lương | 146–195 triệu |
+### 2.3. Phát triển nền tảng mới
 
-Không lấy 150 triệu làm số mặc định nếu chưa chốt cấu trúc đội và lương thực tế.
+#### Đầu tư ban đầu
 
-## 3. Chi phí trực tiếp theo sản phẩm
+- product discovery;
+- kiến trúc hệ thống;
+- UX/UI;
+- development;
+- QA/test;
+- bảo mật;
+- hạ tầng ban đầu;
+- tích hợp thanh toán/nhắn tin;
+- tích hợp Grapuco nếu có;
+- tài liệu và đào tạo vận hành.
 
-### 3.1. Sinh viên online — AI-first
+#### Chi phí vận hành hàng tháng
 
-Giả định để chạy độ nhạy, chưa phải dữ liệu thật:
+- cloud/compute;
+- database/storage;
+- backup;
+- monitoring/logging;
+- email/SMS/Zalo/notification;
+- domain và chứng chỉ;
+- support và bảo trì;
+- AI/API;
+- công cụ analytics;
+- license SaaS;
+- bảo mật và kiểm thử.
 
-- Giảng viên: 10 triệu/cohort.
-- Một điều phối viên: 4 triệu/cohort.
-- Phí thanh toán/đối soát: 0,8% học phí gộp.
-- LLM API: 14.000 đồng/người/khóa.
-- Nền tảng/lưu trữ: 6.000 đồng/người.
+### 2.4. Chi phí lớp học
 
-Chi phí còn có thể bị bỏ sót:
+- học liệu;
+- giảng viên;
+- trợ giảng/điều phối;
+- hỗ trợ người học;
+- điểm danh;
+- chấm và duyệt;
+- chứng nhận/báo cáo;
+- nền tảng phân bổ;
+- phí thu tiền;
+- hoàn tiền/khiếu nại;
+- truyền thông;
+- đi lại/địa điểm nếu trực tiếp.
 
-- xây và bảo trì workflow;
-- RAG, embedding, reranking;
-- Zalo OA/kênh nhắn tin;
-- logging, giám sát và kiểm thử;
-- hỗ trợ ngoại lệ;
-- người duyệt chấm bài;
-- xử lý tài khoản, hoàn tiền và khiếu nại;
-- thời gian của dev.
+### 2.5. Chi phí Grapuco
 
-### 3.2. Sinh viên online — hybrid dự phòng
+Chỉ ghi khi có thỏa thuận hoặc sử dụng:
 
-- AI gợi ý, người trả lời/duyệt.
-- Đối soát bán tự động.
-- Trợ giảng tăng theo tải thật.
-- Người kiểm tra các bài chấm có rủi ro.
-
-Cấu hình này có thể tạo đóng góp thấp hơn nhưng giảm rủi ro khi AI-first chưa sẵn sàng.
-
-### 3.3. B2B giảng viên và doanh nghiệp
-
-Mỗi hợp đồng phải có dự toán riêng:
-
-- khảo sát và thiết kế;
-- chuyên gia/giảng viên;
-- tùy chỉnh nội dung;
-- đi lại, địa điểm;
-- trợ giảng và vận hành;
-- nền tảng, API và công cụ;
-- sản phẩm bàn giao;
-- hỗ trợ sau khóa;
-- thuế và phí trực tiếp.
-
-Không dùng mức “40% giá trị hợp đồng” như số thực tế.
-
-### 3.4. Cấp quyền khóa học
-
-Phải tính:
-
-- bán hàng và đàm phán;
-- tùy chỉnh;
+- license;
+- API/quota;
+- phí theo người học/cohort/trường;
 - onboarding;
-- đào tạo giảng viên nguồn;
-- hosting và kỹ thuật;
-- báo cáo;
-- hỗ trợ;
-- cập nhật nội dung;
-- kiểm soát phạm vi sử dụng.
+- tích hợp;
+- support/SLA;
+- chi phí xử lý/lưu trữ code nếu có;
+- chi phí fallback hoặc chuyển đổi;
+- chia sẻ doanh thu nếu có.
 
-### 3.5. Đào tạo năng lực giáo viên STEAM
+Grapuco không được nhập vào chi phí nhân sự hoặc tài sản nội bộ.
 
-Phải có bảng riêng cho từng pilot:
+## 3. Dòng tiền tháng đầu
 
-- thiết kế 1–2 môn;
-- chuyên gia và nghiệm thu;
-- đi lại/đào tạo tập trung;
-- học liệu hướng dẫn học sinh;
-- điều phối viên tại chỗ;
-- hỗ trợ từ xa;
-- phần mềm/trợ lý AI nếu có;
-- thiết bị nếu cần.
+### 3.1. Dòng tiền vào
 
-Không dùng bảng chi phí sinh viên đại học cho nhóm giáo viên vùng khó.
-
-## 4. Chi phí xây tự động hóa
-
-AI-first làm giảm chi phí biến đổi nhưng tạo chi phí đầu tư ban đầu và chi phí duy trì.
-
-Mỗi hạng mục phải ghi:
-
-| Hạng mục | Giờ dev | Chi phí công cụ/API | Chi phí vận hành tháng | Trạng thái |
-|---|---:|---:|---:|---|
-| Đăng ký và mã học viên | Chưa đo | Chưa đo | Chưa đo | Cần audit |
-| Đối soát thanh toán | Chưa đo | Chưa đo | Chưa đo | Cần audit |
-| FAQ/RAG tuyến đầu | Chưa đo | Chưa đo | Chưa đo | Cần audit |
-| Nhắc lịch/điểm danh | Chưa đo | Chưa đo | Chưa đo | Cần audit |
-| Chấm sơ bộ theo rubric | Chưa đo | Chưa đo | Chưa đo | Cần audit |
-
-Nguyên tắc:
-
-- Không coi giờ dev là miễn phí.
-- Không xây cả năm hạng mục cùng lúc trước khi audit tài sản có sẵn.
-- Nếu dự án tự thu hàng trăm giao dịch, ưu tiên đối soát.
-- Nếu đối tác thu và đối soát, có thể ưu tiên trợ lý AI hoặc workflow lớp học.
-
-## 5. Khung dòng tiền tháng đầu
-
-### 5.1. Dòng tiền vào
-
-| Nguồn | Giá trị/thông tin hiện có | Tiền tháng đầu |
+| Nguồn | Quy mô/thông tin hiện có | Tiền tháng đầu |
 |---|---:|---:|
 | Sinh viên online | 200–300 người × 220.000 đồng `[giả định]` | 44–66 triệu học phí gộp |
-| 2 khóa giảng viên | 40–100 triệu giá trị hợp đồng | Phụ thuộc ứng trước và lịch thu |
-| 2 khóa doanh nghiệp | 40–200 triệu giá trị hợp đồng | Phụ thuộc ứng trước và lịch thu |
-| Cấp quyền khóa sinh viên | Ít nhất 1 thử nghiệm/giao dịch | Chưa có giá và lịch thu |
-| STEAM | Chưa chốt người trả tiền và phạm vi | Không đưa vào dự báo |
+| 2 khóa giảng viên | 40–100 triệu giá trị hợp đồng | phụ thuộc ứng trước/lịch thu |
+| 2 khóa doanh nghiệp | 40–200 triệu giá trị hợp đồng | phụ thuộc ứng trước/lịch thu |
+| Cấp quyền chương trình | ít nhất 1 gói | chưa chốt giá/lịch thu |
+| Nền tảng | có thể tính trong hợp đồng hoặc tách riêng | chưa chốt |
+| Grapuco | không phải doanh thu mặc định | chỉ ghi khi có hợp đồng/chia sẻ doanh thu |
 
-### 5.2. Dòng tiền ra
+### 3.2. Dòng tiền ra
 
-- Chi phí cố định thực tế.
-- Chi phí trực tiếp AI-first hoặc hybrid.
-- Chi phí từng khóa B2B đã triển khai.
-- Chi phí bán hàng và đi lại.
-- Thuế, phí thanh toán và phần đối tác.
-- Chi phí xây hoặc tích hợp tự động hóa.
-- Chi phí STEAM chỉ khi scope được phê duyệt.
+- chi phí nhân sự thực tế;
+- chi phí giảng viên và chuyên gia;
+- chi phí lớp đang chạy;
+- đầu tư nền tảng mới;
+- cloud và SaaS;
+- phí thanh toán;
+- pháp lý/kế toán/thuế;
+- bán hàng và đi lại;
+- Grapuco/đối tác ngoài nếu có;
+- hoàn tiền và xử lý sự cố.
 
-### 5.3. Công thức báo cáo
+### 3.3. Công thức báo cáo
 
-> Dòng tiền thuần tháng = tổng tiền thực thu - tổng tiền thực chi
+> Dòng tiền thuần = tổng tiền thực thu - tổng tiền thực chi
 
-> Công nợ cuối tháng = giá trị đến hạn chưa thu - khoản phải trả đến hạn chưa chi
+> Công nợ cuối kỳ = khoản phải thu đến hạn - khoản phải trả đến hạn
 
-> Runway = tiền mặt khả dụng ÷ chi tiền bình quân theo kịch bản thực tế
+> Runway = tiền mặt khả dụng ÷ mức chi tiền bình quân thực tế
 
-## 6. Bảng theo dõi từng hợp đồng B2B
+Không dùng doanh thu ký mới để che việc tiền chưa về.
+
+## 4. Quản trị đầu tư nền tảng mới
+
+### 4.1. Tách CAPEX/đầu tư và OPEX/vận hành
+
+Báo cáo riêng:
+
+- chi phí xây phiên bản đầu;
+- chi phí phát triển tính năng mới;
+- chi phí bảo trì;
+- chi phí vận hành theo tháng;
+- chi phí theo trường/cohort;
+- chi phí tích hợp đối tác.
+
+### 4.2. Mỗi hạng mục phải có
 
 | Trường | Nội dung |
 |---|---|
-| Mã hợp đồng | định danh |
-| Nhóm khách hàng | giảng viên/doanh nghiệp/STEAM |
-| Giá trị hợp đồng | tổng đã ký |
-| Ngày ký | ngày thực tế |
-| Lịch triển khai | ngày bắt đầu/kết thúc |
-| Tiền ứng trước | số tiền và ngày thu |
-| Các mốc thanh toán | số tiền, điều kiện, hạn thu |
-| Chi phí trực tiếp dự kiến | theo bảng dự toán |
-| Chi phí trực tiếp thực tế | cập nhật sau giao |
-| Doanh thu ghi nhận | theo chính sách kế toán |
-| Công nợ | còn phải thu |
-| Đóng góp thực tế | doanh thu thuần trừ chi phí trực tiếp |
+| Hạng mục | tên chức năng/tích hợp |
+| Lý do | lớp/trường/vấn đề nào cần |
+| Người phụ trách | nội bộ/thuê ngoài |
+| Giờ công | kế hoạch và thực tế |
+| Chi phí | dev, cloud, công cụ, đối tác |
+| Deadline | ngày cần dùng |
+| Trạng thái | chưa làm/đang làm/đã chạy |
+| Kết quả | mức sử dụng, lỗi, tác động |
 
-## 7. Điều khoản thương mại bảo vệ dòng tiền
+### 4.3. Thứ tự đầu tư tháng đầu
 
-- Có tiền ứng trước trước khi bắt đầu tùy chỉnh hoặc đặt lịch chuyên gia.
-- Tiền ứng trước tối thiểu nên đủ trang trải chi phí trực tiếp dự kiến đã cam kết.
-- Chia thanh toán theo mốc có đầu ra rõ ràng.
-- Không để toàn bộ tiền thanh toán sau nghiệm thu nếu phải ứng chi lớn.
-- Ghi rõ phạm vi thay đổi, số vòng chỉnh sửa và hỗ trợ sau khóa.
-- Ghi rõ trách nhiệm đối tác trong tuyển sinh, thu tiền, điều phối và hỗ trợ.
+1. Quản lý trường, chương trình, cohort và người học.
+2. Học liệu, nhiệm vụ và nộp sản phẩm.
+3. Rubric, kết quả và báo cáo.
+4. Phân quyền và audit log.
+5. Điểm danh/tiến độ.
+6. Thanh toán/đối soát hoặc tích hợp nhà cung cấp nếu dự án trực tiếp thu.
+7. API/MCP gateway cho đối tác ngoài.
+8. Grapuco chỉ triển khai sau khi phạm vi và điều khoản đã rõ.
 
-## 8. Chưa dựng bảng dòng tiền 12 tháng
+## 5. Chi phí theo sản phẩm
 
-Chỉ dựng lại khi có tối thiểu:
+### 5.1. Sinh viên online
 
-1. Ngày bắt đầu chính thức.
-2. Chi phí cố định thực tế.
-3. Founder có nhận lương hay không.
-4. Trần số khóa B2B có thể giao mỗi tháng.
-5. Pipeline và tỷ lệ ký thực tế.
-6. Điều khoản thanh toán của các hợp đồng đầu tiên.
-7. Unit economics AI-first và hybrid.
-8. Giá và chi phí gói cấp quyền đầu tiên.
-9. Phạm vi và nguồn tiền STEAM.
+Phải tính:
 
-## 9. Nhu cầu vốn và runway
+- giảng viên;
+- trợ giảng/điều phối;
+- hỗ trợ;
+- nền tảng mới;
+- cloud;
+- AI/API;
+- phí thanh toán;
+- nhắn tin;
+- chấm bài;
+- Grapuco nếu là Vibe Coding có tích hợp.
 
-Không sử dụng mức 800 triệu–1 tỷ như kết luận đã chốt.
+### 5.2. Khóa giảng viên
 
-> Vốn lưu động tối thiểu = điểm âm lũy kế sâu nhất + chi đầu tư bắt buộc + dự phòng rủi ro
+- khảo sát;
+- tùy chỉnh;
+- giảng viên/chuyên gia;
+- đi lại;
+- học liệu;
+- nền tảng;
+- sản phẩm bàn giao;
+- hỗ trợ sau khóa;
+- thuế/phí.
 
-Lập ít nhất ba kịch bản:
+### 5.3. Khóa doanh nghiệp
 
-- B2B ký và thu đúng kế hoạch.
-- B2B ký đủ nhưng thu chậm.
-- B2B chỉ đạt 50% mục tiêu.
+- khảo sát quy trình;
+- dữ liệu và tình huống;
+- chuyên gia;
+- workflow/agent mẫu;
+- bảo mật;
+- nền tảng/công cụ;
+- hỗ trợ triển khai;
+- Grapuco nếu có nội dung codebase/Vibe Coding.
 
-Mỗi kịch bản sinh viên phải có AI-first và hybrid.
+### 5.4. Cấp quyền chương trình
 
-## 10. Ngưỡng cảnh báo
+- bán hàng;
+- tùy chỉnh;
+- onboarding;
+- đào tạo giảng viên nguồn;
+- nền tảng;
+- support;
+- báo cáo;
+- cập nhật nội dung;
+- quản lý IP;
+- đối tác ngoài/add-on.
 
-| Ngưỡng | Hành động |
+### 5.5. STEAM và môn mới
+
+- thiết kế;
+- chuyên gia kiểm duyệt;
+- đào tạo giáo viên;
+- thiết bị nếu có;
+- học liệu;
+- nền tảng;
+- hỗ trợ;
+- đánh giá.
+
+## 6. Bảng theo dõi hợp đồng/cohort
+
+| Trường | Nội dung |
 |---|---|
-| Tiền mặt còn dưới 3 tháng chi cố định thực tế | Dừng chi đầu tư chưa cần thiết; ưu tiên thu công nợ và hợp đồng ứng trước |
-| Hợp đồng B2B ký nhưng ứng trước không đủ chi trực tiếp | Không khởi động phần tùy chỉnh tốn chi phí trước khi điều chỉnh điều khoản |
-| Cohort có API cost/ticket cao hơn kịch bản | Giữ quy mô, chuyển hybrid và tối ưu trước khi mở rộng |
-| Tỷ lệ chuyển người thật vượt ngưỡng thiết kế | Bổ sung điều phối hoặc giảm phạm vi trợ lý AI |
-| Tải hỗ trợ/chấm bài vượt trần đội | Không mở cohort mới; tự động hóa hoặc bố trí chuyên gia theo đợt |
-| Doanh thu/đóng góp thấp hơn kế hoạch hai tháng liên tiếp | Chuyển về kịch bản tối giản và rà lại pipeline |
+| Mã hợp đồng/cohort | định danh |
+| Khách hàng/trường | đơn vị |
+| Chương trình | tên và phiên bản |
+| Số người học | kế hoạch/thực tế |
+| Giá trị hợp đồng/học phí | tổng |
+| Ngày ký | thực tế |
+| Lịch triển khai | bắt đầu/kết thúc |
+| Tiền ứng trước | số tiền/ngày |
+| Các mốc thanh toán | số tiền/điều kiện |
+| Chi phí giảng dạy | dự kiến/thực tế |
+| Chi phí nền tảng | phân bổ |
+| Chi phí Grapuco | nếu có |
+| Chi phí đối tác khác | nếu có |
+| Công nợ | còn phải thu |
+| Đóng góp | doanh thu thuần trừ chi phí trực tiếp |
 
-## 11. Báo cáo tài chính hàng tuần
+## 7. Điều khoản bảo vệ dòng tiền
 
-- Tiền mặt đầu kỳ và cuối kỳ.
-- Tiền đã thu theo từng dòng sản phẩm.
-- Tiền đã chi cố định và trực tiếp.
-- Giá trị hợp đồng mới ký.
-- Tiền ứng trước mới thu.
-- Công nợ đến hạn và quá hạn.
-- Chi phí API và hạ tầng.
-- Giờ dev cho tự động hóa.
-- Ticket, ngoại lệ và giờ điều phối.
-- Dự báo tiền vào/ra 4 tuần tiếp theo.
+- Có tiền ứng trước trước khi đặt lịch chuyên gia hoặc bắt đầu tùy chỉnh.
+- Tiền ứng trước phải đủ trang trải phần chi phí đã cam kết nếu có thể.
+- Thanh toán theo mốc và đầu ra rõ ràng.
+- Ghi rõ phạm vi chỉnh sửa và hỗ trợ.
+- Ghi rõ ai thu học phí và chịu phí thanh toán.
+- Ghi rõ chi phí dịch vụ ngoài như Grapuco do bên nào thanh toán.
+- Ghi rõ xử lý khi đối tác ngoài gián đoạn.
 
-## 12. Các quyết định còn cần anh Đức
+## 8. Quản trị Grapuco
 
-1. Founder có nhận lương trong 6 tháng đầu không.
-2. Chi phí thực tế của đội 4–5 người.
-3. Nguồn tiền mặt hoặc runway hiện có.
-4. Trần số khóa B2B có thể giao mỗi tháng.
-5. Điều khoản ứng trước mục tiêu.
-6. Mức hoàn thiện SOPai, Arkon và henlich.vn.
-7. Pháp nhân và quy trình thu học phí, hóa đơn và thuế.
-8. Phạm vi và nguồn chi trả STEAM.
+Trước khi phát sinh chi phí, cần có:
+
+- proposal/bảng giá;
+- mô hình billing;
+- quota;
+- SLA;
+- hỗ trợ;
+- chính sách dữ liệu/code;
+- quyền sở hữu;
+- phương án chấm dứt;
+- phương án di chuyển dữ liệu;
+- phương án lớp học không dùng Grapuco.
+
+Theo dõi hàng tháng:
+
+- chi phí thực trả;
+- số người/cohort sử dụng;
+- mức sử dụng quota;
+- lỗi;
+- thời gian hỗ trợ;
+- tác động tới kết quả học tập;
+- doanh thu liên quan;
+- tỷ lệ gia hạn.
+
+## 9. Cảnh báo dòng tiền
+
+Cảnh báo khi:
+
+- tiền mặt dưới mức chi 2 tháng;
+- công nợ quá hạn tăng;
+- chi phí nền tảng vượt ngân sách;
+- chi phí Grapuco/đối tác vượt doanh thu liên quan;
+- nhiều trường khai giảng nhưng tiền chưa thu;
+- chi phí hỗ trợ trên mỗi học viên tăng mạnh;
+- đầu tư tính năng không có người dùng.
+
+## 10. Các quyết định cần anh Đức chốt
+
+- Ngân sách nền tảng mới tháng 1 và 3 tháng đầu.
+- Quy mô đội nội bộ/thuê ngoài.
+- Founder và đội ngũ nhận lương thế nào.
+- Runway hiện có.
+- Cơ chế thu học phí.
+- Pháp nhân và hóa đơn.
+- Mức giá cấp quyền.
+- Mô hình thương mại với Grapuco.
+- Trần chi phí Grapuco trên mỗi người/cohort.
+- Đối tác nào được phép truy cập loại dữ liệu nào.
+
+## 11. Kết luận
+
+Dòng tiền của dự án mới phải được xây lại từ dữ liệu thực tế. Không được tái sử dụng bảng chi phí hoặc kết luận tài chính của hệ thống cũ. Nền tảng mới và Grapuco phải được nhìn như hai nhóm chi phí riêng: một nhóm đầu tư/sở hữu nội bộ, một nhóm dịch vụ đối tác ngoài.
