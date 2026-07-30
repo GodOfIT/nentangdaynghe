@@ -1,217 +1,237 @@
-# Mục tiêu kinh doanh tháng 1
+# Mục tiêu kinh doanh và triển khai tháng 1
 
-> Tài liệu này là nguồn tham chiếu ưu tiên cho KPI tháng đầu và thay thế các chỉ tiêu tháng 1 cũ nếu có khác biệt.
+> Tài liệu này là nguồn tham chiếu ưu tiên cho 30 ngày vận hành đầu tiên.
 >
-> **Tháng 1** được hiểu là 30 ngày vận hành đầu tiên kể từ khi bắt đầu triển khai, không mặc định là tháng 1 dương lịch. Khi chốt ngày khai giảng phải ánh xạ sang lịch năm học và lịch nghỉ thực tế.
+> Dự án đã có trường sẵn sàng và chương trình giảng dạy đã soạn. Tháng đầu là tháng **kích hoạt triển khai**, không phải tháng tìm kiếm nhu cầu.
+>
+> Nền tảng, dữ liệu, workflow và hạ tầng được xây mới. Không sử dụng SOPai, Arkon hoặc henlich.vn.
 
-## 1. Cách hiểu thống nhất về KPI khóa B2B
+## 1. Kết quả cần đạt trong 30 ngày
 
-Không dùng một con số “số khóa” cho cả bán hàng, dòng tiền và giao hàng.
+### 1.1. Trường và sinh viên
 
-Mỗi khóa giảng viên hoặc doanh nghiệp phải theo dõi riêng:
+- Kích hoạt **2–3 trường/cơ sở giáo dục** đã sẵn sàng.
+- Có **200–300 sinh viên thanh toán và bắt đầu học**.
+- Bắt đầu đào tạo từ tuần thứ hai.
+- Mỗi trường có đầu mối phối hợp danh sách, truyền thông, lớp học và xử lý tình huống tại chỗ.
 
-1. Cơ hội đủ điều kiện.
-2. Đề xuất đã gửi.
-3. Hợp đồng đã ký.
-4. Tiền ứng trước hoặc tiền đã thu.
-5. Khóa đã khai giảng.
-6. Khóa đã hoàn thành.
-7. Sản phẩm đã bàn giao.
-8. Công nợ còn lại.
+### 1.2. Chương trình sinh viên
 
-Khi báo cáo “đạt 2 khóa” phải ghi rõ đang nói đến trạng thái nào.
+Triển khai từ các chương trình đã soạn:
 
-## 2. Mục tiêu đào tạo trực tiếp
+1. **Ứng dụng AI theo khung năng lực**.
+2. **Phát triển ứng dụng và tự động hóa với AI – Vibe Coding**.
 
-### 2.1. Khóa AI cho giảng viên
+Mỗi chương trình phải có:
 
-- KPI thương mại: **2 hợp đồng đã ký và có lịch triển khai** trong tháng đầu.
-- Mục tiêu giao hàng: triển khai đủ **2 khóa** trong tháng nếu lịch của đơn vị cho phép; theo dõi riêng số đã khai giảng và hoàn thành.
-- Hình thức: trực tiếp hoặc kết hợp.
+- đề cương và cấu trúc 12–15 buổi;
+- học liệu và bài tập;
+- sản phẩm cuối khóa;
+- rubric;
+- tiêu chí hoàn thành;
+- hồ sơ minh chứng;
+- tài liệu giảng viên/điều phối viên.
+
+### 1.3. Đào tạo trực tiếp B2B
+
+#### Khóa AI cho giảng viên
+
+- Mục tiêu: **2 hợp đồng đã ký và có lịch triển khai**.
+- Mục tiêu giao hàng: triển khai đủ **2 khóa** nếu lịch của trường cho phép.
 - Khung giá: **20–50 triệu đồng/khóa**.
 - Giá trị hợp đồng dự kiến: **40–100 triệu đồng**.
-- Mức quản trị tham chiếu: 2 khóa × 35 triệu đồng = **70 triệu đồng**.
 
-### 2.2. Khóa AI cho doanh nghiệp
+#### Khóa AI cho doanh nghiệp
 
-- KPI thương mại: **2 hợp đồng đã ký và có lịch triển khai** trong tháng đầu.
-- Mục tiêu giao hàng: triển khai đủ **2 khóa** trong tháng nếu lịch của doanh nghiệp cho phép; theo dõi riêng số đã khai giảng và hoàn thành.
-- Hình thức: đào tạo trực tiếp, có thể kết hợp khảo sát nhu cầu, tùy chỉnh tình huống, tư vấn quy trình và bàn giao bản mẫu ứng dụng.
+- Mục tiêu: **2 hợp đồng đã ký và có lịch triển khai**.
+- Mục tiêu giao hàng: triển khai đủ **2 khóa** nếu lịch của doanh nghiệp cho phép.
 - Khung giá: **20–100 triệu đồng/khóa**.
 - Giá trị hợp đồng dự kiến: **40–200 triệu đồng**.
-- Mức quản trị tham chiếu: 2 khóa × 60 triệu đồng = **120 triệu đồng**.
 
-### 2.3. Nguyên tắc dòng tiền B2B
+Giá trị hợp đồng, tiền đã thu, khóa đã khai giảng và khóa đã hoàn thành phải báo cáo riêng.
 
-- Giá trị hợp đồng không đồng nghĩa với tiền đã thu.
-- Doanh thu ghi nhận không đồng nghĩa với dòng tiền trong tháng.
-- Ưu tiên điều khoản ứng trước đủ trang trải chi phí trực tiếp dự kiến của khóa.
-- Chưa dùng tỷ lệ chi phí trực tiếp cố định cho mọi hợp đồng; mỗi khóa phải có bảng dự toán riêng.
+### 1.4. Cấp quyền chương trình
 
-Tổng giá trị hợp đồng theo khung giá của bốn khóa B2B là **80–300 triệu đồng**. Mức quản trị tham chiếu là **190 triệu đồng**, nhưng đây chưa phải tiền mặt và chưa phải lợi nhuận.
+- Có ít nhất **1 gói chương trình sinh viên được bán, cấp quyền hoặc triển khai theo thỏa thuận thương mại rõ ràng**.
+- Chốt phạm vi: nội dung, số người học, thời hạn, nền tảng, báo cáo, hỗ trợ và quyền chỉnh sửa.
 
-## 3. Chương trình dành cho sinh viên
+## 2. KPI lớp sinh viên
 
-Chương trình sinh viên được theo dõi thành hai dòng độc lập:
+### 2.1. Giả định thương mại
 
-1. **Bán quyền sử dụng khóa học** cho trường hoặc đối tác.
-2. **Dự án tự vận hành lớp online**, thu học phí theo số sinh viên thanh toán.
-
-Doanh thu bán quyền sử dụng khóa học chưa được cộng vào kế hoạch cho đến khi chốt cấu trúc giá, thời hạn, số người học và phạm vi dịch vụ.
-
-### 3.1. KPI lớp sinh viên online
-
-- Mục tiêu: **200–300 sinh viên thanh toán và bắt đầu học**.
-- Học phí bình quân dùng để lập kế hoạch: **220.000 đồng/người** `[giả định]`.
+- Học phí bình quân: **220.000 đồng/người** `[giả định]`.
 - Phần dự án sau chia sẻ: **60% học phí thực thu** `[giả định]`.
-- Không sử dụng đặt cọc hoàn lại trong tháng đầu vì làm tăng tải hoàn tiền, đối soát và khiếu nại.
+- Không dùng đặt cọc hoàn lại.
 
-### 3.2. Hai cấu hình vận hành
-
-#### AI-first — kiến trúc mục tiêu
-
-- Đăng ký và mã học viên tự động.
-- Thanh toán định danh và đối soát tự động.
-- Trợ lý AI tuyến đầu trên kho tri thức khóa học.
-- Workflow nhắc lịch, điểm danh và nộp bài.
-- LLM chấm sơ bộ theo rubric, người duyệt vòng cuối.
-
-#### Hybrid — phương án dự phòng
-
-- AI gợi ý, người vận hành duyệt và xử lý ngoại lệ.
-- Đối soát bán tự động.
-- Người kiểm tra bài chấm rủi ro.
-- Giới hạn quy mô nếu ticket và tải vận hành vượt trần.
-
-Không được mở rộng lên 500–1.000 người trước khi audit SOPai, Arkon, henlich.vn và đo tải cohort đầu tiên.
-
-### 3.3. Hai mức tỷ lệ hoàn thành
-
-- **Kịch bản ngân sách:** 50–60% người bắt đầu học hoàn thành.
-- **Mục tiêu vận hành nội bộ:** khoảng 70% nếu có thanh toán thật, điểm danh, nhắc lịch và điều phối.
-
-Không dùng 70% làm cam kết đối ngoại trước khi có dữ liệu thật.
-
-| Chỉ tiêu | Mức 200 sinh viên | Mức 300 sinh viên |
+| Chỉ tiêu | 200 sinh viên | 300 sinh viên |
 |---|---:|---:|
 | Sinh viên thanh toán và bắt đầu học | 200 | 300 |
-| Tổng học phí | 44 triệu đồng | 66 triệu đồng |
-| Phần dự án sau chia sẻ | 26,4 triệu đồng | 39,6 triệu đồng |
+| Tổng học phí | 44 triệu | 66 triệu |
+| Phần dự án sau chia sẻ | 26,4 triệu | 39,6 triệu |
 | Hoàn thành theo kịch bản ngân sách 50–60% | 100–120 | 150–180 |
-| Mục tiêu vận hành khoảng 70% | 140 | 210 |
+| Mục tiêu vận hành nội bộ khoảng 70% | 140 | 210 |
 
-Phần dự án sau chia sẻ chưa phải đóng góp hoặc lợi nhuận. Đóng góp thực tế phải tính theo cấu hình AI-first/hybrid và toàn bộ chi phí trực tiếp.
+Phần dự án sau chia sẻ chưa phải lợi nhuận. Phải trừ chi phí giảng dạy, vận hành, công cụ, nền tảng mới, thanh toán và hỗ trợ.
 
-## 4. Audit kỹ thuật trong tuần 1
+## 3. Nền tảng mới trong tháng đầu
 
-Hoàn thành trong 2–3 ngày:
+### 3.1. Nguyên tắc
 
-- SOPai đang xử lý được những trạng thái nào của cohort.
-- Arkon đã có RAG, logging, phân quyền và trợ lý AI tới đâu.
-- henlich.vn đã hỗ trợ đăng ký, mã học viên, lịch, điểm danh và thanh toán tới đâu.
-- Chức năng nào dùng ngay, chức năng nào chạy hybrid, chức năng nào phải xây.
+- Xây mới hoàn toàn.
+- Không chờ hoàn thiện mới mở lớp.
+- Chỉ xây những chức năng phục vụ trực tiếp 2–3 trường và cohort đang chạy.
+- Phần chưa có được xử lý bằng quy trình thủ công hoặc SaaS tạm thời.
 
-Thứ tự mặc định nếu dự án tự thu tiền:
+### 3.2. MVP bắt buộc
 
-1. Đăng ký, mã học viên và đối soát thanh toán.
-2. FAQ/RAG tuyến đầu ở chế độ hybrid.
-3. Nhắc lịch, điểm danh và nộp bài.
-4. Chấm sơ bộ theo rubric, người duyệt vòng cuối.
+Đến cuối tháng đầu cần có tối thiểu:
 
-Nếu đối tác thu tiền và đối soát, thứ tự có thể thay đổi.
+- quản lý trường, chương trình và cohort;
+- nhập/quản lý danh sách người học;
+- tài khoản hoặc mã truy cập;
+- học liệu và nhiệm vụ;
+- nộp bài/sản phẩm;
+- rubric và kết quả đánh giá;
+- điểm danh hoặc trạng thái tham gia;
+- dashboard tiến độ cơ bản;
+- xuất báo cáo cho từng trường;
+- phân quyền quản trị, giảng viên, điều phối viên và người học;
+- nhật ký hoạt động tối thiểu.
 
-## 5. Đo chi phí và tải AI trong tháng đầu
+### 3.3. Những chức năng chưa bắt buộc tháng đầu
 
-Phải ghi:
+- AI tutor hoàn chỉnh;
+- chấm tự động toàn bộ;
+- hệ thống thanh toán phức tạp;
+- skill graph đầy đủ;
+- việc làm và đặt hàng nhân lực;
+- white-label sâu;
+- các tính năng STEAM chuyên biệt chưa có lớp thật.
 
-- chi phí LLM API/người/khóa;
-- token và số lượt hỏi trung bình;
-- tỷ lệ câu hỏi phải chuyển người thật;
-- ticket/người;
-- số giờ điều phối;
-- lỗi thanh toán/tài khoản;
-- thời gian duyệt bài;
-- tỷ lệ câu trả lời sai hoặc không đủ;
-- chi phí xây và duy trì workflow.
+## 4. Liên kết Grapuco trong tháng đầu
 
-Giả định 14.000 đồng API/người/khóa và một điều phối viên đủ cho 1.000 người chỉ dùng để chạy độ nhạy, không dùng làm KPI.
+Grapuco là đối tác ngoài. Tháng đầu không được coi tích hợp đã hoàn thành nếu chưa có thỏa thuận.
 
-## 6. Quy mô thương mại tham chiếu tháng 1
+### 4.1. Việc cần thực hiện
 
-### Trường hợp có 200 sinh viên online
+- Chốt đầu mối làm việc giữa hai bên.
+- Xác định phạm vi dùng Grapuco trong chương trình Vibe Coding.
+- Chọn hình thức tích hợp: API, MCP, tài khoản riêng hoặc liên kết ngoài.
+- Chốt loại dữ liệu được phép gửi.
+- Chốt quyền sở hữu code và sản phẩm người học.
+- Chốt giá, quota, hỗ trợ và SLA.
+- Chuẩn bị phương án lớp học vẫn hoạt động khi Grapuco chưa sẵn sàng.
 
-- Phần dự án sau chia sẻ từ sinh viên online: **26,4 triệu đồng** `[giả định]`.
-- Giá trị 2 khóa giảng viên: **40–100 triệu đồng**.
-- Giá trị 2 khóa doanh nghiệp: **40–200 triệu đồng**.
-- Tổng quy mô thương mại theo khung giá: **106,4–326,4 triệu đồng**.
-- Tổng theo mức quản trị tham chiếu: **216,4 triệu đồng**.
+### 4.2. Kịch bản ứng dụng đầu tiên
 
-### Trường hợp có 300 sinh viên online
+Trong Vibe Coding, Grapuco có thể được dùng để:
 
-- Phần dự án sau chia sẻ từ sinh viên online: **39,6 triệu đồng** `[giả định]`.
-- Giá trị 2 khóa giảng viên: **40–100 triệu đồng**.
-- Giá trị 2 khóa doanh nghiệp: **40–200 triệu đồng**.
-- Tổng quy mô thương mại theo khung giá: **119,6–339,6 triệu đồng**.
-- Tổng theo mức quản trị tham chiếu: **229,6 triệu đồng**.
+- tạo bản đồ codebase;
+- hiển thị module, dependency và call graph;
+- hỗ trợ học viên hiểu code do AI tạo;
+- lập đặc tả trước khi sửa;
+- phân tích tác động của thay đổi;
+- hỗ trợ trình bày kiến trúc sản phẩm cuối khóa.
 
-Các tổng trên:
+Tích hợp Grapuco không thay thế GitHub, môi trường code hoặc quy trình đánh giá của khóa học.
 
-- Chưa tính doanh thu cấp quyền khóa sinh viên.
-- Chưa trừ chi phí trực tiếp và chi phí cố định.
-- Không mặc định toàn bộ hợp đồng B2B được thu tiền trong tháng.
-- Không phải dự báo lợi nhuận hoặc dòng tiền.
+## 5. Kế hoạch theo tuần
 
-## 7. KPI tháng 1 chính thức
+### Tuần 1 — Chốt trường, lớp và nền tảng tối thiểu
 
-| Dòng sản phẩm | KPI tháng 1 |
+- Chốt 2–3 trường, số sinh viên và ngày khai giảng.
+- Chốt chương trình từng trường.
+- Chốt cơ chế học phí, hợp đồng và đầu mối phối hợp.
+- Hoàn thiện học liệu và rubric cần dùng ngay.
+- Thiết kế dữ liệu và kiến trúc MVP mới.
+- Xây phần quản lý trường, cohort, người học và học liệu.
+- Làm việc với Grapuco về phạm vi hợp tác Vibe Coding.
+
+### Tuần 2 — Khai giảng
+
+- Khai giảng cohort sinh viên đầu tiên.
+- Bắt đầu ít nhất một khóa giảng viên hoặc doanh nghiệp.
+- Vận hành chức năng đã có; phần thiếu xử lý thủ công.
+- Theo dõi lỗi tài khoản, hỗ trợ, điểm danh và nộp bài.
+- Tiếp tục xây rubric, báo cáo và dashboard.
+
+### Tuần 3 — Mở các lớp tiếp theo
+
+- Kích hoạt các trường/cohort còn lại trong đợt 1.
+- Triển khai thêm khóa B2B.
+- Thu bài tập và sản phẩm.
+- Hoàn thiện quản lý đánh giá và hồ sơ minh chứng.
+- Thử nghiệm Grapuco ở phạm vi nhỏ nếu thỏa thuận đã chốt.
+
+### Tuần 4 — Báo cáo và chuẩn bị mở rộng
+
+- Tổng hợp số người học, mức tham gia và tiến độ.
+- Đối soát tiền đã thu và công nợ.
+- Báo cáo chi phí trực tiếp theo từng dòng sản phẩm.
+- Ghi nhận các thiếu hụt của nền tảng mới.
+- Chốt danh sách trường và lịch đợt 2.
+- Đánh giá việc sử dụng Grapuco và quyết định phạm vi tháng 2.
+
+## 6. KPI chính thức tháng 1
+
+| Nhóm | KPI |
 |---|---:|
-| Hợp đồng khóa giảng viên đã ký và có lịch | **2 khóa** |
-| Hợp đồng khóa doanh nghiệp đã ký và có lịch | **2 khóa** |
-| Khóa giảng viên đã khai giảng/hoàn thành | Theo dõi riêng, mục tiêu triển khai đủ 2 |
-| Khóa doanh nghiệp đã khai giảng/hoàn thành | Theo dõi riêng, mục tiêu triển khai đủ 2 |
-| Sinh viên thanh toán và bắt đầu học online | **200–300 người** |
-| Sinh viên hoàn thành theo kịch bản ngân sách | **100–180 người** |
-| Mục tiêu hoàn thành nội bộ | **140–210 người** |
-| Gói khóa sinh viên bán hoặc thử nghiệm | **Ít nhất 1 gói** |
-| Audit SOPai, Arkon, henlich.vn | **Hoàn thành tuần 1** |
-| Báo cáo chi phí API/ticket/tải điều phối | **Có sau cohort đầu** |
+| Trường/cơ sở được kích hoạt | **2–3** |
+| Sinh viên thanh toán và bắt đầu học | **200–300** |
+| Sinh viên hoàn thành theo kịch bản ngân sách | **100–180** |
+| Mục tiêu hoàn thành nội bộ | **140–210** |
+| Hợp đồng khóa giảng viên đã ký và có lịch | **2** |
+| Hợp đồng khóa doanh nghiệp đã ký và có lịch | **2** |
+| Gói chương trình sinh viên được cấp quyền/triển khai | **Ít nhất 1** |
+| Nền tảng MVP mới | **Vận hành được cho 2–3 trường** |
+| Báo cáo từng trường | **Có dữ liệu tiến độ và kết quả** |
+| Phạm vi hợp tác Grapuco | **Có biên bản/thỏa thuận kỹ thuật–thương mại hoặc kết luận chưa tích hợp** |
 | Thời điểm bắt đầu đào tạo | **Từ tuần thứ hai** |
 
-## 8. Dashboard báo cáo cuối tháng
+## 7. Dashboard báo cáo tuần
+
+### Trường và lớp
+
+- trường đã chốt;
+- trường đã khai giảng;
+- cohort đang chạy;
+- số sinh viên đăng ký, thanh toán, bắt đầu và hoàn thành.
 
 ### B2B
 
-- Cơ hội đủ điều kiện.
-- Đề xuất đã gửi.
-- Hợp đồng đã ký và tổng giá trị.
-- Tiền ứng trước và tổng tiền đã thu.
-- Khóa đã khai giảng và hoàn thành.
-- Sản phẩm đã bàn giao.
-- Chi phí trực tiếp.
-- Công nợ.
+- hợp đồng đã ký;
+- giá trị hợp đồng;
+- tiền đã thu;
+- khóa đã khai giảng/hoàn thành;
+- sản phẩm bàn giao;
+- công nợ.
 
-### Sinh viên online
+### Nền tảng
 
-- Đăng ký, thanh toán, bắt đầu và hoàn thành.
-- Học phí thực thu và phần chia sẻ.
-- Chi phí API, nền tảng, điều phối và hỗ trợ.
-- Ticket/người và tỷ lệ chuyển người thật.
-- Đóng góp AI-first và hybrid.
-- Số người chuyển sang khóa nâng cao.
+- chức năng đã phát hành;
+- lỗi và yêu cầu hỗ trợ;
+- số giờ dev;
+- chi phí hạ tầng;
+- dữ liệu và báo cáo đã đáp ứng được.
 
-### Cấp quyền khóa sinh viên
+### Grapuco
 
-- Đề xuất đã gửi.
-- Gói đã ký hoặc thử nghiệm.
-- Giá trị hợp đồng và tiền đã thu.
-- Số người học được cấp quyền.
-- Thời hạn và phạm vi sử dụng.
-- Chi phí onboarding, nền tảng và hỗ trợ.
+- trạng thái thỏa thuận;
+- trạng thái tích hợp;
+- số lớp/người dùng thử;
+- lỗi kỹ thuật;
+- chi phí;
+- phản hồi giảng viên và người học;
+- dữ liệu đã chia sẻ.
 
-## 9. Nguyên tắc đánh giá
+## 8. Các quyết định anh Đức cần chốt
 
-- Hai khóa giảng viên và hai khóa doanh nghiệp là mục tiêu cơ sở của tháng đầu.
-- Mục tiêu 200–300 sinh viên dùng để kiểm chứng AI-first/hybrid và chất lượng.
-- Không đánh đồng giá trị hợp đồng, doanh thu ghi nhận và tiền đã thu.
-- Không coi bảng unit economics AI-first là số thật trước khi đo.
-- Mọi giả định phải được thay bằng số thực tế sau cohort và hợp đồng đầu tiên.
+- Danh sách 2–3 trường đợt đầu.
+- Số sinh viên từng trường.
+- Chương trình và ngày khai giảng từng trường.
+- Cơ chế thu học phí/chia sẻ.
+- Pháp nhân và hóa đơn.
+- Quy mô đội xây nền tảng mới.
+- Ngân sách MVP tháng đầu.
+- Grapuco là công cụ bắt buộc hay tùy chọn trong Vibe Coding.
+- Hình thức thương mại với Grapuco.
