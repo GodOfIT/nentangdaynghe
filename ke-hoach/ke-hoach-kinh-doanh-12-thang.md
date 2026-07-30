@@ -63,7 +63,6 @@ Các khóa cho giảng viên và doanh nghiệp cũng đã có khung nội dung 
 - Không chờ nền tảng hoàn chỉnh mới mở lớp.
 - Nền tảng được phát triển dần từ nhu cầu thật.
 - Ngay từ đầu, kiến trúc phải đủ tổng quát để vừa quản lý STEAM, vừa hoạt động như LMS cho AI, vibe coding và các môn khác.
-- SOPai, Arkon và henlich.vn được ưu tiên tái sử dụng.
 - Các chức năng chưa hoàn thiện được vận hành hybrid, không trở thành lý do trì hoãn khai giảng.
 
 ### 2.4. Nguồn lực
@@ -490,12 +489,6 @@ Nền tảng phải hỗ trợ:
 - quyền truy cập và cấp quyền học liệu.
 
 ## 9.2. Tài sản tái sử dụng
-
-| Tài sản | Vai trò |
-|---|---|
-| SOPai | Workflow, trạng thái học viên, lịch, nhắc việc và nộp bài |
-| Arkon | Kho tri thức, trợ lý AI, RAG, hỗ trợ và chấm sơ bộ |
-| henlich.vn | Landing page, đăng ký, lịch, booking và điểm danh |
 
 ## 9.3. Thứ tự phát triển
 
