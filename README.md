@@ -73,6 +73,13 @@ Nền tảng phải hoạt động được khi Grapuco chưa tích hợp hoặc
 
 Xem [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md).
 
+## Nghiên cứu TUMO
+
+- [Nghiên cứu mô hình kinh doanh, vận hành giáo dục và công nghệ TUMO](docs/nghien-cuu-tumo-mo-hinh-kinh-doanh-va-cong-nghe.md)
+- [Phương án triển khai kỹ thuật học từ mô hình TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
+
+TUMO được dùng làm mô hình tham chiếu về learning path động, portfolio, coach, hub–spoke và cấp quyền/franchise. Dự án không sao chép thương hiệu, nội dung hoặc phần mềm sở hữu trí tuệ của TUMO.
+
 ## Tài liệu điều hành ưu tiên
 
 1. [AGENTS.md — nguồn sự thật điều hành](AGENTS.md)
@@ -82,9 +89,10 @@ Xem [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md).
 5. [Unit economics](ke-hoach/unit-economics.md)
 6. [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
 7. [Mô hình nền tảng greenfield](nen-tang/mo-hinh-nen-tang.md)
-8. [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
-9. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
-10. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
+8. [Phương án triển khai kỹ thuật học từ TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
+9. [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
+10. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
+11. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
 
 ## Chương trình nổi bật
 
