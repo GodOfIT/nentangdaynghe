@@ -2,7 +2,7 @@
 
 Repo ghi lại chiến lược, sản phẩm và kế hoạch triển khai nền tảng đào tạo AI, Vibe Coding, STEAM và giáo dục nghề nghiệp.
 
-> **Quy tắc quan trọng:** đọc [AGENTS.md](AGENTS.md) trước mọi tài liệu khác.
+> **Đọc [AGENTS.md](AGENTS.md) trước mọi tài liệu khác.**
 >
 > Dự án chỉ kế thừa các chương trình giảng dạy do anh Đức đã soạn. Nền tảng, source code, dữ liệu, workflow và hạ tầng được xây mới hoàn toàn.
 >
@@ -10,75 +10,85 @@ Repo ghi lại chiến lược, sản phẩm và kế hoạch triển khai nền
 
 ## Định vị
 
-> Nền tảng công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu giúp nhà trường, giáo viên và người học triển khai các chương trình có sản phẩm đầu ra.
+> Nền tảng công nghệ, đào tạo, đánh giá năng lực và điều phối dữ liệu giúp trường học, doanh nghiệp, trung tâm và người học triển khai các chương trình có sản phẩm đầu ra.
 
 ## Chiến lược thị trường
 
-Dự án áp dụng chiến lược **education-first** trong giai đoạn đầu:
+Dự án áp dụng chiến lược **program-first, đa kênh**.
 
-1. Tạo dòng tiền từ lớp cộng đồng và các khóa ngắn hạn dành cho giáo viên, giảng viên, sinh viên và người đi làm.
-2. Dùng trường học, trung tâm và tổ chức giáo dục làm khách hàng đồng thời là kênh phân phối B2B2C.
-3. Phát triển cấp quyền chương trình, đào tạo giảng viên nguồn, nền tảng và báo cáo cho các đơn vị giáo dục.
-4. Tiếp cận doanh nghiệp có chọn lọc bằng workshop, khảo sát và pilot nhỏ; không phụ thuộc doanh thu doanh nghiệp trong những tháng đầu.
+Một chương trình có thể được triển khai cho:
 
-Doanh nghiệp vẫn là thị trường giá trị cao trong dài hạn, nhưng chỉ mở rộng sau khi có case study, quy trình triển khai và dữ liệu chi phí thực tế.
+- trường đại học, cao đẳng, trung cấp và phổ thông;
+- doanh nghiệp và các phòng ban;
+- trung tâm hoặc tổ chức đào tạo;
+- lớp cộng đồng;
+- người đi làm.
+
+Điều chỉnh theo từng phân khúc nằm ở tình huống, sản phẩm đầu ra, dữ liệu, thời lượng, quy mô, hình thức tổ chức và giá; không mặc định phải xây một khóa hoàn toàn mới.
+
+Các trường đã sẵn sàng là lợi thế triển khai ban đầu, nhưng doanh nghiệp không bị đẩy sang giai đoạn sau. Các khóa đào tạo tiêu chuẩn có thể bán trực tiếp cho doanh nghiệp; chỉ dự án tư vấn hoặc triển khai hệ thống riêng mới cần khảo sát, pilot và nghiệm thu kỹ thuật.
+
+## Vibe Coding
+
+Vibe Coding là một chương trình đào tạo thông thường, có thể tổ chức cho:
+
+- sinh viên và học sinh;
+- giáo viên và giảng viên;
+- người đi làm;
+- doanh nghiệp;
+- lớp cộng đồng.
+
+Khóa học có thể bắt đầu bằng AI coding tool, GitHub, môi trường chạy và rubric. Không cần chờ nền tảng mới, Path Engine hoặc Grapuco.
+
+Grapuco là **đối tác công nghệ bên ngoài** và là add-on tùy chọn để hỗ trợ codebase map, dependency, call graph, flow, spec-first và context cho AI coding tools. Nền tảng và khóa học vẫn phải vận hành khi Grapuco chưa tích hợp hoặc gián đoạn.
+
+Xem [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md).
+
+## Đào tạo không phụ thuộc nền tảng
+
+Các lớp đầu có thể vận hành bằng:
+
+- Google Forms và Sheets;
+- Google Drive;
+- Zoom hoặc Google Meet;
+- Zalo hoặc email;
+- GitHub và công cụ AI coding;
+- Notion, Trello hoặc LMS/SaaS tạm thời.
+
+Dữ liệu phải được lưu có cấu trúc để import hoặc migrate lên nền tảng sau. Không được trì hoãn khai giảng chỉ vì phần mềm chưa sẵn sàng.
+
+## Quy tắc định giá
+
+Giá, phạm vi, đầu ra, trách nhiệm và lịch thanh toán phải được chốt trước khi mở bán hoặc gửi proposal.
+
+Tuần 4 chỉ dùng để đối chiếu giá với chi phí thật và điều chỉnh cho đợt tiếp theo. Không để tới tuần 4 mới định giá khóa 4 buổi hay bất kỳ khóa đã bán nào.
 
 ## Các hướng triển khai năm đầu
 
-Theo thứ tự ưu tiên:
-
+- Ứng dụng AI theo khung năng lực.
+- Vibe Coding.
 - AI cho giáo viên và giảng viên.
-- Ứng dụng AI theo khung năng lực cho sinh viên.
-- Vibe Coding cho sinh viên và người học không chuyên.
-- Cấp quyền chương trình và nền tảng cho trường/đối tác.
+- AI cho doanh nghiệp và các phòng ban.
+- Cấp quyền chương trình và nền tảng.
 - Đào tạo giảng viên nguồn và AI+ / AIx.
 - STEAM và các môn mới theo đơn đặt hàng.
-- Workshop, khảo sát và pilot AI cho doanh nghiệp.
-- Triển khai doanh nghiệp quy mô lớn sau khi có case study.
+- Workshop, lớp cộng đồng và chương trình theo nhu cầu.
 
 ## Điểm xuất phát
 
 - Đã có các trường/cơ sở giáo dục sẵn sàng phối hợp.
 - Đã có các chương trình giảng dạy cốt lõi.
-- Đã có khóa AI cho giáo viên phổ thông bản 4 buổi và bản 12 buổi.
+- Có thể đào tạo cho cả trường, doanh nghiệp và cộng đồng ngay từ đầu.
 - Không bắt đầu từ bước tìm trường đầu tiên.
 - Lớp học được triển khai song song với việc xây nền tảng mới.
-- Doanh thu tháng đầu không được xây trên giả định phải ký nhiều hợp đồng doanh nghiệp.
-
-## Thang sản phẩm
-
-> Nội dung miễn phí → workshop → khóa 4 buổi → khóa chuyên sâu → cấp quyền/nền tảng → tư vấn hoặc triển khai riêng.
-
-Thang sản phẩm giúp dự án:
-
-- giảm chi phí tiếp cận;
-- tạo sản phẩm đầu vào dễ mua;
-- thu thập phản hồi và case study;
-- nâng cấp khách hàng theo nhu cầu thực tế;
-- không phải bán ngay một hợp đồng lớn từ lần tiếp xúc đầu tiên.
-
-## Grapuco
-
-Grapuco là **đối tác công nghệ bên ngoài**, không phải tài sản nội bộ và không phải dependency bắt buộc.
-
-Vai trò dự kiến:
-
-- hỗ trợ Vibe Coding bằng bản đồ codebase;
-- trực quan module, dependency, call graph và flow;
-- hỗ trợ spec-first và phân tích tác động thay đổi;
-- cung cấp context cho AI coding tools;
-- hỗ trợ đội phát triển hiểu codebase mới.
-
-Nền tảng phải hoạt động được khi Grapuco chưa tích hợp hoặc tạm gián đoạn. Dữ liệu người học không được chia sẻ theo mặc định.
-
-Xem [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md).
+- Nền tảng không phải điều kiện khai giảng.
 
 ## Nghiên cứu TUMO
 
 - [Nghiên cứu mô hình kinh doanh, vận hành giáo dục và công nghệ TUMO](docs/nghien-cuu-tumo-mo-hinh-kinh-doanh-va-cong-nghe.md)
 - [Phương án triển khai kỹ thuật học từ mô hình TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
 
-TUMO được dùng làm mô hình tham chiếu về learning path động, portfolio, coach, hub–spoke và cấp quyền/franchise. Dự án không sao chép thương hiệu, nội dung hoặc phần mềm sở hữu trí tuệ của TUMO.
+TUMO được dùng làm mô hình tham chiếu về learning path, portfolio, coach, hub–node và cấp quyền. Dự án không sao chép thương hiệu, nội dung hoặc phần mềm sở hữu trí tuệ của TUMO.
 
 ## Tài liệu điều hành ưu tiên
 
@@ -92,8 +102,7 @@ TUMO được dùng làm mô hình tham chiếu về learning path động, port
 8. [Mô hình nền tảng greenfield](nen-tang/mo-hinh-nen-tang.md)
 9. [Phương án triển khai kỹ thuật học từ TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
 10. [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
-11. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
-12. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
+11. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
 
 ## Chương trình nổi bật
 
@@ -106,17 +115,17 @@ TUMO được dùng làm mô hình tham chiếu về learning path động, port
 ## Nguyên tắc thiết kế
 
 - Chỉ kế thừa chương trình giảng dạy.
-- Giáo dục là thị trường tạo dòng tiền và dữ liệu vận hành trước.
-- Tổ chức giáo dục là khách hàng và kênh phân phối.
-- Doanh nghiệp là thị trường phát triển có chọn lọc, không phải giả định doanh thu nền tháng đầu.
-- Xây nền tảng mới theo hướng greenfield, modular và API-first.
-- Triển khai lớp ngay với các trường đã sẵn sàng.
-- Dùng quy trình thủ công/SaaS tạm thời cho phần MVP chưa có.
+- Một chương trình có thể bán qua nhiều kênh.
+- Vibe Coding là khóa học thông thường.
+- Trường, doanh nghiệp, trung tâm và cộng đồng đều là khách hàng hợp lệ.
+- Giá phải có trước bán.
+- Lớp có thể chạy ngoài nền tảng trong giai đoạn đầu.
+- Dữ liệu vận hành tạm thời phải có cấu trúc để migrate.
+- Nền tảng được xây greenfield, modular và API-first.
 - Dữ liệu cốt lõi do dự án kiểm soát.
 - Đối tác ngoài đi qua lớp tích hợp và hợp đồng rõ ràng.
-- AI hỗ trợ; con người chịu trách nhiệm cuối cùng về nội dung và đánh giá.
-- Mọi release kỹ thuật phải phục vụ một mốc kinh doanh, chất lượng hoặc công suất cụ thể.
+- AI hỗ trợ; con người chịu trách nhiệm cuối cùng.
 
 ## Tài liệu lịch sử và trao đổi
 
-Các file trong `trao-doi/`, `THAO-LUAN.md` và một số tài liệu chiến lược cũ được giữ để truy vết quá trình suy luận. Chúng **không phải nguồn điều hành hiện tại** nếu mâu thuẫn với `AGENTS.md`.
+Các file trong `trao-doi/`, `THAO-LUAN.md` và một số tài liệu cũ được giữ để truy vết. Chúng không phải nguồn điều hành hiện tại nếu mâu thuẫn với `AGENTS.md`.
