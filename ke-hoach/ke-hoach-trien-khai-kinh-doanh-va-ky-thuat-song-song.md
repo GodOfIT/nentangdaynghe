@@ -1,867 +1,597 @@
 # Kế hoạch triển khai kinh doanh song song kỹ thuật
 
 > **Phiên bản điều hành:** 2026-08-05  
-> **Phạm vi:** 12 tháng đầu, ưu tiên kế hoạch 90 ngày và 6 tuần triển khai đầu tiên.  
-> **Nguồn:** `AGENTS.md`, `ke-hoach/muc-tieu-thang-1.md`, `docs/nghien-cuu-tumo-mo-hinh-kinh-doanh-va-cong-nghe.md`, `nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md`.  
-> **Ràng buộc:** chỉ kế thừa các chương trình giảng dạy do anh Đức đã soạn; nền tảng, dữ liệu và hạ tầng xây mới; Grapuco là đối tác ngoài.
+> **Phạm vi:** 12 tháng đầu, ưu tiên 90 ngày và 6 tuần đầu.  
+> **Ràng buộc:** chỉ kế thừa chương trình giảng dạy; nền tảng được xây mới; đào tạo không phụ thuộc tiến độ phần mềm; Grapuco là đối tác ngoài tùy chọn.
 
 ---
 
 ## 1. Kết luận điều hành
 
-Dự án vận hành theo hai đường chạy song song:
+Dự án chạy song song hai dòng công việc:
 
-1. **Đường kinh doanh và triển khai giáo dục:** kích hoạt trường đã sẵn sàng, mở lớp, thu tiền, giao chương trình, tạo case study, cấp quyền và mở rộng mạng lưới.
-2. **Đường sản phẩm và kỹ thuật:** xây Learning Operating System theo đúng nhu cầu của các lớp thật, bắt đầu bằng MVP tối thiểu rồi phát triển curriculum graph, competency graph, Path Engine, portfolio, coach console và các tích hợp đối tác.
+1. **Kinh doanh và đào tạo:** bán, tổ chức và giao các chương trình cho trường, doanh nghiệp, trung tâm, lớp cộng đồng và người đi làm.
+2. **Sản phẩm và kỹ thuật:** xây nền tảng mới từ dữ liệu và vấn đề của các lớp thật.
 
-Hai đường không độc lập:
+Hai dòng hỗ trợ nhau nhưng không chặn nhau:
 
-- một mốc kinh doanh phải xác định tính năng kỹ thuật cần có;
-- một tính năng kỹ thuật chỉ được ưu tiên khi phục vụ doanh thu, chất lượng, công suất hoặc khả năng nhân rộng;
-- không chờ nền tảng hoàn thiện mới mở lớp;
-- không mở rộng số trường/người học nếu vận hành và hệ thống chưa chịu được tải;
-- không xây sản phẩm doanh nghiệp lớn trước khi có bài toán, người chịu trách nhiệm và tiêu chí nghiệm thu;
-- Grapuco được tích hợp như add-on cho Vibe Coding, không phải dependency bắt buộc.
+- lớp học có thể bắt đầu trước nền tảng;
+- nền tảng không phải điều kiện để ký hợp đồng hoặc khai giảng;
+- dữ liệu lớp chạy ngoài nền tảng phải được ghi có cấu trúc để migrate;
+- kỹ thuật chỉ ưu tiên tính năng giúp tăng doanh thu, chất lượng, công suất hoặc khả năng nhân rộng;
+- không ép cohort đang chạy chuyển hệ thống nếu gây rủi ro;
+- không xây các tính năng dài hạn chỉ vì TUMO có chúng.
 
-Mục tiêu của năm đầu không phải xây toàn bộ TUMO phiên bản Việt Nam. Mục tiêu là chứng minh được một mô hình nhỏ nhưng đầy đủ:
+### Nguyên tắc sản phẩm
 
-> **Chương trình tập trung + trường/điểm triển khai địa phương + coach/giảng viên phân tầng + nền tảng điều phối lộ trình, sản phẩm và minh chứng + doanh thu lặp lại từ cấp quyền và nền tảng.**
-
----
-
-## 2. Mô hình vận hành đích
-
-## 2.1. Trung tâm lõi
-
-Đội trung tâm chịu trách nhiệm:
-
-- sở hữu và phiên bản hóa chương trình;
-- chuẩn hóa học liệu, activity, prerequisite, rubric và sản phẩm;
-- đào tạo giảng viên/coach nguồn;
-- vận hành nền tảng và dữ liệu;
-- phát triển Path Engine;
-- kiểm soát chất lượng;
-- bán hàng, hợp đồng và cấp quyền;
-- quản lý đối tác ngoài như Grapuco.
-
-## 2.2. Trường/đơn vị triển khai
-
-Mỗi trường hoặc đơn vị là một node triển khai, chịu trách nhiệm phối hợp:
-
-- danh sách người học;
-- truyền thông và tuyển sinh nội bộ;
-- phòng học, thiết bị và lịch học nếu học trực tiếp;
-- đầu mối điều phối;
-- xử lý tình huống tại chỗ;
-- xác nhận báo cáo và nghiệm thu.
-
-Không bắt buộc mỗi trường có một đội công nghệ riêng.
-
-## 2.3. Nhân sự giảng dạy ba tầng
-
-Học từ TUMO nhưng điều chỉnh theo bối cảnh Việt Nam:
-
-1. **Coach/điều phối viên:** hỗ trợ phổ thông, nhắc tiến độ, xử lý bế tắc, theo dõi mức tham gia.
-2. **Giảng viên/workshop leader:** dạy nội dung cốt lõi, phản hồi và đánh giá sản phẩm.
-3. **Chuyên gia/lab leader:** tham gia workshop nâng cao, dự án thật hoặc nội dung chuyên ngành.
-
-Chuyên gia không xử lý toàn bộ tương tác thường ngày. Điều này giúp mở rộng mà không làm chi phí tăng tuyến tính theo số người học.
-
-## 2.4. Sản phẩm học tập
-
-Mỗi chương trình phải được chuyển từ “danh sách buổi học” thành dữ liệu có cấu trúc:
-
-- activity;
-- prerequisite;
-- competency;
-- workshop;
-- assignment;
-- rubric;
-- product/evidence;
-- progression rule;
-- portfolio item.
-
-Chứng chỉ chỉ là đầu ra phụ. Sản phẩm và hồ sơ minh chứng là đầu ra chính.
+- Vibe Coding là một khóa đào tạo thông thường.
+- Nó có thể bán cho trường, doanh nghiệp, lớp cộng đồng và người đi làm.
+- Nó không cần Path Engine, Grapuco hoặc Learning OS hoàn chỉnh mới triển khai.
+- Grapuco chỉ làm tăng trải nghiệm ở một số nội dung; không phải điều kiện hoàn thành khóa.
+- Doanh nghiệp có thể mua trực tiếp các khóa tiêu chuẩn, không phải mọi giao dịch đều cần workshop–khảo sát–pilot phức tạp.
 
 ---
 
-## 3. Mô hình kinh doanh song song với sản phẩm
+## 2. Mô hình kinh doanh đa kênh
 
-## 3.1. Thang sản phẩm giáo dục
+## 2.1. Một chương trình, nhiều phân khúc
 
-### Tầng 1 — Thu hút
+Mỗi chương trình được xem là một sản phẩm lõi. Khi triển khai cho từng nhóm, dự án điều chỉnh:
 
-- nội dung miễn phí;
-- webinar;
+- tình huống thực hành;
+- sản phẩm đầu ra;
+- dữ liệu sử dụng;
+- hình thức tổ chức;
+- số người học;
+- thời lượng;
+- tài liệu bàn giao;
+- mức giá;
+- dịch vụ hỗ trợ.
+
+Không tạo quá nhiều khóa mới chỉ vì khách hàng thuộc phân khúc khác.
+
+## 2.2. Các kênh bán hàng
+
+### Trường và tổ chức giáo dục
+
+- lớp sinh viên;
+- khóa giáo viên/giảng viên;
+- đào tạo giảng viên nguồn;
+- cấp quyền chương trình;
+- báo cáo và nền tảng;
+- AI+ / AIx;
+- STEAM theo đặt hàng.
+
+### Doanh nghiệp
+
+- Ứng dụng AI theo khung năng lực;
+- AI Productivity;
+- AI cho phòng ban;
+- Vibe Coding;
+- automation;
+- AI agent;
+- workshop hoặc khóa ngắn hạn;
+- tư vấn và triển khai riêng khi cần.
+
+Khóa đào tạo tiêu chuẩn có thể bán trực tiếp. Chỉ các dự án triển khai hệ thống riêng mới cần khảo sát, pilot và nghiệm thu kỹ thuật.
+
+### Lớp cộng đồng và cá nhân
+
+- khóa 4 buổi;
+- khóa 12–15 buổi;
 - workshop trải nghiệm;
-- bài học mẫu;
-- đánh giá năng lực đầu vào.
+- lớp online;
+- khóa theo nhóm nghề;
+- Vibe Coding;
+- chương trình nâng cao.
 
-### Tầng 2 — Sản phẩm đầu vào
+### Trung tâm và đối tác đào tạo
 
-- khóa AI cho giáo viên 4 buổi;
-- workshop AI/Vibe Coding cho sinh viên;
-- lớp cộng đồng ngắn hạn;
-- workshop dành cho lãnh đạo hoặc khoa/phòng.
+- đồng tổ chức;
+- chia sẻ doanh thu;
+- cấp quyền nội dung;
+- đào tạo giảng viên nguồn;
+- sử dụng nền tảng và báo cáo.
 
-### Tầng 3 — Chương trình cốt lõi
+---
 
-- AI cho giáo viên 12 buổi;
-- Ứng dụng AI theo khung năng lực 12–15 buổi;
-- Vibe Coding 12–15 buổi;
-- AI cho giảng viên và giáo dục nghề nghiệp;
-- Faculty AI Builder.
+## 3. Danh mục chương trình ưu tiên
 
-### Tầng 4 — Gói tổ chức
+## 3.1. Ứng dụng AI theo khung năng lực
 
-- trường mua trọn gói một hoặc nhiều cohort;
-- đào tạo giảng viên/coach nguồn;
+- 12–15 buổi.
+- Có thể triển khai cho sinh viên, giáo viên, người đi làm và doanh nghiệp.
+- Điều chỉnh bài tập theo ngành, phòng ban hoặc vai trò.
+
+## 3.2. Vibe Coding
+
+- 12–15 buổi hoặc bản ngắn hơn.
+- Đầu ra: website, ứng dụng, workflow, công cụ nội bộ hoặc AI agent.
+- Có thể dạy cho sinh viên, giáo viên, người đi làm và doanh nghiệp.
+- Vận hành bằng AI coding tool, GitHub hoặc nơi lưu source, môi trường chạy và rubric.
+- Không yêu cầu nền tảng riêng.
+- Grapuco là add-on tùy chọn để hiểu codebase, dependency và flow.
+
+## 3.3. AI cho giáo viên và giảng viên
+
+- bản 4 buổi;
+- bản 12 buổi;
+- AI-Powered Teaching;
+- Faculty AI Builder;
 - AI+ Curriculum Sprint;
-- AI Pedagogy Lab;
-- báo cáo và dashboard cho trường.
+- đào tạo giảng viên nguồn.
 
-### Tầng 5 — Doanh thu lặp lại
+## 3.4. AI cho doanh nghiệp
 
-- cấp quyền chương trình theo thời hạn;
-- phí nền tảng theo trường hoặc capacity band;
-- phí active learner;
-- phí báo cáo nâng cao;
-- phí hỗ trợ vận hành;
-- gia hạn nội dung và nền tảng.
+Có thể sử dụng lại các chương trình lõi hoặc đóng gói thành:
 
-### Tầng 6 — Add-on và dự án nâng cao
+- AI Foundation;
+- AI Productivity;
+- AI Workflow;
+- Vibe Coding for Internal Tools;
+- AI Agent Builder;
+- khóa theo phòng ban.
 
-- Grapuco cho Vibe Coding;
-- workshop/lab chuyên gia;
-- AI co-learner;
-- white-label;
-- tích hợp riêng;
-- chương trình theo đặt hàng.
+## 3.5. Cấp quyền và gói tổ chức
 
-## 3.2. Thang sản phẩm doanh nghiệp
-
-Doanh nghiệp không phải nguồn nền trong ba tháng đầu.
-
-> Workshop → khảo sát → đào tạo nhóm nhỏ → pilot → case study → triển khai mở rộng.
-
-Chỉ nhận pilot khi có:
-
-- bài toán rõ;
-- dữ liệu hoặc môi trường thử nghiệm;
-- người phụ trách phía khách hàng;
-- đầu ra;
-- thời gian;
-- tiêu chí nghiệm thu;
-- ngân sách.
-
-## 3.3. Cơ cấu doanh thu định hướng
-
-Các tỷ trọng là `[giả định quản trị]`, tính trên tiền thực thu:
-
-| Giai đoạn | Cá nhân/cohort | Trường/tổ chức/cấp quyền | Doanh nghiệp/add-on/nguồn khác |
-|---|---:|---:|---:|
-| Tháng 1–3 | 50–60% | 25–40% | 0–15% |
-| Tháng 4–6 | 35–50% | 35–50% | 5–20% |
-| Tháng 7–12 | 20–40% | 40–60% | 10–25% |
-
-Đích cuối năm là giảm phụ thuộc vào việc mở từng lớp bán lẻ và tăng phần doanh thu cấp quyền, nền tảng, gia hạn và gói tổ chức.
+- nội dung;
+- nội dung + đào tạo nguồn;
+- nội dung + nền tảng;
+- triển khai đầy đủ;
+- white-label hoặc tùy chỉnh nếu có hợp đồng.
 
 ---
 
-## 4. Kiến trúc kỹ thuật đích
+## 4. Quy tắc định giá và bán hàng
 
-## 4.1. Lựa chọn kiến trúc
+## 4.1. Giá phải có trước bán
 
-Chọn **modular monolith** trong 12 tháng đầu.
+Mỗi sản phẩm phải có bảng phạm vi và mức giá trước khi:
 
-Không chọn microservice sớm vì:
+- chạy quảng cáo;
+- gửi proposal;
+- mời đăng ký;
+- ký hợp đồng;
+- chốt lịch giảng viên.
 
-- đội kỹ thuật nhỏ;
-- domain còn thay đổi;
-- tải thật chưa được đo;
-- distributed transaction và DevOps sẽ làm chậm MVP.
+Không để tới tuần 4 mới định giá khóa 4 buổi hoặc bất kỳ khóa đang triển khai nào.
 
-Các module trong cùng codebase nhưng có boundary rõ:
+## 4.2. Cấu trúc giá
 
-1. Identity & Tenant.
-2. Organization & Partnership.
-3. Curriculum & Competency.
+Có thể có nhiều phiên bản giá:
+
+- giá cá nhân/lớp cộng đồng;
+- giá cho trường;
+- giá cho doanh nghiệp;
+- giá theo quy mô lớp;
+- giá đào tạo trực tiếp/online;
+- phí tùy chỉnh;
+- phí cấp quyền;
+- phí nền tảng;
+- phí hỗ trợ sau khóa;
+- add-on Grapuco hoặc công cụ ngoài nếu có.
+
+Giá khác nhau vì phạm vi dịch vụ, không phải vì khóa học được coi là “cao cấp” hay “thấp cấp”.
+
+## 4.3. Tuần 4 dùng để làm gì
+
+- so sánh giá bán với chi phí thật;
+- đánh giá biên đóng góp;
+- điều chỉnh giá cho đợt tiếp theo;
+- bỏ các hạng mục tốn nhiều nhưng ít giá trị;
+- tạo bundle hoặc gói mới.
+
+---
+
+## 5. Vận hành đào tạo trước nền tảng
+
+## 5.1. Bộ công cụ tạm thời
+
+Các lớp đầu có thể sử dụng:
+
+- Google Forms;
+- Google Sheets;
+- Google Drive;
+- Zoom hoặc Google Meet;
+- Zalo hoặc email;
+- GitHub và công cụ AI coding;
+- Notion, Trello hoặc công cụ quản lý;
+- LMS/SaaS có sẵn.
+
+## 5.2. Dữ liệu phải chuẩn hóa ngay
+
+Mọi cohort phải có:
+
+- mã đơn vị;
+- mã chương trình;
+- mã cohort;
+- mã người học;
+- trạng thái đăng ký và thanh toán;
+- điểm danh;
+- bài tập;
+- sản phẩm;
+- rubric;
+- kết quả;
+- phản hồi;
+- các sự cố quan trọng.
+
+## 5.3. Nguyên tắc chuyển lên nền tảng
+
+- nền tảng alpha được dùng nội bộ trước;
+- cohort mới có thể lên nền tảng khi ổn định;
+- cohort đang chạy không bắt buộc chuyển giữa chừng;
+- dữ liệu được import sau theo mẫu chuẩn;
+- người học không phải nhập lại dữ liệu đã có;
+- luôn có bản backup trước khi migrate.
+
+---
+
+## 6. Mô hình kỹ thuật song song
+
+## 6.1. Kiến trúc đích
+
+Chọn modular monolith trong 12 tháng đầu.
+
+Các module dự kiến:
+
+1. Identity & Access.
+2. Organization & Customer.
+3. Program & Curriculum.
 4. Cohort & Session.
-5. Path Engine.
-6. Assignment & Assessment.
-7. Portfolio & Evidence.
-8. Coach & Support.
-9. Notification.
-10. Commercial & Billing.
-11. Analytics & Reporting.
+5. Learner & Enrollment.
+6. Assignment & Submission.
+7. Assessment & Rubric.
+8. Attendance & Progress.
+9. Portfolio & Evidence.
+10. Reporting.
+11. Commercial & Billing.
 12. Integration Gateway.
+13. Path Engine khi đủ dữ liệu.
 
-## 4.2. Stack đề xuất
+## 6.2. Stack tham chiếu
 
-- **Frontend:** React/Next.js hoặc TypeScript framework tương đương.
-- **Backend:** TypeScript/NestJS modular monolith.
-- **AI worker:** Python khi cần xử lý AI, multimodal, chấm sơ bộ hoặc pipeline dữ liệu.
-- **Database:** PostgreSQL.
-- **Graph V1:** node/edge trong PostgreSQL; chưa cần Neo4j.
-- **Object storage:** S3-compatible.
-- **Queue:** Redis/BullMQ, RabbitMQ hoặc managed queue.
-- **Deployment:** Docker trên managed container platform.
-- **Observability:** log, metric, trace và audit trail.
-- **Mobile:** responsive web trước; native app sau khi có dữ liệu sử dụng.
+- Frontend: React/Next.js hoặc TypeScript framework tương đương.
+- Backend: TypeScript/NestJS modular monolith.
+- Database: PostgreSQL.
+- Object storage: S3-compatible.
+- Queue: Redis/BullMQ hoặc managed queue khi cần.
+- AI worker: Python khi có tác vụ AI riêng.
+- Deployment: Docker trên managed platform.
+- Observability: log, metric, audit trail.
 
-## 4.3. Integration Gateway
+## 6.3. Thứ tự kỹ thuật đúng
 
-Mọi dịch vụ ngoài đi qua một lớp tích hợp:
+Ưu tiên:
 
-- Grapuco;
-- cổng thanh toán;
-- email/SMS/Zalo;
-- video conference;
-- cloud storage;
-- AI model/API;
-- analytics.
+1. dữ liệu và import;
+2. tổ chức, chương trình, cohort và người học;
+3. học liệu, bài tập và nộp bài;
+4. rubric, kết quả và báo cáo;
+5. phân quyền và audit;
+6. thanh toán/đối soát khi có nhu cầu;
+7. portfolio;
+8. cấp quyền;
+9. Path Engine;
+10. AI co-learner và các tính năng nâng cao.
 
-Gateway phải quản lý:
-
-- credential;
-- consent;
-- scope dữ liệu;
-- quota;
-- webhook;
-- retry;
-- timeout;
-- log;
-- thu hồi quyền;
-- fallback.
-
-## 4.4. Path Engine
-
-### V1 — Rule-based
-
-Được triển khai trước vì dễ giải thích và kiểm soát:
-
-- prerequisite;
-- năng lực chưa đạt;
-- hoạt động đã hoàn thành;
-- lịch phù hợp;
-- capacity;
-- deadline;
-- quy định trường;
-- mức hứng thú do người học chọn.
-
-### V2 — Data-informed
-
-Sau khi có dữ liệu nhiều cohort:
-
-- tỷ lệ hoàn thành;
-- thời gian thực hiện;
-- chất lượng sản phẩm;
-- mức tham gia;
-- tải coach;
-- nguy cơ bỏ học;
-- lựa chọn của người học tương đồng.
-
-### V3 — Optimization/recommendation
-
-Chỉ nghiên cứu sau khi V1 và V2 ổn định. Model không được phá prerequisite, capacity hoặc quy định học vụ.
+Không ưu tiên Grapuco trước các chức năng vận hành lớp cơ bản.
 
 ---
 
-## 5. Nguyên tắc gắn kinh doanh với kỹ thuật
+## 7. Mối liên hệ giữa kinh doanh và kỹ thuật
 
-| Mốc kinh doanh | Năng lực kỹ thuật bắt buộc |
-|---|---|
-| Mở cohort đầu tiên | tenant, cohort, người học, học liệu, nhiệm vụ, nộp bài, điểm danh cơ bản |
-| Báo cáo cho trường | rubric, tiến độ, kết quả, export báo cáo, phân quyền |
-| Bán gói nhiều cohort | multi-cohort, template chương trình, import hàng loạt, dashboard |
-| Cấp quyền chương trình | content versioning, entitlement, phạm vi sử dụng, usage report |
-| Đào tạo coach/giảng viên nguồn | coach console, guide, escalation, quality checklist |
-| Nhân rộng nhiều trường | tenant isolation, role matrix, monitoring, support workflow |
-| Vibe Coding nâng cao | repository link, project evidence, demo, code rubric |
-| Tích hợp Grapuco | consent, async job, webhook, cache, fallback, audit |
-| Cá nhân hóa lộ trình | curriculum graph, competency graph, Path Engine |
-| AI co-learner | source control, guardrail, cost metering, human handoff |
-| Hub–Node | scheduling, capacity, workshop allocation, coach load |
+| Nhu cầu kinh doanh | Cách vận hành ban đầu | Kỹ thuật phát triển sau |
+|---|---|---|
+| Mở lớp ngay | Forms, Sheets, Drive, Meet | cohort, user, content |
+| Điểm danh và tiến độ | Sheet chuẩn | attendance, progress |
+| Thu bài và chấm | Drive/GitHub + rubric | assignment, submission, assessment |
+| Báo cáo khách hàng | Sheet/slide/PDF | dashboard và export |
+| Bán nhiều lớp | template thủ công | program template, bulk import |
+| Cấp quyền nội dung | hợp đồng + file phân quyền | entitlement và usage report |
+| Vibe Coding | GitHub + AI coding tool | project evidence và portfolio |
+| Dùng Grapuco | liên kết ngoài/tài khoản riêng | adapter API/MCP nếu cần |
+| Đào tạo doanh nghiệp | lớp tiêu chuẩn | module doanh nghiệp chỉ khi có nhu cầu riêng |
+| Cá nhân hóa | giảng viên/coach điều chỉnh | Path Engine sau khi có dữ liệu |
 
-Một feature không gắn được với ít nhất một mốc trong bảng trên thì không thuộc backlog ưu tiên.
-
----
-
-## 6. Kế hoạch 6 tuần đầu
-
-## Tuần 1 — Kích hoạt thương mại và dựng nền
-
-### Kinh doanh
-
-- Chốt 2–3 trường/cơ sở đợt 1.
-- Chốt số người học, chương trình, cơ chế học phí và đầu mối.
-- Hoàn thiện proposal cho khóa giáo viên 4 buổi và 12 buổi.
-- Chốt tối thiểu hai lớp/hợp đồng giáo dục có lịch.
-- Chuẩn bị gói cấp quyền chương trình sinh viên.
-- Lập danh sách 3–5 cuộc trao đổi doanh nghiệp nhưng không đưa vào doanh thu cơ sở.
-
-### Chương trình và vận hành
-
-- Đóng gói hai chương trình sinh viên đã soạn.
-- Chuyển buổi học thành activity, assignment, rubric và evidence.
-- Chuẩn hóa checklist giảng viên/coach.
-- Chuẩn bị quy trình thủ công dự phòng cho danh sách, điểm danh, nộp bài và hỗ trợ.
-
-### Kỹ thuật
-
-- Chốt domain model và module boundary.
-- Tạo repo, CI/CD, môi trường dev/staging/production.
-- Xây identity, tenant, organization, program và cohort.
-- Thiết kế PostgreSQL, object storage và audit log.
-- Tạo learner/admin shell.
-
-### Kết quả cuối tuần
-
-- Các trường đợt 1 có lịch và đầu mối.
-- Có dữ liệu chương trình đủ để nhập hệ thống.
-- Có bản staging cho quản trị trường, chương trình và cohort.
-
-## Tuần 2 — Khai giảng và MVP lớp học
-
-### Kinh doanh
-
-- Khai giảng cohort đầu tiên.
-- Mở hoặc ký khóa giáo viên 4 buổi.
-- Thu học phí/ứng trước theo thỏa thuận.
-- Chốt lịch các cohort còn lại trong đợt 1.
-
-### Vận hành
-
-- Import danh sách người học.
-- Gửi hướng dẫn truy cập.
-- Theo dõi hỗ trợ, lỗi tài khoản và điểm danh.
-- Ghi lại toàn bộ thao tác thủ công để chuyển thành backlog.
-
-### Kỹ thuật
-
-- Học liệu và cấu trúc buổi học.
-- Assignment và submission.
-- Điểm danh/trạng thái tham gia.
-- Role: admin, school coordinator, instructor, coach, learner.
-- Export danh sách và trạng thái.
-
-### Kết quả cuối tuần
-
-- Người học truy cập được.
-- Có thể xem học liệu, nhận nhiệm vụ và nộp sản phẩm.
-- Điều phối viên xem được danh sách và trạng thái cơ bản.
-
-## Tuần 3 — Đánh giá, báo cáo và mở các lớp tiếp theo
-
-### Kinh doanh
-
-- Kích hoạt trường/cohort thứ hai và thứ ba.
-- Tiếp cận hai đối tác phân phối giáo dục.
-- Gửi tối thiểu một đề xuất cấp quyền chương trình.
-- Thực hiện các cuộc trao đổi doanh nghiệp đã lên lịch.
-
-### Vận hành
-
-- Thu bài tập/sản phẩm đầu tiên.
-- Dùng rubric chung.
-- Đo ticket, giờ hỗ trợ và lỗi phổ biến.
-- Xây FAQ và guide cho coach.
-
-### Kỹ thuật
-
-- Rubric, grading và feedback.
-- Product/evidence storage.
-- Dashboard tiến độ cơ bản.
-- Báo cáo theo trường/cohort.
-- Notification job đầu tiên.
-
-### Kết quả cuối tuần
-
-- Trường nhận được báo cáo tiến độ có thể sử dụng.
-- Sản phẩm người học được lưu thành evidence.
-
-## Tuần 4 — Đối soát, chất lượng và quyết định tháng 2
-
-### Kinh doanh
-
-- Đối soát tiền đã thu, công nợ và chia sẻ.
-- Đánh giá hiệu quả khóa 4 buổi.
-- Chốt trường và cohort đợt 2.
-- Quyết định có nhận pilot doanh nghiệp hay không.
-
-### Vận hành
-
-- Báo cáo tỷ lệ tham gia, tiến độ, hoàn thành sớm và ngoại lệ.
-- Phân loại yêu cầu hỗ trợ.
-- Đánh giá chất lượng giảng viên/coach.
-- Xác định việc nào phải tự động hóa trước.
-
-### Kỹ thuật
-
-- Hardening authentication và tenant isolation.
-- Audit log.
-- Import/export ổn định.
-- Basic monitoring và alert.
-- Sửa các lỗi tạo tải vận hành lớn.
-
-### Kết quả cuối tuần
-
-- Có báo cáo kinh doanh–vận hành–kỹ thuật tháng đầu.
-- Có backlog tháng 2 dựa trên dữ liệu thật.
-
-## Tuần 5–6 — Lặp lại và chuẩn hóa
-
-### Kinh doanh
-
-- Mở đợt cohort thứ hai.
-- Chuyển khóa/lớp đầu thành case study.
-- Chuẩn hóa gói trường mua trọn cohort.
-- Tiến tới hợp đồng cấp quyền hoặc nhiều cohort.
-
-### Kỹ thuật
-
-- Program template và content versioning.
-- Portfolio V1.
-- Competency/evidence mapping.
-- School dashboard V1.
-- Commercial entitlement V1.
-- Event tracking V1.
-
-### Grapuco
-
-- Chỉ bắt đầu technical discovery nếu đã chốt đầu mối, scope, dữ liệu và thương mại.
-- Chưa tích hợp sâu vào critical path.
+Kỹ thuật không phải điều kiện để giao sản phẩm đào tạo; kỹ thuật là công cụ giúp giao tốt hơn và mở rộng hơn.
 
 ---
 
-## 7. Kế hoạch 90 ngày
+## 8. Kế hoạch 6 tuần đầu
 
-## Giai đoạn 1 — Ngày 1–30: kích hoạt và MVP
+## Tuần 1 — Chốt sản phẩm, giá và lịch
 
-### Mục tiêu kinh doanh
+### Kinh doanh
 
-- 2–3 trường/cơ sở hoạt động.
-- 200–300 sinh viên thanh toán và bắt đầu học.
-- Tối thiểu hai khóa/lớp giáo viên, giảng viên hoặc cán bộ giáo dục được chốt.
-- Tối thiểu một khóa giáo viên phổ thông 4 buổi.
-- Ít nhất một gói chương trình sinh viên được triển khai hoặc cấp quyền.
-- 3–5 cuộc trao đổi doanh nghiệp; pilot 0–1, không bắt buộc.
+- Chốt 2–3 trường/cơ sở đợt đầu.
+- Chốt các cơ hội doanh nghiệp, trung tâm và lớp cộng đồng đang có.
+- Chốt giá cho khóa 4 buổi, 12–15 buổi, Vibe Coding và các gói tổ chức.
+- Hoàn thiện proposal, hợp đồng mẫu, chính sách thanh toán và tài liệu bán hàng.
+- Chốt lịch, giảng viên, điều phối viên và công cụ vận hành tạm thời.
 
-### Mục tiêu kỹ thuật
+### Đào tạo
 
-Release 1 — Classroom MVP:
+- Hoàn thiện học liệu cần dùng ngay.
+- Chốt bài tập, sản phẩm và rubric.
+- Tạo Forms, Sheets, Drive và nhóm hỗ trợ cho từng cohort.
 
-- multi-tenant cơ bản;
-- program/cohort/user;
-- content/activity;
+### Kỹ thuật
+
+- Chốt domain model.
+- Tạo repo, CI/CD, database và môi trường.
+- Chuẩn hóa schema import.
+- Bắt đầu module organization, program và cohort.
+
+## Tuần 2 — Khai giảng không phụ thuộc nền tảng
+
+### Kinh doanh và đào tạo
+
+- Khai giảng các lớp đã chốt.
+- Có thể chạy đồng thời lớp trường, doanh nghiệp và cộng đồng.
+- Vibe Coding được triển khai như các khóa khác.
+- Dùng bộ công cụ tạm thời nếu nền tảng chưa sẵn sàng.
+
+### Kỹ thuật
+
+- Xây learner, enrollment, content, assignment và submission.
+- Thử import dữ liệu mẫu.
+- Không ép lớp thật sử dụng bản chưa ổn định.
+
+## Tuần 3 — Mở rộng lớp và hoàn thiện dữ liệu
+
+### Kinh doanh và đào tạo
+
+- Mở các lớp/cohort tiếp theo.
+- Thu bài tập và sản phẩm.
+- Tiếp tục bán các khóa theo bảng giá đã chốt.
+- Thu phản hồi từ trường, doanh nghiệp và người học.
+
+### Kỹ thuật
+
+- Hoàn thiện rubric, result, attendance và export.
+- Đội nội bộ dùng alpha.
+- Sửa lỗi import, phân quyền và dữ liệu.
+
+## Tuần 4 — Đối soát và điều chỉnh
+
+### Kinh doanh
+
+- Tổng hợp doanh thu, tiền đã thu, công nợ và chi phí thật.
+- Đánh giá hiệu quả từng phân khúc.
+- Điều chỉnh giá cho đợt sau nếu cần.
+- Chốt lịch tháng hai.
+
+### Đào tạo
+
+- Hoàn thiện case study và phản hồi.
+- Không đổi công cụ giữa khóa nếu không cần thiết.
+
+### Kỹ thuật
+
+- Chốt cohort nào sẽ lên nền tảng.
+- Hoàn thiện import/migrate.
+- Xếp backlog tháng hai theo vấn đề thật.
+
+## Tuần 5–6 — Bắt đầu sử dụng nền tảng có kiểm soát
+
+### Kinh doanh và đào tạo
+
+- Khởi động đợt hai.
+- Tiếp tục triển khai trường, doanh nghiệp và lớp cộng đồng.
+- Chuẩn hóa playbook mở lớp.
+
+### Kỹ thuật
+
+- Đưa một cohort mới lên nền tảng nếu đủ ổn định.
+- Hoàn thiện school/customer dashboard cơ bản.
+- Xây portfolio V1 nếu sản phẩm đầu ra cần lưu.
+- Hoàn thiện logging, backup và phân quyền.
+
+---
+
+## 9. Kế hoạch 90 ngày
+
+## Giai đoạn 1 — Ngày 1–30: giao đào tạo và dựng nền
+
+### Kinh doanh
+
+- kích hoạt các trường đã sẵn sàng;
+- bán cho cả trường, doanh nghiệp và cộng đồng;
+- chốt giá trước bán;
+- triển khai các chương trình cốt lõi;
+- xây case study và dữ liệu chi phí.
+
+### Kỹ thuật
+
+- domain model;
+- CI/CD;
+- database;
+- import schema;
+- các module nền ở mức alpha;
+- không bắt buộc người học dùng nền tảng.
+
+## Giai đoạn 2 — Ngày 31–60: platform alpha cho cohort mới
+
+### Kinh doanh
+
+- mở đợt cohort tiếp theo;
+- tái bán các khóa đã chuẩn hóa;
+- cấp quyền hoặc đồng tổ chức;
+- bán đào tạo cho doanh nghiệp khi có nhu cầu.
+
+### Kỹ thuật
+
+- user và enrollment;
+- content;
 - assignment/submission;
-- attendance;
 - rubric/result;
-- school report;
-- role/permission;
-- audit tối thiểu.
+- attendance/progress;
+- report/export;
+- tenant isolation và audit cơ bản.
 
-### Cổng chuyển giai đoạn
+## Giai đoạn 3 — Ngày 61–90: chuẩn hóa và nhân rộng
 
-- Không có lỗi truy cập hoặc mất dữ liệu nghiêm trọng.
-- Báo cáo cho trường khớp dữ liệu vận hành.
-- Đội có thể vận hành cohort tiếp theo mà không tăng người theo tỷ lệ 1:1.
-- Đã biết ba vấn đề kỹ thuật tạo tải lớn nhất.
+### Kinh doanh
 
-## Giai đoạn 2 — Ngày 31–60: chuẩn hóa và cấp quyền
+- hình thành gói nhiều cohort;
+- xây playbook triển khai cho trường và doanh nghiệp;
+- chuẩn hóa đào tạo giảng viên/coach;
+- thử cấp quyền có nền tảng.
 
-### Mục tiêu kinh doanh
-
-- Mở cohort đợt 2.
-- Có 4–6 trường/cơ sở lũy kế đang triển khai, đã ký hoặc đã chốt lịch `[mục tiêu điều hành]`.
-- Có ít nhất hai đối tác phân phối giáo dục hoạt động.
-- Chốt cấu hình cấp quyền chương trình.
-- Có tối thiểu một khách hàng mua nhiều cohort hoặc cấp quyền.
-- Chọn tối đa một pilot doanh nghiệp có tiêu chí rõ.
-
-### Mục tiêu kỹ thuật
-
-Release 2 — Reusable Program Platform:
+### Kỹ thuật
 
 - program template;
 - content versioning;
-- entitlement;
+- bulk import;
+- dashboard khách hàng;
 - portfolio V1;
-- competency/evidence mapping;
-- school dashboard;
-- notification;
-- support/coach console cơ bản;
-- product analytics;
-- payment/reconciliation integration nếu dự án trực tiếp thu tiền.
+- entitlement V1;
+- integration gateway cơ bản.
 
-### Cổng chuyển giai đoạn
-
-- Một chương trình được tái sử dụng cho ít nhất hai đơn vị mà không copy dữ liệu thủ công.
-- Trường xem được dashboard và báo cáo.
-- Có số liệu thời gian onboarding một trường mới.
-- Có bảng chi phí phục vụ theo cohort và theo người học.
-
-## Giai đoạn 3 — Ngày 61–90: Learning OS V1
-
-### Mục tiêu kinh doanh
-
-- Chuyển ít nhất một đối tác từ lớp đơn sang gói nhiều cohort/cấp quyền.
-- Có case study giáo dục được phép công bố.
-- Có lịch triển khai quý tiếp theo.
-- Hoàn tất quyết định thương mại về Grapuco nếu hai bên tiếp tục.
-- Có 0–1 pilot doanh nghiệp được nghiệm thu hoặc đang chạy.
-
-### Mục tiêu kỹ thuật
-
-Release 3 — Path & Evidence V1:
-
-- curriculum graph;
-- competency graph;
-- prerequisite;
-- Path Engine rule-based;
-- portfolio/evidence V1 hoàn chỉnh;
-- coach load và escalation;
-- event stream;
-- report accuracy check;
-- integration gateway V1;
-- repository/project evidence cho Vibe Coding.
-
-### Cổng kết thúc 90 ngày
-
-- Có thể kích hoạt một trường mới theo playbook chuẩn.
-- Chương trình, dữ liệu và báo cáo không phụ thuộc thao tác copy thủ công.
-- Có Path V1 chạy được cho ít nhất một chương trình.
-- Có unit economics sơ bộ theo từng dòng sản phẩm.
-- Có quyết định rõ: tăng tốc, giữ quy mô hoặc sửa mô hình.
+Path Engine và Grapuco chỉ được đưa vào khi phục vụ một nhu cầu thật đã xác định.
 
 ---
 
-## 8. Lộ trình tháng 4–12
+## 10. Lộ trình tháng 4–12
 
-## Giai đoạn 4 — Tháng 4–6: đóng gói và nhân rộng có kiểm soát
-
-### Kinh doanh
-
-- Chuẩn hóa gói trường mua cohort, cấp quyền, nền tảng và đào tạo coach nguồn.
-- Mở rộng qua đối tác phân phối giáo dục.
-- Xây một node triển khai mẫu tại trường/đơn vị đối tác.
-- Chuyển doanh thu từ lớp đơn sang gói nhiều cohort và gia hạn.
-- Chỉ phát triển doanh nghiệp bằng các case/pilot có khả năng lặp lại.
-
-### Kỹ thuật
-
-Release 4:
-
-- Path Engine V1 ổn định;
-- coach console;
-- capacity và workshop scheduling cơ bản;
-- licensing/usage report;
-- partner onboarding;
-- multi-cohort analytics;
-- portfolio showcase;
-- data export và retention control;
-- tenant isolation hardening.
-
-### Kết quả cần có
-
-- Thời gian kích hoạt trường mới giảm rõ so với tháng đầu.
-- Trường có thể tự thực hiện một phần onboarding và theo dõi.
-- Nội dung được phiên bản hóa và cấp quyền đúng phạm vi.
-
-## Giai đoạn 5 — Tháng 7–9: Hub–Node và add-on
+## Tháng 4–6 — Tái sử dụng và cấp quyền
 
 ### Kinh doanh
 
-- Thử nghiệm Hub–Node: một trung tâm lõi hỗ trợ nhiều điểm triển khai.
-- Bán workshop/lab chuyên gia.
-- Bán add-on Vibe Coding nâng cao nếu Grapuco sẵn sàng.
-- Chuyển đối tác tốt thành hợp tác năm học hoặc nhiều chương trình.
-- Phát triển tài trợ cohort hoặc lab từ doanh nghiệp có chọn lọc.
+- tăng số lớp từ các chương trình đã chuẩn hóa;
+- mở rộng trường, doanh nghiệp, trung tâm và cộng đồng;
+- bán gói nhiều cohort;
+- cấp quyền nội dung;
+- đào tạo giảng viên nguồn;
+- xây doanh thu nền tảng nếu sản phẩm đủ ổn định.
 
 ### Kỹ thuật
 
-Release 5:
+- content versioning;
+- entitlement;
+- usage report;
+- partner/customer dashboard;
+- portfolio và evidence;
+- commercial/billing theo nhu cầu thật.
 
-- scheduling/capacity nâng cao;
-- coach load balancing;
-- workshop/lab management;
-- Grapuco adapter nếu hợp đồng đã ký;
-- repository consent;
-- async job, webhook, cache và fallback;
-- Path Engine V2 data-informed thử nghiệm;
-- event warehouse/dashboard chất lượng.
-
-### Kết quả cần có
-
-- Nền tảng vận hành được khi Grapuco tắt.
-- Có báo cáo tải coach và specialist.
-- Có sản phẩm Vibe Coding với codebase map được lưu như evidence.
-
-## Giai đoạn 6 — Tháng 10–12: doanh thu lặp lại và AI co-learner pilot
+## Tháng 7–9 — Tăng công suất
 
 ### Kinh doanh
 
-- Gia hạn chương trình/nền tảng theo năm học.
-- Chuẩn hóa bảng giá theo capacity, active learner và phạm vi dịch vụ.
-- Chọn các sản phẩm đủ điều kiện mở rộng năm hai.
-- Dừng hoặc hợp tác ngoài với sản phẩm không tạo lợi thế.
-- Có kế hoạch Hub–Node năm hai dựa trên dữ liệu thật.
+- mở rộng mạng lưới đối tác;
+- tổ chức workshop/lab chuyên gia khi có khách;
+- bán Vibe Coding cho nhiều phân khúc;
+- triển khai các hợp đồng doanh nghiệp lớn hơn khi có nhu cầu.
 
 ### Kỹ thuật
 
-Release 6:
+- automation cho các bước lặp lại;
+- support workflow;
+- analytics;
+- Path Engine V1 nếu có đủ chương trình và dữ liệu;
+- Grapuco adapter nếu hợp đồng và nhu cầu đã chốt.
 
-- advanced licensing;
-- partner portal;
-- white-label nhẹ nếu có hợp đồng;
-- Path Engine V2;
-- AI co-learner pilot có source control, guardrail, cost metering và human handoff;
-- data warehouse/reporting;
-- disaster recovery và security review;
-- đánh giá module cần tách service.
+## Tháng 10–12 — Doanh thu lặp lại và tối ưu
 
-### Kết quả cuối năm
+### Kinh doanh
 
-- Có Learning OS V1 vận hành đa trường.
-- Có doanh thu lặp lại từ cấp quyền/nền tảng/gia hạn.
-- Có curriculum graph, competency graph, Path Engine và portfolio.
-- Có playbook kích hoạt trường và đào tạo coach.
-- Có dữ liệu để chốt kế hoạch quy mô năm hai.
+- gia hạn chương trình và nền tảng;
+- tăng tỷ trọng cấp quyền và gói tổ chức;
+- mở rộng doanh nghiệp và đối tác;
+- chuẩn hóa bảng giá năm hai.
+
+### Kỹ thuật
+
+- licensing nâng cao;
+- reporting;
+- security review;
+- disaster recovery;
+- Path Engine V2 nếu dữ liệu đủ;
+- AI co-learner pilot nếu có use case rõ.
 
 ---
 
-## 9. Tổ chức đội ngũ
-
-Cơ cấu 5 người core `[cần anh Đức gán tên cụ thể]`:
-
-| Vai trò | Trách nhiệm chính |
-|---|---|
-| Founder/CEO/Product Owner | quan hệ trường, sản phẩm, giá, hợp đồng lớn, quyết định ưu tiên |
-| Tech Lead/Full-stack | kiến trúc, backend/frontend, CI/CD, chất lượng kỹ thuật |
-| Learning Product Lead | chuyển chương trình thành activity/rubric/evidence, kiểm soát học thuật |
-| Operations & Customer Success | onboarding trường/người học, coach, hỗ trợ, báo cáo, đối soát |
-| Growth & Partnership | tuyển sinh, lớp cộng đồng, đối tác phân phối, case study, pipeline |
-
-Mạng lưới ngoài:
-
-- giảng viên/workshop leader;
-- coach/trợ giảng;
-- chuyên gia nội dung;
-- pháp lý/kế toán;
-- nhà cung cấp hạ tầng;
-- Grapuco và các đối tác công nghệ.
-
-Một người có thể kiêm nhiệm trong giai đoạn đầu, nhưng mỗi deliverable phải có một người chịu trách nhiệm cuối cùng.
-
----
-
-## 10. Nhịp quản trị hằng tuần
-
-## 10.1. Họp điều hành đầu tuần
-
-Chốt:
-
-- trường/lớp nào phải kích hoạt;
-- tiền nào phải thu;
-- sản phẩm/học liệu nào phải giao;
-- release kỹ thuật nào phục vụ mốc đó;
-- rủi ro và người xử lý.
-
-## 10.2. Release giữa hoặc cuối tuần
-
-- release nhỏ, có rollback;
-- không dồn nhiều tính năng vào cuối tháng;
-- ưu tiên sửa lỗi tạo tải vận hành.
-
-## 10.3. Báo cáo cuối tuần
-
-Một dashboard thống nhất gồm:
+## 11. KPI điều hành chung
 
 ### Kinh doanh
 
-- trường/cơ sở ở từng trạng thái;
-- lớp đã mở;
-- người thanh toán;
-- tiền đã thu;
+- số lớp đã chốt;
+- số lớp đã khai giảng;
+- số người học;
+- doanh thu và tiền đã thu;
 - công nợ;
-- đề xuất/cấp quyền;
-- tỷ lệ nâng cấp sản phẩm.
+- chi phí trực tiếp;
+- tỷ lệ mua tiếp;
+- số hợp đồng trường, doanh nghiệp, cộng đồng và đối tác;
+- doanh thu theo chương trình, không chỉ theo phân khúc.
 
-### Vận hành giáo dục
+### Đào tạo
 
-- người bắt đầu;
-- tham gia;
-- nộp bài;
+- điểm danh;
 - hoàn thành;
-- ticket;
-- giờ coach;
-- chất lượng sản phẩm;
-- ngoại lệ.
+- sản phẩm;
+- chất lượng theo rubric;
+- phản hồi;
+- số giờ giảng viên/coach;
+- số sự cố và thời gian xử lý.
 
 ### Kỹ thuật
 
-- active user;
-- lỗi;
-- uptime;
-- thời gian phản hồi;
-- deploy;
-- ticket kỹ thuật;
-- thời gian dev theo module;
-- chi phí cloud/API;
-- event coverage.
+- tiến độ module;
+- lỗi nghiêm trọng;
+- thời gian import;
+- tỷ lệ dữ liệu hợp lệ;
+- uptime khi bắt đầu dùng thật;
+- ticket;
+- thời gian xử lý;
+- số cohort dùng nền tảng;
+- số cohort vẫn vận hành ngoài nền tảng.
 
 ---
 
-## 11. Stage-Gate kép
+## 12. Điều kiện chuyển lớp lên nền tảng
 
-Không tăng quy mô chỉ dựa trên doanh số hoặc chỉ dựa trên việc phần mềm chạy được.
+Một cohort chỉ nên dùng nền tảng mới khi:
 
-## Gate A — Mở đợt cohort tiếp theo
+- đăng nhập và phân quyền ổn định;
+- import danh sách chính xác;
+- học liệu và bài tập truy cập được;
+- submission không làm mất dữ liệu;
+- backup hoạt động;
+- có người hỗ trợ;
+- có phương án quay về công cụ tạm thời;
+- giảng viên và điều phối viên đã được hướng dẫn.
 
-Cần đồng thời:
-
-- trường và danh sách người học đã chốt;
-- học phí/hợp đồng rõ;
-- giảng viên/coach sẵn sàng;
-- học liệu và rubric đủ dùng;
-- hệ thống hoặc quy trình dự phòng phục vụ được;
-- không có lỗi dữ liệu nghiêm trọng.
-
-## Gate B — Mở rộng lên nhiều trường
-
-Cần đồng thời:
-
-- onboarding có playbook;
-- báo cáo trường chính xác;
-- tenant isolation ổn định;
-- ticket/người và giờ hỗ trợ nằm trong trần do đội chốt;
-- dòng tiền không âm vì tăng số người học;
-- có người phụ trách mỗi trường.
-
-## Gate C — Bán cấp quyền/nền tảng
-
-Cần đồng thời:
-
-- chương trình có version;
-- entitlement và phạm vi quyền rõ;
-- có báo cáo usage;
-- có chính sách hỗ trợ;
-- hợp đồng quy định IP, dữ liệu và gia hạn;
-- chi phí phục vụ đã được đo.
-
-## Gate D — Tích hợp Grapuco
-
-Cần đồng thời:
-
-- hợp đồng/scope;
-- giá/quota/SLA;
-- consent và loại dữ liệu;
-- quyền sở hữu code;
-- webhook/API ổn định;
-- fallback;
-- lớp Vibe Coding không phụ thuộc tích hợp.
-
-## Gate E — AI co-learner
-
-Cần đồng thời:
-
-- curriculum/evidence có cấu trúc;
-- nguồn học liệu kiểm soát được;
-- logging;
-- guardrail;
-- human handoff;
-- cost metering;
-- tiêu chí đánh giá tác động học tập.
+Không chuyển chỉ để đạt KPI kỹ thuật.
 
 ---
 
-## 12. Quản trị tài chính
+## 13. Vai trò Grapuco
 
-Không sử dụng lại các con số chi phí từ hệ thống cũ.
+Grapuco là công cụ ngoài có thể hỗ trợ:
 
-Phải tách:
-
-1. Chi phí trực tiếp giao lớp.
-2. Chi phí phát triển nền tảng.
-3. Chi phí vận hành nền tảng.
-4. Chi phí bán hàng và kích hoạt đối tác.
-5. Chi phí chuyên gia/coach.
-6. Chi phí nhà cung cấp ngoài và Grapuco.
-7. Chi phí pháp lý, thuế, hóa đơn và thanh toán.
+- bản đồ codebase;
+- dependency và call graph;
+- spec-first;
+- phân tích tác động;
+- context cho AI coding tools.
 
 Nguyên tắc:
 
-- không lấy giá trị hợp đồng thay cho tiền đã thu;
-- không dùng doanh thu cohort để che chi phí build nền tảng;
-- mỗi release lớn phải có business milestone đi kèm;
-- ngân sách kỹ thuật được rà soát theo tiền thực thu, runway và tải thật;
-- phí Grapuco là chi phí đối tác/add-on riêng;
-- không bán add-on dưới giá thành chỉ để tăng số người dùng.
-
-Bảng cần cập nhật hằng tháng:
-
-| Dòng | Tiền đã thu | Chi phí trực tiếp | Đóng góp | Chi phí build/run phân bổ | Công nợ |
-|---|---:|---:|---:|---:|---:|
-| Lớp cộng đồng | | | | | |
-| Trường/tổ chức | | | | | |
-| Cấp quyền/nền tảng | | | | | |
-| Doanh nghiệp | | | | | |
-| Add-on/Grapuco | | | | | |
+- Vibe Coding không phụ thuộc Grapuco;
+- người học có thể hoàn thành khóa bằng GitHub và AI coding tool thông thường;
+- chỉ tích hợp khi có giá, quota, SLA, consent và hợp đồng;
+- luôn có fallback;
+- không gửi dữ liệu người học mặc định.
 
 ---
 
-## 13. Rủi ro chính
+## 14. Kết luận
 
-| Rủi ro | Kiểm soát |
-|---|---|
-| Bán nhanh hơn khả năng giao | Stage-Gate kép; tách KPI ký, thu và giao |
-| Nền tảng chậm làm trì hoãn lớp | quy trình/SaaS tạm thời; MVP theo nhu cầu thật |
-| Xây quá nhiều tính năng | feature phải gắn business milestone |
-| Một dev trở thành nút thắt | modular monolith; giới hạn WIP; thuê theo module khi cần |
-| Chương trình khó nhập nền tảng | curriculum schema và migration từ tài liệu ngay tuần 1 |
-| Báo cáo sai | event/audit; đối chiếu thủ công giai đoạn đầu |
-| Coach quá tải | đo ticket, giờ hỗ trợ và escalation |
-| Cấp quyền làm rò rỉ IP | entitlement, version, hợp đồng và usage log |
-| Grapuco gián đoạn | adapter và fallback; không critical path |
-| Chi phí AI/cloud tăng | metering, quota và model routing |
-| AI làm thay người học | co-learner design, rubric và human review |
-| Doanh nghiệp kéo lệch roadmap | pilot nhỏ, backlog riêng, không tùy chỉnh lõi miễn phí |
-| Dữ liệu cá nhân bị chia sẻ sai | consent, tenant isolation, scope và audit |
+Kinh doanh phải bắt đầu từ chương trình và khách hàng đã có, không chờ nền tảng. Kỹ thuật xây song song để giảm tải, nâng chất lượng và tạo khả năng nhân rộng.
 
----
+Ba điều không được nhầm lại:
 
-## 14. Các quyết định anh Đức cần chốt
-
-1. Ngày bắt đầu chính thức của tuần 1.
-2. Danh sách 2–3 trường đợt đầu và số người học từng trường.
-3. Trường hay dự án trực tiếp thu học phí.
-4. Giá cụ thể của khóa 4 buổi, 12 buổi và hai chương trình sinh viên.
-5. Phạm vi gói cấp quyền đầu tiên.
-6. Tên và vai trò cụ thể của 5 người core.
-7. Trần ngân sách build nền tảng trong 90 ngày.
-8. Stack kỹ thuật cuối cùng nếu khác đề xuất.
-9. Đầu mối và mô hình thương mại với Grapuco.
-10. Trần tải hỗ trợ/coach trước khi mở rộng.
-
-Các điểm chưa chốt không được tự điền thành dữ liệu thật. Tuy nhiên chúng không làm dừng các việc có thể thực hiện ngay: chuẩn hóa chương trình, chốt trường, xây domain model và Classroom MVP.
-
----
-
-## 15. Tiêu chí thành công sau 12 tháng
-
-Kế hoạch được xem là thành công khi đạt phần lớn các điều kiện sau:
-
-- các chương trình cốt lõi được triển khai lặp lại tại nhiều trường;
-- có doanh thu từ cohort và tổ chức giáo dục;
-- có doanh thu lặp lại từ cấp quyền, nền tảng hoặc gia hạn;
-- thời gian kích hoạt trường mới giảm theo từng quý;
-- nền tảng quản lý được đa trường, đa cohort và đa chương trình;
-- chương trình được biểu diễn thành graph hoạt động–năng lực–prerequisite;
-- Path Engine V1 hoạt động trong ít nhất một chương trình;
-- người học có portfolio và evidence;
-- trường có dashboard và báo cáo;
-- coach/giảng viên nguồn có playbook;
-- Grapuco được tích hợp an toàn hoặc được xác định rõ là chưa cần;
-- có dữ liệu unit economics, chất lượng và công suất để lập kế hoạch năm hai.
-
-**Nguyên tắc cuối cùng:** kinh doanh tạo dữ liệu và nguồn lực cho kỹ thuật; kỹ thuật làm tăng chất lượng, công suất và doanh thu lặp lại cho kinh doanh. Không bên nào được chạy tách khỏi bên còn lại.
+1. **Vibe Coding là khóa học bình thường**, không phải dự án kỹ thuật cao cấp.
+2. **Khách hàng gồm trường, doanh nghiệp, cộng đồng và người đi làm**, không chỉ trường học.
+3. **Các lớp đầu có thể chạy hoàn toàn ngoài nền tảng**, miễn dữ liệu được quản lý có cấu trúc để chuyển lên sau.
