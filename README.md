@@ -83,16 +83,17 @@ TUMO được dùng làm mô hình tham chiếu về learning path động, port
 ## Tài liệu điều hành ưu tiên
 
 1. [AGENTS.md — nguồn sự thật điều hành](AGENTS.md)
-2. [Mục tiêu tháng đầu](ke-hoach/muc-tieu-thang-1.md)
-3. [Kế hoạch kinh doanh và triển khai 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
-4. [Mô hình doanh thu](docs/mo-hinh-doanh-thu.md)
-5. [Unit economics](ke-hoach/unit-economics.md)
-6. [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
-7. [Mô hình nền tảng greenfield](nen-tang/mo-hinh-nen-tang.md)
-8. [Phương án triển khai kỹ thuật học từ TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
-9. [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
-10. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
-11. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
+2. [Kế hoạch triển khai kinh doanh song song kỹ thuật](ke-hoach/ke-hoach-trien-khai-kinh-doanh-va-ky-thuat-song-song.md)
+3. [Mục tiêu tháng đầu](ke-hoach/muc-tieu-thang-1.md)
+4. [Kế hoạch kinh doanh và triển khai 12 tháng](ke-hoach/ke-hoach-kinh-doanh-12-thang.md)
+5. [Mô hình doanh thu](docs/mo-hinh-doanh-thu.md)
+6. [Unit economics](ke-hoach/unit-economics.md)
+7. [Chi phí, dòng tiền và vốn lưu động](ke-hoach/chi-phi-va-dong-tien.md)
+8. [Mô hình nền tảng greenfield](nen-tang/mo-hinh-nen-tang.md)
+9. [Phương án triển khai kỹ thuật học từ TUMO](nen-tang/phuong-an-trien-khai-ky-thuat-hoc-tu-tumo.md)
+10. [Danh mục sản phẩm đào tạo](san-pham/danh-muc-san-pham-dao-tao.md)
+11. [Thế mạnh và nguyên tắc lập kế hoạch](docs/the-manh-du-an.md)
+12. [Khung hợp tác với Grapuco](docs/doi-tac-grapuco.md)
 
 ## Chương trình nổi bật
 
@@ -114,6 +115,7 @@ TUMO được dùng làm mô hình tham chiếu về learning path động, port
 - Dữ liệu cốt lõi do dự án kiểm soát.
 - Đối tác ngoài đi qua lớp tích hợp và hợp đồng rõ ràng.
 - AI hỗ trợ; con người chịu trách nhiệm cuối cùng về nội dung và đánh giá.
+- Mọi release kỹ thuật phải phục vụ một mốc kinh doanh, chất lượng hoặc công suất cụ thể.
 
 ## Tài liệu lịch sử và trao đổi
 
