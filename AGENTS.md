@@ -2,9 +2,9 @@
 
 > **Đọc file này trước tiên, trước mọi file khác trong repo.**
 >
-> File này là nguồn sự thật điều hành. Khi mâu thuẫn với tài liệu khác, ưu tiên file này cho đến khi tài liệu kia được sửa.
+> Đây là nguồn sự thật điều hành. Khi mâu thuẫn với tài liệu khác, ưu tiên file này cho đến khi tài liệu kia được sửa.
 
-Cập nhật lần cuối: 2026-07-30  
+Cập nhật lần cuối: 2026-08-05  
 Người chủ trì: Bùi Minh Đức
 
 ---
@@ -24,7 +24,7 @@ Các thành phần được phép kế thừa:
 - sản phẩm đầu ra và tiêu chí đánh giá;
 - khung năng lực và phương pháp giảng dạy đã được chốt.
 
-Không được mặc định kế thừa:
+Không mặc định kế thừa:
 
 - source code hoặc nền tảng phần mềm cũ;
 - cơ sở dữ liệu, tài khoản và dữ liệu người dùng cũ;
@@ -42,7 +42,7 @@ Grapuco là **đối tác công nghệ độc lập**, không phải tài sản 
 
 Vai trò dự kiến:
 
-- add-on cho chương trình Vibe Coding;
+- công cụ bổ sung cho các khóa Vibe Coding và AI coding;
 - trực quan hóa module, dependency, call graph và flow;
 - hỗ trợ spec-first và phân tích tác động thay đổi;
 - cung cấp context có cấu trúc cho AI coding tools;
@@ -50,51 +50,115 @@ Vai trò dự kiến:
 
 Nguyên tắc bắt buộc:
 
-- tích hợp qua API, MCP hoặc cơ chế được hai bên thỏa thuận;
+- tích hợp qua API, MCP, tài khoản riêng hoặc cơ chế được hai bên thỏa thuận;
 - có hợp đồng, phạm vi, giá, SLA và trách nhiệm hỗ trợ riêng;
 - không mặc định chia sẻ dữ liệu cá nhân người học;
 - chỉ gửi code hoặc dữ liệu dự án được cho phép;
-- nền tảng vẫn vận hành khi Grapuco chưa tích hợp hoặc gián đoạn;
+- lớp học và nền tảng vẫn vận hành khi Grapuco chưa tích hợp hoặc gián đoạn;
 - quyền sở hữu code, học liệu và dữ liệu phải được quy định rõ.
 
-### 1.3. Chiến lược thị trường: education-first
+### 1.3. Chiến lược thị trường: program-first, đa kênh
 
-Trong giai đoạn đầu, dự án **không đặt doanh nghiệp làm nguồn doanh thu chính** vì:
+Dự án không chia sản phẩm thành “khóa dành riêng cho trường” và “khóa dành riêng cho doanh nghiệp” một cách cứng nhắc.
 
-- khó tiếp cận số lượng lớn trong thời gian ngắn;
-- chu kỳ ra quyết định và ký hợp đồng thường dài;
-- yêu cầu khảo sát, tùy chỉnh và hỗ trợ cao;
-- doanh thu ban đầu không chắc tương xứng với chi phí bán hàng và triển khai;
-- chưa có đủ case study để bán các gói có giá trị cao.
+Một chương trình có thể được triển khai cho:
 
-Thứ tự ưu tiên thị trường:
+- trường đại học, cao đẳng, trung cấp và trường phổ thông;
+- doanh nghiệp và các phòng ban;
+- trung tâm hoặc tổ chức đào tạo;
+- lớp cộng đồng;
+- nhóm người học hoặc người đi làm.
 
-1. **Cá nhân và lớp cộng đồng trong giáo dục:** giáo viên, giảng viên, sinh viên và người đi làm.
-2. **Trường học, trung tâm và tổ chức giáo dục:** đóng vai trò kênh phân phối B2B2C và khách hàng tổ chức.
-3. **Cấp quyền chương trình, đào tạo giảng viên nguồn và nền tảng:** tạo doanh thu lặp lại từ tổ chức giáo dục.
-4. **Doanh nghiệp:** tiếp cận có chọn lọc bằng workshop, khảo sát và pilot nhỏ; chỉ mở rộng sau khi có case study.
+Điều chỉnh nằm ở:
 
-Mục tiêu là dùng giáo dục để tạo dòng tiền, dữ liệu vận hành, uy tín và sản phẩm chuẩn hóa; doanh nghiệp là tầng doanh thu giá trị cao phát triển sau.
+- tình huống thực hành;
+- sản phẩm đầu ra;
+- dữ liệu và quy trình sử dụng;
+- thời lượng;
+- hình thức tổ chức;
+- giá và phạm vi dịch vụ.
+
+**Vibe Coding là một chương trình đào tạo thông thường**, tương tự các khóa AI khác. Nó không phải một dự án kỹ thuật cao cấp và không cần chờ Grapuco, Path Engine hoặc nền tảng hoàn chỉnh mới tổ chức.
+
+Vibe Coding có thể triển khai cho:
+
+- sinh viên và học sinh;
+- giảng viên và giáo viên;
+- người đi làm;
+- doanh nghiệp muốn nhân sự tạo website, ứng dụng, workflow hoặc công cụ nội bộ;
+- lớp cộng đồng.
 
 ### 1.4. Trạng thái triển khai
 
-- Đã có các trường đại học, cao đẳng và cơ sở giáo dục sẵn sàng phối hợp.
+- Đã có các trường và cơ sở giáo dục sẵn sàng phối hợp.
 - Không bắt đầu từ bước tìm trường đầu tiên.
-- Nhiệm vụ trước mắt là kích hoạt các đơn vị đã sẵn sàng, tổ chức lớp, thu học phí/doanh thu và xây nền tảng song song.
+- Doanh nghiệp cũng là khách hàng đào tạo ngay từ đầu khi có nhu cầu phù hợp.
 - Không chờ nền tảng hoàn chỉnh mới khai giảng.
-- Các cơ hội doanh nghiệp vẫn được tiếp nhận, nhưng không được dùng làm giả định nền cho dòng tiền tháng đầu.
+- Các khóa đầu có thể vận hành hoàn toàn ngoài nền tảng mới.
+- Nền tảng được xây song song, sau đó tiếp nhận dần dữ liệu và quy trình từ các lớp đang chạy.
 
-### 1.5. KPI tháng đầu
+### 1.5. Đào tạo không phụ thuộc nền tảng
 
-Ưu tiên chính thức:
+Trong các tuần đầu, lớp học có thể sử dụng:
 
-- kích hoạt 2–3 trường/cơ sở giáo dục;
-- bắt đầu đào tạo từ tuần thứ hai;
+- Google Forms hoặc biểu mẫu tương đương để đăng ký và nộp bài;
+- Google Sheets hoặc bảng quản lý để theo dõi người học;
+- Google Drive hoặc cloud storage để chứa học liệu;
+- Zoom, Google Meet hoặc nền tảng họp trực tuyến;
+- nhóm Zalo, email hoặc kênh nhắn tin;
+- GitHub, IDE và công cụ AI cho Vibe Coding;
+- LMS/SaaS tạm thời nếu cần.
+
+Yêu cầu bắt buộc là dữ liệu tối thiểu phải được ghi nhận có cấu trúc để sau này nhập hoặc migrate vào nền tảng:
+
+- người học;
+- chương trình và cohort;
+- điểm danh;
+- bài tập và sản phẩm;
+- rubric và kết quả;
+- phản hồi;
+- học phí hoặc trạng thái thanh toán khi có.
+
+Không được biến tiến độ phát triển phần mềm thành lý do hoãn bán hàng hoặc hoãn khai giảng.
+
+### 1.6. Quy tắc định giá
+
+Giá và phạm vi sản phẩm phải được chốt **trước khi mở bán, gửi proposal hoặc ký hợp đồng**.
+
+Với mỗi khóa cần có tối thiểu:
+
+- đối tượng;
+- số buổi và thời lượng;
+- hình thức đào tạo;
+- số người học hoặc quy mô lớp;
+- nội dung và đầu ra;
+- phần tùy chỉnh;
+- trách nhiệm của hai bên;
+- mức giá;
+- lịch thanh toán;
+- chi phí ngoài phạm vi.
+
+Tuần 4 chỉ dùng để:
+
+- đối chiếu giá với chi phí thật;
+- đánh giá hiệu quả;
+- điều chỉnh giá cho đợt sau;
+- tạo gói hoặc phiên bản mới.
+
+**Không để tới tuần 4 mới định giá khóa 4 buổi hoặc bất kỳ khóa nào đã bán trong tháng.**
+
+### 1.7. KPI tháng đầu
+
+Ưu tiên:
+
+- kích hoạt 2–3 trường/cơ sở đã sẵn sàng;
+- triển khai các lớp cộng đồng hoặc lớp doanh nghiệp phù hợp khi có khách;
+- bắt đầu đào tạo từ tuần thứ hai hoặc sớm hơn nếu lịch đã chốt;
 - 200–300 sinh viên thanh toán và bắt đầu học;
-- tối thiểu 2 khóa dành cho giáo viên/giảng viên hoặc cán bộ giáo dục được ký và có lịch;
-- tối thiểu 1 lớp ngắn hạn 4 buổi được mở hoặc bán cho đơn vị giáo dục;
-- ít nhất 1 gói chương trình sinh viên được bán, cấp quyền hoặc triển khai theo thỏa thuận;
-- doanh nghiệp: thực hiện 3–5 cuộc trao đổi nhu cầu và tối đa 1 pilot nếu có cơ hội phù hợp; **không đặt KPI bắt buộc phải có doanh thu doanh nghiệp trong tháng đầu**.
+- tối thiểu 2 lớp/hợp đồng đào tạo đã chốt, không giới hạn chỉ ở trường;
+- tối thiểu 1 khóa ngắn hạn 4 buổi được mở hoặc bán;
+- ít nhất 1 chương trình sinh viên được triển khai, bán hoặc cấp quyền;
+- có dữ liệu vận hành đủ để xây nền tảng theo nhu cầu thật.
 
 `ke-hoach/muc-tieu-thang-1.md` là nguồn ưu tiên cho KPI chi tiết.
 
@@ -102,157 +166,92 @@ Mục tiêu là dùng giáo dục để tạo dòng tiền, dữ liệu vận h�
 
 ## 2. Bối cảnh sản phẩm
 
-### 2.1. Chương trình cốt lõi
+### 2.1. Các chương trình cốt lõi
 
-Hai chương trình sinh viên:
+1. **Ứng dụng AI theo khung năng lực** — khoảng 12–15 buổi.
+2. **Phát triển ứng dụng và tự động hóa với AI – Vibe Coding** — khoảng 12–15 buổi.
+3. AI cho giáo viên phổ thông — bản 4 buổi và bản 12 buổi.
+4. AI cho giảng viên đại học, cao đẳng và giáo dục nghề nghiệp.
+5. AI cho doanh nghiệp và các phòng ban.
+6. AI+ / AIx trong chương trình đào tạo.
+7. STEAM và các môn mới theo đơn đặt hàng.
 
-1. **Ứng dụng AI theo khung năng lực** — 12–15 buổi, dành cho sinh viên không chuyên.
-2. **Phát triển ứng dụng và tự động hóa với AI – Vibe Coding** — 12–15 buổi, tạo website, ứng dụng, workflow hoặc AI agent có thể chạy.
+### 2.2. Nguyên tắc sản phẩm
 
-Các nhóm chương trình giáo dục:
-
-- AI cho giáo viên phổ thông: bản 4 buổi và bản 12 buổi;
-- AI cho giảng viên đại học, cao đẳng và giáo dục nghề nghiệp;
-- AI+ / AIx trong chương trình đào tạo;
-- đào tạo giảng viên nguồn;
-- STEAM và các môn mới theo đơn đặt hàng;
-- workshop và khóa ngắn hạn có sản phẩm đầu ra.
-
-Các chương trình doanh nghiệp được giữ trong danh mục nhưng ở trạng thái phát triển có chọn lọc:
-
-- workshop nhận thức và AI foundation;
-- khảo sát quy trình/AI readiness;
-- đào tạo theo phòng ban;
-- pilot workflow, agent hoặc công cụ nội bộ;
-- triển khai mở rộng sau khi pilot được nghiệm thu.
-
-### 2.2. Thang sản phẩm
-
-Mỗi nhóm khách hàng nên được dẫn qua thang sản phẩm:
-
-> Nội dung miễn phí → workshop ngắn → khóa 4 buổi → khóa chuyên sâu → cấp quyền/nền tảng → tư vấn hoặc triển khai riêng.
-
-Với giáo dục, ưu tiên chuẩn hóa để một chương trình có thể được bán theo nhiều cấu hình:
+Mỗi chương trình có thể được bán dưới nhiều hình thức:
 
 - lớp cộng đồng;
-- lớp do trường tập hợp người học;
-- trường mua trọn gói;
-- trường cấp quyền và tự tổ chức;
+- lớp cho một trường hoặc nhiều trường;
+- lớp cho doanh nghiệp;
+- đào tạo nội bộ;
+- lớp online hoặc trực tiếp;
+- cấp quyền nội dung;
 - đào tạo giảng viên nguồn;
-- nền tảng và báo cáo đi kèm.
+- nền tảng và báo cáo đi kèm;
+- triển khai tùy chỉnh.
+
+Không nâng một chương trình thành “sản phẩm cao cấp” chỉ vì nó có nội dung kỹ thuật. Mức độ phức tạp thương mại phụ thuộc phạm vi triển khai, không phụ thuộc tên khóa học.
 
 ### 2.3. Nền tảng mới
 
-Phạm vi lõi giai đoạn đầu:
+Nền tảng được xây greenfield nhưng không phải điều kiện để đào tạo.
+
+Phạm vi lõi dài hạn:
 
 - quản lý đơn vị, chương trình, cohort và người học;
 - học liệu, nhiệm vụ, bài tập và nộp sản phẩm;
 - rubric, chấm điểm và hồ sơ minh chứng;
 - điểm danh, tiến độ và báo cáo;
-- phân quyền quản trị, giảng viên, điều phối viên và người học;
-- hỗ trợ tích hợp dịch vụ ngoài qua API/MCP;
-- nhật ký hoạt động và kiểm soát truy cập.
-
-Không biến danh sách tính năng thành lý do trì hoãn lớp. Giai đoạn đầu có thể dùng quy trình thủ công hoặc SaaS tạm thời.
+- phân quyền;
+- tích hợp dịch vụ ngoài;
+- nhật ký hoạt động và kiểm soát truy cập;
+- lộ trình học và dữ liệu năng lực khi đủ dữ liệu.
 
 ### 2.4. Nguyên tắc kiến trúc
 
 - **Greenfield:** xây mới, không phụ thuộc codebase cũ.
 - **Modular:** phân hệ có thể phát triển và thay thế độc lập.
 - **API-first:** sẵn sàng kết nối đối tác.
-- **Data ownership:** dữ liệu học tập do dự án và đơn vị giáo dục kiểm soát theo thỏa thuận.
+- **Data ownership:** dữ liệu cốt lõi do dự án và khách hàng kiểm soát theo thỏa thuận.
 - **Human-in-the-loop:** AI hỗ trợ, con người chịu trách nhiệm cuối cùng.
 - **Vendor independence:** không để đối tác ngoài trở thành điểm lỗi duy nhất.
+- **Platform-optional at launch:** lớp học có thể bắt đầu trước phần mềm.
 
 ---
 
-## 3. Mô hình thương mại ưu tiên
+## 3. Nguyên tắc phối hợp kinh doanh và kỹ thuật
 
-### 3.1. Dòng doanh thu chính giai đoạn đầu
-
-1. Lớp cộng đồng và lớp theo cohort cho giáo viên, giảng viên, sinh viên.
-2. Đào tạo trực tiếp cho trường, khoa, trung tâm và tổ chức giáo dục.
-3. Cấp quyền chương trình, học liệu và đào tạo giảng viên nguồn.
-4. Phí nền tảng, báo cáo và hỗ trợ vận hành đi kèm các chương trình giáo dục.
-
-### 3.2. Dòng doanh thu phát triển sau
-
-- đào tạo và tư vấn doanh nghiệp;
-- khảo sát AI readiness;
-- pilot workflow/agent;
-- triển khai công cụ nội bộ;
-- gói Vibe Coding có Grapuco;
-- white-label và tích hợp sâu.
-
-### 3.3. Tỷ trọng định hướng
-
-Các tỷ trọng dưới đây là `[giả định quản trị]`, không phải cam kết doanh thu:
-
-- giai đoạn đầu: 50–60% từ cá nhân/cohort, 25–35% từ tổ chức giáo dục, 10–20% tối đa từ doanh nghiệp và nguồn khác;
-- khi đã có case study: tăng dần tỷ trọng tổ chức và doanh nghiệp, giảm phụ thuộc vào lớp bán lẻ.
-
-Không được đưa doanh thu doanh nghiệp chưa có hợp đồng vào kịch bản cơ sở.
-
-### 3.4. Nguyên tắc ghi nhận
-
-Không được nhầm:
-
-- học phí gộp với doanh thu dự án;
-- giá trị hợp đồng với tiền đã thu;
-- doanh thu với đóng góp;
-- hợp đồng đã ký với khóa đã giao xong;
-- cơ hội bán hàng với doanh thu dự kiến chắc chắn.
+1. Kinh doanh bán chương trình và đầu ra, không bán danh sách tính năng phần mềm.
+2. Kỹ thuật ưu tiên các vấn đề xuất hiện trong lớp thật.
+3. Không yêu cầu một lớp thông thường phải có Path Engine, portfolio nâng cao hoặc tích hợp Grapuco.
+4. Dữ liệu từ vận hành thủ công phải được chuẩn hóa để migrate sau.
+5. Một tính năng chỉ được ưu tiên khi giúp:
+   - tăng khả năng bán;
+   - giảm tải vận hành;
+   - nâng chất lượng;
+   - tăng khả năng mở rộng;
+   - tạo doanh thu lặp lại.
+6. Không trì hoãn đào tạo vì thiếu dashboard, thanh toán tự động, AI tutor hoặc mobile app.
 
 ---
 
-## 4. Cách tiếp cận doanh nghiệp
+## 4. Điều các trợ lý AI phải tránh
 
-Doanh nghiệp đi theo lộ trình giảm rủi ro:
-
-1. Workshop hoặc buổi chia sẻ ngắn.
-2. Khảo sát nhu cầu và quy trình.
-3. Đào tạo nhóm nhỏ hoặc theo phòng ban.
-4. Pilot một workflow, agent hoặc công cụ nội bộ.
-5. Đo kết quả, nghiệm thu và xây case study.
-6. Chỉ sau đó mới mở rộng triển khai.
-
-Không bán ngay dự án lớn khi chưa hiểu dữ liệu, quy trình, người chịu trách nhiệm và tiêu chí thành công.
-
-KPI doanh nghiệp giai đoạn đầu nên là:
-
-- số cuộc trao đổi chất lượng;
-- số bài toán được xác định rõ;
-- số pilot có phạm vi và tiêu chí nghiệm thu;
-- số case study đủ điều kiện công bố;
-- doanh thu và đóng góp thực thu, không phải tổng pipeline.
+- Coi Vibe Coding là dự án cao cấp hoặc khó triển khai hơn các khóa học khác.
+- Chỉ mô tả khách hàng là trường học và bỏ qua doanh nghiệp, cộng đồng hoặc người đi làm.
+- Đặt nền tảng làm điều kiện bắt buộc để khai giảng.
+- Để tới tuần 4 mới định giá một sản phẩm đã bán.
+- Gắn Vibe Coding bắt buộc với Grapuco.
+- Gắn doanh thu với tính năng phần mềm chưa có.
+- Tự tạo giá, chi phí hoặc tỷ lệ chia sẻ khi anh Đức chưa chốt.
+- Nhầm giá trị hợp đồng, tiền đã thu, doanh thu và lợi nhuận.
 
 ---
 
-## 5. Nguyên tắc lập kế hoạch
+## 5. Quy ước tài liệu
 
-1. Bắt đầu từ các trường và cộng đồng giáo dục đã sẵn sàng.
-2. Dùng chương trình đã soạn để khai giảng nhanh.
-3. Ưu tiên khóa ngắn hạn để tạo dòng tiền và dẫn sang khóa chuyên sâu.
-4. Tổ chức giáo dục là khách hàng và đồng thời là kênh phân phối.
-5. Doanh nghiệp không phải KPI doanh thu bắt buộc trong tháng đầu.
-6. Nền tảng mới được xây song song, ưu tiên tính năng phục vụ lớp thật.
-7. Tích hợp đối tác ngoài theo hợp đồng và interface rõ ràng.
-8. Mọi số chưa có căn cứ phải ghi `[giả định]`.
-9. Mọi số thực tế phải ghi nguồn, ngày và trạng thái thu tiền.
-10. Không mở rộng sản phẩm khi chưa đo được chi phí giao hàng và chất lượng.
-
----
-
-## 6. Tài liệu ưu tiên
-
-1. `AGENTS.md`.
-2. `ke-hoach/muc-tieu-thang-1.md`.
-3. `ke-hoach/ke-hoach-kinh-doanh-12-thang.md`.
-4. `docs/mo-hinh-doanh-thu.md`.
-5. `ke-hoach/unit-economics.md`.
-6. `ke-hoach/chi-phi-va-dong-tien.md`.
-7. `san-pham/danh-muc-san-pham-dao-tao.md`.
-8. `nen-tang/mo-hinh-nen-tang.md`.
-9. `docs/doi-tac-grapuco.md`.
-
-Các tài liệu trong `trao-doi/` dùng để truy vết quyết định, không thay thế nguồn điều hành hiện hành.
+- Mọi số chưa kiểm chứng ghi `[giả định]`.
+- Dữ liệu thật ghi nguồn và ngày.
+- Tài liệu lịch sử được giữ để truy vết nhưng không thắng `AGENTS.md`.
+- Khi bất đồng, ghi rõ phương án, đánh đổi và dữ liệu cần thêm.
+- Chỉ anh Đức quyết định các vấn đề kinh doanh chưa chốt.
